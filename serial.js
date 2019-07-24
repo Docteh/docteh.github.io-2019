@@ -20,6 +20,7 @@ var serial = {};
       { 'vendorId': 0x239A, 'productId': 0x000E },
       { 'vendorId': 0x239A, 'productId': 0x800D },
       { 'vendorId': 1155, 'productId': 57105 },
+      { 'vendorId': 1155, 'productId': 22336 },
       { 'vendorId': 10473, 'productId': 393 },
     ];
     return navigator.usb.requestDevice({ 'filters': filters }).then(
