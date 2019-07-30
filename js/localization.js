@@ -125,8 +125,9 @@ i18n.localizePage = function() {
  * returns the current locale to the callback
  */
 function getStoredUserLocale(cb) {
-    chrome.storage.local.get('userLanguageSelect', function (result) {
+    configAbstraction.get('userLanguageSelect', function (result) {
         var userLanguage = 'DEFAULT';
+        console.log('got',result);
         if (result.userLanguageSelect) {
             userLanguage = result.userLanguageSelect
         } 
@@ -134,7 +135,7 @@ function getStoredUserLocale(cb) {
         userLanguage = getValidLocale(userLanguage);
 
         cb(userLanguage);
-    })
+    });
 }
 
 function getValidLocale(userLocale) {

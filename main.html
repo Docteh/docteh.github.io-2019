@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="./js/libraries/jquery.nouislider.pips.min.css"/>
     <link type="text/css" rel="stylesheet" href="./js/libraries/flightindicators.css"/>
     <link type="text/css" rel="stylesheet" href="./css/main.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="./css/tabs/static_tab.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/landing.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/setup.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/help.css" media="all"/>
@@ -34,6 +35,7 @@
     <link type="text/css" rel="stylesheet" href="./css/opensans_webfontkit/fonts.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/dropdown-lists/css/style_lists.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./js/libraries/switchery/switchery.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="./css/webserial.css" media="all"/>
 
     <link type="text/css" rel="stylesheet" href="./css/main-dark.css" media="all" disabled/>
     <link type="text/css" rel="stylesheet" href="./css/tabs-dark/landing-dark.css" media="all" disabled/>
@@ -110,16 +112,18 @@
     <script type="text/javascript" src="./node/inflection.min.js"></script>
     <script type="text/javascript" src="./js/libraries/analytics.js"></script>
     <script type="text/javascript" src="./js/injected_methods.js"></script>
+    <script type="text/javascript" src="./js/configAbstraction.js"></script>
     <script type="text/javascript" src="./js/data_storage.js"></script>
     <script type="text/javascript" src="./js/fc.js"></script>
     <script type="text/javascript" src="./js/port_handler.js"></script>
     <script type="text/javascript" src="./js/port_usage.js"></script>
-    <script type="text/javascript" src="./js/serial.js"></script>
+    <!--<script type="text/javascript" src="./js/serial.js"></script>-->
+    <script type="text/javascript" src="./js/navigator.serial.js"></script>
     <script type="text/javascript" src="./js/gui.js"></script>
     <script type="text/javascript" src="./js/huffman.js"></script>
     <script type="text/javascript" src="./js/default_huffman_tree.js"></script>
     <script type="text/javascript" src="./js/model.js"></script>
-    <script type="text/javascript" src="./js/serial_backend.js"></script>
+    <!--<script type="text/javascript" src="./js/serial_backend.js"></script>-->
     <script type="text/javascript" src="./js/msp/MSPCodes.js"></script>
     <script type="text/javascript" src="./js/msp.js"></script>
     <script type="text/javascript" src="./js/msp/MSPHelper.js"></script>
@@ -136,6 +140,7 @@
     <script type="text/javascript" src="./js/jenkins_loader.js"></script>
     <script type="text/javascript" src="./js/Analytics.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/tabs/static_tab.js"></script>
     <script type="text/javascript" src="./js/tabs/landing.js"></script>
     <script type="text/javascript" src="./js/tabs/setup.js"></script>
     <script type="text/javascript" src="./js/tabs/setup_osd.js"></script>
@@ -217,7 +222,7 @@
                     <label for="port-override"><span i18n="portOverrideText">Port:</span> <input id="port-override" type="text"
                                                             value="/dev/rfcomm0"/></label>
                 </div>
-                <div>
+                <div id="autoConnectSwitch">
                     <label><input class="auto_connect togglesmall" type="checkbox"/><span
                             class="auto_connect" i18n="autoConnect"></span></label>
                 </div>
@@ -288,9 +293,11 @@
             <ul class="mode-disconnected">
                 <li class="tab_landing" id="tab_landing"><a href="#" i18n="tabLanding" class="tabicon ic_welcome" i18n_title="tabLanding"></a>
                 </li>
+                <li class="tab_changelog"><a href="#" class="tabicon ic_help" i18n="defaultChangelogAction"></a></li>
+                <li class="tab_privacy_policy"><a href="#" class="tabicon ic_help" i18n="defaultPrivacyPolicyAction"></a></li>
                 <li class="tab_help" id="tab_help"><a href="#" i18n="tabHelp" class="tabicon ic_help"
                                         i18n_title="tabHelp"></a></li>
-                <li class="tab_firmware_flasher"><a href="#" i18n="tabFirmwareFlasher" class="tabicon ic_flasher"
+                <li class="tab_firmware_flasher" id="tabFirmware"><a href="#" i18n="tabFirmwareFlasher" class="tabicon ic_flasher"
                                                     i18n_title="tabFirmwareFlasher"></a></li>
             </ul>
             <ul class="mode-connected">

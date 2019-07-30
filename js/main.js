@@ -30,7 +30,7 @@ function getNwGui() {
 function checkSetupAnalytics(callback) {
     if (!analytics) {
         setTimeout(function () {
-            chrome.storage.local.get(['userId', 'analyticsOptOut', 'checkForConfiguratorUnstableVersions', ], function (result) {
+            configAbstraction.get(['userId', 'analyticsOptOut', 'checkForConfiguratorUnstableVersions', ], function (result) {
                 if (!analytics) {
                     setupAnalytics(result);
                 }
@@ -130,6 +130,8 @@ function startProcess() {
             break;
     }
 
+// not sure exactly what to check here
+if (chrome.storage) {
     if (GUI.operating_system !== 'ChromeOS') {
         checkForConfiguratorUpdates();
     }
@@ -139,6 +141,10 @@ function startProcess() {
             $("#showlog").trigger('click');
         }
     });
+} else {
+    console.log('Not checking for an update');
+    GUI.log('chrome.storage not available, no checking for updates');
+}
 
     // log webgl capability
     // it would seem the webgl "enabling" through advanced settings will be ignored in the future
@@ -213,14 +219,22 @@ function startProcess() {
                 function content_ready() {
                     GUI.tab_switch_in_progress = false;
                 }
-
+// Hide behind chrome.storage, reason: can't opt out of analytics, shouldn't do them for now
+if(chrome.storage) {
                 checkSetupAnalytics(function (analytics) {
                     analytics.sendAppView(tab);
                 });
+}
 
                 switch (tab) {
                     case 'landing':
                         TABS.landing.initialize(content_ready);
+                        break;
+                    case 'changelog':
+                        TABS.staticTab.initialize('changelog', content_ready);
+                        break;
+                    case 'privacy_policy':
+                        TABS.staticTab.initialize('privacy_policy', content_ready);
                         break;
                     case 'firmware_flasher':
                         TABS.firmware_flasher.initialize(content_ready);
@@ -311,7 +325,7 @@ function startProcess() {
                 // translate to user-selected language
                 i18n.localizePage();
 
-                chrome.storage.local.get('permanentExpertMode', function (result) {
+                configAbstraction.get('permanentExpertMode', function (result) {
                     if (result.permanentExpertMode) {
                         $('div.permanentExpertMode input').prop('checked', true);
                     }
@@ -319,21 +333,21 @@ function startProcess() {
                     $('div.permanentExpertMode input').change(function () {
                         var checked = $(this).is(':checked');
 
-                        chrome.storage.local.set({'permanentExpertMode': checked});
+                        configAbstraction.set({'permanentExpertMode': checked});
 
                         $('input[name="expertModeCheckbox"]').prop('checked', checked).change();
                     }).change();
                 });
 
-                chrome.storage.local.get('rememberLastTab', function (result) {
+                configAbstraction.get('rememberLastTab', function (result) {
                     $('div.rememberLastTab input')
                         .prop('checked', !!result.rememberLastTab)
-                        .change(function() { chrome.storage.local.set({rememberLastTab: $(this).is(':checked')}) })
+                        .change(function() { configAbstraction.set({rememberLastTab: $(this).is(':checked')}) })
                         .change();
                 });
 
                 if (GUI.operating_system !== 'ChromeOS') {
-                    chrome.storage.local.get('checkForConfiguratorUnstableVersions', function (result) {
+                    configAbstraction.get('checkForConfiguratorUnstableVersions', function (result) {
                         if (result.checkForConfiguratorUnstableVersions) {
                             $('div.checkForConfiguratorUnstableVersions input').prop('checked', true);
                         }
@@ -341,7 +355,7 @@ function startProcess() {
                         $('div.checkForConfiguratorUnstableVersions input').change(function () {
                             var checked = $(this).is(':checked');
 
-                            chrome.storage.local.set({'checkForConfiguratorUnstableVersions': checked});
+                            configAbstraction.set({'checkForConfiguratorUnstableVersions': checked});
 
                             checkForConfiguratorUpdates();
                         });
@@ -350,7 +364,7 @@ function startProcess() {
                     $('div.checkForConfiguratorUnstableVersions').hide();
                 }
 
-                chrome.storage.local.get('analyticsOptOut', function (result) {
+                configAbstraction.get('analyticsOptOut', function (result) {
                     if (result.analyticsOptOut) {
                         $('div.analyticsOptOut input').prop('checked', true);
                     }
@@ -358,7 +372,7 @@ function startProcess() {
                     $('div.analyticsOptOut input').change(function () {
                         var checked = $(this).is(':checked');
 
-                        chrome.storage.local.set({'analyticsOptOut': checked});
+                        configAbstraction.set({'analyticsOptOut': checked});
 
                         checkSetupAnalytics(function (analytics) {
                             if (checked) {
@@ -379,7 +393,7 @@ function startProcess() {
                     .change(function () {
                         var checked = $(this).is(':checked');
 
-                        chrome.storage.local.set({'cliAutoComplete': checked});
+                        configAbstraction.set({'cliAutoComplete': checked});
                         CliAutoComplete.setEnabled(checked);
                     }).change();
 
@@ -388,11 +402,11 @@ function startProcess() {
                     .change(function () {
                         var checked = $(this).is(':checked');
 
-                        chrome.storage.local.set({'darkTheme': checked});
+                        configAbstraction.set({'darkTheme': checked});
                         DarkTheme.setConfig(checked);
                     }).change();
 
-                chrome.storage.local.get('userLanguageSelect', function (result) {
+                configAbstraction.get('userLanguageSelect', function (result) {
 
                     var userLanguage_e = $('div.userLanguage select');
                     var languagesAvailables = i18n.getLanguagesAvailables();
@@ -411,7 +425,7 @@ function startProcess() {
                         var languageSelected = $(this).val();
 
                         // Select the new language, a restart is required
-                        chrome.storage.local.set({'userLanguageSelect': languageSelected});
+                        configAbstraction.set({'userLanguageSelect': languageSelected});
                     });
                 });
 
@@ -519,7 +533,7 @@ function startProcess() {
             $("#content").removeClass('logopen');
             $(".tab_container").removeClass('logopen');
             $("#scrollicon").removeClass('active');
-            chrome.storage.local.set({'logopen': false});
+            configAbstraction.set({'logopen': false});
 
             state = false;
         } else {
@@ -528,7 +542,7 @@ function startProcess() {
             $("#content").addClass('logopen');
             $(".tab_container").addClass('logopen');
             $("#scrollicon").addClass('active');
-            chrome.storage.local.set({'logopen': true});
+            configAbstraction.set({'logopen': true});
 
             state = true;
         }
@@ -536,6 +550,7 @@ function startProcess() {
         $(this).data('state', state);
     });
 
+    if (chrome.storage) {
     chrome.storage.local.get('permanentExpertMode', function (result) {
         if (result.permanentExpertMode) {
             $('input[name="expertModeCheckbox"]').prop('checked', true);
@@ -560,6 +575,10 @@ function startProcess() {
     chrome.storage.local.get('darkTheme', function (result) {
         DarkTheme.setConfig(result.darkTheme);
     });
+    } else {
+        // Try it here, technically a personal preference.
+        $('#showlog').click();
+    }; //another if false block
 };
 
 function checkForConfiguratorUpdates() {
@@ -799,9 +818,17 @@ function updateStatusBarVersion(firmwareVersion, firmwareId, hardwareId) {
     $('#status-bar .version').text(versionText);
 }
 
+//This is called 4 times, not the best location to do things once.
 function getManifestVersion(manifest) {
     if (!manifest) {
-        manifest = chrome.runtime.getManifest();
+        if (chrome.runtime.getManifest != undefined) {
+            manifest = chrome.runtime.getManifest();
+        } else {
+            manifest = { version: '10.6.6000' }; // Hard coded, come back to this
+            // another async issue?
+            //$.getJSON('version.json', function(data) { manifest = data; });
+            //console.log(manifest);
+        }
     }
 
     var version = manifest.version_name;

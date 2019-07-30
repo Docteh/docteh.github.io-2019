@@ -1,0 +1,10 @@
+/* Hide certain items */
+.webSerialHidden {
+    display: none;
+}
+#port-override-option,
+#autoConnectSwitch,
+#flashbutton,
+#tabFirmware {
+    display: none;
+}
