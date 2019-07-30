@@ -1,0 +1,2315 @@
+{
+    "warningTitle": {
+        "message": "Figyelmeztetés"
+    },
+    "noticeTitle": {
+        "message": "Értesítés"
+    },
+    "options_title": {
+        "message": "Alkalmazás Beállításai"
+    },
+    "connect": {
+        "message": "Kapcsolódás"
+    },
+    "connecting": {
+        "message": "Kapcsolódás"
+    },
+    "disconnect": {
+        "message": "Lekapcsolódás"
+    },
+    "portsSelectManual": {
+        "message": "Manuális Választás"
+    },
+    "portOverrideText": {
+        "message": "Port:"
+    },
+    "autoConnect": {
+        "message": "Automatikus kapcsolódás"
+    },
+    "close": {
+        "message": "Bezár"
+    },
+    "autoConnectEnabled": {
+        "message": "Automatikus kapcsolódás: Engedélyezve - Ha új portot érzékel, a konfigurátor automatikusan megkezdi a kapcsolat létrehozását"
+    },
+    "autoConnectDisabled": {
+        "message": "Automatikus kapcsolódás: Letiltva - A felhasználónak kell kiválasztania a megfelelő soros portot és a \"Kapcsolódj\" gombra kattintania"
+    },
+    "expertMode": {
+        "message": "Szakértő mód engedélyezése"
+    },
+    "permanentExpertMode": {
+        "message": "Szakértő mód állandó engedélyezése"
+    },
+    "userLanguageSelect": {
+        "message": "Nyelv (a változtatások újraindítás után jelennek meg)"
+    },
+    "language_default": {
+        "message": "Alapértelmezett"
+    },
+    "sensorStatusGyro": {
+        "message": "Giroszkóp"
+    },
+    "sensorStatusAccel": {
+        "message": "Gyorsulásmérő"
+    },
+    "sensorStatusMag": {
+        "message": "Magnetométer"
+    },
+    "sensorStatusBaro": {
+        "message": "Barométer"
+    },
+    "sensorStatusGPS": {
+        "message": "GPS"
+    },
+    "sensorStatusSonar": {
+        "message": "Szonár \/ Távolságmérő"
+    },
+    "checkForConfiguratorUnstableVersions": {
+        "message": "Értesíts a konfigurátor instabil frissítéseiről"
+    },
+    "configuratorUpdateNotice": {
+        "message": "A <b>Betaflight Konfigurátor<\/b> elavult változatát használja.<br><b>1$<\/b> verzió elérhető online a <a href=\"$2\" target=\"_blank\"> Betaflight letöltések oldalán<\/a> a legfrissebb javításokkal és fejlesztésekkel. <br>Kérjük, zárja be a konfigurátor ablakot frissítése előtt."
+    },
+    "configuratorUpdateWebsite": {
+        "message": "A Legfrissebb Verzió Weboldalára"
+    },
+    "deviceRebooting": {
+        "message": "Eszköz - <span class=\"message-negative\">Újraindítás<\/span>"
+    },
+    "deviceReady": {
+        "message": "Eszköz - <span class=\"message-positive\">Kész<\/span>"
+    },
+    "configMigrationFrom": {
+        "message": "Generált konfigurációs fájl migrálása: $1"
+    },
+    "configMigratedTo": {
+        "message": "Konfiguráció betöltve a konfigurátorba: $1"
+    },
+    "configMigrationSuccessful": {
+        "message": "Konfigurációk betöltése befejezve, elvégzett betöltések : $1"
+    },
+    "tabFirmwareFlasher": {
+        "message": "Firmware Égető"
+    },
+    "tabLanding": {
+        "message": "Üdvözöljük"
+    },
+    "tabHelp": {
+        "message": "Dokumentáció és Támogatás"
+    },
+    "tabSetup": {
+        "message": "Beállítások"
+    },
+    "tabSetupOSD": {
+        "message": "OSD Beállítás"
+    },
+    "tabConfiguration": {
+        "message": "Beállítás"
+    },
+    "tabPorts": {
+        "message": "Portok"
+    },
+    "tabPidTuning": {
+        "message": "PID Hangolás"
+    },
+    "tabReceiver": {
+        "message": "Vevő"
+    },
+    "tabModeSelection": {
+        "message": "Mód Választás"
+    },
+    "tabServos": {
+        "message": "Szervók"
+    },
+    "tabFailsafe": {
+        "message": "Failsafe"
+    },
+    "tabTransponder": {
+        "message": "Verseny Válaszjeladó"
+    },
+    "tabOsd": {
+        "message": "OSD"
+    },
+    "tabPower": {
+        "message": "Töltés és Akkumulátor"
+    },
+    "tabGPS": {
+        "message": "GPS"
+    },
+    "tabMotorTesting": {
+        "message": "Motorok"
+    },
+    "tabLedStrip": {
+        "message": "LED csík"
+    },
+    "tabRawSensorData": {
+        "message": "Érzékelők"
+    },
+    "tabCLI": {
+        "message": "CLI"
+    },
+    "tabOnboardLogging": {
+        "message": "Feketedoboz (Blackbox)"
+    },
+    "tabAdjustments": {
+        "message": "Módosítások"
+    },
+    "tabAuxiliary": {
+        "message": "Módok"
+    },
+    "logActionHide": {
+        "message": "Napló elrejtése"
+    },
+    "logActionShow": {
+        "message": "Napló megjelenítése"
+    },
+    "serialPortOpened": {
+        "message": "Soros port <span class=\"message-positive\">sikeresen<\/span> megnyitva, ID: $1"
+    },
+    "serialPortOpenFail": {
+        "message": "Soros port megnyitása <span class=\"message-negative\">nem sikerült<\/span>"
+    },
+    "serialPortClosedOk": {
+        "message": "Soros port <span class=\"message-positive\">sikeresen<\/span> bezárva"
+    },
+    "serialPortClosedFail": {
+        "message": "Soros port bezárása <span class=\"message-negative\">nem sikerült<\/span>"
+    },
+    "serialUnrecoverable": {
+        "message": "Helyrehozhatatlan <span class=\"message-negative\">hiba<\/span> történt a soros konnektoron, szetkapcsolódunk...."
+    },
+    "usbDeviceOpened": {
+        "message": "USB eszköz <span class=\"message-positive\">sikeresen<\/span> megnyitva, ID: $1"
+    },
+    "usbDeviceOpenFail": {
+        "message": "<span class=\"message-negative\">Nem sikerült<\/span> megnyitni az USB eszközt!"
+    },
+    "usbDeviceClosed": {
+        "message": "USB eszköz <span class=\"message-positive\">sikeresen<\/span> bezárva"
+    },
+    "usbDeviceCloseFail": {
+        "message": "<span class=\"message-negative\">Nem sikerült<\/span> bezárni az USB eszközt"
+    },
+    "usbDeviceUdevNotice": {
+        "message": "Jol vannak az <strong>udev szabályok<\/strong> felinstalálva? A tennivalókért lásd a dokumnentációt"
+    },
+    "stm32UsbDfuNotFound": {
+        "message": "USB DFU nem fellelhető"
+    },
+    "stm32TimedOut": {
+        "message": "STM32 - időtúllépés, programozás: NEM SIKERÜLT"
+    },
+    "stm32WrongResponse": {
+        "message": "STM32 kommunikáció helytelen válasz miatt nem sikerült, várt válasz: $1 (0x$2), kapott válasz: $3 (0x4$)"
+    },
+    "stm32ContactingBootloader": {
+        "message": "Kapcsolatfelvétel a bootloaderrel ..."
+    },
+    "stm32ContactingBootloaderFailed": {
+        "message": "Nem sikerült kommunikálni a bootloaderrel"
+    },
+    "stm32ResponseBootloaderFailed": {
+        "message": "Nem érkezett válasz a bootloadertől, a programozás nem sikerült."
+    },
+    "stm32GlobalEraseExtended": {
+        "message": "Teljes csipp törlés folyamatban (kiterjesztett törlés) ..."
+    },
+    "stm32LocalEraseExtended": {
+        "message": "Helyi törlés folyamatban (kiterjesztett törlés) ..."
+    },
+    "stm32GlobalErase": {
+        "message": "Teljes csipp törlés folyamatban ..."
+    },
+    "stm32LocalErase": {
+        "message": "Helyi törlés folyamatban ..."
+    },
+    "stm32Erase": {
+        "message": "Törlés ..."
+    },
+    "stm32Flashing": {
+        "message": "Égetés ..."
+    },
+    "stm32Verifying": {
+        "message": "Ellenőrzés ..."
+    },
+    "stm32ProgrammingSuccessful": {
+        "message": "Programozás sikeresen befejeződött."
+    },
+    "stm32ProgrammingFailed": {
+        "message": "Programozás nem sikerült."
+    },
+    "stm32NotReadProtected": {
+        "message": "Olvasás védelem nem aktív"
+    },
+    "stm32UnprotectSuccessful": {
+        "message": "Védelem sikeresen eltávolítva."
+    },
+    "stm32UnprotectFailed": {
+        "message": "A védelmet nem sikerült eltávolítani"
+    },
+    "stm32UnprotectInitFailed": {
+        "message": "A védelem eltávolítását nem sikerült megkezdeni"
+    },
+    "noConfigurationReceived": {
+        "message": "Nem érkezett konfiguráció <span class=\"message-negative\">10 másodpercen<\/span> belül, a kommunikáció <span class=\"message-negative\">sikertelen<\/span>"
+    },
+    "firmwareVersionNotSupported": {
+        "message": "A firmware verzió nem <span class=\"message-negative\">támogatott<\/span>. Frissítse olyanra, ami támogatja legalább a <strong>$1<\/strong> API verziót. Használja a CLI-t biztonsági mentés készítésére égetés előtt. A CLI biztonsági mentés\/visszatöltés leírását a dokumentációban találja.<br \/>Ha nem akar frissíteni, használja a konfigurátor egy régebbi verzióját."
+    },
+    "firmwareTypeNotSupported": {
+        "message": "Nincs - CLI mód kivételével a Cleanflight\/Betaflight firmware <span class=\"message-negative\">nem támogatott<\/span>."
+    },
+    "firmwareUpgradeRequired": {
+        "message": "Az eszközön található firmware-t frissíteni kell. Használja a CLI-t biztonsági mentés készítésére égetés előtt. A CLI biztonsági mentés\/visszatöltés leírását a dokumentációban találja.<br \/>Ha nem akar frissíteni, használja a konfigurátor egy régebbi verzióját."
+    },
+    "releaseCheckLoaded": {
+        "message": "$1 Verzióinformáció betöltése GitHub-ról."
+    },
+    "releaseCheckCached": {
+        "message": "Kesselt verzióinformáció a $1 kiadáshoz."
+    },
+    "releaseCheckNoInfo": {
+        "message": "Nem áll rendelkezésre verzióinformáció a $1-hez."
+    },
+    "tabSwitchConnectionRequired": {
+        "message": "<strong>Csatlakoztatnia<\/strong> kell, mielőtt bármelyik fület megtekinthetné."
+    },
+    "tabSwitchWaitForOperation": {
+        "message": "Pillanatnyilag <span class=\"message-negative\">nem<\/span> végrehajtható, várjon, míg az aktuális művelet befejeződik..."
+    },
+    "tabSwitchUpgradeRequired": {
+        "message": "A  $1 fül használata előtt <strong>frissítenie<\/strong> kell a Betaflight legfrissebb verziójára."
+    },
+    "firmwareVersion": {
+        "message": "Firmware verzió: <strong>$1<\/strong>"
+    },
+    "apiVersionReceived": {
+        "message": "MultiWii API verzió: <strong>$1<\/strong>"
+    },
+    "uniqueDeviceIdReceived": {
+        "message": "Egyedi eszköz azonosító: <strong>0x$1<\/strong>"
+    },
+    "craftNameReceived": {
+        "message": "Eszköz neve: <strong>$1<\/strong>"
+    },
+    "armingDisabled": {
+        "message": "<strong>Élesítés Kikapcsolva<\/strong>"
+    },
+    "armingEnabled": {
+        "message": "<strong>Élesítés Bekapcsolva<\/strong>"
+    },
+    "boardInfoReceived": {
+        "message": "Csipp: <strong>$1<\/strong>, verzió: <strong>$2<\/strong>"
+    },
+    "buildInfoReceived": {
+        "message": "Használt firmware kiadási dátuma: <strong>$1<\/strong>"
+    },
+    "fcInfoReceived": {
+        "message": "Repülésirányító információ, identifikátor: <strong>$1<\/strong>, verzió: <strong>$2<\/strong>"
+    },
+    "versionLabelTarget": {
+        "message": "Célhardwer"
+    },
+    "versionLabelFirmware": {
+        "message": "Firmware"
+    },
+    "versionLabelConfigurator": {
+        "message": "Konfigurátor"
+    },
+    "notifications_app_just_updated_to_version": {
+        "message": "Az alkalmazás frissült $1 verzióra"
+    },
+    "notifications_click_here_to_start_app": {
+        "message": "Az alkalmazás indításához kattintson ide"
+    },
+    "statusbar_port_utilization": {
+        "message": "Port hasznosítás:"
+    },
+    "statusbar_usage_download": {
+        "message": "D: $1%"
+    },
+    "statusbar_usage_upload": {
+        "message": "U: $1%"
+    },
+    "statusbar_packet_error": {
+        "message": "Csomag hiba:"
+    },
+    "statusbar_i2c_error": {
+        "message": "I2C hiba:"
+    },
+    "statusbar_cycle_time": {
+        "message": "Ciklus Időtartam:"
+    },
+    "statusbar_cpu_load": {
+        "message": "CPU Terhelés: $1%"
+    },
+    "dfu_connect_message": {
+        "message": "Kérjük használja a Firmware Égetőt, hogy hozzáférjen a DFU eszközökhöz"
+    },
+    "eeprom_saved_ok": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "defaultWelcomeIntro": {
+        "message": "Üdvözöljük a <strong>Betaflight konfigurátor<\/strong>-ban, ami leegyszerűsíti a repülésirányító frissítését, beállítását és finomhangolását."
+    },
+    "defaultWelcomeHead": {
+        "message": "Hardver"
+    },
+    "defaultContributingHead": {
+        "message": "Hozzájárult"
+    },
+    "defaultContributingText": {
+        "message": "Ha azt szeretne hozzájárulni, hogy a Betaflight még jobb legyen, több módon is segíthet, például <br\/><ul><li>más felhasználók kérdéseinke megválaszolásával a fórumokon és az IRC csatornán.<\/li><li>Firmware és konfigurátor forráskód írásával - új funkciók, javítások, fejlesztések<\/li><li><a href=\"https:\/\/github.com\/Betaflight\/betaflight\/pulls\" target=\"_blank\">Új funkciók, javítások<\/a> tesztelésével.<\/li><li><a href=\"https:\/\/github.com\/betaflight\/betaflight\/issues\" target=\"_blank\"> Hibák, vagy kérések<\/a> kommentálásával.<\/li><li><a href=\"https:\/\/crowdin.com\/project\/betaflight-configurator\" target=\"_blank\">A konfigurátor fordításával.<\/a><\/li><li><\/li><\/ul>"
+    },
+    "defaultChangelogAction": {
+        "message": "Változtatásnapló"
+    },
+    "defaultChangelogHead": {
+        "message": "Konfigurátor - Változtatásnapló"
+    },
+    "defaultButtonFirmwareFlasher": {
+        "message": "Firmware Égető"
+    },
+    "defaultDonate": {
+        "message": "Adományozás"
+    },
+    "defaultSponsorsHead": {
+        "message": "Szponzorok"
+    },
+    "defaultDocumentationHead": {
+        "message": "Dokumentáció \/ Kézikönyv"
+    },
+    "defaultDocumentation": {
+        "message": "A Betaflight dokumentáció rendelkezésre áll, a verzióinfirmációk közt és a wiki-n.<br\/><br\/>"
+    },
+    "defaultDocumentation1": {
+        "message": "A <a href=\"https:\/\/github.com\/betaflight\/betaflight\/wiki\" target=\"_blank\">Betaflight wiki<\/a> nagyszerű információforrás."
+    },
+    "defaultDocumentation2": {
+        "message": "A firmware kiadási megjegyzései a <a href=\"https:\/\/github.com\/Betaflight\/Betaflight\/releases\" target=\"_blank\">Githubon<\/a> olvashatóak."
+    },
+    "defaultSupportHead": {
+        "message": "Támogatás"
+    },
+    "defaultSupportSubline1": {
+        "message": "Támogatási Források"
+    },
+    "defaultSupportSubline2": {
+        "message": "Fejlesztő"
+    },
+    "defaultSupport1": {
+        "message": "<a href=\"http:\/\/www.rcgroups.com\/forums\/showthread.php?t=2464844&page=1\" target=\"_blank\">RC Groups thread<\/a>"
+    },
+    "defaultSupport2": {
+        "message": "<a href=\"http:\/\/betaflight.info\" target=\"_blank\">Betaflight Wiki<\/a>"
+    },
+    "defaultSupport3": {
+        "message": "<a href=\"https:\/\/www.youtube.com\/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Joshua Bardwell Betaflight Videói<\/a>"
+    },
+    "defaultSupport4": {
+        "message": "<a href=\"https:\/\/github.com\/Betaflight\" target=\"_blank\">GitHub<\/a>"
+    },
+    "initialSetupButtonCalibrateAccel": {
+        "message": "Gyorsulásmérő kalibrálása"
+    },
+    "initialSetupCalibrateAccelText": {
+        "message": "Helyezze a csippet, vagy vázat <strong>vízszintes<\/strong> felületre, folytassa a kalibrációt, biztosítsa, hogy az egység a kalibráció ideje alatt nem mozdul el"
+    },
+    "initialSetupButtonCalibrateMag": {
+        "message": "Magnetométer kalibrálása"
+    },
+    "initialSetupButtonCalibratingText": {
+        "message": "Kalibrálás..."
+    },
+    "initialSetupButtonReset": {
+        "message": "Beállítások visszaállítása"
+    },
+    "initialSetupResetText": {
+        "message": "Beállítások visszaállítása <strong>alapértelmezettre<\/strong>"
+    },
+    "initialSetupButtonBackup": {
+        "message": "Biztonsági Mentés"
+    },
+    "initialSetupButtonRestore": {
+        "message": "Visszaállítás"
+    },
+    "initialSetupBackupSuccess": {
+        "message": "Biztonsági másolat <span class=\"message-positive\">sikeresen<\/span> elmentve"
+    },
+    "initialSetupRestoreSuccess": {
+        "message": "Beállítások <span class=\"message-positive\">sikeresen<\/span> visszaállítva"
+    },
+    "initialSetupButtonResetZaxis": {
+        "message": "Z tengely visszaállítása, elhajlás: 0 fok"
+    },
+    "initialSetupButtonResetZaxisValue": {
+        "message": "Z tengely visszaállítása, elhajlás: $1 fok"
+    },
+    "initialSetupMixerHead": {
+        "message": "Keverő típus"
+    },
+    "initialSetupThrottleHead": {
+        "message": "Gázkar Beállítások"
+    },
+    "initialSetupMinimum": {
+        "message": "Minimum:"
+    },
+    "initialSetupMaximum": {
+        "message": "Maximum:"
+    },
+    "initialSetupFailsafe": {
+        "message": "Failsafe:"
+    },
+    "initialSetupBatteryHead": {
+        "message": "Akkumulátor"
+    },
+    "initialSetupMinCellV": {
+        "message": "Min Cellafeszültség:"
+    },
+    "initialSetupMaxCellV": {
+        "message": "Max Cellafeszültség:"
+    },
+    "initialSetupVoltageScale": {
+        "message": "Feszültség Skála:"
+    },
+    "initialSetupAccelTrimsHead": {
+        "message": "Gyorsulásmérő igazítások"
+    },
+    "initialSetupPitch": {
+        "message": "Hosszdőlés"
+    },
+    "initialSetupRoll": {
+        "message": "Dőlés:"
+    },
+    "initialSetupMagHead": {
+        "message": "Magnetométer"
+    },
+    "initialSetupDeclination": {
+        "message": "Elhajlás:"
+    },
+    "initialSetupInfoHead": {
+        "message": "Infó"
+    },
+    "initialSetupBattery": {
+        "message": "Akkumulátor feszültség:"
+    },
+    "initialSetupBatteryValue": {
+        "message": "$1 V"
+    },
+    "initialSetupDrawn": {
+        "message": "Fogyasztott ektromos töltés:"
+    },
+    "initialSetupDrawing": {
+        "message": "Áramfelvétel:"
+    },
+    "initialSetupBatteryMahValue": {
+        "message": "$1 mAh"
+    },
+    "initialSetupBatteryAValue": {
+        "message": "$1 A"
+    },
+    "initialSetupRSSI": {
+        "message": "RSSI:"
+    },
+    "initialSetupRSSIValue": {
+        "message": "$1 %"
+    },
+    "initialSetupArmingDisableFlags": {
+        "message": "Élesítés Kikapcsolás Jelek:"
+    },
+    "initialSetupArmingAllowed": {
+        "message": "Élesítés Engedélyezve"
+    },
+    "initialSetupGPSHead": {
+        "message": "GPS"
+    },
+    "initialSetupInstrumentsHead": {
+        "message": "Eszközök"
+    },
+    "initialSetupButtonSave": {
+        "message": "Mentés"
+    },
+    "initialSetupModel": {
+        "message": "Modell: $1"
+    },
+    "initialSetupAttitude": {
+        "message": "$1 fok"
+    },
+    "initialSetupAccelCalibStarted": {
+        "message": "Gyorsulásmérő kalibrációja megkezdődött"
+    },
+    "initialSetupAccelCalibEnded": {
+        "message": "Gyorsulásmérő kalibrációja <span class=\"message-positive\">befejeződött<\/span>"
+    },
+    "initialSetupMagCalibStarted": {
+        "message": "Magnetométer kalibrációja megkezdődött"
+    },
+    "initialSetupMagCalibEnded": {
+        "message": "Magnetométer kalibrációja <span class=\"message-positive\">befejeződött<\/span>"
+    },
+    "initialSetupSettingsRestored": {
+        "message": "Beállítások visszaállítva <strong>alapértelmezettre<\/strong>"
+    },
+    "initialSetupEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "featureNone": {
+        "message": "&lt;Kiválasztani&gt;"
+    },
+    "featureRX_PPM": {
+        "message": "PPM RX bemenet"
+    },
+    "featureVBAT": {
+        "message": "Akkumulátor feszültség figyelése"
+    },
+    "featureINFLIGHT_ACC_CAL": {
+        "message": "Kalibráciió repülés közben"
+    },
+    "featureRX_SERIAL": {
+        "message": "Soros vevő (SPEKSAT, SBUS, SUMD)"
+    },
+    "featureMOTOR_STOP": {
+        "message": "A motorok ne induljanak élesítéskor"
+    },
+    "featureSERVO_TILT": {
+        "message": "Szervó gimbal"
+    },
+    "featureSOFTSERIAL": {
+        "message": "CPU alapú soros portok engedélyezése"
+    },
+    "featureSOFTSERIALTip": {
+        "message": "Engedélyezés után konfigurálja a portokat a Portok fülön."
+    },
+    "featureGPS": {
+        "message": "Navigációs és telemetriai GPS"
+    },
+    "featureSONAR": {
+        "message": "Szonár"
+    },
+    "featureTELEMETRY": {
+        "message": "Telemetria kimenet"
+    },
+    "featureCURRENT_METER": {
+        "message": "Akkumulátor áramerősségfigyelés"
+    },
+    "feature3D": {
+        "message": "3D mode (megfordítható ESC-khez)"
+    },
+    "featureRX_PARALLEL_PWM": {
+        "message": "PMW RX bemenet (csatornánként egy drót)"
+    },
+    "featureRX_MSP": {
+        "message": "MSP RX bemenet (MSP port irányítja)"
+    },
+    "featureRSSI_ADC": {
+        "message": "Analóg RSSI bemenet"
+    },
+    "featureLED_STRIP": {
+        "message": "Több színű RGB LED-csík támogatása"
+    },
+    "featureDISPLAY": {
+        "message": "OLED képernyő"
+    },
+    "featureDISPLAYTip": {
+        "message": "Ha ez a funkció engedélyezve van, és nincs megjelenítőeszköz csatlakoztatva (vagy a megjelenítőeszköz nincs bekapcsolva), a repülésirányító minden újraindításakor körülbelül 10 másodpercet várakozik."
+    },
+    "featureONESHOT125": {
+        "message": "ONESHOT ESC támogatás"
+    },
+    "featureONESHOT125Tip": {
+        "message": "Bekapcsolás előtt szakítsa meg az akkumulátorkapcsolatot és vegye le a propellereket."
+    },
+    "featureBLACKBOX": {
+        "message": "Feketedoboz (Blackbox) repülési adatrögzítő"
+    },
+    "featureBLACKBOXTip": {
+        "message": "Bekapcsolás után állítsa be a Blackbox fülön."
+    },
+    "featureRX_SPI": {
+        "message": "SPI RX támogatás"
+    },
+    "featureESC_SENSOR": {
+        "message": "KISS\/BLHeli_32 ESC telemetria használata szenzorként"
+    },
+    "featureCHANNEL_FORWARDING": {
+        "message": "AUX csatornák továbbítása a szervó kimenetre"
+    },
+    "featureTRANSPONDER": {
+        "message": "Verseny Jeladó"
+    },
+    "featureTRANSPONDERTip": {
+        "message": "Engedélyezés után konfigurálja a Verseny Jeladó fülön"
+    },
+    "featureAIRMODE": {
+        "message": "Állandó légi mód (Airmode)"
+    },
+    "featureSDCARD": {
+        "message": "SD kártya támogatás (naplózáshoz)"
+    },
+    "featureOSD": {
+        "message": "Képernyőre vetített kijelző (OSD)"
+    },
+    "featureVTX": {
+        "message": "Videó Adó"
+    },
+    "featureFAILSAFE": {
+        "message": "2. Failsafe Stádium Engedélyezése"
+    },
+    "featureFAILSAFEOld": {
+        "message": "Failsafe Engedélyezése"
+    },
+    "featureFAILSAFETip": {
+        "message": "<strong>Megjegyzés:<\/strong> Ha a 2. Failsafe Stádium LE VAN TILTVA, az alapértelmezett <strong>Auto<\/strong> beállítás kerül használatba a felhasználó által definiált chatornabeállítások (Roll, Pitch, Yaw and Throttle) helyett."
+    },
+    "featureFAILSAFEOldTip": {
+        "message": "Failsafe beállítás alkalmazása szignálvesztés esetén"
+    },
+    "configurationFeatureEnabled": {
+        "message": "Engedélyezve"
+    },
+    "configurationFeatureName": {
+        "message": "Funkció"
+    },
+    "configurationFeatureDescription": {
+        "message": "Leírás"
+    },
+    "configurationMixer": {
+        "message": "Keverő"
+    },
+    "configurationFeatures": {
+        "message": "Egyéb Funkciók"
+    },
+    "configurationReceiver": {
+        "message": "Vevő"
+    },
+    "configurationReceiverMode": {
+        "message": "Vevő Mód"
+    },
+    "configurationRSSI": {
+        "message": "RSSI (Jel Erősség)"
+    },
+    "configurationEscFeatures": {
+        "message": "ESC\/Motor Funkciók"
+    },
+    "configurationSpiRxHelp": {
+        "message": "<strong>Megjegyzés:<\/strong> Az SPI RX szolgáltató csak akkor működik, ha a szükséges hardver be van építve, vagy SPI buszon csatlakoztatva."
+    },
+    "configurationOtherFeaturesHelp": {
+        "message": "<strong>Megjegyzés:<\/strong> Nem minden repülésirányító támogat minden funkcionalitást. Ha egy bekapcsolt funkció inaktív marad a 'Mentés és Újraindítás' gomb megnyomása után, akkor azt nem támogatja az irányító."
+    },
+    "configurationBoardAlignment": {
+        "message": "Csipp és Szenzor Hangolás"
+    },
+    "configurationBoardAlignmentRoll": {
+        "message": "Dőlési Szög"
+    },
+    "configurationBoardAlignmentPitch": {
+        "message": "Hosszdőlés Fokok"
+    },
+    "configurationSensorAlignmentGyro": {
+        "message": "GYRO igazítás"
+    },
+    "configurationSensorAlignmentAcc": {
+        "message": "ACCEL igazítás"
+    },
+    "configurationSensorAlignmentMag": {
+        "message": "MAG igazítás"
+    },
+    "configurationSensorAlignmentDefaultOption": {
+        "message": "Alapértelmezett"
+    },
+    "configurationAccelTrims": {
+        "message": "Gyorsulásmérő Igazítás"
+    },
+    "configurationAccelTrimRoll": {
+        "message": "Gyorsulásmérő Dőlés Igazítás"
+    },
+    "configurationAccelTrimPitch": {
+        "message": "Gyorsulásmérő Hosszdőlés Igazítás"
+    },
+    "configurationArming": {
+        "message": "Élesítés"
+    },
+    "configurationArmingHelp": {
+        "message": "Egyes élesítési módoknál szükség lehet a gyorsulásmérő engedélyezésére"
+    },
+    "configurationMagDeclination": {
+        "message": "Magnetométer Elhajlás [fok]"
+    },
+    "configurationReverseMotorSwitch": {
+        "message": "Fordított a motor iránya"
+    },
+    "configurationDisarmKillSwitchHelp": {
+        "message": "Ha a gázkar nincs alacsony állásban az élesítés mindig le van tiltva. Legyen óvatos, mivel emellett a beállítás mellett egy kapcsoló átállításával akár repülés közben is visszabiztosíthatja a repülésirányítót."
+    },
+    "configurationDigitalIdlePercent": {
+        "message": "Gázállás [százalékban], ha a Motorok Nyugalmi Állapotban Vannak"
+    },
+    "configurationThrottleMinimum": {
+        "message": "Minimális Gázállás (Legalacsonyabb ESC érték, ahol élesítés engedélyezett)"
+    },
+    "configurationThrottleMaximum": {
+        "message": "Maximális Gázállás (Legmagasabb ESC érték, ahol élesítés engedélyezett)"
+    },
+    "configurationBeeper": {
+        "message": "Csipogó konfiguráció"
+    },
+    "beeperGYRO_CALIBRATED": {
+        "message": "Csipog giroszkóp kalibráció után"
+    },
+    "beeperRX_LOST": {
+        "message": "Csipog, ha az adó kikapcsolt, vagy a elvesztette a kapcsolatot  (folytatja, míg az adás vissza nem tér)"
+    },
+    "beeperRX_LOST_LANDING": {
+        "message": "SOS jelet Csipog, ha élesítve van, és az adó kikapcsolt, vagy a elvesztette a kapcsolatot  (automatikus landolás\/biztosítás)"
+    },
+    "beeperDISARMING": {
+        "message": "Csipog a repülésirányító biztosításánál"
+    },
+    "beeperARMING": {
+        "message": "Csipog a repülésirányító élesítésénél"
+    },
+    "beeperARMING_GPS_FIX": {
+        "message": "Más hangon csipog a repülésirányító élesítésénél, ha a GPS pozíció be van mérve"
+    },
+    "beeperBAT_CRIT_LOW": {
+        "message": "Hosszabb, ismétlődő figyelmeztetőcsipogások, ha az akkumulátorfeszültség kritikusan alacsony"
+    },
+    "beeperBAT_LOW": {
+        "message": "Ismétlődő figyelmeztetőcsipogások, ha az akkumulátorfeszültség alacsony"
+    },
+    "beeperACC_CALIBRATION": {
+        "message": "Gyorsulásmérő repülés közbeni kalibrációja sikeresen befejeződött jelzés"
+    },
+    "beeperACC_CALIBRATION_FAIL": {
+        "message": "Gyorsulásmérő repülés közbeni kalibrációja nem sikerült jelzés"
+    },
+    "beeperREADY_BEEP": {
+        "message": "Jelt ad, mikor a GPS bemérés befejeződött"
+    },
+    "beeperDISARM_REPEAT": {
+        "message": "Csipog, ha a gázkar biztosító pozícióban áll"
+    },
+    "beeperSYSTEM_INIT": {
+        "message": "Bejelentkező csipogás, mikor a csipp áram alá kerül"
+    },
+    "beeperBLACKBOX_ERASE": {
+        "message": "Csipog, ha a feketedoboz törlése befejeződött"
+    },
+    "configuration3d": {
+        "message": "3D ESC\/Motor Funkciók"
+    },
+    "configuration3dDeadbandLow": {
+        "message": "3D Holtsáv Alsó"
+    },
+    "configuration3dDeadbandHigh": {
+        "message": "3D Holtsáv Felső"
+    },
+    "configuration3dNeutral": {
+        "message": "3D Neutrális"
+    },
+    "configuration3dDeadbandThrottle": {
+        "message": "3D Gázkar Holtsáv"
+    },
+    "configurationLoopTime": {
+        "message": "Repülésirányító Ciklushossz"
+    },
+    "configurationCalculatedCyclesSec": {
+        "message": "Ciklus\/Sec [Hz]"
+    },
+    "configurationGPS": {
+        "message": "GPS"
+    },
+    "configurationGPSProtocol": {
+        "message": "Protokol"
+    },
+    "configurationGPSBaudrate": {
+        "message": "Átviteli Sebesség"
+    },
+    "configurationGPSAutoBaud": {
+        "message": "Auto Baud"
+    },
+    "configurationGPSAutoConfig": {
+        "message": "Auto Konfig"
+    },
+    "configurationSerialRX": {
+        "message": "Soros Port Szolgáltató"
+    },
+    "configurationSpiRX": {
+        "message": "SPI Busz Vevő Szolgáltató"
+    },
+    "configurationEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "configurationButtonSave": {
+        "message": "Mentés és Újraindítás"
+    },
+    "portsIdentifier": {
+        "message": "Identifikátor"
+    },
+    "portsConfiguration": {
+        "message": "Konfiguráció\/MSP"
+    },
+    "portsSerialRx": {
+        "message": "Soros Rx"
+    },
+    "portsSensorIn": {
+        "message": "Szenzor Bemenet"
+    },
+    "portsTelemetryOut": {
+        "message": "Telemetria Kimenet"
+    },
+    "portsPeripherals": {
+        "message": "Perifériák"
+    },
+    "portsHelp": {
+        "message": "<strong>Megjegyzés:<\/strong> nem minden kombináció érvényes. Ha a repulésirányító firmware ilyen helyzetet érzékel, a soros port beállításai visszaállítódnak."
+    },
+    "portsMSPHelp": {
+        "message": "<strong>Megjegyzés:<\/strong> <span class=\"message-negative\">NE<\/span> kapcsolja ki az MSP-t az első soros porton, kivéve, ha pontosan tudja mit csinál. A konfigurációk újraírására, vagy törlésére kényszerülhet, ha megteszi."
+    },
+    "portsFirmwareUpgradeRequired": {
+        "message": "Firmware frissítés <span class=\"message-negative\">szükséges<\/span>. A soros port beállítása &lt; 1.8.0 firmware-ben nem támogatott."
+    },
+    "portsButtonSave": {
+        "message": "Mentés és Újraindítás"
+    },
+    "portsTelemetryDisabled": {
+        "message": "Kikapcsolva"
+    },
+    "portsFunction_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_GPS": {
+        "message": "GPS"
+    },
+    "portsFunction_TELEMETRY_FRSKY": {
+        "message": "FrSky"
+    },
+    "portsFunction_TELEMETRY_HOTT": {
+        "message": "HoTT"
+    },
+    "portsFunction_TELEMETRY_LTM": {
+        "message": "LTM"
+    },
+    "portsFunction_TELEMETRY_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_TELEMETRY_SMARTPORT": {
+        "message": "SmartPort"
+    },
+    "portsFunction_TELEMETRY_IBUS": {
+        "message": "IBUS"
+    },
+    "portsFunction_TELEMETRY_JETIXBUS": {
+        "message": "JETIXBUS"
+    },
+    "portsFunction_TELEMETRY_CRSF": {
+        "message": "CRSF"
+    },
+    "portsFunction_TELEMETRY_SRXL": {
+        "message": "SRXL"
+    },
+    "portsFunction_ESC_SENSOR": {
+        "message": "ESC"
+    },
+    "portsFunction_RX_SERIAL": {
+        "message": "Soros Rx"
+    },
+    "portsFunction_BLACKBOX": {
+        "message": "Feketedoboz (Blackbox) naplózás"
+    },
+    "pidTuningProfileOption": {
+        "message": "Profil $1"
+    },
+    "pidTuningRateProfileOption": {
+        "message": "Rate profil $1"
+    },
+    "pidTuningSubTabPid": {
+        "message": "PID Beállítások"
+    },
+    "pidTuningSubTabFilter": {
+        "message": "Filter Beállítások"
+    },
+    "pidTuningShowAllPids": {
+        "message": "Mutass minden PID-t"
+    },
+    "pidTuningHideUnusedPids": {
+        "message": "Nem használt PID-k rejtése"
+    },
+    "pidTuningNonProfilePidSettings": {
+        "message": "Profil független PID Kontroller Beállítások"
+    },
+    "pidTuningAntiGravityThres": {
+        "message": "Anti-gravitációs küszöb"
+    },
+    "pidTuningPidSettings": {
+        "message": "PID Kontroller Beállítások"
+    },
+    "receiverRcInterpolation": {
+        "message": "RC Interpoláció"
+    },
+    "receiverRcInterpolationOff": {
+        "message": "Kikapcs"
+    },
+    "receiverRcInterpolationDefault": {
+        "message": "Elődefiniált"
+    },
+    "receiverRcInterpolationAuto": {
+        "message": "Auto"
+    },
+    "receiverRcInterpolationManual": {
+        "message": "Manuális"
+    },
+    "receiverRcInterpolationInterval": {
+        "message": "RC Interpollációs Tartomány [ms]"
+    },
+    "pidTuningProportional": {
+        "message": "Arányos"
+    },
+    "pidTuningIntegral": {
+        "message": "Integrált"
+    },
+    "pidTuningDerivative": {
+        "message": "Derivált"
+    },
+    "pidTuningRcRate": {
+        "message": "RC Rate"
+    },
+    "pidTuningMaxVel": {
+        "message": "Max Seb. [fok\/s]"
+    },
+    "pidTuningRate": {
+        "message": "Rate"
+    },
+    "pidTuningSuperRate": {
+        "message": "Szuper Rate"
+    },
+    "pidTuningRatesPreview": {
+        "message": "Rate Előnézet"
+    },
+    "pidTuningTPA": {
+        "message": "TPA"
+    },
+    "pidTuningFilter": {
+        "message": "Filter"
+    },
+    "pidTuningFilterFrequency": {
+        "message": "Frekvencia"
+    },
+    "throttle": {
+        "message": "Gázkar"
+    },
+    "pidTuningButtonSave": {
+        "message": "Mentés"
+    },
+    "pidTuningButtonRefresh": {
+        "message": "Frissítés"
+    },
+    "pidTuningProfileHead": {
+        "message": "Profil"
+    },
+    "pidTuningControllerHead": {
+        "message": "PID Kontroller"
+    },
+    "pidTuningCopyProfile": {
+        "message": "Profil értékek másolása"
+    },
+    "dialogCopyProfileText": {
+        "message": "Értékek másolása az aktuális profilból"
+    },
+    "dialogCopyProfileTitle": {
+        "message": "Profil Értékek Másolása"
+    },
+    "dialogCopyProfileConfirm": {
+        "message": "Másolás"
+    },
+    "dialogCopyProfileClose": {
+        "message": "Visszavonás"
+    },
+    "pidTuningResetProfile": {
+        "message": "Minden profil érték visszaállítása"
+    },
+    "pidTuningProfileReset": {
+        "message": "Alapértelmezett profilértékek beolvasása"
+    },
+    "pidTuningReceivedProfile": {
+        "message": "Repülésirányító Profil: <strong class=\"message-positive\">$1<\/strong>"
+    },
+    "pidTuningLoadedProfile": {
+        "message": "Beolvasott Profil: <strong class=\"message-positive\">$1<\/strong>"
+    },
+    "pidTuningDataRefreshed": {
+        "message": "PID adatok <strong>frissítve<\/strong>"
+    },
+    "pidTuningEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "receiverThrottleMid": {
+        "message": "Gázkar MID"
+    },
+    "receiverThrottleExpo": {
+        "message": "Gázkar EXPO"
+    },
+    "receiverStickCenter": {
+        "message": "Kar Középpont"
+    },
+    "receiverDeadband": {
+        "message": "RC Holtsáv"
+    },
+    "recevier3dDeadbandThrottle": {
+        "message": "3D Gázkar Holtsáv"
+    },
+    "receiverChannelMap": {
+        "message": "Csatornakiosztás"
+    },
+    "receiverChannelDefaultOption": {
+        "message": "Alapértelmezett"
+    },
+    "receiverChannelMapTitle": {
+        "message": "A doboz belsejébe kattintva beállíthat saját csatornakiosztást"
+    },
+    "receiverRssiChannel": {
+        "message": "RSSI Kanális"
+    },
+    "receiverRssiChannelDisabledOption": {
+        "message": "Kikapcsolva"
+    },
+    "receiverRefreshRateTitle": {
+        "message": "Grafikon frissítési gyakoriság"
+    },
+    "receiverButtonSave": {
+        "message": "Mentés"
+    },
+    "receiverButtonRefresh": {
+        "message": "Frissítés"
+    },
+    "receiverDataRefreshed": {
+        "message": "RC Hangolási adatok <strong>frissítve<\/strong>"
+    },
+    "receiverEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "receiverModelPreview": {
+        "message": "Előnézet"
+    },
+    "auxiliaryMin": {
+        "message": "Min"
+    },
+    "auxiliaryMax": {
+        "message": "Max"
+    },
+    "auxiliaryButtonSave": {
+        "message": "Mentés"
+    },
+    "auxiliaryEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "auxiliaryAutoChannelSelect": {
+        "message": "AUTO"
+    },
+    "adjustmentsMin": {
+        "message": "Min"
+    },
+    "adjustmentsMax": {
+        "message": "Max"
+    },
+    "adjustmentsFunction0": {
+        "message": "Nincs változás"
+    },
+    "adjustmentsFunction6": {
+        "message": "Hosszdőlés és Dőlés P Igazítás"
+    },
+    "adjustmentsFunction7": {
+        "message": "Hosszdőlés és Dőlés I Igazítás"
+    },
+    "adjustmentsFunction8": {
+        "message": "Hosszdőlés és Dőlés D Igazítás"
+    },
+    "adjustmentsFunction14": {
+        "message": "Dőlési Sebesség"
+    },
+    "adjustmentsFunction15": {
+        "message": "Hosszdőlés P Igazítás"
+    },
+    "adjustmentsFunction16": {
+        "message": "Hosszdőlés I Igazítás"
+    },
+    "adjustmentsFunction17": {
+        "message": "Hosszdőlés D Igazítás"
+    },
+    "adjustmentsFunction18": {
+        "message": "Dőlés P Igazítás"
+    },
+    "adjustmentsFunction19": {
+        "message": "Dőlés I Igazítás"
+    },
+    "adjustmentsFunction20": {
+        "message": "Dőlés D Igazítás"
+    },
+    "adjustmentsSave": {
+        "message": "Mentés"
+    },
+    "adjustmentsEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "transponderType0": {
+        "message": "Nincs"
+    },
+    "transponderType3": {
+        "message": "ERLT"
+    },
+    "transponderData1": {
+        "message": "Adatok"
+    },
+    "transponderData2": {
+        "message": "Transzponder ID"
+    },
+    "transponderData3": {
+        "message": "Transzponder ID"
+    },
+    "transponderDataHelp1": {
+        "message": "Csak hexadecimális számjegyek: 0-9, A-F"
+    },
+    "transponderButtonSave": {
+        "message": "Mentés"
+    },
+    "transponderButtonSaveReboot": {
+        "message": "Mentés és Újraindítás"
+    },
+    "transponderEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "servosName": {
+        "message": "Név"
+    },
+    "servosMid": {
+        "message": "MID"
+    },
+    "servosMin": {
+        "message": "MIN"
+    },
+    "servosMax": {
+        "message": "MAX"
+    },
+    "servosAngleAtMin": {
+        "message": "Min szög"
+    },
+    "servosAngleAtMax": {
+        "message": "Max szög"
+    },
+    "servosButtonSave": {
+        "message": "Mentés"
+    },
+    "servosNormal": {
+        "message": "Normál"
+    },
+    "servosEepromSave": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "gpsHead": {
+        "message": "GPS"
+    },
+    "gpsMapHead": {
+        "message": "Pillanatnyi GPS pozíció"
+    },
+    "gps3dFix": {
+        "message": "3D Fix:"
+    },
+    "gpsFixTrue": {
+        "message": "<span class=\"fixtrue\">Igaz<\/span>"
+    },
+    "gpsFixFalse": {
+        "message": "<span class=\"fixfalse\">Hamis<\/span>"
+    },
+    "gpsAltitude": {
+        "message": "Magasság:"
+    },
+    "gpsLat": {
+        "message": "Szélesség:"
+    },
+    "gpsLon": {
+        "message": "Hosszúság:"
+    },
+    "gpsSpeed": {
+        "message": "Sebesség:"
+    },
+    "gpsSats": {
+        "message": "Szatel:"
+    },
+    "gpsDistToHome": {
+        "message": "Távolság az Otthontól:"
+    },
+    "gpsSignalStrHead": {
+        "message": "GPS jelerősség"
+    },
+    "gpsSignalStr": {
+        "message": "Jelerősség"
+    },
+    "gpsSignalSatId": {
+        "message": "Szat ID"
+    },
+    "gpsSignalQty": {
+        "message": "Db"
+    },
+    "motorsText": {
+        "message": "Motorok"
+    },
+    "motorNumber1": {
+        "message": "Motor - 1"
+    },
+    "motorNumber2": {
+        "message": "Motor - 2"
+    },
+    "motorNumber3": {
+        "message": "Motor - 3"
+    },
+    "motorNumber4": {
+        "message": "Motor - 4"
+    },
+    "motorNumber5": {
+        "message": "Motor - 5"
+    },
+    "motorNumber6": {
+        "message": "Motor - 6"
+    },
+    "motorNumber7": {
+        "message": "Motor - 7"
+    },
+    "motorNumber8": {
+        "message": "Motor - 8"
+    },
+    "servosText": {
+        "message": "Szervók"
+    },
+    "servoNumber1": {
+        "message": "Szervó - 1"
+    },
+    "servoNumber2": {
+        "message": "Szervó - 2"
+    },
+    "servoNumber3": {
+        "message": "Szervó - 3"
+    },
+    "servoNumber4": {
+        "message": "Szervó - 4"
+    },
+    "servoNumber5": {
+        "message": "Szervó - 5"
+    },
+    "servoNumber6": {
+        "message": "Szervó - 6"
+    },
+    "servoNumber7": {
+        "message": "Szervó - 7"
+    },
+    "servoNumber8": {
+        "message": "Szervó - 8"
+    },
+    "motorsResetMaximumButton": {
+        "message": "Visszaállítás"
+    },
+    "motorsSensorGyroSelect": {
+        "message": "giro"
+    },
+    "motorsSensorAccelSelect": {
+        "message": "gyors"
+    },
+    "sensorsRefresh": {
+        "message": "Frissítés:"
+    },
+    "sensorsScale": {
+        "message": "Méretarány:"
+    },
+    "sensorsGyroSelect": {
+        "message": "Giroszkóp"
+    },
+    "sensorsAccelSelect": {
+        "message": "Gyorsulásmérő"
+    },
+    "sensorsMagSelect": {
+        "message": "Magntométer"
+    },
+    "sensorsBaroSelect": {
+        "message": "Barométer"
+    },
+    "sensorsSonarSelect": {
+        "message": "Szonár"
+    },
+    "sensorsDebugSelect": {
+        "message": "Debug"
+    },
+    "sensorsGyroTitle": {
+        "message": "Giroszkóp - fok\/s"
+    },
+    "sensorsAccelTitle": {
+        "message": "Gyorsulásmérő - g"
+    },
+    "sensorsMagTitle": {
+        "message": "Magnetométer - Ga"
+    },
+    "sensorsBaroTitle": {
+        "message": "Barométer - méterek"
+    },
+    "sensorsSonarTitle": {
+        "message": "Szonár - cm"
+    },
+    "sensorsDebugTitle": {
+        "message": "Debug"
+    },
+    "cliEnter": {
+        "message": "CLI mód felismerve"
+    },
+    "cliReboot": {
+        "message": "CLI újraindítás felismerve"
+    },
+    "cliSaveToFileBtn": {
+        "message": "Fájlba Mentés"
+    },
+    "loggingSamplesSaved": {
+        "message": "Minták elmentve:"
+    },
+    "loggingLogSize": {
+        "message": "Napló Mérete:"
+    },
+    "loggingButtonLogFile": {
+        "message": "Naplófájl Választás"
+    },
+    "loggingStart": {
+        "message": "Naplózás Megkezdése"
+    },
+    "loggingStop": {
+        "message": "Naplózás Leállítása"
+    },
+    "loggingBack": {
+        "message": "Naplózás Elhagyása \/ Lekapcsolódás"
+    },
+    "loggingErrorNotConnected": {
+        "message": "Először <strong>kapcsolódnia<\/strong> kell"
+    },
+    "loggingErrorLogFile": {
+        "message": "Válasszon naplófájlt"
+    },
+    "loggingErrorOneProperty": {
+        "message": "Válasszon legalább egy naplózandó tulajdonságot"
+    },
+    "loggingAutomaticallyRetained": {
+        "message": "Előző naplófájl automatikusan betöltve: <strong>$1<\/strong>"
+    },
+    "blackboxNotSupported": {
+        "message": "A repülésirányító  (flight controller) firmware nem támogatja a Feketedoboz (Blackbox) naplózást."
+    },
+    "blackboxMaybeSupported": {
+        "message": "Vagy a repülésirányító  (flight controller) firmware túl öreg, vagy a Feketedoboz (Blackbox) funkció van kikapcsolva a Konfiguráció fülön."
+    },
+    "blackboxConfiguration": {
+        "message": "Feketedoboz (Blackbox) konfiguráció"
+    },
+    "blackboxButtonSave": {
+        "message": "Mentés és újraindítás"
+    },
+    "blackboxLoggingNone": {
+        "message": "Nincs Naplózás"
+    },
+    "blackboxLoggingFlash": {
+        "message": "Fedélzeti Flash"
+    },
+    "blackboxLoggingSdCard": {
+        "message": "SD Kártya"
+    },
+    "blackboxLoggingSerial": {
+        "message": "Soros Port"
+    },
+    "dataflashUsedSpace": {
+        "message": "Fehasznált tárhely"
+    },
+    "dataflashFreeSpace": {
+        "message": "Szabad tárhely"
+    },
+    "dataflashUnavSpace": {
+        "message": "Nem rendelkezésre álló tárhely"
+    },
+    "dataflashLogsSpace": {
+        "message": "Szabad tárhely naplózáshoz"
+    },
+    "dataflashButtonErase": {
+        "message": "Flash törlése"
+    },
+    "dataflashConfirmEraseTitle": {
+        "message": "Flash törlésének megerősítése"
+    },
+    "dataflashSavingTitle": {
+        "message": "Flash adatainak mentése fájlba"
+    },
+    "dataflashSavingNote": {
+        "message": "A mentés több percig is eltarthat, kérem, várjon."
+    },
+    "dataflashSavingNoteAfter": {
+        "message": "Mentés befejeződött, A folytatáshoz nyomja meg az \"Ok\" gombot."
+    },
+    "dataflashButtonSaveCancel": {
+        "message": "Visszavonás"
+    },
+    "dataflashButtonSaveDismiss": {
+        "message": "Ok"
+    },
+    "dataflashButtonEraseConfirm": {
+        "message": "Igen, Flash adatok törlése"
+    },
+    "dataflashButtonEraseCancel": {
+        "message": "Visszavonás"
+    },
+    "sdcardStatusNoCard": {
+        "message": "Nincs kártya behelyezve"
+    },
+    "sdcardStatusReboot": {
+        "message": "Fatális hiba<br>Újraindítás szükséges"
+    },
+    "sdcardStatusReady": {
+        "message": "Kártya készen"
+    },
+    "sdcardStatusStarting": {
+        "message": "Kártya indítása..."
+    },
+    "sdcardStatusFileSystem": {
+        "message": "Fájlrendszer indítása..."
+    },
+    "sdcardStatusUnknown": {
+        "message": "Ismeretlen állapot $1"
+    },
+    "firmwareFlasherReleaseSummaryHead": {
+        "message": "Verzióinformáció"
+    },
+    "firmwareFlasherReleaseName": {
+        "message": "Név\/Verzió:"
+    },
+    "firmwareFlasherReleaseVersionUrl": {
+        "message": "A kiadott verziókhoz"
+    },
+    "firmwareFlasherReleaseNotes": {
+        "message": "Kiadási megjegyzések:"
+    },
+    "firmwareFlasherReleaseDate": {
+        "message": "Dátum:"
+    },
+    "firmwareFlasherReleaseStatus": {
+        "message": "Állapot:"
+    },
+    "firmwareFlasherReleaseTarget": {
+        "message": "Célhardwer:"
+    },
+    "firmwareFlasherReleaseFile": {
+        "message": "Bináris:"
+    },
+    "firmwareFlasherReleaseStatusReleaseCandidate": {
+        "message": "<span class=\"message-negative\">FONTOS: Ez a egy release candidate firmwareverzió. Kérjük, azonnal jelentsen bármilyen tapasztalt poblémát.<\/span>"
+    },
+    "firmwareFlasherReleaseFileUrl": {
+        "message": "Manuális letöltés."
+    },
+    "firmwareFlasherPath": {
+        "message": "Elérés:"
+    },
+    "firmwareFlasherSize": {
+        "message": "Méret:"
+    },
+    "firmwareFlasherStatus": {
+        "message": "Státusz:"
+    },
+    "firmwareFlasherProgress": {
+        "message": "Állapot:"
+    },
+    "firmwareFlasherLoadFirmwareFile": {
+        "message": "Töltse be a firmware fájlt"
+    },
+    "firmwareFlasherOnlineSelectBoardDescription": {
+        "message": "Válassza ki a repülésirányítóját a rendelkezésre álló online firmware verziók megtekintéséhez - Válssza ki a megfelelő firmware-t a repülésirányítójához."
+    },
+    "firmwareFlasherOnlineSelectFirmwareVersionDescription": {
+        "message": "Válasszon firmware verziót a chipjéhez."
+    },
+    "firmwareFlasherFlashOnConnect": {
+        "message": "Égetés kapcsolódáskor"
+    },
+    "firmwareFlasherFullChipErase": {
+        "message": "Teljes csip törlés"
+    },
+    "firmwareFlasherFullChipEraseDescription": {
+        "message": "Minden konfigurációs adatot kitöröl a csipről."
+    },
+    "firmwareFlasherFlashDevelopmentFirmware": {
+        "message": "Fejlesztői firmware használata"
+    },
+    "firmwareFlasherFlashDevelopmentFirmwareDescription": {
+        "message": "Legfrissebb (nem tesztelt) fejlesztői firmware felégetése."
+    },
+    "firmwareFlasherManualPort": {
+        "message": "Port"
+    },
+    "firmwareFlasherManualBaud": {
+        "message": "Manuális atviteli sebesség"
+    },
+    "firmwareFlasherBaudRate": {
+        "message": "Átviteli Sebesség"
+    },
+    "firmwareFlasherOptionLoading": {
+        "message": "Betöltés ..."
+    },
+    "firmwareFlasherOptionLabelSelectFirmware": {
+        "message": "Válasszon Firmware-t \/ Csippet"
+    },
+    "firmwareFlasherOptionLabelSelectBoard": {
+        "message": "Válasszon Csippet"
+    },
+    "firmwareFlasherOptionLabelSelectFirmwareVersion": {
+        "message": "Válasszon firmware verziót"
+    },
+    "firmwareFlasherButtonLoadLocal": {
+        "message": "Firmware betöltése [Helyi]"
+    },
+    "firmwareFlasherButtonLoadOnline": {
+        "message": "Firmware betöltése [Online]"
+    },
+    "firmwareFlasherButtonDownloading": {
+        "message": "Letöltés..."
+    },
+    "firmwareFlasherFlashFirmware": {
+        "message": "Firmware Felégetve"
+    },
+    "firmwareFlasherGithubInfoHead": {
+        "message": "GitHub Firmware Információ"
+    },
+    "firmwareFlasherDate": {
+        "message": "Dátum:"
+    },
+    "firmwareFlasherHash": {
+        "message": "Hash:"
+    },
+    "firmwareFlasherMessage": {
+        "message": "Üzenet:"
+    },
+    "firmwareFlasherButtonLeave": {
+        "message": "Firmware feltölltő elhagyása"
+    },
+    "firmwareFlasherFirmwareNotLoaded": {
+        "message": "Firmware nincs betöltve"
+    },
+    "firmwareFlasherHexCorrupted": {
+        "message": "HEX fájl sérültnek tűnik"
+    },
+    "firmwareFlasherRemoteFirmwareLoaded": {
+        "message": "<span class=\"message-positive\">Távoli firmware betöltve, égetésre kész<\/span>"
+    },
+    "firmwareFlasherFailedToLoadOnlineFirmware": {
+        "message": "Távoli firmware betöltése nem sikerült"
+    },
+    "firmwareFlasherNoFirmwareSelected": {
+        "message": "<b>Nincs kiválasztva firmware a betöltéshez<\/b>"
+    },
+    "firmwareFlasherNoValidPort": {
+        "message": "<span class=\"message-negative\">Válasszon érvényes soros portot<\/span>"
+    },
+    "ledStripButtonSave": {
+        "message": "Mentés"
+    },
+    "ledStripEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">elmentve<\/span>"
+    },
+    "ledStripFunctionSection": {
+        "message": "LEF Funkciók"
+    },
+    "ledStripFunctionTitle": {
+        "message": "Funkció"
+    },
+    "ledStripColorModifierTitle": {
+        "message": "Szín módosító"
+    },
+    "ledStripVtxFunction": {
+        "message": "Larson szkenner"
+    },
+    "ledStripBlinkAlwaysOverlay": {
+        "message": "Folyamatos villogás"
+    },
+    "ledStripBlinkLandingOverlay": {
+        "message": "Villogás landoláskor"
+    },
+    "ledStripWarningsOverlay": {
+        "message": "Figyelmeztetések"
+    },
+    "colorBlack": {
+        "message": "fekete"
+    },
+    "colorWhite": {
+        "message": "fehér"
+    },
+    "colorRed": {
+        "message": "piros"
+    },
+    "colorOrange": {
+        "message": "narancsárga"
+    },
+    "colorYellow": {
+        "message": "sárga"
+    },
+    "colorLimeGreen": {
+        "message": "zöldcitrom"
+    },
+    "colorGreen": {
+        "message": "zöld"
+    },
+    "colorMintGreen": {
+        "message": "menta zöld"
+    },
+    "colorCyan": {
+        "message": "cián"
+    },
+    "colorLightBlue": {
+        "message": "világoskék"
+    },
+    "colorBlue": {
+        "message": "kék"
+    },
+    "colorDarkViolet": {
+        "message": "sötétlila"
+    },
+    "colorMagenta": {
+        "message": "magenta"
+    },
+    "colorDeepPink": {
+        "message": "sötétrózsaszin"
+    },
+    "controlAxisRoll": {
+        "message": "Dőlés [A]"
+    },
+    "controlAxisPitch": {
+        "message": "Hosszdőlés [E]"
+    },
+    "controlAxisThrottle": {
+        "message": "Gázkar [T]"
+    },
+    "controlAxisAux1": {
+        "message": "AUX 1"
+    },
+    "controlAxisAux2": {
+        "message": "AUX 2"
+    },
+    "controlAxisAux3": {
+        "message": "AUX 3"
+    },
+    "controlAxisAux4": {
+        "message": "AUX 4"
+    },
+    "controlAxisAux5": {
+        "message": "AUX 5"
+    },
+    "controlAxisAux6": {
+        "message": "AUX 6"
+    },
+    "controlAxisAux7": {
+        "message": "AUX 7"
+    },
+    "controlAxisAux8": {
+        "message": "AUX 8"
+    },
+    "controlAxisAux9": {
+        "message": "AUX 9"
+    },
+    "controlAxisAux10": {
+        "message": "AUX 10"
+    },
+    "controlAxisAux11": {
+        "message": "AUX 11"
+    },
+    "controlAxisAux12": {
+        "message": "AUX 12"
+    },
+    "controlAxisAux13": {
+        "message": "AUX 13"
+    },
+    "controlAxisAux14": {
+        "message": "AUX 14"
+    },
+    "controlAxisAux15": {
+        "message": "AUX 15"
+    },
+    "controlAxisAux16": {
+        "message": "AUX 16"
+    },
+    "pidTuningMag": {
+        "message": "Magnetométer\/Irány"
+    },
+    "pidTuningGps": {
+        "message": "GPS Navigáció"
+    },
+    "pidTuningStrength": {
+        "message": "Erő"
+    },
+    "pidTuningHorizon": {
+        "message": "Horizont"
+    },
+    "pidTuningAngle": {
+        "message": "Szög"
+    },
+    "pidTuningLevelAngleLimit": {
+        "message": "Szög Határ"
+    },
+    "pidTuningLevelSensitivity": {
+        "message": "Érzékenyskég"
+    },
+    "failsafeFeaturesHelpOld": {
+        "message": "A Failsafe beállítások jelentősen megváltoztak. Használjon Betaflight <strong>v1.12.0+<\/strong> verziót az irányítópanel aktiválásához."
+    },
+    "failsafeRxMinUsecItem": {
+        "message": "Minimum hossz"
+    },
+    "failsafeRxMaxUsecItem": {
+        "message": "Maximum hossz"
+    },
+    "failsafeChannelFallbackSettingsTitle": {
+        "message": "Failsafe Csatornabeálláitások"
+    },
+    "failsafeStageTwoSettingsTitle": {
+        "message": "2. Stádium - Beállítások"
+    },
+    "failsafeDelayHelp": {
+        "message": "1. stádium türelmi ideje szignálvisszaállításra"
+    },
+    "failsafeThrottleItem": {
+        "message": "Gázkar értéke landolás közben"
+    },
+    "failsafeOffDelayItem": {
+        "message": "Várakozás a motorok kikapcsolásáig Failsafe aktiválása esetén [1 = 0.1 sec.]"
+    },
+    "failsafeProcedureItemSelect1": {
+        "message": "Landolás"
+    },
+    "failsafeProcedureItemSelect2": {
+        "message": "Zuhanás"
+    },
+    "powerButtonSave": {
+        "message": "Mentés"
+    },
+    "powerBatteryVoltageMeterSource": {
+        "message": "Feszültségmérő Forrása"
+    },
+    "powerBatteryVoltageMeterTypeNone": {
+        "message": "Nincs"
+    },
+    "powerBatteryVoltageMeterTypeAdc": {
+        "message": "Fedélzeti ADC"
+    },
+    "powerBatteryVoltageMeterTypeEsc": {
+        "message": "ESC Szenzor"
+    },
+    "powerBatteryCurrentMeterTypeNone": {
+        "message": "Nincs"
+    },
+    "powerBatteryCurrentMeterTypeAdc": {
+        "message": "Fedélzeti ADC"
+    },
+    "powerBatteryCurrentMeterTypeVirtual": {
+        "message": "Virtuális"
+    },
+    "powerBatteryCurrentMeterTypeEsc": {
+        "message": "ESC Szenzor"
+    },
+    "powerBatteryMinimum": {
+        "message": "Minimális Cellafeszültség"
+    },
+    "powerBatteryMaximum": {
+        "message": "Maximális Cellafeszültség"
+    },
+    "powerBatteryWarning": {
+        "message": "Figyelmeztető Cellafeszültség"
+    },
+    "powerVoltageHead": {
+        "message": "Feszültségmérő"
+    },
+    "powerVoltageValue": {
+        "message": "$1 V"
+    },
+    "powerAmperageValue": {
+        "message": "$1 A"
+    },
+    "powerVoltageId10": {
+        "message": "Akkumulátor"
+    },
+    "powerVoltageId20": {
+        "message": "5V"
+    },
+    "powerVoltageId30": {
+        "message": "9V"
+    },
+    "powerVoltageId40": {
+        "message": "12V"
+    },
+    "powerVoltageId60": {
+        "message": "ESC Motor 1"
+    },
+    "powerVoltageId61": {
+        "message": "ESC Motor 2"
+    },
+    "powerVoltageId62": {
+        "message": "ESC Motor 3"
+    },
+    "powerVoltageId63": {
+        "message": "ESC Motor 4"
+    },
+    "powerVoltageId64": {
+        "message": "ESC Motor 5"
+    },
+    "powerVoltageId65": {
+        "message": "ESC Motor 6"
+    },
+    "powerVoltageId66": {
+        "message": "ESC Motor 7"
+    },
+    "powerVoltageId67": {
+        "message": "ESC Motor 8"
+    },
+    "powerVoltageId68": {
+        "message": "ESC Motor 9"
+    },
+    "powerVoltageId69": {
+        "message": "ESC Motor 10"
+    },
+    "powerVoltageId70": {
+        "message": "ESC Motor 11"
+    },
+    "powerVoltageId71": {
+        "message": "ESC Motor 12"
+    },
+    "powerVoltageId80": {
+        "message": "Cella 1"
+    },
+    "powerVoltageId81": {
+        "message": "Cella 2"
+    },
+    "powerVoltageId82": {
+        "message": "Cella 3"
+    },
+    "powerVoltageId83": {
+        "message": "Cella 4"
+    },
+    "powerVoltageId84": {
+        "message": "Cella 5"
+    },
+    "powerVoltageId85": {
+        "message": "Cella 6"
+    },
+    "powerVoltageScale": {
+        "message": "Skála"
+    },
+    "powerVoltageMultiplier": {
+        "message": "Szorzó Érték"
+    },
+    "powerAmperageId10": {
+        "message": "Akkumulátor"
+    },
+    "powerAmperageId60": {
+        "message": "ESC Motor 1"
+    },
+    "powerAmperageId61": {
+        "message": "ESC Motor 2"
+    },
+    "powerAmperageId62": {
+        "message": "ESC Motor 3"
+    },
+    "powerAmperageId63": {
+        "message": "ESC Motor 4"
+    },
+    "powerAmperageId64": {
+        "message": "ESC Motor 5"
+    },
+    "powerAmperageId65": {
+        "message": "ESC Motor 6"
+    },
+    "powerAmperageId66": {
+        "message": "ESC Motor 7"
+    },
+    "powerAmperageId67": {
+        "message": "ESC Motor 8"
+    },
+    "powerAmperageId68": {
+        "message": "ESC Motor 9"
+    },
+    "powerAmperageId69": {
+        "message": "ESC Motor 10"
+    },
+    "powerAmperageId70": {
+        "message": "ESC Motor 11"
+    },
+    "powerAmperageId71": {
+        "message": "ESC Motor 12"
+    },
+    "powerAmperageId80": {
+        "message": "Virtuális"
+    },
+    "powerAmperageId90": {
+        "message": "MSP"
+    },
+    "powerMahValue": {
+        "message": "$1 mAh"
+    },
+    "powerAmperageScale": {
+        "message": "Skála [1\/10th mV\/A]"
+    },
+    "powerBatteryHead": {
+        "message": "Akkumulátor"
+    },
+    "powerBatteryConnected": {
+        "message": "Kapcsolódva"
+    },
+    "powerBatteryConnectedValueYes": {
+        "message": "Igen (Cellák: $1)"
+    },
+    "powerBatteryConnectedValueNo": {
+        "message": "Nem"
+    },
+    "powerBatteryVoltage": {
+        "message": "Feszültség"
+    },
+    "powerBatteryCurrentDrawn": {
+        "message": "használt mAh"
+    },
+    "powerBatteryAmperage": {
+        "message": "Áramerősség"
+    },
+    "powerBatteryCapacity": {
+        "message": "Ektromos töltés (mAh):"
+    },
+    "osdSetupTitle": {
+        "message": "OSD"
+    },
+    "osdSetupUnsupportedNote1": {
+        "message": "A repülésirányító nem reagál az OSD parancsaira. Ezt valószínűleg az okozza, hogy nem rendelkezik beépített BetaFlight OSD-vel."
+    },
+    "osdSetupElementsTitle": {
+        "message": "Elemek"
+    },
+    "osdSetupVideoFormatTitle": {
+        "message": "Videó Formátum"
+    },
+    "osdSetupUnitsTitle": {
+        "message": "Egységek"
+    },
+    "osdSetupTimersTitle": {
+        "message": "Időzítő"
+    },
+    "osdSetupAlarmsTitle": {
+        "message": "Riasztók"
+    },
+    "osdSetupStatsTitle": {
+        "message": "Repülés Utáni Statisztikák"
+    },
+    "osdSetupVtxTitle": {
+        "message": "VTX Beállítások"
+    },
+    "osdSetupCraftNameTitle": {
+        "message": "Eszköz Neve"
+    },
+    "osdSetupWarningsTitle": {
+        "message": "Figyelmeztetések"
+    },
+    "osdSetupFontPresets": {
+        "message": "Alapértelmezett betűtípusok:"
+    },
+    "osdSetupOpenFont": {
+        "message": "Betűtípus Fájl Megnyitása"
+    },
+    "osdSetupUploadFont": {
+        "message": "Betűtípus Feltöltése"
+    },
+    "osdSetupSave": {
+        "message": "Mentés"
+    },
+    "osdSetupFontManager": {
+        "message": "Betűtípuskezelő"
+    },
+    "osdSetupUncheckAll": {
+        "message": "Minden kiválasztást eltávolítani"
+    },
+    "osdSetupHead": {
+        "message": "Infó"
+    },
+    "osdSetupVideoMode": {
+        "message": "Videó Mód"
+    },
+    "osdSetupCameraConnected": {
+        "message": "Kamera Csatlakoztatva"
+    },
+    "osdSetupCameraConnectedValueYes": {
+        "message": "Igen"
+    },
+    "osdSetupCameraConnectedValueNo": {
+        "message": "Nem"
+    },
+    "osdSetupResetText": {
+        "message": "OSD vissza alapértelmezettre"
+    },
+    "osdSetupButtonReset": {
+        "message": "Beállítások Visszaállítása"
+    },
+    "osdDescElementMainBattVoltage": {
+        "message": "Pillanatnyi akkumulátor feszültség (riasztási küszöb alatt villog)"
+    },
+    "osdDescElementRssiValue": {
+        "message": "Pillanatnyi RSSI érték (riasztási küszöb alatt villog)"
+    },
+    "osdDescElementThrottlePosition": {
+        "message": "Aktuális gázkar csatorna érték"
+    },
+    "osdDescElementArmed": {
+        "message": "Szöveges élesített üzenet"
+    },
+    "osdDescElementDisarmed": {
+        "message": "Szöveges biztosított üzenet"
+    },
+    "osdDescElementCrosshairs": {
+        "message": "Célkereszt a képernyő közepén"
+    },
+    "osdDescElementArtificialHorizon": {
+        "message": "Rajzolt műhorizont"
+    },
+    "osdDescElementHorizonSidebars": {
+        "message": "Műhorizont vertikális oldalvonalai"
+    },
+    "osdDescElementCurrentDraw": {
+        "message": "Pillanatnyi áramfelvétel"
+    },
+    "osdDescElementMahDrawn": {
+        "message": "Teljes felhasznált ektromos töltés"
+    },
+    "osdDescElementCraftName": {
+        "message": "Gép neve a Konfiguráció fülről"
+    },
+    "osdDescElementAltitude": {
+        "message": "Pillanatnyi magasság (riasztási küszöb felett villog)"
+    },
+    "osdDescElementOnTime": {
+        "message": "Teljes bekapcsolva töltött idő"
+    },
+    "osdDescElementFlyTime": {
+        "message": "Teljes élesített időtartam az aktuális akkumulátortöltéssel (riasztási küszöb felett villog)"
+    },
+    "osdDescElementFlyMode": {
+        "message": "Aktuális repülési mód"
+    },
+    "osdDescElementGPSSpeed": {
+        "message": "GPS meghatározott sebesség"
+    },
+    "osdDescElementGPSSats": {
+        "message": "GPS bemérést biztosító műholdak száma"
+    },
+    "osdDescElementDebug": {
+        "message": "Debug változók"
+    },
+    "osdDescElementPIDRoll": {
+        "message": "Hossztengely PID hozzáadás"
+    },
+    "osdDescElementPIDPitch": {
+        "message": "Hosszdőléstengely PID hozzáadás"
+    },
+    "osdDescElementPower": {
+        "message": "Pillanatnyi áramfelvétel"
+    },
+    "osdDescElementAvgCellVoltage": {
+        "message": "Átlag cellafeszültség (akkumulátor feszültség \/ cellaszám)"
+    },
+    "osdDescElementPitchAngle": {
+        "message": "Hosszdőlésszög fokokban"
+    },
+    "osdDescElementRollAngle": {
+        "message": "Oldaldőlési szög fokokban"
+    },
+    "osdDescElementMainBattUsage": {
+        "message": "Fogyasztott ektromos töltés grafikus reprezentációja"
+    },
+    "osdDescElementArmedTime": {
+        "message": "Legutóbbi élesítés óta eltelt idő"
+    },
+    "osdDescElementNumericalHeading": {
+        "message": "Pillanatnyi irány fokokban"
+    },
+    "osdDescElementNumericalVario": {
+        "message": "Vertikális sebesség számokban (lábban,  vagy méterben a mértékegységbeállítások szerint)"
+    },
+    "osdDescElementCompassBar": {
+        "message": "Pillanatnyi irány grafikus reprezentációja"
+    },
+    "osdDescElementWarnings": {
+        "message": "Figyelmeztetések (pl. alacsony feszültség, kritikusan alacsony feszültség, élesítésre képtelenség, ...) és vizuális csipogó (4 villogó csillag)."
+    },
+    "osdDescElementEscTemperature": {
+        "message": "ESC telemetria hőmérsékletadata"
+    },
+    "osdDescElementEscRpm": {
+        "message": "ESC telemetria RPM adata"
+    },
+    "osdDescElementRemaningTimeEstimate": {
+        "message": "Fennmaradó repülési idő becslés"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Valós idő és dátum"
+    },
+    "osdDescElementCoreTemperature": {
+        "message": "Az STM32 MCU mag hőmérséklete"
+    },
+    "osdDescElementUnknown": {
+        "message": "Ismeretlen elem (további részletek a későbbi verziókban várhatók)"
+    },
+    "osdDescStatMaxSpeed": {
+        "message": "Maximális mért sebesség"
+    },
+    "osdDescStatMinBattery": {
+        "message": "Minimális mért akkumulátor feszültség"
+    },
+    "osdDescStatMinRssi": {
+        "message": "Maximális mért RSSI"
+    },
+    "osdDescStatMaxAltitude": {
+        "message": "Maximális mért magasság"
+    },
+    "osdDescStatBlackbox": {
+        "message": "Blackbox százalékos kihasználtsága"
+    },
+    "osdDescStatEndBattery": {
+        "message": "Akkumulátorfeszültség a biztosítás pillanatában"
+    },
+    "osdDescStatFlyTime": {
+        "message": "Teljes élesítve töltött idő az aktuális akkumulátortöltettel"
+    },
+    "osdDescStatArmedTime": {
+        "message": "Legutóbbi élesítés ota eltelt idő"
+    },
+    "osdTimerSource": {
+        "message": "Forrás:"
+    },
+    "osdTimerPrecision": {
+        "message": "Pontosság:"
+    },
+    "osdTimerAlarm": {
+        "message": "Riasztó:"
+    },
+    "osdWarningBatteryCritical": {
+        "message": "Riasszon, ha az akkumulátorfeszültség a minimális átlagos cellafeszültség alá esik"
+    },
+    "osdWarningVisualBeeper": {
+        "message": "Vizuális csipogó (4 villogó csillag)."
+    },
+    "osdSectionHelpElements": {
+        "message": "OSD elemek be- vagy kikapcsolása"
+    },
+    "osdSettingsSaved": {
+        "message": "OSD beállítások elmenve"
+    },
+    "mainHelpArmed": {
+        "message": "Motor Élesítés"
+    },
+    "mainHelpFailsafe": {
+        "message": "Failsafe Mód"
+    },
+    "configurationEscProtocol": {
+        "message": "ESC\/Motor protokol"
+    },
+    "configurationUnsyncedPWMFreq": {
+        "message": "Motor PWM frekvnecia"
+    },
+    "configurationGyroSyncDenom": {
+        "message": "Giro frissítési frekvencia"
+    },
+    "configurationPidProcessDenom": {
+        "message": "PID ciklus frekvencia"
+    },
+    "configurationAccHardware": {
+        "message": "Gyorsulásmérő"
+    },
+    "configurationBaroHardware": {
+        "message": "Barométer (ha támogatott)"
+    },
+    "configurationMagHardware": {
+        "message": "Magnetométer (ha támogatott)"
+    },
+    "configurationSmallAngle": {
+        "message": "Maximális élesítési szög [fokokban]"
+    },
+    "configurationBatteryVoltage": {
+        "message": "Akkumulátor Feszültség"
+    },
+    "configurationBatteryCurrent": {
+        "message": "Akkumulátor Áramerősség"
+    },
+    "configurationBatteryMinimum": {
+        "message": "Minimális Cellafeszültség"
+    },
+    "configurationBatteryMaximum": {
+        "message": "Maximális Cellafeszültség"
+    },
+    "configurationBatteryWarning": {
+        "message": "Figyelmeztető Cellafeszültség"
+    },
+    "configurationBatteryScale": {
+        "message": "Feszültségskála"
+    },
+    "configurationCurrent": {
+        "message": "Áramerősség Szenzor"
+    },
+    "pidTuningProfile": {
+        "message": "Profil"
+    },
+    "pidTuningDeltaError": {
+        "message": "Hiba"
+    },
+    "pidTuningDeltaMeasurement": {
+        "message": "Mérés"
+    },
+    "configurationCamera": {
+        "message": "Kamera"
+    },
+    "configurationPersonalization": {
+        "message": "Testreszabás"
+    },
+    "craftName": {
+        "message": "Eszköz neve"
+    },
+    "configurationFpvCamAngleDegrees": {
+        "message": "FPV Kamera Szög [fokokban]"
+    },
+    "onboardLoggingBlackbox": {
+        "message": "Feketedoboz (Blackbox) naplózó eszköz"
+    },
+    "onboardLoggingRateOfLogging": {
+        "message": "Feketedoboz (Blackbox) naplózási gyakoriság"
+    },
+    "onboardLoggingSerialLogger": {
+        "message": "Fedélzeti soros porton csatlakozó naplózó eszköz"
+    },
+    "onboardLoggingFlashLogger": {
+        "message": "Fedélzeti adatflash csip"
+    },
+    "onboardLoggingEraseInProgress": {
+        "message": "Törlés folyamatban, kérem várjon..."
+    },
+    "onboardLoggingOnboardSDCard": {
+        "message": "Fedélzeti SD kártya"
+    },
+    "dialogConfirmResetTitle": {
+        "message": "Megerősítés"
+    },
+    "dialogConfirmResetConfirm": {
+        "message": "Visszaállítás"
+    },
+    "dialogConfirmResetClose": {
+        "message": "Visszavonás"
+    },
+    "modeCameraWifi": {
+        "message": "KAMERA WI-FI GOMB"
+    },
+    "modeCameraPower": {
+        "message": "KAMERA BEKAPCSOLÓGOMB"
+    },
+    "modeCameraChangeMode": {
+        "message": "KAMERAMÓD VÁLTÁS"
+    }
+}

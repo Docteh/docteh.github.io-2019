@@ -1,0 +1,1287 @@
+{
+    "error": {
+        "message": "Błąd: {{errorMessage}}"
+    },
+    "errorTitle": {
+        "message": "Błąd"
+    },
+    "warningTitle": {
+        "message": "Ostrzeżenie"
+    },
+    "noticeTitle": {
+        "message": "Uwaga"
+    },
+    "operationNotSupported": {
+        "message": "Operacja nie jest obsługiwana przez urządzenie."
+    },
+    "storageDeviceNotReady": {
+        "message": "Urządzenie pamięci nie jest gotowe. W przypadku karty microSD upewnij się, że jest prawidłowo rozpoznawana przez kontroler lotu."
+    },
+    "options_title": {
+        "message": "Ustawienia aplikacji"
+    },
+    "connect": {
+        "message": "Połącz"
+    },
+    "connecting": {
+        "message": "Łączenie"
+    },
+    "disconnect": {
+        "message": "Rozłącz"
+    },
+    "portsSelectManual": {
+        "message": "Wybór ręczny"
+    },
+    "portOverrideText": {
+        "message": "Port:"
+    },
+    "autoConnect": {
+        "message": "Automatyczne połączenie"
+    },
+    "close": {
+        "message": "Zamknij"
+    },
+    "autoConnectEnabled": {
+        "message": "Automatyczne połączenie: Włączone - Konfigurator automatycznie spróbuje połączyć się, gdy wykryje nowy port."
+    },
+    "autoConnectDisabled": {
+        "message": "Automatyczne połączenie: Wyłączone - Użytkownik samodzielnie musi wybrać prawidłowy port i kliknąć \"Połącz\""
+    },
+    "expertMode": {
+        "message": "Uruchom Tryb Eksperta"
+    },
+    "expertModeDescription": {
+        "message": "Pokaż niepublikowane i możliwie niestabilne wersje"
+    },
+    "permanentExpertMode": {
+        "message": "Uruchom Tryb Eksperta na stałe"
+    },
+    "rememberLastTab": {
+        "message": "Otwórz ostatnią kartę po połączeniu"
+    },
+    "analyticsOptOut": {
+        "message": "Zrezygnuj z anonimowego zbierania danych statystycznych"
+    },
+    "userLanguageSelect": {
+        "message": "Język (należy zrestartować aplikację aby zobaczyć zmiany)"
+    },
+    "language_default": {
+        "message": "Domyślne"
+    },
+    "sensorDataFlashNotFound": {
+        "message": "Nie znaleziono <br>czipu DataFlash",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorDataFlashFreeSpace": {
+        "message": "Dataflash: wolne miejsce",
+        "description": "Text of the dataflash image in the header of the page."
+    },
+    "sensorStatusGyro": {
+        "message": "Żyroskop"
+    },
+    "sensorStatusGyroShort": {
+        "message": "Gyro",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusAccel": {
+        "message": "Akcelerometr"
+    },
+    "sensorStatusAccelShort": {
+        "message": "Accel",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusMag": {
+        "message": "Magnetometr"
+    },
+    "sensorStatusMagShort": {
+        "message": "Mag",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusBaro": {
+        "message": "Barometr"
+    },
+    "sensorStatusBaroShort": {
+        "message": "Baro",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusGPS": {
+        "message": "GPS"
+    },
+    "sensorStatusGPSShort": {
+        "message": "GPS",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "sensorStatusSonar": {
+        "message": "Sonar \/ Czujnik odległości"
+    },
+    "sensorStatusSonarShort": {
+        "message": "Sonar",
+        "description": "Text of the image in the top sensors icons. Please keep it short."
+    },
+    "checkForConfiguratorUnstableVersions": {
+        "message": "Pokaż powiadomienia o aktualizacji dla niestabilnych wersji konfiguratora."
+    },
+    "configuratorUpdateNotice": {
+        "message": "Używasz starszej wersji <b>Betaflight Configurator<\/b>. <br>Nowa wersja <b>$1<\/b> jest dostępna. Odwiedź <a href=\"$2\" target=\"_blank\">stronę z aktualizacjami<\/a> aby pobrać najnowszą wersję.<br>Proszę zamknij konfigurator, zanim zaczniesz aktualizację."
+    },
+    "configuratorUpdateWebsite": {
+        "message": "Idź do strony z aktualizacjami"
+    },
+    "deviceRebooting": {
+        "message": "Urządzenie - <span class=\"message-negative\">Restartowanie<\/span>"
+    },
+    "deviceReady": {
+        "message": "Urządzenie - <span class=\"message-positive\">Gotowe<\/span>"
+    },
+    "backupFileIncompatible": {
+        "message": "Przepraszamy. Plik kopii zapasowej był wygenerowany przez poprzednią wersję konfiguratora i nie jest kompatybilny z bieżącą wersją."
+    },
+    "backupFileUnmigratable": {
+        "message": "Przepraszamy. Plik kopii zapasowej był wygenerowany przez poprzednią wersję konfiguratora i nie może zostać zaimportowany."
+    },
+    "configMigrationFrom": {
+        "message": "Importowanie pliku konfiguracji wygenerowanej przez konfigurator: $1"
+    },
+    "configMigratedTo": {
+        "message": "Zaimportowano konfigurację do konfiguratora: $1"
+    },
+    "configMigrationSuccessful": {
+        "message": "Import konfiguracji zakończony: $1"
+    },
+    "tabFirmwareFlasher": {
+        "message": "Wgrywanie oprogramowania"
+    },
+    "tabLanding": {
+        "message": "Witaj"
+    },
+    "tabHelp": {
+        "message": "Dokumentacja i pomoc"
+    },
+    "tabSetup": {
+        "message": "Ustawienia"
+    },
+    "tabSetupOSD": {
+        "message": "Ustawienia OSD"
+    },
+    "tabConfiguration": {
+        "message": "Konfiguracja"
+    },
+    "tabPorts": {
+        "message": "Porty"
+    },
+    "tabPidTuning": {
+        "message": "Regulacja PID"
+    },
+    "tabReceiver": {
+        "message": "Odbiornik"
+    },
+    "tabModeSelection": {
+        "message": "Wybór trybu"
+    },
+    "tabServos": {
+        "message": "Serwomechanizmy"
+    },
+    "tabFailsafe": {
+        "message": "Failsafe"
+    },
+    "tabTransponder": {
+        "message": "Transponder"
+    },
+    "tabOsd": {
+        "message": "OSD"
+    },
+    "tabPower": {
+        "message": "Zasilanie i bateria"
+    },
+    "tabGPS": {
+        "message": "GPS"
+    },
+    "tabMotorTesting": {
+        "message": "Silniki"
+    },
+    "tabLedStrip": {
+        "message": "Pasek LED"
+    },
+    "tabRawSensorData": {
+        "message": "Czujniki"
+    },
+    "tabCLI": {
+        "message": "CLI"
+    },
+    "tabLogging": {
+        "message": "Logowanie powiązane"
+    },
+    "tabOnboardLogging": {
+        "message": "Czarna skrzynka"
+    },
+    "tabAdjustments": {
+        "message": "Regulacja"
+    },
+    "tabAuxiliary": {
+        "message": "Tryby"
+    },
+    "logActionHide": {
+        "message": "Ukryj logi"
+    },
+    "logActionShow": {
+        "message": "Pokaż logi"
+    },
+    "serialPortOpened": {
+        "message": "Port <span class=\"message-positive\">został otwarty<\/span> z ID: $1"
+    },
+    "serialPortOpenFail": {
+        "message": "<span class=\"message-negative\">Nie udało się<\/span> otworzyć portu."
+    },
+    "serialPortClosedOk": {
+        "message": "Port został <span class=\"message-positive\">prawidłowo<\/span> zamknięty."
+    },
+    "serialPortClosedFail": {
+        "message": "<span class=\"message-negative\">Nie udało się<\/span> zamknąć portu."
+    },
+    "serialUnrecoverable": {
+        "message": "<span class=\"message-negative\">Błąd<\/span> połączenia szeregowego, rozłączanie..."
+    },
+    "usbDeviceOpened": {
+        "message": "Połączenie z urządzeniem USB <span class=\"message-positive\">zostało otwarte<\/span> z ID: $1"
+    },
+    "usbDeviceOpenFail": {
+        "message": "<span class=\"message-negative\">Nie udało się<\/span> otworzyć połączenia z urządzeniem USB!"
+    },
+    "usbDeviceClosed": {
+        "message": "Połączenie z urządzeniem USB zostało <span class=\"message-positive\">prawidłowo<\/span> zamknięte."
+    },
+    "usbDeviceCloseFail": {
+        "message": "<span class=\"message-negative\">Nie udało się<\/span> zamknąć połączenia z urządzeniem USB"
+    },
+    "usbDeviceUdevNotice": {
+        "message": "Czy zasady <strong>udev<\/strong> są zainstalowane prawidłowo? Aby znaleźć instrukcje przeczytaj dokumentację."
+    },
+    "stm32UsbDfuNotFound": {
+        "message": "Nie znaleziono USB DFU"
+    },
+    "stm32TimedOut": {
+        "message": "STM32 - czas oczekiwania upłynął, programowanie nie udało się."
+    },
+    "stm32WrongResponse": {
+        "message": "STM32 błąd komunikacji, błędna odpowiedź, oczekiwano: $1 (0x$2), otrzymano: $3 (0x$4)"
+    },
+    "stm32ContactingBootloader": {
+        "message": "Łączenie z bootloader'em ..."
+    },
+    "stm32ContactingBootloaderFailed": {
+        "message": "Komunikacja z bootloader'em zawiodła"
+    },
+    "stm32ResponseBootloaderFailed": {
+        "message": "Brak odpowiedzi z bootloader'a, programowanie nie udało się"
+    },
+    "stm32GlobalEraseExtended": {
+        "message": "Uruchamianie całkowitego czyszczenia pamięci FLASH ..."
+    },
+    "stm32LocalEraseExtended": {
+        "message": "Uruchamianie szybkiego czyszczenia pamięci FLASH ..."
+    },
+    "stm32GlobalErase": {
+        "message": "Uruchamianie całkowitego czyszczenia pamięci FLASH ..."
+    },
+    "stm32LocalErase": {
+        "message": "Uruchamianie szybkiego czyszczenia pamięci FLASH ..."
+    },
+    "stm32Erase": {
+        "message": "Czyszczenie ..."
+    },
+    "stm32Flashing": {
+        "message": "Wgrywanie ..."
+    },
+    "stm32Verifying": {
+        "message": "Weryfikacja ..."
+    },
+    "stm32ProgrammingSuccessful": {
+        "message": "Programowanie zakończone powodzeniem"
+    },
+    "stm32ProgrammingFailed": {
+        "message": "Programowanie nie udało się"
+    },
+    "stm32AddressLoadFailed": {
+        "message": "Załadowanie adresu sektora bajtów z ustawieniami nie powiodło się. Prawdopodobnie przez uruchomione zabezpieczenie odczytu."
+    },
+    "stm32AddressLoadSuccess": {
+        "message": "Załadowanie adresu sektora bajtów z ustawieniami powiodło się."
+    },
+    "stm32AddressLoadUnknown": {
+        "message": "Nie można załadować bajtów ustawień procesora z powodu nieznanego błędu. Przerywanie."
+    },
+    "stm32NotReadProtected": {
+        "message": "Zabezpieczenie odczytu nieaktywne"
+    },
+    "stm32ReadProtected": {
+        "message": "Płytka jest zabezpieczona przed odczytem. Odbezpieczanie. Nie rozłączaj urządzenia!"
+    },
+    "stm32UnprotectSuccessful": {
+        "message": "Usunięcie zabezpieczenia powiodło się."
+    },
+    "stm32UnprotectUnplug": {
+        "message": "WYMAGANE DZIAŁANIE UŻYTKOWNIKA: Aby spróbować wgrać oprogramowanie ponownie odłącz i podłącz kontroler lotu w trybie DFU!"
+    },
+    "stm32UnprotectFailed": {
+        "message": "Nie udało się odbezpieczyć płytki"
+    },
+    "stm32UnprotectInitFailed": {
+        "message": "Nie udało się uruchomić procedury odbezpieczania"
+    },
+    "noConfigurationReceived": {
+        "message": "Nie otrzymano konfiguracji przez <span class=\"message-negative\">10 sekund<\/span>, komunikacja <span class=\"message-negative\">zawiodła<\/span>."
+    },
+    "firmwareVersionNotSupported": {
+        "message": "Ta wersja oprogramowania kontrolera <span class=\"message-negative\">nie jest wspierana<\/span>. Proszę uaktualnij oprogramowanie do wersji, która wspiera API <strong>$1<\/strong>, lub wyższej. Użyj CLI, aby zgrać bieżącą konfigurację. Opis zgrywania\/przywrócenia konfiguracji opisany jest w dokumentacji.<br \/>Możesz także pobrać starszą wersję konfiguratora, jeżeli nie chcesz aktualizować oprogramowania kontrolera lotu."
+    },
+    "firmwareTypeNotSupported": {
+        "message": "Oprogramowanie nie będące Cleanflight\/Betaflight <span class=\"message-negative\">nie jest wspierane<\/span>, z wyjątkiem trybu CLI."
+    },
+    "firmwareUpgradeRequired": {
+        "message": "Oprogramowanie tego kontrolera lotu wymaga aktualizacji do nowszej wersji. Użyj CLI, aby zgrać bieżącą konfigurację. Opis zgrywania\/przywrócenia konfiguracji opisany jest w dokumentacji.<br \/>Możesz także pobrać starszą wersję konfiguratora, jeżeli nie chcesz aktualizować oprogramowania kontrolera lotu."
+    },
+    "infoVersions": {
+        "message": "Działający - OS: <strong>{{operatingSystem}}<\/strong>, Chrome: <strong>{{chromeVersion}}<\/strong>, Konfigurator: <strong>{{configuratorVersion}}<\/strong>",
+        "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
+    },
+    "buildServerLoaded": {
+        "message": "Załadowano informacje o kompilacji $1 z serwera."
+    },
+    "buildServerUsingCached": {
+        "message": "Użycie informacji o kompilacji z bufora dla $1."
+    },
+    "releaseCheckLoaded": {
+        "message": "Załadowano informację o wersji $1 z GitHub'a."
+    },
+    "releaseCheckFailed": {
+        "message": "<b>Zapytanie do GitHub'a dla wersji $1 nie udało się, używam zapamiętanych wcześniej informacji. Powód: <code>$2<\/code><\/b>"
+    },
+    "releaseCheckCached": {
+        "message": "Używam zapamiętanych wcześniej informacji dla $1 wersji."
+    },
+    "releaseCheckNoInfo": {
+        "message": "Informacje o wersji $1 są niedostępne."
+    },
+    "tabSwitchConnectionRequired": {
+        "message": "Musisz się <strong>połączyć<\/strong> żeby móc zobaczyć jakąkolwiek zakładkę."
+    },
+    "tabSwitchWaitForOperation": {
+        "message": "<span class=\"message-negative\">Nie możesz<\/span> wykonać tego teraz, zaczekaj aż obecna operacja się zakończy ..."
+    },
+    "tabSwitchUpgradeRequired": {
+        "message": "Aby zobaczyć zakładkę $1 musisz <strong>zaktualizować<\/strong> oprogramowanie kontrolera lotu do najnowszej wersji."
+    },
+    "firmwareVersion": {
+        "message": "Wersja oprogramowania FC: <strong>$1<\/strong>"
+    },
+    "apiVersionReceived": {
+        "message": "Wersja MultiWii API: <strong>$1<\/strong>"
+    },
+    "uniqueDeviceIdReceived": {
+        "message": "Unikatowy ID urządzenia: <strong>0x$1<\/strong>"
+    },
+    "craftNameReceived": {
+        "message": "Nazwa modelu: <strong>$1<\/strong>"
+    },
+    "armingDisabled": {
+        "message": "<strong>Uzbrajanie nieaktywne<\/strong>"
+    },
+    "armingEnabled": {
+        "message": "<strong>Uzbrajanie aktywne<\/strong>"
+    },
+    "runawayTakeoffPreventionDisabled": {
+        "message": "<strong>Zabezpieczenie przed ucieczką tymczasowo wyłączone<\/strong>"
+    },
+    "runawayTakeoffPreventionEnabled": {
+        "message": "Zabezpieczenie przed ucieczką włączone"
+    },
+    "boardInfoReceived": {
+        "message": "Płytka: <strong>$1<\/strong>, wersja: <strong>$2<\/strong>"
+    },
+    "buildInfoReceived": {
+        "message": "Używane oprogramowanie kontrolera lotu z dnia: <strong>$1<\/strong>"
+    },
+    "fcInfoReceived": {
+        "message": "Informacje o kontrolerze lotu - identyfikator: <strong>$1<\/strong>, wersja: <strong>$2<\/strong>"
+    },
+    "versionLabelTarget": {
+        "message": "Urządzenie docelowe"
+    },
+    "versionLabelFirmware": {
+        "message": "Oprogramowanie FC"
+    },
+    "versionLabelConfigurator": {
+        "message": "Konfigurator"
+    },
+    "notifications_app_just_updated_to_version": {
+        "message": "Aplikacja właśnie została zaktualizowana do wersji: $1"
+    },
+    "notifications_click_here_to_start_app": {
+        "message": "Kliknij tutaj aby uruchomić aplikację."
+    },
+    "statusbar_port_utilization": {
+        "message": "Obciążenie portu:"
+    },
+    "statusbar_usage_download": {
+        "message": "P: $1%"
+    },
+    "statusbar_usage_upload": {
+        "message": "W: $1%"
+    },
+    "statusbar_packet_error": {
+        "message": "Błąd pakietu danych:"
+    },
+    "statusbar_i2c_error": {
+        "message": "Błąd I2C:"
+    },
+    "statusbar_cycle_time": {
+        "message": "Czas pętli:"
+    },
+    "statusbar_cpu_load": {
+        "message": "Obciążenie procesora: $1%"
+    },
+    "dfu_connect_message": {
+        "message": "Prosimy użyć zakładki \"Wgrywanie oprogramowania\" aby połączyć się z urządzeniami w trybie DFU."
+    },
+    "dfu_erased_kilobytes": {
+        "message": "<span class=\"message-positive\">Prawidłowo<\/span> wyczyszczono $1 kB pamięci FLASH."
+    },
+    "dfu_device_flash_info": {
+        "message": "Wykryto urządzenie z całkowitym rozmiarem pamięci flash $1 KiB"
+    },
+    "dfu_error_image_size": {
+        "message": "<span class=\"message-negative\">Błąd<\/span>: Dostarczony obraz jest większy niż ilość miejsca dostępna w pamięci flash! Obraz: $1 KiB, limit = $2 KiB"
+    },
+    "eeprom_saved_ok": {
+        "message": "<span class=\"message-positive\">Zapisano<\/span> zmiany w EEPROM"
+    },
+    "defaultWelcomeIntro": {
+        "message": "Witaj w <strong>Betaflight - Configurator<\/strong>, narzędziu stworzonym by uprościć aktualizację, konfigurację i regulację Twojego kontrolera lotu."
+    },
+    "defaultWelcomeHead": {
+        "message": "Sprzęt"
+    },
+    "defaultWelcomeText": {
+        "message": "Aplikacja wspiera wszystkie kontrolery lotu które mogą współpracować z Betaflight. Sprawdź kartę \"Wgrywanie oprogramowania\" aby zobaczyć listę wszystkich kompatybilnych urządzeń.<br><br><a href=\"https:\/\/chrome.google.com\/webstore\/detail\/betaflight-blackbox-explo\/canpiagfkeefejklcojkhojdijglnghc\" target=\"_blank\"> Pobierz Betaflight Blackbox<\/a><br \/><br \/>Kody źródłowe oprogramowania dostępne do pobrania <a href=\"https:\/\/github.com\/betaflight\/betaflight\" title=\"www.github.com\" target=\"_blank\">tutaj<\/a>.<br \/>Najnowsze oprogramowanie FC znajdziesz <a href=\"https:\/\/github.com\/betaflight\/betaflight\/releases\" title=\"www.github.com\" target=\"_blank\">tutaj<\/a><br \/><br \/>Najnowsze <a href=\"http:\/\/www.silabs.com\/products\/mcu\/pages\/usbtouartbridgevcpdrivers.aspx\" title=\"http:\/\/www.silabs.com\" target=\"_blank\">sterowniki CP210x<\/a> można pobrać <a href=\"http:\/\/www.silabs.com\/products\/mcu\/pages\/usbtouartbridgevcpdrivers.aspx\" title=\"http:\/\/www.silabs.com\" target=\"_blank\">tutaj<\/a>.<br \/>Najnowsze <a href=\"http:\/\/www.st.com\/web\/en\/catalog\/tools\/PF257938\" title=\"http:\/\/www.st.com\" target=\"_blank\">sterowniki STM USB VCP<\/a> można pobrać <a href=\"http:\/\/www.st.com\/web\/en\/catalog\/tools\/PF257938\" title=\"http:\/\/www.st.com\" target=\"_blank\">tutaj<\/a>.<br \/>Najnowszy program <a href=\"http:\/\/zadig.akeo.ie\/\" title=\"http:\/\/zadig.akeo.ie\" target=\"_blank\">Zadig<\/a> do instalacji sterowników USB w Windows można pobrać <a href=\"http:\/\/zadig.akeo.ie\/\" title=\"http:\/\/zadig.akeo.ie\" target=\"_blank\">tutaj<\/a>.<br \/>"
+    },
+    "defaultContributingHead": {
+        "message": "Współtworzenie"
+    },
+    "defaultContributingText": {
+        "message": "Jeżeli chcesz pomóc w rozwoju Betaflight, możesz to zrobić na wiele sposobów, np.:<br \/><ul><li>Odpowiadając na pytania innych użytkowników na forach i IRC,<\/li><li>Współtworząc kod oprogramowania FC i konfiguratora - nowe funkcjonalności, poprawki, ulepszenia,<\/li><li>Testując <a href=\"https:\/\/github.com\/Betaflight\/betaflight\/pulls\" target=\"_blank\">nowe funkcjonalności\/poprawki<\/a>.<\/li><li>Pomagając w <a href=\"https:\/\/github.com\/betaflight\/betaflight\/issues\" target=\"_blank\">problemach (GitHub Issues) i komentując zgłaszane funkcjonalności (feature requests)<\/a>.<\/li><li>Współpracując w <a href=\"https:\/\/crowdin.com\/project\/betaflight-configurator\" target=\"_blank\">tłumaczeniu konfiguratora<\/a> na Twój język.<\/li><li><\/li><\/ul>"
+    },
+    "defaultFacebookText": {
+        "message": "Mamy również <a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">Grupa Facebook<\/a>.<br \/>Dołącz do nas aby porozmawiać o Betaflight, spytać o konfiguracje lub po prostu spędzić czas z innymi pilotami."
+    },
+    "defaultChangelogAction": {
+        "message": "Wykaz zmian"
+    },
+    "defaultChangelogHead": {
+        "message": "Wykaz zmian w konfiguratorze"
+    },
+    "defaultPrivacyPolicyAction": {
+        "message": "Polityka Prywatności"
+    },
+    "defaultButtonFirmwareFlasher": {
+        "message": "Wgrywanie oprogramowania"
+    },
+    "defaultDonateHead": {
+        "message": "Open Source \/ Informacja o darowiznach"
+    },
+    "defaultDonateText": {
+        "message": "<p><strong>Betaflight<\/strong> to oprogramowanie kontrolera lotu które jest <strong>open source<\/strong> i jest dostępne bez opłat, <strong>bez gwarancji<\/strong> dla wszystkich użytkowników.<\/p><p>Jeśli uważasz Betaflight lub Konfigurator Betaflight za przydatne, proszę rozważ <strong>wsparcie<\/strong> ich rozwoju przez darowiznę.<\/p>"
+    },
+    "defaultDonateBottom": {
+        "message": "<p>Jeśli chcesz wnosić wkład finansowy na bieżąco, powinieneś rozważyć możliwość zostania naszym patronem <a href='https:\/\/www.patreon.com\/betaflight'>Patreon<\/a>.<\/p>"
+    },
+    "defaultDonate": {
+        "message": "Dotacja"
+    },
+    "defaultSponsorsHead": {
+        "message": "Sponsorzy"
+    },
+    "defaultDocumentationHead": {
+        "message": "Dokumentacja \/ Instrukcja"
+    },
+    "defaultDocumentation": {
+        "message": "Dokumentacja Betaflight dostępna jest w notatkach do wydania i wiki.<br \/><br \/>"
+    },
+    "defaultDocumentation1": {
+        "message": "Betaflight wiki jest świetnym źródłem informacji i może być znalezione <a href=\"https:\/\/github.com\/betaflight\/betaflight\/wiki\" target=\"_blank\">tutaj<\/a>."
+    },
+    "defaultDocumentation2": {
+        "message": "Notatki do wydania oprogramowania FC mogą być przeczytane na stronie <a href=\"https:\/\/github.com\/Betaflight\/Betaflight\/releases\" target=\"_blank\">GitHub releases<\/a>."
+    },
+    "defaultSupportHead": {
+        "message": "Wsparcie"
+    },
+    "defaultSupportSubline1": {
+        "message": "Źródła wsparcia"
+    },
+    "defaultSupportSubline2": {
+        "message": "Twórca"
+    },
+    "defaultSupport": {
+        "message": "Aby uzyskać pomoc, przeszukaj fora i wiki lub skontaktuj się z twoim dostawcą.<br \/><br \/>"
+    },
+    "defaultSupport1": {
+        "message": "<a href=\"http:\/\/www.rcgroups.com\/forums\/showthread.php?t=2464844&page=1\" target=\"_blank\">Wątek na RC Groups<\/a>"
+    },
+    "defaultSupport2": {
+        "message": "<a href=\"http:\/\/betaflight.info\" target=\"_blank\">Betaflight Wiki<\/a>"
+    },
+    "defaultSupport3": {
+        "message": "<a href=\"https:\/\/www.youtube.com\/playlist?list=PLwoDb7WF6c8kdK6yHr7vhsU9iRTr5HxP4\" target=\"_blank\">Filmy o Betaflight autorstwa Joshua Bardwell <\/a>"
+    },
+    "defaultSupport4": {
+        "message": "<a href=\"https:\/\/github.com\/Betaflight\" target=\"_blank\">GitHub<\/a>"
+    },
+    "defaultSupport5": {
+        "message": "<a href=\"https:\/\/slack.betaflight.com\" target=\"_blank\">Developerzy Betaflight na slack'u<\/a>"
+    },
+    "initialSetupBackupAndRestoreApiVersion": {
+        "message": "<span class=\"message-negative\">Zapis i odtwarzanie konfiguracji jest wyłączone.<\/span> Posiadasz oprogramowanie FC z API w wersji <span class=\"message-negative\">$1<\/span>. Zapis i odtwarzanie konfiguracji wymaga wersji<span class=\"message-positive\">$2<\/span>. Prosimy, zapisz swoją konfigurację za pomocą CLI. Opis procedury znajdziesz w dokumentacji Betaflight."
+    },
+    "initialSetupButtonCalibrateAccel": {
+        "message": "Kalibracja akcelerometru"
+    },
+    "initialSetupCalibrateAccelText": {
+        "message": "Połóż płytkę FC lub ramę na <strong>płaskiej<\/strong> powierzchni i kontynuuj kalibrację. Zwróć uwagę by płytka\/rama nie ruszała się podczas trwania kaliblracji."
+    },
+    "initialSetupButtonCalibrateMag": {
+        "message": "Kalibracja magnetometru"
+    },
+    "initialSetupCalibrateMagText": {
+        "message": "Obróć drona przynajmniej <strong>360<\/strong> stopni wokół każdej osi obrotu, masz 30 sekund aby wykonać to zadanie."
+    },
+    "initialSetupButtonCalibratingText": {
+        "message": "Kalibracja..."
+    },
+    "initialSetupButtonReset": {
+        "message": "Resetuj ustawienia"
+    },
+    "initialSetupResetText": {
+        "message": "Przywróć ustawienia <strong>domyślne<\/strong>."
+    },
+    "initialSetupButtonBackup": {
+        "message": "Zapisz kopię zapasową."
+    },
+    "initialSetupButtonRestore": {
+        "message": "Przywróć kopię zapasową."
+    },
+    "initialSetupButtonRebootBootloader": {
+        "message": "Aktywacja Boot Loader'a \/ DFU"
+    },
+    "initialSetupBackupRestoreText": {
+        "message": "<strong>Utwórz kopię zapasową<\/strong> swojej konfiguracji na wypadek utraty, <strong>Ustawienia CLI<\/strong> <span class=\"message-negative\">nie są<\/span> uwzględniane - użyj do tego komendy 'diff all' w CLI."
+    },
+    "initialSetupRebootBootloaderText": {
+        "message": "Ponowne uruchomienie do <strong>boot loader'a \/ DFU<\/strong>."
+    },
+    "initialSetupBackupSuccess": {
+        "message": "Kopia zapasowa została <span class=\"message-positive\">zapisana<\/span>."
+    },
+    "initialSetupRestoreSuccess": {
+        "message": "Kopia zapasowa została <span class=\"message-positive\">przywrócona<\/span>."
+    },
+    "initialSetupButtonResetZaxis": {
+        "message": "Resetuj oś Z, położenie: 0 stopni"
+    },
+    "initialSetupButtonResetZaxisValue": {
+        "message": "Resetuj oś Z, położenie: $1 stopni"
+    },
+    "initialSetupMixerHead": {
+        "message": "Typ mixer'a"
+    },
+    "initialSetupThrottleHead": {
+        "message": "Ustawienia gazu"
+    },
+    "initialSetupMinimum": {
+        "message": "Minimum:"
+    },
+    "initialSetupMaximum": {
+        "message": "Maksimum:"
+    },
+    "initialSetupFailsafe": {
+        "message": "Failsafe:"
+    },
+    "initialSetupMinCommand": {
+        "message": "MinCommand:"
+    },
+    "initialSetupBatteryHead": {
+        "message": "Bateria"
+    },
+    "initialSetupMinCellV": {
+        "message": "Minimalne napięcie celi:"
+    },
+    "initialSetupMaxCellV": {
+        "message": "Maksymalne napięcie celi:"
+    },
+    "initialSetupVoltageScale": {
+        "message": "Skala napięcia:"
+    },
+    "initialSetupAccelTrimsHead": {
+        "message": "Dostrajanie akcelerometru"
+    },
+    "initialSetupPitch": {
+        "message": "Pitch:"
+    },
+    "initialSetupRoll": {
+        "message": "Roll:"
+    },
+    "initialSetupMagHead": {
+        "message": "Magnetometr"
+    },
+    "initialSetupDeclination": {
+        "message": "Deklinacja:"
+    },
+    "initialSetupInfoHead": {
+        "message": "Info"
+    },
+    "initialSetupBattery": {
+        "message": "Napięcie baterii:"
+    },
+    "initialSetupBatteryValue": {
+        "message": "$1 V"
+    },
+    "initialSetupDrawn": {
+        "message": "Zużyta pojemność baterii:"
+    },
+    "initialSetupDrawing": {
+        "message": "Pobór prądu:"
+    },
+    "initialSetupBatteryMahValue": {
+        "message": "$1 mAh"
+    },
+    "initialSetupBatteryAValue": {
+        "message": "$1 A"
+    },
+    "initialSetupRSSI": {
+        "message": "RSSI:"
+    },
+    "initialSetupRSSIValue": {
+        "message": "$1 %"
+    },
+    "initialSetupArmingDisableFlags": {
+        "message": "Flagi wyłączające uzbrajanie:"
+    },
+    "initialSetupArmingAllowed": {
+        "message": "Uzbrajanie dozwolone"
+    },
+    "initialSetupArmingDisableFlagsTooltip": {
+        "message": "Lista flag wskazuje dlaczego uzbrojenie jest obecnie niedozwolone. Ustaw kursor myszki na fladze lub odnieś się do Wiki (strona 'Sekwencja uzbrajania & bezpieczeństwo'), aby uzyskać więcej informacji."
+    },
+    "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
+        "message": "Nie wykryto żyroskopu",
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
+        "message": "Failsafe jest aktywny",
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
+        "message": "Brak prawidłowego sygnału z odbiornika",
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
+        "message": "Twój odbiornik wyszedł z stanu Failsafe ale przełącznik uzbrajania jest włączony",
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
+        "message": "Przełącznik \"FAILSAFE\" został aktywowany",
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
+        "message": "Zabezpieczenie przed ucieczką podczas startu zostało wyzwolone",
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
+        "message": "Kanał przepustnicy ma zbyt wysoką wartość",
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipANGLE": {
+        "message": "Dron nie jest (wystarczająco) wypoziomowany",
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipLOAD": {
+        "message": "Obciążenie systemu jest zbyt wysokie, aby zapewnić bezpieczny lot",
+        "description": "Message that pops up to describe the LOAD arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
+        "message": "Kalibracja czujnika nadal trwa",
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCLI": {
+        "message": "CLI jest aktywne",
+        "description": "Message that pops up to describe the CLI arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
+        "message": "CMS (menu konfiguracji) jest aktywne - na OSD lub innym wyświetlaczu -",
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
+        "message": "Menu OSD jest aktywne",
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipBST": {
+        "message": "Urządzenie Black Sheep Telemetry (np. TBS Core Pro) jest rozbrojone i uniemożliwia uzbrojenie",
+        "description": "Message that pops up to describe the BST arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipMSP": {
+        "message": "Połączenie MSP jest aktywne, prawdopodobnie z tym konfiguratorem Betafligh",
+        "description": "Message that pops up to describe the MSP arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipPARALYZE": {
+        "message": "Tryb Paraliż został aktywowany",
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipGPS": {
+        "message": "Tryb ratunkowy GPS jest skonfigurowany, ale wymagana liczba satelitów nie została połączona",
+        "description": "Message that pops up to describe the GPS arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRESC": {
+        "message": "Włączono przełącznik „GPS Rescue”",
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
+        "message": "Jedna z pozostałych flag rozbrojenia jest aktywna podczas uzbrajania",
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
+    },
+    "initialSetupGPSHead": {
+        "message": "GPS"
+    },
+    "initialSetupInstrumentsHead": {
+        "message": "Instrumenty"
+    },
+    "initialSetupButtonSave": {
+        "message": "Zapisz"
+    },
+    "initialSetupModel": {
+        "message": "Model: $1"
+    },
+    "initialSetupAttitude": {
+        "message": "$1 stopni"
+    },
+    "initialSetupAccelCalibStarted": {
+        "message": "Kalibracja akcelerometru uruchomiona"
+    },
+    "initialSetupAccelCalibEnded": {
+        "message": "Kalibracja akcelerometru <span class=\"message-positive\">zakończona<\/span>"
+    },
+    "initialSetupMagCalibStarted": {
+        "message": "Kalibracja magnetometru uruchomiona"
+    },
+    "initialSetupMagCalibEnded": {
+        "message": "Kalibracja magnetometru <span class=\"message-positive\">zakończona<\/span>"
+    },
+    "initialSetupSettingsRestored": {
+        "message": "Ustawienia przywrócone do <strong>domyślnych<\/strong>"
+    },
+    "initialSetupEepromSaved": {
+        "message": "EEPROM <span class=\"message-positive\">zapisany<\/span>"
+    },
+    "featureNone": {
+        "message": "&lt;Wybierz jeden&gt;"
+    },
+    "featureRX_PPM": {
+        "message": "wejście PPM RX"
+    },
+    "featureVBAT": {
+        "message": "Monitorowanie napięcia baterii"
+    },
+    "featureINFLIGHT_ACC_CAL": {
+        "message": "Kalibracja poziomu w locie"
+    },
+    "featureRX_SERIAL": {
+        "message": "Odbiorniki używające SerialPort (SPEKSAT, SBUS, SUMD)"
+    },
+    "featureMOTOR_STOP": {
+        "message": "Nie obracaj śmigłami po uzbrojeniu"
+    },
+    "featureSERVO_TILT": {
+        "message": "Servo gimbal"
+    },
+    "featureSOFTSERIAL": {
+        "message": "Uruchom SerialPort'y bazujące na CPU"
+    },
+    "featureSOFTSERIALTip": {
+        "message": "Po uruchomieniu skonfiguruj porty na zakładce Porty."
+    },
+    "featureGPS": {
+        "message": "GPS do nawigacji i telemetrii"
+    },
+    "featureGPSTip": {
+        "message": "Skonfiguruj najpierw porty"
+    },
+    "featureSONAR": {
+        "message": "Sonar"
+    },
+    "featureTELEMETRY": {
+        "message": "Wyjście telemetrii"
+    },
+    "featureCURRENT_METER": {
+        "message": "Monitorowanie prądu baterii"
+    },
+    "feature3D": {
+        "message": "Tryb 3D (do użytku tylko z ESC z odwracaniem kierunku)"
+    },
+    "featureRX_PARALLEL_PWM": {
+        "message": "Wejście PWM RX (jeden przewód na kanał)"
+    },
+    "featureRX_MSP": {
+        "message": "Wejście MSP RX (kontrola przez port MSP)"
+    },
+    "featureRSSI_ADC": {
+        "message": "Analogowe wejście RSSI"
+    },
+    "featureLED_STRIP": {
+        "message": "Wsparcie paska RGB LED"
+    },
+    "featureDISPLAY": {
+        "message": "Wyświetlacz OLED"
+    },
+    "featureDISPLAYTip": {
+        "message": "Jeżeli ta funkcja jest uruchomiona i nie jest podłączony wyświetlacz (lub nie jest zasilony), każde uruchomienie lub restart FC będzie dłuższe o około 10 sekund."
+    },
+    "featureONESHOT125": {
+        "message": "Wsparcie ONESHOT ESC"
+    },
+    "featureONESHOT125Tip": {
+        "message": "Odłącz baterię i zdejmij śmigła zanim uruchomisz."
+    },
+    "featureBLACKBOX": {
+        "message": "Czarna skrzynka"
+    },
+    "featureBLACKBOXTip": {
+        "message": "Po uruchomieniu skonfiguruj w zakładce Czarna skrzynka."
+    },
+    "featureRX_SPI": {
+        "message": "Wsparcie SPI RX"
+    },
+    "featureESC_SENSOR": {
+        "message": "Użyj telemetrii KISS\/BlHeli_32 jako czujnika."
+    },
+    "featureCHANNEL_FORWARDING": {
+        "message": "Prześlij wartość kanału AUX do wyjść serwomechanizmów"
+    },
+    "featureTRANSPONDER": {
+        "message": "Transponder"
+    },
+    "featureTRANSPONDERTip": {
+        "message": "Po uruchomieniu skonfiguruj w zakładce Transponder."
+    },
+    "featureAIRMODE": {
+        "message": "Uruchom Airmode na stałe."
+    },
+    "featureSUPEREXPO_RATES": {
+        "message": "Super Expo Rates"
+    },
+    "featureSDCARD": {
+        "message": "Wsparcie karty SD (dla logowania)"
+    },
+    "featureOSD": {
+        "message": "OSD"
+    },
+    "featureVTX": {
+        "message": "Nadajnik wideo"
+    },
+    "featureANTI_GRAVITY": {
+        "message": "Chwilowo podbijaj I podczas dużych zmian gazu"
+    },
+    "featureDYNAMIC_FILTER": {
+        "message": "Dynamiczny filtr Notch dla żyroskopu"
+    },
+    "featureFAILSAFE": {
+        "message": "Uruchom poziom 2 Failsafe"
+    },
+    "featureFAILSAFEOld": {
+        "message": "Uruchom Failsafe"
+    },
+    "featureFAILSAFEOldTip": {
+        "message": "Użyj ustawień Failsafe gdy zaniknie sygnał RC"
+    },
+    "configurationFeatureEnabled": {
+        "message": "Włączone"
+    },
+    "configurationFeatureName": {
+        "message": "Funkcja"
+    },
+    "configurationFeatureDescription": {
+        "message": "Opis"
+    },
+    "configurationMixer": {
+        "message": "Mikser"
+    },
+    "configurationFeatures": {
+        "message": "Pozostałe funkcje"
+    },
+    "configurationReceiver": {
+        "message": "Odbiornik"
+    },
+    "configurationReceiverMode": {
+        "message": "Typ odbiornika"
+    },
+    "configurationRSSI": {
+        "message": "RSSI (Siła sygnału)"
+    },
+    "configurationRSSIHelp": {
+        "message": "RSSI jest wskaźnikiem siły sygnału i jest bardzo pomocna gdy Twój dron odlatuje z zasięgu lub występują zakłócenia sygnału."
+    },
+    "configurationEscFeatures": {
+        "message": "Ustawienia ESC\/Silników"
+    },
+    "configurationSerialRXHelp": {
+        "message": "<strong>Uwaga:<\/strong> Gdy używasz odbiornika typu RX_SERIAL, pamiętaj o skonfigurowaniu portu (w zakładce Porty) i wybraniu rodzaju sygnału odbiornika."
+    },
+    "configurationSpiRxHelp": {
+        "message": "<strong>Uwaga:<\/strong> Odbiornik typu SPI RX będzie działa tylko gdy odbiornik jest zintegrowany z FC lub jest podłączony do magistrali SPI."
+    },
+    "configurationBoardAlignment": {
+        "message": "Ułożenie płytki i czujników"
+    },
+    "configurationBoardAlignmentRoll": {
+        "message": "Roll (stopnie)"
+    },
+    "configurationBoardAlignmentPitch": {
+        "message": "Pitch (stopnie)"
+    },
+    "configurationBoardAlignmentYaw": {
+        "message": "Yaw (stopnie)"
+    },
+    "configurationSensorAlignmentGyro": {
+        "message": "Ułożenie żyroskopu"
+    },
+    "configurationSensorGyroToUse": {
+        "message": "GYRO\/ACCEL"
+    },
+    "configurationSensorGyroToUseNotFound": {
+        "message": "Ostrzeżenie: Nie znaleziono Gyro\/Accel"
+    },
+    "configurationSensorGyroToUseFirst": {
+        "message": "Pierwszy"
+    },
+    "configurationSensorGyroToUseSecond": {
+        "message": "Drugi"
+    },
+    "configurationSensorGyroToUseBoth": {
+        "message": "Oba"
+    },
+    "configurationSensorAlignmentGyro1": {
+        "message": "Pierwsze GYRO"
+    },
+    "configurationSensorAlignmentGyro2": {
+        "message": "Drugie GYRO"
+    },
+    "configurationSensorAlignmentAcc": {
+        "message": "Ułożenie akcelerometru"
+    },
+    "configurationSensorAlignmentMag": {
+        "message": "Ułożenie magnetometru"
+    },
+    "configurationSensorAlignmentDefaultOption": {
+        "message": "Domyślne"
+    },
+    "configurationAccelTrims": {
+        "message": "Dostrajanie akcelerometru"
+    },
+    "configurationAccelTrimRoll": {
+        "message": "Roll"
+    },
+    "configurationAccelTrimPitch": {
+        "message": "Pitch"
+    },
+    "configurationArming": {
+        "message": "Uzbrajanie"
+    },
+    "configurationArmingHelp": {
+        "message": "Niektóre opcje uzbrajania mogą wymagać uruchomionego akcelerometru"
+    },
+    "configurationMagDeclination": {
+        "message": "Deklinacja magnetometru [stopnie]"
+    },
+    "configurationReverseMotorSwitch": {
+        "message": "Kierunek silników jest odwrócony"
+    },
+    "configurationReverseMotorSwitchHelp": {
+        "message": "Ta opcja konfiguruje mikser aby wyczekiwał że kierunek silnika zostanie odwrócony a śmigła odpowiedni założone.<strong>Ostrzeżenie:<\/strong> Nie zmienia to kierunku silnika. Użyj narzędzia do konfiguracji twoich ESC lub zamień kolejność przewodów silnika aby to osiągnąć. Upewnij się również bez założonych śmigieł czy silniki kręcą się w kierunku jak na diagramie powyżej przed próbą uzbrajania."
+    },
+    "configurationAutoDisarmDelay": {
+        "message": "Rozbrojenie silników po ustawionym czasie [sekundy] (Wymaga uruchomienia MOTOR_STOP)"
+    },
+    "configurationDisarmKillSwitch": {
+        "message": "Rozbrojenie silników niezależnie od wartości gazu (Gdy uzbrajanie jest skonfigurowane jako przełącznik AUX)"
+    },
+    "configurationDisarmKillSwitchHelp": {
+        "message": "Uzbrojenie jest zawsze wyłączone, gdy przepustnica nie jest nisko. Bądź ostrożny, ponieważ możesz przypadkowo rozbroić przez przełącznik podczas lotu, gdy ta opcja jest aktywna."
+    },
+    "configurationDigitalIdlePercent": {
+        "message": "Wartość przepustnicy dla bezczynnego silnika [percent]"
+    },
+    "configurationDigitalIdlePercentHelp": {
+        "message": "Jest to wartość 'bezczynności\" wyrażana jako procent maksymalnej wartości przepustnicy wysyłanej do ESC kiedy dron jest uzbrojony i drążek przepustnicy jest w najniższym położeniu. Zwiększ liczbę procentów aby uzyskać większą prędkość podczas 'bezczynności'."
+    },
+    "configurationThrottleMinimum": {
+        "message": "Minimum przepustnicy (Najniższa wartość ESC gdy uzbrojony)"
+    },
+    "configurationThrottleMinimumHelp": {
+        "message": "Jest to wartość 'bezczynności', która jest wysyłana do ESC, gdy dron jest uzbrojony i drążek przepustnicy jest w najniższym położeniu. Zwiększ wartość aby uzyskać większą prędkość obrotową. Zwiększ wartość w przypadku desynchronizacji!"
+    },
+    "configurationBeeper": {
+        "message": "Ustawienia buzzer'a"
+    },
+    "beeperGYRO_CALIBRATED": {
+        "message": "Zapikaj po skalibrowaniu żyroskopu"
+    },
+    "beeperRX_LOST": {
+        "message": "Zapikaj gdy nadajnik RC jest wyłączony lub nie ma zasięgu (powtarzaj dopóki nadajnik nie jest ok)"
+    },
+    "beeperRX_LOST_LANDING": {
+        "message": "Emituje sygnał SOS gdy jest uzbrojony a nadajnik RC jest wyłączony lub nie ma zasięgu (automatyczne lądowanie\/rozbrajanie)"
+    },
+    "beeperDISARMING": {
+        "message": "Zapikaj przy rozbrajaniu kontrolera lotu"
+    },
+    "beeperARMING": {
+        "message": "Zapikaj przy uzbrajaniu kontrolera lotu"
+    },
+    "beeperARMING_GPS_FIX": {
+        "message": "Emituje specjalny dźwięk gdy FC jest uzbrajany i ma GPS fix'a"
+    },
+    "beeperBAT_CRIT_LOW": {
+        "message": "Dłuższe piknięcia gdy poziom baterii jest krytycznie niski (powtarzane)"
+    },
+    "beeperBAT_LOW": {
+        "message": "Ostrzegawcze piknięcia gdy poziom naładowania baterii spada (powtarzane)"
+    },
+    "beeperACC_CALIBRATION": {
+        "message": "Potwierdzenie zakończenia kalibracji akcelerometru podczas lotu"
+    },
+    "beeperACC_CALIBRATION_FAIL": {
+        "message": "Kalibracja akcelerometru podczas lotu nie powiodła się"
+    },
+    "configuration3d": {
+        "message": "Ustawienia ESC\/Silników do lotów 3D"
+    },
+    "configurationSystem": {
+        "message": "Konfiguracja systemu"
+    },
+    "configurationCalculatedCyclesSec": {
+        "message": "Cykle\/Sekundy [Hz]"
+    },
+    "configurationGPS": {
+        "message": "GPS"
+    },
+    "configurationGPSProtocol": {
+        "message": "Protokół"
+    },
+    "configurationSerialRX": {
+        "message": "Rodzaj sygnału odbiornika"
+    },
+    "configurationSpiRX": {
+        "message": "Rodzaj sygnału odbiornika SPI"
+    },
+    "configurationEepromSaved": {
+        "message": "Pamięć EEPROM <span class=\"message-positive\">zapisana<\/span>"
+    },
+    "configurationButtonSave": {
+        "message": "Zapisz i zrestartuj"
+    },
+    "portsIdentifier": {
+        "message": "Identyfikator"
+    },
+    "portsConfiguration": {
+        "message": "Konfiguracja\/MSP"
+    },
+    "portsSerialRx": {
+        "message": "Serial Rx"
+    },
+    "portsSensorIn": {
+        "message": "Wejście czujnika"
+    },
+    "portsTelemetryOut": {
+        "message": "Wyjście telemetrii"
+    },
+    "portsPeripherals": {
+        "message": "Peryferia"
+    },
+    "portsButtonSave": {
+        "message": "Zapisz i zrestartuj"
+    },
+    "portsTelemetryDisabled": {
+        "message": "Wyłączony"
+    },
+    "portsFunction_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_GPS": {
+        "message": "GPS"
+    },
+    "portsFunction_TELEMETRY_FRSKY": {
+        "message": "FrSky"
+    },
+    "portsFunction_TELEMETRY_HOTT": {
+        "message": "HoTT"
+    },
+    "portsFunction_TELEMETRY_LTM": {
+        "message": "LTM"
+    },
+    "portsFunction_TELEMETRY_MAVLINK": {
+        "message": "MAVLink"
+    },
+    "portsFunction_TELEMETRY_MSP": {
+        "message": "MSP"
+    },
+    "portsFunction_TELEMETRY_SMARTPORT": {
+        "message": "SmartPort"
+    },
+    "portsFunction_TELEMETRY_IBUS": {
+        "message": "iBUS"
+    },
+    "portsFunction_TELEMETRY_JETIXBUS": {
+        "message": "JETIXBUS"
+    },
+    "portsFunction_TELEMETRY_CRSF": {
+        "message": "CRSF"
+    },
+    "portsFunction_TELEMETRY_SRXL": {
+        "message": "SRXL"
+    },
+    "portsFunction_ESC_SENSOR": {
+        "message": "ESC"
+    },
+    "portsFunction_RX_SERIAL": {
+        "message": "Serial RX"
+    },
+    "portsFunction_TBS_SMARTAUDIO": {
+        "message": "VTX (TBS SmartAudio)"
+    },
+    "portsFunction_IRC_TRAMP": {
+        "message": "VTX (IRC Tramp)"
+    },
+    "portsFunction_RUNCAM_DEVICE_CONTROL": {
+        "message": "Kamera (RunCam Protocol)"
+    },
+    "pidTuningProfileOption": {
+        "message": "Profil $1"
+    },
+    "portsFunction_LIDAR_TF": {
+        "message": "Benewake LIDAR"
+    },
+    "pidTuningSubTabPid": {
+        "message": "Ustawienia PID"
+    },
+    "pidTuningSubTabFilter": {
+        "message": "Ustawienia filtrów"
+    },
+    "pidTuningShowAllPids": {
+        "message": "Pokaż wszystkie PID'y"
+    },
+    "pidTuningHideUnusedPids": {
+        "message": "Ukryj nieużywane PID'y"
+    },
+    "pidTuningNonProfilePidSettings": {
+        "message": "Ustawienia regulatora PID niezależne od profilu"
+    },
+    "pidTuningPidSettings": {
+        "message": "Ustawienia regulatora PID"
+    },
+    "receiverRcSmoothing": {
+        "message": "Wygładzanie RC"
+    },
+    "receiverRcSmoothingAuto": {
+        "message": "Automatycznie"
+    },
+    "receiverRcSmoothingManual": {
+        "message": "Ręcznie"
+    },
+    "receiverRcSmoothingFilter": {
+        "message": "Filtr"
+    },
+    "receiverRcInterpolationOff": {
+        "message": "Wyłączony"
+    },
+    "receiverRcInterpolationAuto": {
+        "message": "Automatycznie"
+    },
+    "receiverRcInterpolationManual": {
+        "message": "Ręcznie"
+    },
+    "pidTuningTPA": {
+        "message": "TPA"
+    },
+    "pidTuningTPABreakPoint": {
+        "message": "Punkt przerwania TPA"
+    },
+    "pidTuningThrottleLimitType": {
+        "message": "Limit przepustnicy"
+    },
+    "pidTuningThrottleLimitPercent": {
+        "message": "Limit przepustnicy %"
+    },
+    "pidTuningThrottleLimitTypeOff": {
+        "message": "Wył"
+    },
+    "pidTuningButtonSave": {
+        "message": "Zapisz"
+    },
+    "pidTuningButtonRefresh": {
+        "message": "Odśwież"
+    },
+    "pidTuningProfileHead": {
+        "message": "Profil"
+    },
+    "pidTuningControllerHead": {
+        "message": "Regulator PID"
+    },
+    "dialogCopyProfileText": {
+        "message": "Skopiuj wartości z obecnego profilu do"
+    },
+    "dialogCopyRateProfileText": {
+        "message": "Skopiuj wartości z obecnego profilu rate'ów do"
+    },
+    "dialogCopyProfileNote": {
+        "message": "Wszystkie wartości w profilu docelowym zostaną wymazane i nadpisane"
+    },
+    "dialogCopyProfileConfirm": {
+        "message": "Kopiuj"
+    },
+    "dialogCopyProfileClose": {
+        "message": "Anuluj"
+    },
+    "pidTuningResetProfile": {
+        "message": "Zresetuj wszystkie wartości w profilu"
+    },
+    "pidTuningProfileReset": {
+        "message": "Załaduj domyślne wartości w profilu."
+    },
+    "receiverChannelMap": {
+        "message": "Mapa kanałów"
+    },
+    "receiverChannelDefaultOption": {
+        "message": "Domyślne"
+    },
+    "receiverChannelMapTitle": {
+        "message": "Możesz zdefiniować własną mapę kanałów klikając w pole"
+    },
+    "receiverRssiChannel": {
+        "message": "Kanał RSSI"
+    },
+    "receiverRssiChannelDisabledOption": {
+        "message": "Wyłączony"
+    },
+    "receiverRefreshRateTitle": {
+        "message": "Częstotliwość odświeżania wykresu"
+    },
+    "receiverButtonSave": {
+        "message": "Zapisz"
+    },
+    "receiverButtonRefresh": {
+        "message": "Odśwież"
+    },
+    "receiverModelPreview": {
+        "message": "Podgląd"
+    },
+    "flashTab": {
+        "message": "Aktualizuj oprogramowanie"
+    }
+}
