@@ -28,6 +28,8 @@ function initializeSerialBackend() {
         // Enabled just after analytics usually
         $('.connect_b a.connect').removeClass('disabled');
 
+    } else {
+        GUI.log('navigator.serial not available, requires chrome 77+ and a flag');
     }
     $('div.connect_controls a.connect').click(function () {
         GUI.log('bonk');
