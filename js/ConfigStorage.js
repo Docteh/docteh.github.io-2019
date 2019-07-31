@@ -1,7 +1,8 @@
 'use strict';
 
 // idea here is to abstract around the use of chrome.storage.local as it functions differently from "localStorage" and IndexedDB
-var configAbstraction = {
+// localStorage deals with strings, not objects, so the objects have been serialized.
+var ConfigStorage = {
     // key can be one string, or array of strings
     get: function(key, callback) {
         if (chrome.storage && chrome.storage.local) {
@@ -12,7 +13,7 @@ var configAbstraction = {
                 var obj = {};
                 key.forEach(function (element) {
                     try {
-obj = {...obj, ...JSON.parse(window.localStorage.getItem(element))};
+                        obj = {...obj, ...JSON.parse(window.localStorage.getItem(element))};
                     } catch (e) {
                         // is okay
                     }
@@ -46,3 +47,5 @@ obj = {...obj, ...JSON.parse(window.localStorage.getItem(element))};
         }
     }
 }
+// Temp hax
+var configAbstraction = ConfigStorage;

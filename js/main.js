@@ -4,6 +4,19 @@ var nwGui = getNwGui();
 
 var googleAnalytics = analytics;
 var analytics = undefined;
+// Just nerf analytics for now
+if (!analytics) {
+  var analytics = {
+    setFlightControllerData: function() {
+      //nothing
+    },
+    sendEvent: function(){},
+    DATA: {
+      API_VERSION: 0
+    },
+    EVENT_CATEGORIES: {}
+  }
+}
 
 $(document).ready(function () {
     $.getJSON('version.json', function(data) {
@@ -30,7 +43,7 @@ function getNwGui() {
 function checkSetupAnalytics(callback) {
     if (!analytics) {
         setTimeout(function () {
-            configAbstraction.get(['userId', 'analyticsOptOut', 'checkForConfiguratorUnstableVersions', ], function (result) {
+            ConfigStorage.get(['userId', 'analyticsOptOut', 'checkForConfiguratorUnstableVersions', ], function (result) {
                 if (!analytics) {
                     setupAnalytics(result);
                 }
@@ -55,7 +68,7 @@ function setupAnalytics(result) {
         var uid = new ShortUniqueId();
         userId = uid.randomUUID(13);
 
-        chrome.storage.local.set({ 'userId': userId });
+        ConfigStorage.set({ 'userId': userId });
     }
 
     var optOut = !!result.analyticsOptOut;
@@ -136,7 +149,7 @@ if (chrome.storage) {
         checkForConfiguratorUpdates();
     }
 
-    chrome.storage.local.get('logopen', function (result) {
+    ConfigStorage.get('logopen', function (result) {
         if (result.logopen) {
             $("#showlog").trigger('click');
         }
@@ -157,7 +170,7 @@ if (chrome.storage) {
     // Tabs
     $("#tabs ul.mode-connected li").click(function() {
         // store the first class of the current tab (omit things like ".active")
-        chrome.storage.local.set({
+        ConfigStorage.set({
             lastTab: $(this).attr("class").split(' ')[0]
         });
     });
@@ -325,7 +338,7 @@ if(chrome.storage) {
                 // translate to user-selected language
                 i18n.localizePage();
 
-                configAbstraction.get('permanentExpertMode', function (result) {
+                ConfigStorage.get('permanentExpertMode', function (result) {
                     if (result.permanentExpertMode) {
                         $('div.permanentExpertMode input').prop('checked', true);
                     }
@@ -333,21 +346,21 @@ if(chrome.storage) {
                     $('div.permanentExpertMode input').change(function () {
                         var checked = $(this).is(':checked');
 
-                        configAbstraction.set({'permanentExpertMode': checked});
+                        ConfigStorage.set({'permanentExpertMode': checked});
 
                         $('input[name="expertModeCheckbox"]').prop('checked', checked).change();
                     }).change();
                 });
 
-                configAbstraction.get('rememberLastTab', function (result) {
+                ConfigStorage.get('rememberLastTab', function (result) {
                     $('div.rememberLastTab input')
                         .prop('checked', !!result.rememberLastTab)
-                        .change(function() { configAbstraction.set({rememberLastTab: $(this).is(':checked')}) })
+                        .change(function() { ConfigStorage.set({rememberLastTab: $(this).is(':checked')}) })
                         .change();
                 });
 
                 if (GUI.operating_system !== 'ChromeOS') {
-                    configAbstraction.get('checkForConfiguratorUnstableVersions', function (result) {
+                    ConfigStorage.get('checkForConfiguratorUnstableVersions', function (result) {
                         if (result.checkForConfiguratorUnstableVersions) {
                             $('div.checkForConfiguratorUnstableVersions input').prop('checked', true);
                         }
@@ -355,7 +368,7 @@ if(chrome.storage) {
                         $('div.checkForConfiguratorUnstableVersions input').change(function () {
                             var checked = $(this).is(':checked');
 
-                            configAbstraction.set({'checkForConfiguratorUnstableVersions': checked});
+                            ConfigStorage.set({'checkForConfiguratorUnstableVersions': checked});
 
                             checkForConfiguratorUpdates();
                         });
@@ -364,7 +377,7 @@ if(chrome.storage) {
                     $('div.checkForConfiguratorUnstableVersions').hide();
                 }
 
-                configAbstraction.get('analyticsOptOut', function (result) {
+                ConfigStorage.get('analyticsOptOut', function (result) {
                     if (result.analyticsOptOut) {
                         $('div.analyticsOptOut input').prop('checked', true);
                     }
@@ -372,7 +385,7 @@ if(chrome.storage) {
                     $('div.analyticsOptOut input').change(function () {
                         var checked = $(this).is(':checked');
 
-                        configAbstraction.set({'analyticsOptOut': checked});
+                        ConfigStorage.set({'analyticsOptOut': checked});
 
                         checkSetupAnalytics(function (analytics) {
                             if (checked) {
@@ -393,7 +406,7 @@ if(chrome.storage) {
                     .change(function () {
                         var checked = $(this).is(':checked');
 
-                        configAbstraction.set({'cliAutoComplete': checked});
+                        ConfigStorage.set({'cliAutoComplete': checked});
                         CliAutoComplete.setEnabled(checked);
                     }).change();
 
@@ -402,11 +415,11 @@ if(chrome.storage) {
                     .change(function () {
                         var checked = $(this).is(':checked');
 
-                        configAbstraction.set({'darkTheme': checked});
+                        ConfigStorage.set({'darkTheme': checked});
                         DarkTheme.setConfig(checked);
                     }).change();
 
-                configAbstraction.get('userLanguageSelect', function (result) {
+                ConfigStorage.get('userLanguageSelect', function (result) {
 
                     var userLanguage_e = $('div.userLanguage select');
                     var languagesAvailables = i18n.getLanguagesAvailables();
@@ -425,7 +438,7 @@ if(chrome.storage) {
                         var languageSelected = $(this).val();
 
                         // Select the new language, a restart is required
-                        configAbstraction.set({'userLanguageSelect': languageSelected});
+                        ConfigStorage.set({'userLanguageSelect': languageSelected});
                     });
                 });
 
@@ -533,7 +546,7 @@ if(chrome.storage) {
             $("#content").removeClass('logopen');
             $(".tab_container").removeClass('logopen');
             $("#scrollicon").removeClass('active');
-            configAbstraction.set({'logopen': false});
+            ConfigStorage.set({'logopen': false});
 
             state = false;
         } else {
@@ -542,7 +555,7 @@ if(chrome.storage) {
             $("#content").addClass('logopen');
             $(".tab_container").addClass('logopen');
             $("#scrollicon").addClass('active');
-            configAbstraction.set({'logopen': true});
+            ConfigStorage.set({'logopen': true});
 
             state = true;
         }
@@ -551,7 +564,7 @@ if(chrome.storage) {
     });
 
     if (chrome.storage) {
-    chrome.storage.local.get('permanentExpertMode', function (result) {
+    ConfigStorage.get('permanentExpertMode', function (result) {
         if (result.permanentExpertMode) {
             $('input[name="expertModeCheckbox"]').prop('checked', true);
         }
@@ -568,11 +581,11 @@ if(chrome.storage) {
         }).change();
     });
 
-    chrome.storage.local.get('cliAutoComplete', function (result) {
+    ConfigStorage.get('cliAutoComplete', function (result) {
         CliAutoComplete.setEnabled(typeof result.cliAutoComplete == 'undefined' || result.cliAutoComplete); // On by default
     });
 
-    chrome.storage.local.get('darkTheme', function (result) {
+    ConfigStorage.get('darkTheme', function (result) {
         DarkTheme.setConfig(result.darkTheme);
     });
     } else {
@@ -588,7 +601,7 @@ function checkForConfiguratorUpdates() {
 }
 
 function notifyOutdatedVersion(releaseData) {
-    chrome.storage.local.get('checkForConfiguratorUnstableVersions', function (result) {
+    ConfigStorage.get('checkForConfiguratorUnstableVersions', function (result) {
         var showUnstableReleases = false;
         if (result.checkForConfiguratorUnstableVersions) {
             showUnstableReleases = true;
