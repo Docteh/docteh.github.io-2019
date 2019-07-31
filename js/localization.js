@@ -24,7 +24,7 @@ i18n.init = function(cb) {
                 ns: ['messages'],
                 defaultNS:['messages'],
                 fallbackLng: 'en',
-                backend: { loadPath: '/locales/{{lng}}/{{ns}}.json' }
+                backend: { loadPath: '/_locales/{{lng}}/{{ns}}.json' }
                 }, function(err, t) {
                     if (err !== undefined) {
                         console.error('Error loading i18n ' + err);
@@ -127,7 +127,6 @@ i18n.localizePage = function() {
 function getStoredUserLocale(cb) {
     configAbstraction.get('userLanguageSelect', function (result) {
         var userLanguage = 'DEFAULT';
-        console.log('got',result);
         if (result.userLanguageSelect) {
             userLanguage = result.userLanguageSelect
         } 
@@ -135,7 +134,7 @@ function getStoredUserLocale(cb) {
         userLanguage = getValidLocale(userLanguage);
 
         cb(userLanguage);
-    });
+    })
 }
 
 function getValidLocale(userLocale) {
