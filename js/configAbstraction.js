@@ -4,12 +4,11 @@
 var configAbstraction = {
     // key can be one string, or array of strings
     get: function(key, callback) {
-        if (chrome.storage) {
-            chrome.storage.get(key,callback);
+        if (chrome.storage && chrome.storage.local) {
+            chrome.storage.local.get(key,callback);
         } else {
-            console.log('Abstraction.get',key);
+            //console.log('Abstraction.get',key);
             if(key.forEach) {
-                console.log(key);
                 var obj = {};
                 key.forEach(function (element) {
                     try {
@@ -18,11 +17,11 @@ obj = {...obj, ...JSON.parse(window.localStorage.getItem(element))};
                         // is okay
                     }
                 });
+                callback(obj);
             } else {
                 var keyValue = window.localStorage.getItem(key);
                 if (keyValue) {
                     var obj = {};
-                    console.log('returning',key,keyValue);
                     try {
                         obj = JSON.parse(keyValue);
                     } catch (e) {
@@ -37,10 +36,10 @@ obj = {...obj, ...JSON.parse(window.localStorage.getItem(element))};
     },
     // set takes an object like {'userLanguageSelect':'DEFAULT'}
     set: function(input) {
-        if (chrome.storage) {
-            chrome.storage.set(input);
+        if (chrome.storage && chrome.storage.local) {
+            chrome.storage.local.set(input);
         } else {
-            console.log('Abstraction.set',input);
+            //console.log('Abstraction.set',input);
             Object.keys(input).forEach(function (element) {
                 window.localStorage.setItem(element, JSON.stringify(input));
             });
