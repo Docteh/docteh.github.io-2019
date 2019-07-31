@@ -11,6 +11,7 @@ if (!analytics) {
       //nothing
     },
     sendEvent: function(){},
+    setOptOut: function(){},
     DATA: {
       API_VERSION: 0
     },
