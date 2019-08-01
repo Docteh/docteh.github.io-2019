@@ -10,17 +10,24 @@ if (!analytics) {
     setFlightControllerData: function() {
       //nothing
     },
+    sendAppView: function(){},
+    sendChangeEvents: function(){},
     sendEvent: function(){},
+    setDimension: function(){},
     setOptOut: function(){},
     DATA: {
       API_VERSION: 0
     },
+    DIMENSIONS: {},
     EVENT_CATEGORIES: {}
   }
 }
 
 $(document).ready(function () {
     $.getJSON('version.json', function(data) {
+        if (data.version) {
+            CONFIGURATOR.version = data.version;
+        }
         CONFIGURATOR.gitChangesetId = data.gitChangesetId;
 
         i18n.init(function() {
@@ -144,9 +151,8 @@ function startProcess() {
             break;
     }
 
-// not sure exactly what to check here
-if (chrome.storage) {
-    if (GUI.operating_system !== 'ChromeOS') {
+    // If we don't have chrome.storage, we're probably running as a website.
+    if (chrome.storage && GUI.operating_system !== 'ChromeOS') {
         checkForConfiguratorUpdates();
     }
 
@@ -155,10 +161,6 @@ if (chrome.storage) {
             $("#showlog").trigger('click');
         }
     });
-} else {
-    console.log('Not checking for an update');
-    GUI.log('chrome.storage not available, no checking for updates');
-}
 
     // log webgl capability
     // it would seem the webgl "enabling" through advanced settings will be ignored in the future
@@ -233,12 +235,10 @@ if (chrome.storage) {
                 function content_ready() {
                     GUI.tab_switch_in_progress = false;
                 }
-// Hide behind chrome.storage, reason: can't opt out of analytics, shouldn't do them for now
-if(chrome.storage) {
+
                 checkSetupAnalytics(function (analytics) {
                     analytics.sendAppView(tab);
                 });
-}
 
                 switch (tab) {
                     case 'landing':
@@ -564,7 +564,6 @@ if(chrome.storage) {
         $(this).data('state', state);
     });
 
-    if (chrome.storage) {
     ConfigStorage.get('permanentExpertMode', function (result) {
         if (result.permanentExpertMode) {
             $('input[name="expertModeCheckbox"]').prop('checked', true);
@@ -589,10 +588,6 @@ if(chrome.storage) {
     ConfigStorage.get('darkTheme', function (result) {
         DarkTheme.setConfig(result.darkTheme);
     });
-    } else {
-        // Try it here, technically a personal preference.
-        $('#showlog').click();
-    }; //another if false block
 };
 
 function checkForConfiguratorUpdates() {
@@ -832,17 +827,10 @@ function updateStatusBarVersion(firmwareVersion, firmwareId, hardwareId) {
     $('#status-bar .version').text(versionText);
 }
 
-//This is called 4 times, not the best location to do things once.
 function getManifestVersion(manifest) {
+    return CONFIGURATOR.version;
     if (!manifest) {
-        if (chrome.runtime.getManifest != undefined) {
-            manifest = chrome.runtime.getManifest();
-        } else {
-            manifest = { version: '10.6.6000' }; // Hard coded, come back to this
-            // another async issue?
-            //$.getJSON('version.json', function(data) { manifest = data; });
-            //console.log(manifest);
-        }
+        manifest = chrome.runtime.getManifest();
     }
 
     var version = manifest.version_name;
