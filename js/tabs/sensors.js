@@ -239,10 +239,10 @@ TABS.sensors.initialize = function (callback) {
 
             $('.tab-sensors .rate select:first').change();
 
-            chrome.storage.local.set({'graphs_enabled': checkboxes});
+            ConfigStorage.set({'graphs_enabled': checkboxes});
         });
 
-        chrome.storage.local.get('graphs_enabled', function (result) {
+        ConfigStorage.get('graphs_enabled', function (result) {
             if (result.graphs_enabled) {
                 var checkboxes = $('.tab-sensors .info .checkboxes input');
                 for (var i = 0; i < result.graphs_enabled.length; i++) {
@@ -304,7 +304,7 @@ TABS.sensors.initialize = function (callback) {
         });
 
         // set refresh speeds according to configuration saved in storage
-        chrome.storage.local.get('sensor_settings', function (result) {
+        ConfigStorage.get('sensor_settings', function (result) {
             if (result.sensor_settings) {
                 $('.tab-sensors select[name="gyro_refresh_rate"]').val(result.sensor_settings.rates.gyro);
                 $('.tab-sensors select[name="gyro_scale"]').val(result.sensor_settings.scales.gyro);
@@ -353,7 +353,7 @@ TABS.sensors.initialize = function (callback) {
             var fastest = d3.min([rates.gyro, rates.accel, rates.mag]);
 
             // store current/latest refresh rates in the storage
-            chrome.storage.local.set({'sensor_settings': {'rates': rates, 'scales': scales}});
+            ConfigStorage.set({'sensor_settings': {'rates': rates, 'scales': scales}});
 
             // re-initialize domains with new scales
             gyroHelpers = initGraphHelpers('#gyro', samples_gyro_i, [-scales.gyro, scales.gyro]);

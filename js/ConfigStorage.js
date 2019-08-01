@@ -9,7 +9,7 @@ var ConfigStorage = {
             chrome.storage.local.get(key,callback);
         } else {
             //console.log('Abstraction.get',key);
-            if(key.forEach) {
+            if (Array.isArray(key)) {
                 var obj = {};
                 key.forEach(function (element) {
                     try {
@@ -47,5 +47,3 @@ var ConfigStorage = {
         }
     }
 }
-// Temp hax
-var configAbstraction = ConfigStorage;

@@ -261,7 +261,7 @@ TABS.motors.initialize = function (callback) {
         });
 
         // set refresh speeds according to configuration saved in storage
-        chrome.storage.local.get(['motors_tab_sensor_settings', 'motors_tab_gyro_settings', 'motors_tab_accel_settings'], function (result) {
+        ConfigStorage.get(['motors_tab_sensor_settings', 'motors_tab_gyro_settings', 'motors_tab_accel_settings'], function (result) {
             if (result.motors_tab_sensor_settings) {
                 var sensor = result.motors_tab_sensor_settings.sensor;
                 $('.tab-motors select[name="sensor_choice"]').val(result.motors_tab_sensor_settings.sensor);
@@ -296,7 +296,7 @@ TABS.motors.initialize = function (callback) {
 
         $('.tab-motors .sensor select').change(function(){
             TABS.motors.sensor = $('.tab-motors select[name="sensor_choice"]').val()
-            chrome.storage.local.set({'motors_tab_sensor_settings': {'sensor': TABS.motors.sensor}});
+            ConfigStorage.set({'motors_tab_sensor_settings': {'sensor': TABS.motors.sensor}});
 
             switch(TABS.motors.sensor){
             case "gyro":
@@ -323,7 +323,7 @@ TABS.motors.initialize = function (callback) {
 
             switch(TABS.motors.sensor) {
             case "gyro":
-                chrome.storage.local.set({'motors_tab_gyro_settings': {'rate': rate, 'scale': scale}});
+                ConfigStorage.set({'motors_tab_gyro_settings': {'rate': rate, 'scale': scale}});
                 TABS.motors.sensorGyroRate = rate;
                 TABS.motors.sensorGyroScale = scale;
 
@@ -334,7 +334,7 @@ TABS.motors.initialize = function (callback) {
                 }, rate, true);
                 break;
             case "accel":
-                chrome.storage.local.set({'motors_tab_accel_settings': {'rate': rate, 'scale': scale}});
+                ConfigStorage.set({'motors_tab_accel_settings': {'rate': rate, 'scale': scale}});
                 TABS.motors.sensorAccelRate = rate;
                 TABS.motors.sensorAccelScale = scale;
                 accel_helpers = initGraphHelpers('#graph', samples_accel_i, [-scale, scale]);

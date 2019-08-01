@@ -65,6 +65,7 @@ var serial = {
       }
 
     },
+    emptyOutputBuffer: function(){},
     send: function (data, callback) {
       //console.log('serial.send()',data,callback);
       serial.writer.write(data);
