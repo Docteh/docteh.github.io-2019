@@ -18,7 +18,7 @@
         "message": "存储设备尚未就绪。如果是 microSD 卡, 请确保它已被飞控正确识别。"
     },
     "options_title": {
-        "message": "选项"
+        "message": "应用程序选项"
     },
     "connect": {
         "message": "连接"
@@ -225,6 +225,12 @@
     },
     "logActionShow": {
         "message": "显示日志"
+    },
+    "serialErrorFrameError": {
+        "message": "串行连接错误：数据帧错误"
+    },
+    "serialErrorParityError": {
+        "message": "串行连接错误：奇偶错误"
     },
     "serialPortOpened": {
         "message": "打开串口 <span class=\"message-positive\">成功<\/span> ID: $1"
@@ -494,9 +500,6 @@
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong>是一个<strong>开放源码<\/strong>的飞行控制软件，所有用户都可以在<strong>没有保修<\/strong>的前提下免费使用。<\/p><p>如果你觉得Betaflight或Betaflight配置程序对你有用，请考虑捐赠以<strong>支持<\/strong>它的开发工作<\/p>"
     },
-    "defaultDonateBottom": {
-        "message": "<p>如果你想持续捐助资金，请考虑在<a href='https:\/\/www.patreon.com\/betaflight'>Patreon<\/a>上赞助我们。<\/p>"
-    },
     "defaultDonate": {
         "message": "捐赠"
     },
@@ -676,87 +679,99 @@
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "未检测到陀螺仪",
-        "description": "Description of the NO GYRO arming disable flag"
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
         "message": "失控保护已激活",
-        "description": "Description of the FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
         "message": "未检测到有效的接收机信号",
-        "description": "Description of the RX_FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
         "message": "你的接收机刚刚从接收机失控保护中恢复，但解锁开关处于已解锁状态。",
-        "description": "Description of the BAD_RX_RECOVERY arming disable flag"
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
         "message": "失控保护模式开关已激活",
-        "description": "Description of the BOXFAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
         "message": "已触发起飞防暴走模式",
-        "description": "Description of the RUNAWAY_TAKEOFF arming disable flag"
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCRASH": {
+        "message": "检测到坠机事故",
+        "description": "Message that pops up to describe the CRASH arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
         "message": "油门通道值过高",
-        "description": "Description of the THROTTLE arming disable flag"
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "飞行器未（充分）放平",
-        "description": "Description of the ANGLE arming disable flag"
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
         "message": "上电后解锁太早",
-        "description": "Description of the BOOT_GRACE_TIME arming disable flag"
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipNOPREARM": {
         "message": "预解锁开关没有激活或者预解锁开关没有在锁定后复位",
-        "description": "Description of the NOPREARM arming disable flag"
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipLOAD": {
         "message": "系统负载过高, 无法安全飞行",
-        "description": "Description of the LOAD arming disable flag"
+        "description": "Message that pops up to describe the LOAD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
         "message": "传感器校准仍在进行中",
-        "description": "Description of the CALIBRATING arming disable flag"
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCLI": {
         "message": "CLI (命令行) 已激活",
-        "description": "Description of the CLI arming disable flag"
+        "description": "Message that pops up to describe the CLI arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
         "message": "CMS（配置菜单）在OSD或者其他显示设备中处于激活状态",
-        "description": "Description of the CMS_MENU arming disable flag"
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "OSD菜单处于激活状态",
-        "description": "Description of the OSD_MENU arming disable flag"
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBST": {
         "message": "一个黑羊遥测设备(例如TBS Core Pro) 已上锁并阻止解锁",
-        "description": "Description of the BST arming disable flag"
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "MSP 连接已激活，可能正与当前的配置程序通信中。",
-        "description": "Description of the MSP arming disable flag"
+        "description": "Message that pops up to describe the MSP arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipPARALYZE": {
         "message": "瘫痪模式已被激活（已扑街）",
-        "description": "Description of the PARALYZE arming disable flag"
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipGPS": {
         "message": "已配置GPS救援模式，但尚未锁定所需数量的卫星。",
-        "description": "Description of the GPS arming disable flag"
+        "description": "Message that pops up to describe the GPS arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRESC": {
         "message": "“GPS救援”开关已激活",
-        "description": "Description of the RESC arming disable flag"
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRPMFILTER": {
+        "message": "基于转速的滤波器已开启，但一个或多个电调未发送有效的 DSHOT 回传数据。请确认电调支持 DSHOT 回传功能并且已刷入支持双向 DSHOT 回传的固件。",
+        "description": "Message that pops up to describe the RPMFILTER arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipREBOOT_REQD": {
+        "message": "配置更改需要重启",
+        "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "解锁时有一个阻止解锁的标志处于活跃状态",
-        "description": "Description of the ARM_SWITCH arming disable flag"
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
     },
     "initialSetupGPSHead": {
         "message": "GPS"
@@ -811,6 +826,9 @@
     },
     "featureSERVO_TILT": {
         "message": "舵机云台"
+    },
+    "featureSERVO_TILTTip": {
+        "message": "此功能将开启相机稳定模式，使用加速度计来保持两个轴的稳定。"
     },
     "featureSOFTSERIAL": {
         "message": "启用软串口"
@@ -1164,7 +1182,7 @@
         "message": "<strong>注意：<\/strong>确保你的飞控有能力运行在这些频率上！检查CPU循环时间是否稳定。改变频率可能需要重新调校PID。提示：关闭加速度计和其他传感器可以节省运算资源以获得更高性能。"
     },
     "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>关于32k陀螺仪采样模式的说明：<\/strong> Betaflight 曾以实验特性的形式提供了对 32kHz 陀螺仪采样模式的支持。在它可用的时间里，因其对震动的敏感性，且其较高的噪声水平所需要的更激进的滤波对控制环路造成的延迟，相较于 8kHz 陀螺仪采样模式它并未体现出任何优势。基于以上原因，在 Betaflight 4.0 中<strong>对 32kHz 陀螺仪采样模式的支持已被废弃<\/strong> 。"
+        "message": "$t(configurationLoopTimeHelp.message)<br><strong>关于32k陀螺仪采样模式的说明：<\/strong> Betaflight 曾以实验特性的形式提供了对 32kHz 陀螺仪采样模式的支持。在它可用的时间里，因其对震动的敏感性，且其较高的噪声水平所需要的更激进的滤波对控制环路造成的延迟，相较于 8kHz 陀螺仪采样模式它并未体现出任何优势。基于以上原因，在 Betaflight 4.0 中<strong>对 32kHz 陀螺仪采样模式的支持已被废弃 <\/strong>。"
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1191,7 +1209,7 @@
         "message": "串行数字接收机协议"
     },
     "configurationSpiRX": {
-        "message": "SPI 总线接口接收机提供者"
+        "message": "SPI 总线接口接收机协议"
     },
     "configurationEepromSaved": {
         "message": "EEPROM <span class=\"message-positive\">已保存<\/span>"
@@ -1728,16 +1746,19 @@
         "message": "和"
     },
     "adjustmentsHelp": {
-        "message": "配置调整开关。参阅手册的 'in-flight adjustments' 章解获取具体信息。通过该功能所做的调校修改不会被自动保存。总共有4个槽位。每一个开关需要独占一个槽位。"
+        "message": "配置调整开关。详细信息请参阅手册中的“飞行中调整”章节。通过该调整功能所进行的更改将不会被自动保存。"
+    },
+    "adjustmentSlotsHelp": {
+        "message": "共有4个滑槽。同时进行调整时每个开关都需要配置专用滑槽。"
     },
     "adjustmentsExamples": {
-        "message": "范例"
+        "message": "例如："
     },
     "adjustmentsExample1": {
-        "message": "使用插槽1 和AUX1通道上的三段开关在Pitch\/Roll P， I 和 D 之间选择，使用AUX2通道的三段开关来上下增大和减小数值（保持高，或者保持低）。"
+        "message": "使用AUX1通道上的三段开关在Pitch\/Roll的 P, I 和 D 之间选择，使用AUX2通道的三段开关来上下增大和减小数值（拨高，或拨低）。"
     },
     "adjustmentsExample2": {
-        "message": "使用插槽2 和AUX4通道上的三段开关来选择 Rate 配置文件"
+        "message": "使用AUX4通道上的三段开关来选择 Rate 配置文件"
     },
     "adjustmentsColumnEnable": {
         "message": "如果激活"
@@ -2181,7 +2202,10 @@
         "message": "<strong>注意：<\/strong>退出CLI菜单或者点击断开连接将自动向飞控<strong><\/strong>发送“<strong>退出<\/strong>”指令。在最新的固件中这将使飞控<strong>重启<\/strong>并且未保存的设置将会<strong>丢失<\/strong>。<p><strong><span class=\"message-negative\">警告：<\/span><\/strong>CLI中的某些命令可能导致电机输出引脚发出随机指令。如果连接电池，这有可能导致电机旋转。因此，强烈建议<strong>在CLI中输入命令之前确保未连接电池<\/strong>。"
     },
     "cliInputPlaceholder": {
-        "message": "在这里输入命令"
+        "message": "在这里输入你的命令。按 Tab 可以进行自动填充。"
+    },
+    "cliInputPlaceholderBuilding": {
+        "message": "正在构建“自动填充”缓存，请稍候……"
     },
     "cliEnter": {
         "message": "检测到命令行模式"
@@ -2200,6 +2224,18 @@
     },
     "cliCopySuccessful": {
         "message": "复制成功！"
+    },
+    "cliLoadFromFileBtn": {
+        "message": "从文件加载"
+    },
+    "cliConfirmSnippetDialogTitle": {
+        "message": "查看已加载的命令"
+    },
+    "cliConfirmSnippetNote": {
+        "message": "<strong>注意<\/strong>: 您可以在执行前查看和编辑命令。"
+    },
+    "cliConfirmSnippetBtn": {
+        "message": "执行"
     },
     "loggingNote": {
         "message": "数据 <span class=\"message-negative\">仅会<\/span>在此页面记录，关闭此页面将会 <span class=\"message-negative\">取消<\/span>数据记录，并且应用将会返回<strong>“普通配置”<\/strong> 状态。<br \/> 你可以选择合适的全局刷新率，飞控出于性能考虑，只会每 <strong>1<\/strong> 秒写入一次日志。"
@@ -2521,6 +2557,9 @@
     },
     "firmwareFlasherFirmwareLocalLoaded": {
         "message": "已加载本地固件: ($ 1 字节)"
+    },
+    "firmwareFlasherFirmwareOnlineLoaded": {
+        "message": "已加载在线固件: ($1 字节)"
     },
     "firmwareFlasherHexCorrupted": {
         "message": "HEX文件似乎已损坏"
@@ -3167,7 +3206,7 @@
         "message": "最小卫星数"
     },
     "failsafeGpsRescueItemSanityChecks": {
-        "message": "理智检查"
+        "message": "可用性检测"
     },
     "failsafeGpsRescueItemSanityChecksOff": {
         "message": "关闭"
@@ -3247,11 +3286,47 @@
     "powerBatteryWarning": {
         "message": "警告单芯电压"
     },
+    "powerCalibrationManagerButton": {
+        "message": "校准"
+    },
+    "powerCalibrationManagerTitle": {
+        "message": "校准管理器"
+    },
+    "powerCalibrationManagerHelp": {
+        "message": "要校准，请使用万用表测量你的飞行器上(接上电池) 的实际电压\/电流，然后在下方输入值。然后，在同一块电池仍然接入的情况下，点击 [Calibrate] 按钮。"
+    },
+    "powerCalibrationManagerNote": {
+        "message": "<strong>注意：<\/strong>在校准缩放之前，请确保电压和电流漂移的除数和乘数设置正确。<br>将值设置为0将不会应用校准。<\/br><strong>切记在插入电池之前移除螺旋桨！<\/strong>"
+    },
+    "powerCalibrationManagerWarning": {
+        "message": "<span class=\"message-negative\">警告：<\/span>电池<span class=\"message-negative\">未接入<\/span>或电压计源和电流计源<span class=\"message-negative\">没有正确设置。<\/span>请确保电压计和\/或电流计读数超过0. 否则您将无法使用此工具进行校准。"
+    },
+    "powerCalibrationManagerSourceNote": {
+        "message": "<span class=\"message-negative\">警告：<\/span>电压计和\/或电流计测量源<strong>已经更改，但未保存<\/strong>。请在校准之前设置并保存正确的测量源。"
+    },
+    "powerCalibrationSave": {
+        "message": "校准"
+    },
+    "powerCalibrationApply": {
+        "message": "应用校准"
+    },
+    "powerCalibrationDiscard": {
+        "message": "放弃校准"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "这里显示新的校准放缩表。<br>应用它们将会设置缩放但<strong>并不会保存<\/strong>。<\/br> <br>在保存之后，请确保新的电压和电流读数正确。<\/br>"
+    },
     "powerVoltageHead": {
         "message": "电压计"
     },
     "powerVoltageValue": {
         "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "测量电压"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "校准电压缩放:"
     },
     "powerAmperageValue": {
         "message": "$1 A"
@@ -3394,6 +3469,12 @@
     "powerAmperageOffset": {
         "message": "偏移量 [mA]"
     },
+    "powerAmperageCalibration": {
+        "message": "测量电流"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "校准电流缩放:"
+    },
     "powerBatteryHead": {
         "message": "电池"
     },
@@ -3425,7 +3506,7 @@
         "message": "OSD 屏幕叠加显示"
     },
     "osdSetupPreviewHelp": {
-        "message": "<strong>注意：<\/strong> 预览界面的字体有可能和实际OSD显示的字体不一样。"
+        "message": "<strong>注意:<\/strong>OSD 预览可能无法显示飞控实际安装的字体。当使用旧版本的固件时，某些图标的布局位置可能会有所不同 - 请在飞行之前先通过视频眼镜检查妥当。"
     },
     "osdSetupUnsupportedNote1": {
         "message": "飞控对 OSD 命令无反应，有可能飞控不带 OSD 功能。"
@@ -3446,7 +3527,11 @@
     },
     "osdSetupPreviewSelectProfileTitle": {
         "message": "预览",
-        "description": "Label of the selector for the OSD Profile in the preview"
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
+    },
+    "osdSetupPreviewForTitle": {
+        "message": "在此处更改配置文件或者字体仅影响预览窗口而不会改变飞控中的配置文件或者字体。如果您想更改飞控，则必须分别使用 '$t(osdSetupSelectedProfileTitle.message)' 选项或者 '$t(osdSetupFontManager.message)' 按钮。",
+        "description": "Help content for the OSD profile and font PREVIEW"
     },
     "osdSetupSelectedProfileTitle": {
         "message": "激活OSD配置文件",
@@ -3460,14 +3545,35 @@
         "message": "OSD配置文件 {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
     },
-    "osdSetupPreviewTitleTip": {
-        "message": "在预览窗口显示或者隐藏Betalight logo。这选项不会影响飞控上的设置。"
+    "osdSetupPreviewSelectFontElement": {
+        "message": "字体 {{fontName}}",
+        "description": "Content of the selector for the OSD Font in the preview"
     },
     "osdSetupVideoFormatTitle": {
         "message": "视频制式"
     },
+    "osdSetupVideoFormatOptionAuto": {
+        "message": "自动",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionPal": {
+        "message": "PAL",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionNtsc": {
+        "message": "NTSC",
+        "description": "Option for the video format in the OSD"
+    },
     "osdSetupUnitsTitle": {
         "message": "单位制式"
+    },
+    "osdSetupUnitsOptionImperial": {
+        "message": "英制",
+        "description": "Option for the units system used in the OSD"
+    },
+    "osdSetupUnitsOptionMetric": {
+        "message": "公制",
+        "description": "Option for the units system used in the OSD"
     },
     "osdSetupTimersTitle": {
         "message": "计时器"
@@ -3492,6 +3598,10 @@
     },
     "osdSetupFontPresetsSelector": {
         "message": "选择预设字体："
+    },
+    "osdSetupFontPresetsSelectorCustomOption": {
+        "message": "用户提供的字体",
+        "description": "Option to show as selected when the user selects a custom local font"
     },
     "osdSetupFontPresetsSelectorOr": {
         "message": "或"
@@ -3526,6 +3636,12 @@
     "osdSetupUploadFont": {
         "message": "更新字体"
     },
+    "osdSetupUploadingFont": {
+        "message": "正在上传..."
+    },
+    "osdSetupUploadingFontEnd": {
+        "message": "将全部 {{length}} 个字符上传到 OSD"
+    },
     "osdSetupSave": {
         "message": "保存"
     },
@@ -3556,242 +3672,658 @@
     "osdSetupButtonReset": {
         "message": "重设配置"
     },
+    "osdTextElementMainBattVoltage": {
+        "message": "电池电压",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementMainBattVoltage": {
         "message": "实时电压 (低于警告电压时会闪烁)"
+    },
+    "osdTextElementRssiValue": {
+        "message": "RSSI值",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRssiValue": {
         "message": "实时 RSSI 值 (信号强度低于设定值时会闪烁)"
     },
+    "osdTextElementTimer": {
+        "message": "计时器",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer": {
+        "message": "飞行计时器"
+    },
+    "osdTextElementThrottlePosition": {
+        "message": "油门位置",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementThrottlePosition": {
         "message": "当前油门位置"
+    },
+    "osdTextElementCpuLoad": {
+        "message": "CPU负载",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCpuLoad": {
+        "message": "当前CPU负载"
+    },
+    "osdTextElementVtxChannel": {
+        "message": "图传频道",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVtxChannel": {
+        "message": "当前图传频道和功率"
+    },
+    "osdTextElementVoltageWarning": {
+        "message": "电池电压警告",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVoltageWarning": {
+        "message": "当电压处于报警值时显示警告"
+    },
+    "osdTextElementArmed": {
+        "message": "已解锁",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementArmed": {
         "message": "解锁文字提示"
     },
+    "osdTextElementDisarmed": {
+        "message": "已上锁",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementDisarmed": {
         "message": "锁定文字提示"
+    },
+    "osdTextElementCrosshairs": {
+        "message": "十字准星",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCrosshairs": {
         "message": "屏幕中间的十字光标"
     },
+    "osdTextElementArtificialHorizon": {
+        "message": "模拟地平线",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArtificialHorizon": {
         "message": "图形化模拟地平线"
+    },
+    "osdTextElementHorizonSidebars": {
+        "message": "模拟地平线侧标尺",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHorizonSidebars": {
         "message": "模拟地平线旁边显示的边栏"
     },
+    "osdTextElementCurrentDraw": {
+        "message": "实时电流",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementCurrentDraw": {
         "message": "实时电流"
+    },
+    "osdTextElementMahDrawn": {
+        "message": "电池已消耗毫安数",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMahDrawn": {
         "message": "累计已用电池容量"
     },
+    "osdTextElementCraftName": {
+        "message": "飞行器名称",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementCraftName": {
         "message": "设置页面里设置的飞行器名称"
     },
-    "osdDescElementDisplayName": {
-        "message": "由CLI命令\"display_name\"设置的显示名称"
+    "osdTextElementAltitude": {
+        "message": "海拔高度",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementAltitude": {
         "message": "当前高度 (当超过设置的警告高度时会闪烁)"
     },
+    "osdTextElementOnTime": {
+        "message": "启动时间",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementOnTime": {
         "message": "累计上电时间"
+    },
+    "osdTextElementFlyTime": {
+        "message": "飞行时间",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementFlyTime": {
         "message": "已解锁时间 （超过设定值时会闪烁）"
     },
+    "osdTextElementFlyMode": {
+        "message": "飞行模式",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementFlyMode": {
         "message": "当前飞行模式"
+    },
+    "osdTextElementGPSSpeed": {
+        "message": "GPS 速度",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSSpeed": {
         "message": "GPS 速度"
     },
+    "osdTextElementGPSSats": {
+        "message": "GPS 卫星数",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementGPSSats": {
         "message": "GPS 锁定卫星数"
     },
+    "osdTextElementGPSLon": {
+        "message": "GPS 经度",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementGPSLon": {
-        "message": "GPS 经度"
+        "message": "GPS 经度坐标"
+    },
+    "osdTextElementGPSLat": {
+        "message": "GPS 纬度",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSLat": {
-        "message": "GPS 纬度"
+        "message": "GPS 纬度坐标"
+    },
+    "osdTextElementDebug": {
+        "message": "调试",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementDebug": {
         "message": "调试用变量"
     },
+    "osdTextElementPIDRoll": {
+        "message": "PID roll",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRoll": {
         "message": "横滚 PID 数值"
+    },
+    "osdTextElementPIDPitch": {
+        "message": "PID pitch",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPIDPitch": {
         "message": "俯仰 PID 数值"
     },
+    "osdTextElementPIDYaw": {
+        "message": "PID yaw",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDYaw": {
         "message": "方向 PID 数值"
+    },
+    "osdTextElementPower": {
+        "message": "功率",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPower": {
         "message": "实时功率消耗"
     },
+    "osdTextElementPIDRateProfile": {
+        "message": "配置文件： PID 和 rate",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRateProfile": {
         "message": "当前 PID 和 rate 配置文件的数字编号"
+    },
+    "osdTextElementBatteryWarning": {
+        "message": "电池警告",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementBatteryWarning": {
         "message": "当电池电压低于设定阈值时的警告文字提示"
     },
+    "osdTextElementAvgCellVoltage": {
+        "message": "电池平均单芯电压",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementAvgCellVoltage": {
         "message": "平均单芯电压 （电池总电压 \/ 芯数）"
+    },
+    "osdTextElementPitchAngle": {
+        "message": "角度：pitch",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPitchAngle": {
         "message": "俯仰角度数字"
     },
+    "osdTextElementRollAngle": {
+        "message": "角度：roll",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementRollAngle": {
         "message": "横滚角度数字"
+    },
+    "osdTextElementMainBattUsage": {
+        "message": "电池使用情况",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMainBattUsage": {
         "message": "图形化显示电池用量"
     },
+    "osdTextElementArmedTime": {
+        "message": "计时器：解锁时间",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArmedTime": {
         "message": "距离上次解锁时间"
     },
-    "osdDescElementWarnings": {
-        "message": "警报 (比如低电压)，警告 (不能开锁原因，电池电压极低) 和模拟蜂鸣器(4个闪烁星号)。"
-    },
-    "osdDescElementEscTemperature": {
-        "message": "电调回传温度"
-    },
-    "osdDescElementEscRpm": {
-        "message": "电调回传电机转速"
-    },
-    "osdDescElementEscRpmFreq": {
-        "message": "电调回传电机转速频率"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "日期\/时间"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "当前激活的调整范围和数值"
+    "osdTextElementHomeDirection": {
+        "message": "到起飞点的方向",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHomeDirection": {
-        "message": "指向起飞点的箭头 （啊~那是家的方向~~）"
+        "message": "指向起飞点的箭头"
+    },
+    "osdTextElementHomeDistance": {
+        "message": "到起飞点的距离",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHomeDistance": {
-        "message": "距离起飞点的距离"
+        "message": "距离起飞点的距离 (单位为英尺或米，取决于系统设置)"
+    },
+    "osdTextElementNumericalHeading": {
+        "message": "数字式航向",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementNumericalHeading": {
         "message": "当前行进方向的角度数字"
     },
+    "osdTextElementNumericalVario": {
+        "message": "数字式垂直速度表",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementNumericalVario": {
         "message": "爬升速度数字"
+    },
+    "osdTextElementCompassBar": {
+        "message": "罗盘标尺",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCompassBar": {
         "message": "当前行进方向的图形箭头"
     },
-    "osdDescElementFlipArrow": {
-        "message": "在乌龟模式中，箭头指示哪边的电机朝上"
+    "osdTextElementWarnings": {
+        "message": "警告",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementLinkQuality": {
-        "message": "基于帧丢失情况的“连接质量”的替代图标-请谨慎使用"
+    "osdDescElementWarnings": {
+        "message": "警报 (比如低电压)，警告 (不能开锁原因，电池电压极低) 和模拟蜂鸣器(4个闪烁星号)。"
     },
-    "osdDescElementFlightDist": {
-        "message": "此次飞行中的飞行距离"
+    "osdTextElementEscTemperature": {
+        "message": "电调温度",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementStickOverlayLeft": {
-        "message": "遥控器左摇杆的叠层位置"
+    "osdDescElementEscTemperature": {
+        "message": "电调回传温度"
     },
-    "osdDescElementStickOverlayRight": {
-        "message": "遥控器右摇杆的叠层位置"
+    "osdTextElementEscRpm": {
+        "message": "电调转速",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementTimer1": {
-        "message": "显示计时器1"
+    "osdDescElementEscRpm": {
+        "message": "电调回传电机转速"
     },
-    "osdDescElementTimer2": {
-        "message": "显示计时器2"
+    "osdTextElementRemaningTimeEstimate": {
+        "message": "计时器：预估剩余时间",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRemaningTimeEstimate": {
         "message": "预计剩余电池飞行时间"
     },
-    "osdDescElementUnknown": {
-        "message": "未知参数"
+    "osdTextElementRtcDateTime": {
+        "message": "RTC日期和时间",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "日期\/时间"
+    },
+    "osdTextElementAdjustmentRange": {
+        "message": "调整范围",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "当前激活的调整范围和数值"
+    },
+    "osdTextElementTimer1": {
+        "message": "计时器1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer1": {
+        "message": "显示计时器1"
+    },
+    "osdTextElementTimer2": {
+        "message": "计时器2",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer2": {
+        "message": "显示计时器2"
+    },
+    "osdTextElementCoreTemperature": {
+        "message": "核心温度",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCoreTemperature": {
         "message": "显示飞控主芯片温度"
     },
+    "osdTextAntiGravity": {
+        "message": "反重力",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescAntiGravity": {
         "message": "当反重力功能激活时显示指示器"
     },
+    "osdTextGForce": {
+        "message": "重力加速度",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescGForce": {
-        "message": "显示当前飞机所受的地心引力"
+        "message": "显示当前飞机所受G力"
+    },
+    "osdTextElementMotorDiag": {
+        "message": "电机诊断",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMotorDiag": {
         "message": "显示每个电机输出的图表"
     },
+    "osdTextElementLogStatus": {
+        "message": "黑盒日志状态",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementLogStatus": {
         "message": "黑匣子编号和警告"
+    },
+    "osdTextElementFlipArrow": {
+        "message": "反乌龟箭头",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlipArrow": {
+        "message": "在乌龟模式中，箭头指示哪边的电机朝上"
+    },
+    "osdTextElementLinkQuality": {
+        "message": "连接质量",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLinkQuality": {
+        "message": "基于帧丢失情况的“连接质量”的替代图标-请谨慎使用"
+    },
+    "osdTextElementFlightDist": {
+        "message": "飞行距离",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlightDist": {
+        "message": "此次飞行中的飞行距离"
+    },
+    "osdTextElementStickOverlayLeft": {
+        "message": "摇杆左浮层",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayLeft": {
+        "message": "遥控器左摇杆的浮层位置"
+    },
+    "osdTextElementStickOverlayRight": {
+        "message": "摇杆右浮层",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayRight": {
+        "message": "遥控器右摇杆的浮层位置"
+    },
+    "osdTextElementDisplayName": {
+        "message": "显示名称",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDisplayName": {
+        "message": "由CLI命令\"display_name\"设置的显示名称"
+    },
+    "osdTextElementEscRpmFreq": {
+        "message": "电调转速频率",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEscRpmFreq": {
+        "message": "电调回传电机转速频率"
+    },
+    "osdTextElementRateProfileName": {
+        "message": "配置文件：Rate 配置名称",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRateProfileName": {
+        "message": "显示当前 Rate 配置名称"
+    },
+    "osdTextElementPidProfileName": {
+        "message": "配置文件：PID 配置名称",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPidProfileName": {
+        "message": "显示当前 PID 配置文件名称"
+    },
+    "osdTextElementOsdProfileName": {
+        "message": "配置文件：OSD 配置名称",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementOsdProfileName": {
+        "message": "在 CLI 中设置的 \"osd_profile_1_name\", \"osd_profile_2_name\" 和 \"osd_profile_3_name\" 所对应的OSD配置文件名称"
+    },
+    "osdTextElementRssiDbmValue": {
+        "message": "RSSI dBm 值",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRssiDbmValue": {
+        "message": "RSSI 信号的 dBm 值 （如果可用）"
+    },
+    "osdTextElementUnknown": {
+        "message": "未知$1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementUnknown": {
+        "message": "未知参数"
+    },
+    "osdTextStatMaxSpeed": {
+        "message": "速度最大值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxSpeed": {
         "message": "记录到的最大速度"
     },
+    "osdTextStatMinBattery": {
+        "message": "电池电压最小值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMinBattery": {
         "message": "记录到的最低主电池电压"
+    },
+    "osdTextStatMinRssi": {
+        "message": "RSSI 最小值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinRssi": {
         "message": "记录到的最小RSSI值"
     },
+    "osdTextStatMaxCurrent": {
+        "message": "电池电流最高值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxCurrent": {
         "message": "记录到的最大电流"
+    },
+    "osdTextStatUsedMah": {
+        "message": "电池已使用毫安数",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatUsedMah": {
         "message": "已用电池容量"
     },
+    "osdTextStatMaxAltitude": {
+        "message": "最大高度",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxAltitude": {
         "message": "记录到的最大高度"
+    },
+    "osdTextStatBlackbox": {
+        "message": "黑盒日志使用情况",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBlackbox": {
         "message": "黑匣子空间使用百分比"
     },
+    "osdTextStatEndBattery": {
+        "message": "电池电压截止值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatEndBattery": {
-        "message": "解锁时电池电压"
+        "message": "锁定时电池电压"
+    },
+    "osdTextStatFlyTime": {
+        "message": "总飞行时间",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatFlyTime": {
         "message": "解锁总时间"
     },
+    "osdTextStatArmedTime": {
+        "message": "上次解锁总飞行时间",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatArmedTime": {
         "message": "距离上一次解锁时间"
+    },
+    "osdTextStatMaxDistance": {
+        "message": "距起飞点最大距离",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxDistance": {
         "message": "距离起飞位置最大距离"
     },
+    "osdTextStatBlackboxLogNumber": {
+        "message": "黑盒日志编号",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatBlackboxLogNumber": {
         "message": "黑匣子记录文件编号"
+    },
+    "osdTextStatTimer1": {
+        "message": "计时器1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatTimer1": {
         "message": "上锁时计时器1数值"
     },
+    "osdTextStatTimer2": {
+        "message": "计时器2",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatTimer2": {
         "message": "上锁时计时器2数值"
+    },
+    "osdTextStatRtcDateTime": {
+        "message": "RTC日期和时间",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatRtcDateTime": {
         "message": "实时时钟时间日期"
     },
+    "osdTextStatBattery": {
+        "message": "电池电压",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatBattery": {
         "message": "电池实时电压"
+    },
+    "osdTextStatGForce": {
+        "message": "G力最大值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatGForce": {
         "message": "飞行器经历的最大 G 力"
     },
+    "osdTextStatEscTemperature": {
+        "message": "电调温度最高值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatEscTemperature": {
         "message": "电调最高温度"
+    },
+    "osdTextStatEscRpm": {
+        "message": "电调转速最大值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatEscRpm": {
         "message": "电调最高转速"
     },
+    "osdTextStatMinLinkQuality": {
+        "message": "连接质量最小值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMinLinkQuality": {
         "message": "基于帧丢失情况的“连接质量”的替代图标的最小值"
+    },
+    "osdTextStatFlightDistance": {
+        "message": "飞行距离",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatFlightDistance": {
         "message": "此次飞行中的总行程"
     },
+    "osdTextStatMaxFFT": {
+        "message": "FFT 最大值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxFFT": {
         "message": "FFT峰值频率"
+    },
+    "osdTextStatTotalFlights": {
+        "message": "总飞行次数",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlights": {
+        "message": "总飞行次数"
+    },
+    "osdTextStatTotalFlightTime": {
+        "message": "总飞行时间",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightTime": {
+        "message": "总飞行时间"
+    },
+    "osdTextStatTotalFlightDistance": {
+        "message": "总飞行距离",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightDistance": {
+        "message": "总航行距离"
+    },
+    "osdTextStatMinRssiDbm": {
+        "message": "RSSI dBm最小值",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinRssiDbm": {
+        "message": "最小 RSSI 分贝值"
+    },
+    "osdTextStatUnknown": {
+        "message": "未知 $1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatUnknown": {
+        "message": "未知统计 (会在将来的版本中添加详细信息)"
+    },
+    "osdDescribeFontVersion1": {
+        "message": "字体版本: 1 (Betaflight 4.0或更旧版本)"
+    },
+    "osdDescribeFontVersion2": {
+        "message": "字体版本: 2 (Betaflight 4.1或更新版本)"
+    },
+    "osdDescribeFontVersionCUSTOM": {
+        "message": "字库版本: 用户提供"
     },
     "osdTimerSource": {
         "message": "来源："
@@ -3799,11 +4331,39 @@
     "osdTimerSourceTooltip": {
         "message": "选择时钟源"
     },
+    "osdTimerSourceOptionOnTime": {
+        "message": "总上电时间",
+        "description": "One of the options for the source timer. This options shows the amount of time has passed since the battery was plugged"
+    },
+    "osdTimerSourceOptionTotalArmedTime": {
+        "message": "总解锁时间",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed since the battery was plugged"
+    },
+    "osdTimerSourceOptionLastArmedTime": {
+        "message": "上次解锁时间",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed the latest time"
+    },
+    "osdTimerSourceOptionOnArmTime": {
+        "message": "启动\/解锁时间",
+        "description": "One of the options for the source timer. This option shows On time when craft is disarmed, and Armed time when armed"
+    },
     "osdTimerPrecision": {
         "message": "精度："
     },
     "osdTimerPrecisionTooltip": {
         "message": "选择计时器精度"
+    },
+    "osdTimerPrecisionOptionSecond": {
+        "message": "第二",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionHundredth": {
+        "message": "百分之一秒",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionTenth": {
+        "message": "十分之一秒",
+        "description": "Selectable option for the precision of the timer in the OSD"
     },
     "osdTimerAlarm": {
         "message": "警报："
@@ -3811,47 +4371,135 @@
     "osdTimerAlarmTooltip": {
         "message": "设置计时器警报时间（分钟）。当计时器时间大于设置时间，将会在OSD上面闪烁。设定为0可禁用报警。"
     },
-    "osdWarningUnknown": {
-        "message": "未知警告 (会在将来的版本中添加详细信息)"
+    "osdTimerAlarmOptionRssi": {
+        "message": "RSSI",
+        "description": "Text of the RSSI alarm"
+    },
+    "osdTimerAlarmOptionCapacity": {
+        "message": "容量",
+        "description": "Text of the capacity alarm"
+    },
+    "osdTimerAlarmOptionAltitude": {
+        "message": "海拔高度",
+        "description": "Text of the altitude alarm"
+    },
+    "osdWarningTextArmingDisabled": {
+        "message": "禁止解锁",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningArmingDisabled": {
         "message": "显示导致不能解锁最主要的原因"
     },
+    "osdWarningTextBatteryNotFull": {
+        "message": "电池不满",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningBatteryNotFull": {
         "message": "当上电时检测到电池电量不满发出警告"
+    },
+    "osdWarningTextBatteryWarning": {
+        "message": "电池警告",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningBatteryWarning": {
         "message": "当电池电压低于设置警报电压时发出警告"
     },
+    "osdWarningTextBatteryCritical": {
+        "message": "电池电量危急",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningBatteryCritical": {
         "message": "当电池电压低于最小单芯电压时发出警告"
+    },
+    "osdWarningTextVisualBeeper": {
+        "message": "模拟蜂鸣器",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningVisualBeeper": {
         "message": "显示模拟蜂鸣器（表现为4个星号）"
     },
+    "osdWarningTextCrashFlipMode": {
+        "message": "反乌龟模式",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningCrashFlipMode": {
         "message": "当激活坠机模式又发生翻转时发出警告"
+    },
+    "osdWarningTextEscFail": {
+        "message": "ESC 通信失败",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningEscFail": {
         "message": "列举一个出现故障的ESCs\/电机的列表 (RPM 或温度超出配置的阈值)"
     },
+    "osdWarningTextCoreTemperature": {
+        "message": "核心温度",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningCoreTemperature": {
         "message": "当 MCU 核心温度超过配置的阈值时发出警告"
+    },
+    "osdWarningTextRcSmoothingFailure": {
+        "message": "RC 平滑失败",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningRcSmoothingFailure": {
         "message": "当 RC 平滑初始化失败时发出警告"
     },
+    "osdWarningTextFailsafe": {
+        "message": "失控保护",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningFailsafe": {
         "message": "发生失控保护时发出警告"
+    },
+    "osdWarningTextLaunchControl": {
+        "message": "起飞控制",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningLaunchControl": {
         "message": "起飞控制（Launch Control）模式被激活时发出警告"
     },
+    "osdWarningTextGpsRescueUnavailable": {
+        "message": "GPS 救援不可用",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningGpsRescueUnavailable": {
         "message": "当 GPS 救援不可用且无法激活时发出警告"
     },
+    "osdWarningTextGpsRescueDisabled": {
+        "message": "GPS 救援已禁用",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningGpsRescueDisabled": {
         "message": "GPS 救援被禁用时发出警告"
+    },
+    "osdWarningTextRSSI": {
+        "message": "RSSI",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRSSI": {
+        "message": "当 RSSI 低于报警设置时发出警告"
+    },
+    "osdWarningTextLinkQuality": {
+        "message": "连接质量",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningLinkQuality": {
+        "message": "当连接质量（Link Quality）低于报警设置时发出警告"
+    },
+    "osdWarningTextRssiDbm": {
+        "message": "RSSI 分贝",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRssiDbm": {
+        "message": "当 RSSI 分贝低于报警设置时发出警告"
+    },
+    "osdWarningTextUnknown": {
+        "message": "未知$1"
+    },
+    "osdWarningUnknown": {
+        "message": "未知警告 (会在将来的版本中添加详细信息)"
     },
     "osdSectionHelpElements": {
         "message": "显示或者隐藏 OSD 显示信息"
@@ -4074,5 +4722,11 @@
     },
     "flashTab": {
         "message": "更新固件"
+    },
+    "cliAutoComplete": {
+        "message": "高级CLI自动填充"
+    },
+    "darkTheme": {
+        "message": "使用暗色主题"
     }
 }

@@ -1,8 +1,4 @@
 {
-    "windowTitle": {
-        "message": "Betaflight Configurator",
-        "description": "Title of the application window, usually not translated"
-    },
     "error": {
         "message": "Fel: {{errorMessage}}"
     },
@@ -64,7 +60,7 @@
         "message": "Öppna senaste fliken vid anslutning"
     },
     "analyticsOptOut": {
-        "message": "Välj bort anonymiserad insamling av statistikdata"
+        "message": "Avstå från anonymiserad insamling av statistikdata"
     },
     "userLanguageSelect": {
         "message": "Språk (programmet behöver startas om för att ändringarna ska börja gälla)"
@@ -229,6 +225,12 @@
     },
     "logActionShow": {
         "message": "Visa logg"
+    },
+    "serialErrorFrameError": {
+        "message": "Fel i seriell anslutning: framing-fel"
+    },
+    "serialErrorParityError": {
+        "message": "Fel i seriell anslutning: paritetsfel"
     },
     "serialPortOpened": {
         "message": "Anslutning till serieport <span class=\"message-positive\">lyckades<\/span> med ID: $1"
@@ -498,9 +500,6 @@
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong> är en flygkontrollerprogramvara som bygger på <strong>öppen källkod<\/strong> och är tillgänglig utan kostnad <strong>utan garanti<\/strong> för alla användare.<\/p><p>Om du tycker att Betaflight eller Betaflight configurator är användbar kanske du vill <strong>stödja<\/strong> utvecklingen genom en donation.<\/p>"
     },
-    "defaultDonateBottom": {
-        "message": "<p>Om du vill fortsätta bidra ekonomiskt bör du överväga att bli en \"patron\" för oss på <a href='https:\/\/www.patreon.com\/betaflight'>Patreon<\/a>.<\/p>"
-    },
     "defaultDonate": {
         "message": "Donera"
     },
@@ -680,87 +679,99 @@
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "Ingen gyro detekterad",
-        "description": "Description of the NO GYRO arming disable flag"
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
         "message": "Failsafe är aktiv",
-        "description": "Description of the FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
         "message": "Ingen giltig mottagarsignal detekterad",
-        "description": "Description of the RX_FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
         "message": "Din mottagare har just återställts från Failsafe, men aktiveringsswitchen är på",
-        "description": "Description of the BAD_RX_RECOVERY arming disable flag"
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
         "message": "'FAILSAFE'-switchen aktiverades",
-        "description": "Description of the BOXFAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
         "message": "Förhindrande av oavsiktlig uppstigning (Runaway Takeoff Prevention) har aktiverats",
-        "description": "Description of the RUNAWAY_TAKEOFF arming disable flag"
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCRASH": {
+        "message": "Inaktiverad via kraschdetektering",
+        "description": "Message that pops up to describe the CRASH arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
         "message": "Trottelkanalen är för hög",
-        "description": "Description of the THROTTLE arming disable flag"
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "Farkosten är inte (tillräckligt) horisontell",
-        "description": "Description of the ANGLE arming disable flag"
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
         "message": "Aktiverad för snabbt efter strömpåslag",
-        "description": "Description of the BOOT_GRACE_TIME arming disable flag"
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipNOPREARM": {
         "message": "Föraktiveringsswitchen är inte aktiv, eller föraktivering har inte återställts efter avaktivering",
-        "description": "Description of the NOPREARM arming disable flag"
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipLOAD": {
         "message": "Belastningen på systemet är för hög för säker flygning",
-        "description": "Description of the LOAD arming disable flag"
+        "description": "Message that pops up to describe the LOAD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
         "message": "Sensorkalibrering pågår fortfarande",
-        "description": "Description of the CALIBRATING arming disable flag"
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCLI": {
         "message": "CLI är aktiv",
-        "description": "Description of the CLI arming disable flag"
+        "description": "Message that pops up to describe the CLI arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
         "message": "CMS (konfigureringsmeny) är aktiv - över OSD eller annan display",
-        "description": "Description of the CMS_MENU arming disable flag"
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "OSD-menyn är aktiv",
-        "description": "Description of the OSD_MENU arming disable flag"
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBST": {
         "message": "En Black Sheep Telemetry-enhet (TBS Core Pro t ex) avaktiverades och förhindrar aktivering",
-        "description": "Description of the BST arming disable flag"
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "En MSP-koppling är aktiv, troligen via denna Betaflight-konfigurator",
-        "description": "Description of the MSP arming disable flag"
+        "description": "Message that pops up to describe the MSP arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipPARALYZE": {
         "message": "Paralyze-läge har aktiverats",
-        "description": "Description of the PARALYZE arming disable flag"
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipGPS": {
         "message": "GPS-räddningsläge är konfigurerat, men tillräckligt antal satelliter har inte hittats",
-        "description": "Description of the GPS arming disable flag"
+        "description": "Message that pops up to describe the GPS arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRESC": {
         "message": "'GPS Rescue'-switchen aktiverades",
-        "description": "Description of the RESC arming disable flag"
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRPMFILTER": {
+        "message": "RPM-baserad filtrering är aktiverad, men en eller flera ESCar stödjer inte giltig DSHOT-telemetri. Kontrollera att ESCarna har stöd och har rätt firmware installerad för att kunna stödja dubbelriktad DSHOT-telemetri.",
+        "description": "Message that pops up to describe the RPMFILTER arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipREBOOT_REQD": {
+        "message": "En konfigurationsändring kräver en omstart",
+        "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "En av de andra avaktiveringsflaggorna är aktiv vid aktivering",
-        "description": "Description of the ARM_SWITCH arming disable flag"
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
     },
     "initialSetupGPSHead": {
         "message": "GPS"
@@ -815,6 +826,9 @@
     },
     "featureSERVO_TILT": {
         "message": "Servo-gimbal"
+    },
+    "featureSERVO_TILTTip": {
+        "message": "Denna funktion aktiverar CAMSTAB-läge, vilket kan användas för att stabilisera upp till två axlar genom användning av accelerometern"
     },
     "featureSOFTSERIAL": {
         "message": "Aktivera CPU-baserade seriella portar"
@@ -1129,7 +1143,7 @@
         "message": "Pip när blackbox-radering slutförs"
     },
     "beeperCRASH_FLIP": {
-        "message": "Pip när kraschflippläge är aktivt"
+        "message": "Pip när kraschflipp-läge är aktivt"
     },
     "beeperCAM_CONNECTION_OPEN": {
         "message": "Pip när 5-knappskamerakontrollen aktiveras"
@@ -1732,16 +1746,19 @@
         "message": "OCH"
     },
     "adjustmentsHelp": {
-        "message": "Konfigurera justerings-switchar. Se avsnittet 'In-flight adjustments' i manualen för detaljer. Ändringarna som justeringsfunktionerna utför sparas inte automatiskt. Det finns 4 platser. Varje switch som används för att göra samtidiga justeringar kräver exklusiv användning av en plats."
+        "message": "Konfigurera justeringsswitchar. Se sektionen 'in-flight adjustments' i manualen för detaljer. Ändringarna som görs av justeringsfunktionerna sparas inte automatiskt."
+    },
+    "adjustmentSlotsHelp": {
+        "message": "Det finns 4 platser. Varje switch som används för samtidiga justeringar kräver exklusiv användning av en plats."
     },
     "adjustmentsExamples": {
-        "message": "Exempel"
+        "message": "Exempel:"
     },
     "adjustmentsExample1": {
-        "message": "Använd plats 1 och en 3POS-switch på AUX1 för att välja mellan Looping\/Roll P, I och D och en annan 3POS-switch på AUX2 för att öka eller minska värdet när den fälls uppåt eller nedåt."
+        "message": "Använd en trepositionsswitch på AUX1 för att välja mellan Looping\/Roll P, I och D och en annan trepositionsswitch på AUX2 för att öka eller minska värdet när den fälls uppåt eller nedåt."
     },
     "adjustmentsExample2": {
-        "message": "Använd plats 2 och en 3POS-switch på AUX4 för att aktivera Rate-profilval via samma 3POS-switch på samma kanal."
+        "message": "Använd en trepositionsswitch på AUX4 för att välja Rate-profilval via samma trepositionsswitch på samma kanal."
     },
     "adjustmentsColumnEnable": {
         "message": "Om aktiverad"
@@ -2185,7 +2202,10 @@
         "message": "<strong>Notering:<\/strong> Om fliken CLI lämnas eller vid val av Koppla från kommer \"<strong>exit<\/strong>\" att sändas <strong>automatiskt<\/strong> till styrkortet. Med den senaste firmwaren kommer detta att <strong>starta om<\/strong> kontrollern, och osparade ändringar kommer att <strong>förloras<\/strong>.<p><strong><span class=\"message-negative\">Varning:<\/span><\/strong> Vissa CLI-kommandon kan leda till att slumpmässiga signaler skickas ut till motorerna. Detta kan få motorerna att sätta igång om ett batteri är inkopplat. Därför är det rekommenderat att säkerställa att <strong>inget batteri är anslutet innan CLI-kommandon anges<\/strong>."
     },
     "cliInputPlaceholder": {
-        "message": "Skriv ditt kommando här"
+        "message": "Skriv ditt kommando här. Tryck Tab för AutoComplete."
+    },
+    "cliInputPlaceholderBuilding": {
+        "message": "Vänta medan AutoComplete-cachen byggs upp..."
     },
     "cliEnter": {
         "message": "CLI-läge upptäckt"
@@ -2204,6 +2224,18 @@
     },
     "cliCopySuccessful": {
         "message": "Kopierat!"
+    },
+    "cliLoadFromFileBtn": {
+        "message": "Ladda från fil"
+    },
+    "cliConfirmSnippetDialogTitle": {
+        "message": "Granska laddade kommandon"
+    },
+    "cliConfirmSnippetNote": {
+        "message": "<strong>Observera<\/strong>: Du kan granska och redigera kommandon innan de verkställs."
+    },
+    "cliConfirmSnippetBtn": {
+        "message": "Verkställ"
     },
     "loggingNote": {
         "message": "Data kommer <span class=\"message-negative\">endast<\/span> att loggas när denna flik är aktiv; om fliken lämnas kommer loggningen att <span class=\"message-negative\">avbrytas<\/span> och applikationen återgår till sitt normala <strong>\"konfigurations\"<\/strong> -läge.<br \/> Du kan fritt välja global uppdateringsperiod, data kommer att skrivas till loggen <strong>1<\/strong> gång per sekund av prestandaskäl."
@@ -2525,6 +2557,9 @@
     },
     "firmwareFlasherFirmwareLocalLoaded": {
         "message": "Laddade lokal firmware: ($1 bytes)"
+    },
+    "firmwareFlasherFirmwareOnlineLoaded": {
+        "message": "Laddade online-firmware: ($1 bytes)"
     },
     "firmwareFlasherHexCorrupted": {
         "message": "HEX-filen verkar vara korrupt"
@@ -3251,11 +3286,47 @@
     "powerBatteryWarning": {
         "message": "Varningsnivå för cellspänning"
     },
+    "powerCalibrationManagerButton": {
+        "message": "Kalibrering"
+    },
+    "powerCalibrationManagerTitle": {
+        "message": "Kalibreringshanterare"
+    },
+    "powerCalibrationManagerHelp": {
+        "message": "För att kalibrera, använd en multimeter för att mäta den faktiska spänningen \/ strömförbrukningen för din farkost (med ett batteri inkopplat), och ange värdena nedan. Klicka sedan [Calibrate], med samma batteri fortfarande inkopplat."
+    },
+    "powerCalibrationManagerNote": {
+        "message": "<strong>Observera:<\/strong> Före kalibrering av skalan, se till att divisor- och multiplikatorvärdena för spänning och offset för strömstyrka är korrekt angivna.<br>Om värdena lämnas kvar på 0 kommer kalibreringen inte att tillämpas.<\/br><strong>Kom ihåg att ta bort propellrarna innan ett batteri kopplas in!<\/strong>"
+    },
+    "powerCalibrationManagerWarning": {
+        "message": "<span class=\"message-negative\">Varning:<\/span> Batteriet <span class=\"message-negative\">är inte inkopplat<\/span> eller så är spännings- eller strömstyrkemätarkällorna <span class=\"message-negative\">inte korrekt angivna<\/span>. Se till att spänning och\/eller strömstyrka visar ett värde över 0, annars går det inte att kalibrera med detta verktyg."
+    },
+    "powerCalibrationManagerSourceNote": {
+        "message": "<span class=\"message-negative\">Varning:<\/span> Spännings- och\/eller strömstyrkemätarkällorna <strong>har ändrats men inte sparats.<\/strong> Ange korrekta mätarkällor och spara dem innan kalibrering påbörjas."
+    },
+    "powerCalibrationSave": {
+        "message": "Kalibrera"
+    },
+    "powerCalibrationApply": {
+        "message": "Tillämpa kalibrering"
+    },
+    "powerCalibrationDiscard": {
+        "message": "Överge kalibrering"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "Nya kalibreringsskalor visas här. <br>Tillämpning av dem kommer att aktivera skalorna men <strong>kommer inte att spara dem.<\/strong><\/br>\n<br>Se till att de nya värdena för spänning och ström är korrekta när de sparats.<\/br>"
+    },
     "powerVoltageHead": {
         "message": "Spänningsmätare"
     },
     "powerVoltageValue": {
         "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "Uppmätt spänning"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "Kalibrerad spänningsskala:"
     },
     "powerAmperageValue": {
         "message": "$1 A"
@@ -3333,7 +3404,7 @@
         "message": "Skala"
     },
     "powerVoltageDivider": {
-        "message": "Divisionsvärde"
+        "message": "Divisorvärde"
     },
     "powerVoltageMultiplier": {
         "message": "Multiplikatorvärde"
@@ -3398,6 +3469,12 @@
     "powerAmperageOffset": {
         "message": "Offset [mA]"
     },
+    "powerAmperageCalibration": {
+        "message": "Uppmätt strömstyrka"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "Kalibrerad strömstyrkeskala:"
+    },
     "powerBatteryHead": {
         "message": "Batteri"
     },
@@ -3420,7 +3497,7 @@
         "message": "mAh använt"
     },
     "powerBatteryAmperage": {
-        "message": "Amperestyrka"
+        "message": "Strömstyrka"
     },
     "powerBatteryCapacity": {
         "message": "Kapacitet (mAh)"
@@ -3429,7 +3506,7 @@
         "message": "OSD"
     },
     "osdSetupPreviewHelp": {
-        "message": "<strong>Observera:<\/strong> OSD-förhandsvisningen visar kanske inte det faktiska teckensnittet som är installerat på flygkontrollern."
+        "message": "<strong>Observera:<\/strong> OSD-förhandsgranskningen kanske inte visar det typsnitt som finns installerat på flygkontrollern. Layouten för enskilda element kan se annorlunda ut när äldre versioner av firmwaren används - kontrollera utseendet genom dina goggles före flygning."
     },
     "osdSetupUnsupportedNote1": {
         "message": "Din flygkontroller svarar inte på OSD-kommandon. Detta innebär förmodligen att den inte har en integrerad BetaFlight-OSD."
@@ -3450,7 +3527,11 @@
     },
     "osdSetupPreviewSelectProfileTitle": {
         "message": "Förhandsgranskning för",
-        "description": "Label of the selector for the OSD Profile in the preview"
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
+    },
+    "osdSetupPreviewForTitle": {
+        "message": "En ändring av profilen eller teckensnittet här kommer INTE att ändra profilen eller teckensnittet i flygkontrollern, ändringen syns bara i förhandsgranskningsfönstret. Om du vill ändra dem måste du använda alternativet '$t(osdSetupSelectedProfileTitle.message)' eller knappen '$t(osdSetupFontManager.message)' för respektive ändring.",
+        "description": "Help content for the OSD profile and font PREVIEW"
     },
     "osdSetupSelectedProfileTitle": {
         "message": "Aktiv OSD-profil",
@@ -3464,14 +3545,35 @@
         "message": "OSD-profil {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
     },
-    "osdSetupPreviewTitleTip": {
-        "message": "Visa eller dölj logo i förhandsvisningen. Detta ändrar inga inställningar i flygkontrollern."
+    "osdSetupPreviewSelectFontElement": {
+        "message": "Teckensnitt {{fontName}}",
+        "description": "Content of the selector for the OSD Font in the preview"
     },
     "osdSetupVideoFormatTitle": {
         "message": "Videoformat"
     },
+    "osdSetupVideoFormatOptionAuto": {
+        "message": "Auto",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionPal": {
+        "message": "PAL",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionNtsc": {
+        "message": "NTSC",
+        "description": "Option for the video format in the OSD"
+    },
     "osdSetupUnitsTitle": {
         "message": "Enheter"
+    },
+    "osdSetupUnitsOptionImperial": {
+        "message": "Engelska mått",
+        "description": "Option for the units system used in the OSD"
+    },
+    "osdSetupUnitsOptionMetric": {
+        "message": "Metrisk",
+        "description": "Option for the units system used in the OSD"
     },
     "osdSetupTimersTitle": {
         "message": "Timers"
@@ -3496,6 +3598,10 @@
     },
     "osdSetupFontPresetsSelector": {
         "message": "Välj förinställningar för teckensnitt:"
+    },
+    "osdSetupFontPresetsSelectorCustomOption": {
+        "message": "Användardefinierat teckensnitt",
+        "description": "Option to show as selected when the user selects a custom local font"
     },
     "osdSetupFontPresetsSelectorOr": {
         "message": "eller"
@@ -3530,6 +3636,12 @@
     "osdSetupUploadFont": {
         "message": "Ladda upp teckensnitt"
     },
+    "osdSetupUploadingFont": {
+        "message": "Laddar upp..."
+    },
+    "osdSetupUploadingFontEnd": {
+        "message": "Laddade upp alla {{length}} tecken till OSD"
+    },
     "osdSetupSave": {
         "message": "Spara"
     },
@@ -3560,242 +3672,658 @@
     "osdSetupButtonReset": {
         "message": "Återställ inställningar"
     },
+    "osdTextElementMainBattVoltage": {
+        "message": "Batterispänning",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementMainBattVoltage": {
         "message": "Ögonblicklig huvudbatterispänning (blinkar om larmtröskeln ej överskridits)"
+    },
+    "osdTextElementRssiValue": {
+        "message": "RSSI-värde",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRssiValue": {
         "message": "Ögonblickligt RSSI-värde (blinkar om larmtröskeln ej överskridits)"
     },
+    "osdTextElementTimer": {
+        "message": "Timer",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer": {
+        "message": "En flygtimer"
+    },
+    "osdTextElementThrottlePosition": {
+        "message": "Trottelposition",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementThrottlePosition": {
         "message": "Aktuellt trottelkanalvärde"
+    },
+    "osdTextElementCpuLoad": {
+        "message": "CPU-belastning",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCpuLoad": {
+        "message": "Aktuell CPU-belastning"
+    },
+    "osdTextElementVtxChannel": {
+        "message": "VTX-kanal",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVtxChannel": {
+        "message": "Aktuell VTX-kanal och styrka"
+    },
+    "osdTextElementVoltageWarning": {
+        "message": "Batterispänningsvarning",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVoltageWarning": {
+        "message": "Visar en varning när spänningen understiger larmvärdet"
+    },
+    "osdTextElementArmed": {
+        "message": "Aktiverad",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementArmed": {
         "message": "Textmeddelande vid motoraktivering"
     },
+    "osdTextElementDisarmed": {
+        "message": "Inaktiverad",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementDisarmed": {
         "message": "Textmeddelande vid motoravaktivering"
+    },
+    "osdTextElementCrosshairs": {
+        "message": "Hårkors",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCrosshairs": {
         "message": "Hårkors för skärmens mittpunkt"
     },
+    "osdTextElementArtificialHorizon": {
+        "message": "Artificiell horisont",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArtificialHorizon": {
         "message": "Grafisk artificiell horisontindikator"
+    },
+    "osdTextElementHorizonSidebars": {
+        "message": "Sidopaneler för artificiell horisont",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHorizonSidebars": {
         "message": "Staplar runt grafisk artificiell horisontindikator"
     },
+    "osdTextElementCurrentDraw": {
+        "message": "Aktuell batteriförbrukning",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementCurrentDraw": {
         "message": "Ögonblicklig aktuell batteriförbrukning"
+    },
+    "osdTextElementMahDrawn": {
+        "message": "Batteriets aktuella mAh-förbrukning",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMahDrawn": {
         "message": "Total använd batterikapacitet"
     },
+    "osdTextElementCraftName": {
+        "message": "Farkostnamn",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementCraftName": {
         "message": "Farkostnamnet som det angivits i Konfigurationsfliken"
     },
-    "osdDescElementDisplayName": {
-        "message": "Visningsnamnet som det har satts med cli-kommandot \"display_name\""
+    "osdTextElementAltitude": {
+        "message": "Höjd",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementAltitude": {
         "message": "Aktuell höjd (blinkar om larmtröskeln överskridits)"
     },
+    "osdTextElementOnTime": {
+        "message": "Aktiv tid",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementOnTime": {
         "message": "Total tid farkosten varit påslagen"
+    },
+    "osdTextElementFlyTime": {
+        "message": "Flygtid",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementFlyTime": {
         "message": "Total tid farkosten har varit aktiverad i aktuell strömcykel (blinkar om larmtröskeln överskridits)"
     },
+    "osdTextElementFlyMode": {
+        "message": "Flygläge",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementFlyMode": {
         "message": "Aktuellt flygläge"
+    },
+    "osdTextElementGPSSpeed": {
+        "message": "GPS-hastighet",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSSpeed": {
         "message": "Hastighet enligt GPS"
     },
+    "osdTextElementGPSSats": {
+        "message": "GPS-satelliter",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementGPSSats": {
         "message": "Antal satelliter för GPS-fix"
     },
+    "osdTextElementGPSLon": {
+        "message": "GPS-longitud",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementGPSLon": {
-        "message": "GPS-longitud"
+        "message": "GPS longitudkoordinat"
+    },
+    "osdTextElementGPSLat": {
+        "message": "GPS-latitud",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSLat": {
-        "message": "GPS-latitud"
+        "message": "GPS latitudkoordinat"
+    },
+    "osdTextElementDebug": {
+        "message": "Felsökning",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementDebug": {
         "message": "Felsökningsvariabler"
     },
+    "osdTextElementPIDRoll": {
+        "message": "PID roll",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRoll": {
         "message": "Roll-axel PID-ökningar"
+    },
+    "osdTextElementPIDPitch": {
+        "message": "PID looping",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPIDPitch": {
         "message": "Looping-axel PID-ökningar"
     },
+    "osdTextElementPIDYaw": {
+        "message": "PID gir",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDYaw": {
         "message": "Gir-axel PID-ökningar"
+    },
+    "osdTextElementPower": {
+        "message": "Ström",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPower": {
         "message": "Ögonblicklig elektrisk ström-konsumtion"
     },
+    "osdTextElementPIDRateProfile": {
+        "message": "Profil: PID och rate",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRateProfile": {
         "message": "Numerisk visning av aktiva PID- och rate-profiler"
+    },
+    "osdTextElementBatteryWarning": {
+        "message": "Batterivarning",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementBatteryWarning": {
         "message": "Varningstext som visas när batteriets spänning sjunker under varningströskeln"
     },
+    "osdTextElementAvgCellVoltage": {
+        "message": "Genomsnittlig battericellspänning",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementAvgCellVoltage": {
         "message": "Genomsnittlig cellspänning (full batterispänning \/ antal celler)"
+    },
+    "osdTextElementPitchAngle": {
+        "message": "Angle: looping",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPitchAngle": {
         "message": "Numerisk looping-vinkel i grader"
     },
+    "osdTextElementRollAngle": {
+        "message": "Angle: roll",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementRollAngle": {
         "message": "Numerisk roll-vinkel i grader"
+    },
+    "osdTextElementMainBattUsage": {
+        "message": "Batteriförbrukning",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMainBattUsage": {
         "message": "Grafisk representation av batterianvändning"
     },
+    "osdTextElementArmedTime": {
+        "message": "Timer: aktiverad tid",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArmedTime": {
         "message": "Tid sedan farkosten senast aktiverades"
     },
-    "osdDescElementWarnings": {
-        "message": "Larm (t ex lågt batteri), varningar (t ex aktiveringshinder, kritiskt lågt batteri) och visuell ljudsignal (4 blinkande asterisker)."
-    },
-    "osdDescElementEscTemperature": {
-        "message": "Temperatur enligt ESC-telemetri"
-    },
-    "osdDescElementEscRpm": {
-        "message": "Varvtal enligt ESC-telemetri"
-    },
-    "osdDescElementEscRpmFreq": {
-        "message": "RPM-frekvens enligt ESC-telemetri"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "Datum \/ tid från realtidsklocka"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "Inställning och värde för justeringsområde som är aktivt nu"
+    "osdTextElementHomeDirection": {
+        "message": "Riktning hem",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHomeDirection": {
         "message": "Pil som visar riktning till hemposition"
     },
+    "osdTextElementHomeDistance": {
+        "message": "Distans hem",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementHomeDistance": {
         "message": "Avstånd till hemposition (i fot eller meter baserat på enhetssysteminställning)"
+    },
+    "osdTextElementNumericalHeading": {
+        "message": "Riktning numeriskt",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementNumericalHeading": {
         "message": "Numerisk avläsning av aktuell riktning i grader"
     },
+    "osdTextElementNumericalVario": {
+        "message": "Numerisk vario",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementNumericalVario": {
         "message": "Numerisk avläsning av vertikal hastighet (i fot eller meter baserat på enhetssysteminställning)"
+    },
+    "osdTextElementCompassBar": {
+        "message": "Kompassnål",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCompassBar": {
         "message": "Grafisk kompass som visar aktuell riktning"
     },
-    "osdDescElementFlipArrow": {
-        "message": "Pil som visar vilken motorsida som pekar uppåt i sköldpaddsläge (turtle mode)"
+    "osdTextElementWarnings": {
+        "message": "Varningar",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementLinkQuality": {
-        "message": "Alternativ indikator för 'länkkvalitet' baserat på bildförlust - använd med försiktighet"
+    "osdDescElementWarnings": {
+        "message": "Larm (t ex lågt batteri), varningar (t ex aktiveringshinder, kritiskt lågt batteri) och visuell ljudsignal (4 blinkande asterisker)."
     },
-    "osdDescElementFlightDist": {
-        "message": "Avverkad distans under denna flygning."
+    "osdTextElementEscTemperature": {
+        "message": "ESC-temperatur",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementStickOverlayLeft": {
-        "message": "Överlagring för vänster spakposition."
+    "osdDescElementEscTemperature": {
+        "message": "Temperatur enligt ESC-telemetri"
     },
-    "osdDescElementStickOverlayRight": {
-        "message": "Överlagring för höger spakposition."
+    "osdTextElementEscRpm": {
+        "message": "ESC RPM",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementTimer1": {
-        "message": "Visar värdet på timer 1"
+    "osdDescElementEscRpm": {
+        "message": "Varvtal enligt ESC-telemetri"
     },
-    "osdDescElementTimer2": {
-        "message": "Visar värdet på timer 2"
+    "osdTextElementRemaningTimeEstimate": {
+        "message": "Timer: uppskattad kvarvarande tid",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRemaningTimeEstimate": {
         "message": "Uppskattad återstående flygtid"
     },
-    "osdDescElementUnknown": {
-        "message": "Okänt element (detaljer tillkommer i en kommande utgåva)"
+    "osdTextElementRtcDateTime": {
+        "message": "RTC datum och tid",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Datum \/ tid från realtidsklocka"
+    },
+    "osdTextElementAdjustmentRange": {
+        "message": "Justeringsintervall",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "Inställning och värde för justeringsområde som är aktivt nu"
+    },
+    "osdTextElementTimer1": {
+        "message": "Timer 1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer1": {
+        "message": "Visar värdet på timer 1"
+    },
+    "osdTextElementTimer2": {
+        "message": "Timer 2",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer2": {
+        "message": "Visar värdet på timer 2"
+    },
+    "osdTextElementCoreTemperature": {
+        "message": "Kärntemperatur",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCoreTemperature": {
         "message": "Temperatur på STM32 MCU-kärna"
     },
+    "osdTextAntiGravity": {
+        "message": "Antigravitation",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescAntiGravity": {
         "message": "Aktiverar en indikator när anti-gravity är påslagen"
+    },
+    "osdTextGForce": {
+        "message": "G-kraft",
+        "description": "One of the elements of the OSD"
     },
     "osdDescGForce": {
         "message": "Visar hur stor G-kraft farkosten utsätts för"
     },
+    "osdTextElementMotorDiag": {
+        "message": "Motordiagnostik",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementMotorDiag": {
         "message": "Visar ett diagram över utmatningen från respektive motor"
+    },
+    "osdTextElementLogStatus": {
+        "message": "Blackbox loggstatus",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementLogStatus": {
         "message": "Blackbox-nummer och varningar"
     },
+    "osdTextElementFlipArrow": {
+        "message": "Kraschflipp-pil",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlipArrow": {
+        "message": "Pil som visar vilken motorsida som pekar uppåt i sköldpaddsläge (turtle mode)"
+    },
+    "osdTextElementLinkQuality": {
+        "message": "Länkkvalitet",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLinkQuality": {
+        "message": "Alternativ indikator för 'länkkvalitet' baserat på bildförlust - använd med försiktighet"
+    },
+    "osdTextElementFlightDist": {
+        "message": "Flygdistans",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlightDist": {
+        "message": "Avverkad distans under denna flygning."
+    },
+    "osdTextElementStickOverlayLeft": {
+        "message": "Spak-överlagring vänster",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayLeft": {
+        "message": "Överlagring för vänster spakposition."
+    },
+    "osdTextElementStickOverlayRight": {
+        "message": "Spak-överlagring höger",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayRight": {
+        "message": "Överlagring för höger spakposition."
+    },
+    "osdTextElementDisplayName": {
+        "message": "Visningsnamn",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDisplayName": {
+        "message": "Visningsnamnet som det har satts med cli-kommandot \"display_name\""
+    },
+    "osdTextElementEscRpmFreq": {
+        "message": "ESC RPM-frekvens",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEscRpmFreq": {
+        "message": "RPM-frekvens enligt ESC-telemetri"
+    },
+    "osdTextElementRateProfileName": {
+        "message": "Profil: Rateprofilnamn",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRateProfileName": {
+        "message": "Visar namn på aktuell rate-profil"
+    },
+    "osdTextElementPidProfileName": {
+        "message": "Profil: PID-profilnamn",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPidProfileName": {
+        "message": "Visar namn på aktuell PID-profil"
+    },
+    "osdTextElementOsdProfileName": {
+        "message": "Profil: OSD-profilnamn",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementOsdProfileName": {
+        "message": "OSD-profilnamn som det satts i CLI-variablerna \"osd_profile_1_name\", \"osd_profile_2_name\" och \"osd_profile_3_name\""
+    },
+    "osdTextElementRssiDbmValue": {
+        "message": "RSSI dBm-värde",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRssiDbmValue": {
+        "message": "Värde i dBm för RSSI-signalen, om tillgänglig"
+    },
+    "osdTextElementUnknown": {
+        "message": "Okänd $1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementUnknown": {
+        "message": "Okänt element (detaljer tillkommer i en kommande utgåva)"
+    },
+    "osdTextStatMaxSpeed": {
+        "message": "Maxhastighet",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxSpeed": {
         "message": "Högsta registrerade hastighet"
+    },
+    "osdTextStatMinBattery": {
+        "message": "Minsta batterispänning",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinBattery": {
         "message": "Lägsta registrerade huvudbatterispänning"
     },
+    "osdTextStatMinRssi": {
+        "message": "RSSI-minimum",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMinRssi": {
         "message": "Lägsta registrerade RSSI"
+    },
+    "osdTextStatMaxCurrent": {
+        "message": "Maximal aktuell batteriförbrukning",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxCurrent": {
         "message": "Högsta registrerade stömmuttag"
     },
+    "osdTextStatUsedMah": {
+        "message": "Batteriförbrukning i mAh",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatUsedMah": {
         "message": "Använd batterikapacitet"
+    },
+    "osdTextStatMaxAltitude": {
+        "message": "Maximal höjd",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxAltitude": {
         "message": "Högsta registrerade höjd"
     },
+    "osdTextStatBlackbox": {
+        "message": "Blackbox-användning",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatBlackbox": {
         "message": "Procentandel av total blackbox-användning"
+    },
+    "osdTextStatEndBattery": {
+        "message": "Slutlig batterispänning",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatEndBattery": {
         "message": "Batterispänning vid tiden för avaktivering"
     },
+    "osdTextStatFlyTime": {
+        "message": "Total flygtid",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatFlyTime": {
         "message": "Total tid farkosten har varit aktiverad i aktuell strömcykel"
+    },
+    "osdTextStatArmedTime": {
+        "message": "Flygtid efter senaste aktivering",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatArmedTime": {
         "message": "Tid sedan farkosten senast aktiverades"
     },
+    "osdTextStatMaxDistance": {
+        "message": "Maximal distans hem",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxDistance": {
         "message": "Största avstånd från hemposition"
+    },
+    "osdTextStatBlackboxLogNumber": {
+        "message": "Blackbox-nummer",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBlackboxLogNumber": {
         "message": "Logg-nummer för denna flygnings Blackbox-logg"
     },
+    "osdTextStatTimer1": {
+        "message": "Timer 1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatTimer1": {
         "message": "Värdet på timer 1 vid tiden för avaktivering"
+    },
+    "osdTextStatTimer2": {
+        "message": "Timer 2",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatTimer2": {
         "message": "Värdet på timer 2 vid tiden för avaktivering"
     },
+    "osdTextStatRtcDateTime": {
+        "message": "RTC datum och tid",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatRtcDateTime": {
         "message": "Datum och tid från realtidsklocka"
+    },
+    "osdTextStatBattery": {
+        "message": "Batterispänning",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBattery": {
         "message": "Batterispänning i realtid"
     },
+    "osdTextStatGForce": {
+        "message": "Maximal G-kraft",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatGForce": {
         "message": "Den maximala G-kraft farkosten utsatts för"
+    },
+    "osdTextStatEscTemperature": {
+        "message": "Högsta ESC-temperatur",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatEscTemperature": {
         "message": "Maximal ESC-temperatur"
     },
+    "osdTextStatEscRpm": {
+        "message": "Högsta ESC-varvtal",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatEscRpm": {
         "message": "Maximalt ESC-varvtal"
+    },
+    "osdTextStatMinLinkQuality": {
+        "message": "Lägsta länkkvalitet",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinLinkQuality": {
         "message": "Minimivärde för den alternativa indikatorn för 'länkkvalitet' baserat på bildförlust"
     },
+    "osdTextStatFlightDistance": {
+        "message": "Flygdistans",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatFlightDistance": {
         "message": "Total färdsträcka under flygningen"
     },
+    "osdTextStatMaxFFT": {
+        "message": "FFT-maximum",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxFFT": {
         "message": "Toppvärde FFT-frekvens"
+    },
+    "osdTextStatTotalFlights": {
+        "message": "Totalt antal flygningar",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlights": {
+        "message": "Totalt antal flygningar"
+    },
+    "osdTextStatTotalFlightTime": {
+        "message": "Total flygtid",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightTime": {
+        "message": "Total flygtid"
+    },
+    "osdTextStatTotalFlightDistance": {
+        "message": "Total flygdistans",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightDistance": {
+        "message": "Total färdsträcka"
+    },
+    "osdTextStatMinRssiDbm": {
+        "message": "RSSI dBm-minimum",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinRssiDbm": {
+        "message": "Minsta RSSI dBm-värde"
+    },
+    "osdTextStatUnknown": {
+        "message": "Okänd $1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatUnknown": {
+        "message": "Okänt element (detaljer tillkommer i en kommande utgåva)"
+    },
+    "osdDescribeFontVersion1": {
+        "message": "Teckensnittsversion: 1 (Betaflight 4.0 eller äldre)"
+    },
+    "osdDescribeFontVersion2": {
+        "message": "Teckensnittsversion: 2 (Betaflight 4.1 eller nyare)"
+    },
+    "osdDescribeFontVersionCUSTOM": {
+        "message": "Typsnittsversion: från användaren"
     },
     "osdTimerSource": {
         "message": "Källa:"
@@ -3803,11 +4331,39 @@
     "osdTimerSourceTooltip": {
         "message": "Välj timer-källa, detta styr varaktigheten\/händelsen som timern mäter"
     },
+    "osdTimerSourceOptionOnTime": {
+        "message": "Aktiv tid",
+        "description": "One of the options for the source timer. This options shows the amount of time has passed since the battery was plugged"
+    },
+    "osdTimerSourceOptionTotalArmedTime": {
+        "message": "Total aktiveringstid",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed since the battery was plugged"
+    },
+    "osdTimerSourceOptionLastArmedTime": {
+        "message": "Senast aktiverad",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed the latest time"
+    },
+    "osdTimerSourceOptionOnArmTime": {
+        "message": "Aktiv\/aktiverad tid",
+        "description": "One of the options for the source timer. This option shows On time when craft is disarmed, and Armed time when armed"
+    },
     "osdTimerPrecision": {
         "message": "Precision:"
     },
     "osdTimerPrecisionTooltip": {
         "message": "Välj timer-precision, detta styr vilken precision tiden rapporteras i"
+    },
+    "osdTimerPrecisionOptionSecond": {
+        "message": "Sekund",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionHundredth": {
+        "message": "Hundradel",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionTenth": {
+        "message": "Tiondel",
+        "description": "Selectable option for the precision of the timer in the OSD"
     },
     "osdTimerAlarm": {
         "message": "Larm:"
@@ -3815,47 +4371,135 @@
     "osdTimerAlarmTooltip": {
         "message": "Välj tidslarmets tröskel i minuter, när tiden överskrider detta värde kommer OSD-elementet att blinka, sätt denna till 0 för att inaktivera larmet"
     },
-    "osdWarningUnknown": {
-        "message": "Okänd varning (detaljer tillkommer i en kommande utgåva)"
+    "osdTimerAlarmOptionRssi": {
+        "message": "RSSI",
+        "description": "Text of the RSSI alarm"
+    },
+    "osdTimerAlarmOptionCapacity": {
+        "message": "Kapacitet",
+        "description": "Text of the capacity alarm"
+    },
+    "osdTimerAlarmOptionAltitude": {
+        "message": "Höjd",
+        "description": "Text of the altitude alarm"
+    },
+    "osdWarningTextArmingDisabled": {
+        "message": "Aktivering avstängd",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningArmingDisabled": {
         "message": "Rapporterar den viktigaste orsaken till att motoraktivering inte är tillåten"
     },
+    "osdWarningTextBatteryNotFull": {
+        "message": "Batteri ej fulladdat",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningBatteryNotFull": {
         "message": "Varnar när ett ej fullt laddat batteri ansluts"
+    },
+    "osdWarningTextBatteryWarning": {
+        "message": "Batterivarning",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningBatteryWarning": {
         "message": "Varnar när batteriets spänning sjunker under varningströskeln"
     },
+    "osdWarningTextBatteryCritical": {
+        "message": "Batterinivå kritisk",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningBatteryCritical": {
         "message": "Varnar när batteriets spänning sjunker under minsta genomsnittliga cellspänning"
+    },
+    "osdWarningTextVisualBeeper": {
+        "message": "Visuell signal",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningVisualBeeper": {
         "message": "Visar en visualisering av ljudsignalen (visas som 4 asterisker)"
     },
+    "osdWarningTextCrashFlipMode": {
+        "message": "Kraschflipp-läge",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningCrashFlipMode": {
-        "message": "Varnar när \"flippa över efter krasch\"-läge aktiveras"
+        "message": "Varnar när kraschflipp-läge aktiveras"
+    },
+    "osdWarningTextEscFail": {
+        "message": "ESC-avbrott",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningEscFail": {
         "message": "Räknar upp en lista med de ESC:er\/motorer som fallerar (RPM eller temperatur är utanför konfigurerade tröskelvärden)"
     },
+    "osdWarningTextCoreTemperature": {
+        "message": "Kärntemperatur",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningCoreTemperature": {
         "message": "Varnar när MCU-kärntemperaturen överskrider ett konfigurerat tröskelvärde"
+    },
+    "osdWarningTextRcSmoothingFailure": {
+        "message": "RC-utjämning misslyckad",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningRcSmoothingFailure": {
         "message": "Varnar när initiering av rc-utjämning misslyckades"
     },
+    "osdWarningTextFailsafe": {
+        "message": "Failsafe",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningFailsafe": {
         "message": "Varnar när Failsafe inträffar"
+    },
+    "osdWarningTextLaunchControl": {
+        "message": "Launch control",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningLaunchControl": {
         "message": "Varnar när Launch Control-läget aktiveras"
     },
+    "osdWarningTextGpsRescueUnavailable": {
+        "message": "GPS-räddning ej tillgänglig",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningGpsRescueUnavailable": {
         "message": "Varnar när GPS-räddning inte är tillgänglig och inte kan aktiveras"
     },
+    "osdWarningTextGpsRescueDisabled": {
+        "message": "GPS-räddning avstängd",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningGpsRescueDisabled": {
         "message": "Varnar när GPS-räddning är avstängd"
+    },
+    "osdWarningTextRSSI": {
+        "message": "RSSI",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRSSI": {
+        "message": "Varnar när RSSI underskrider larminställning"
+    },
+    "osdWarningTextLinkQuality": {
+        "message": "Länkkvalitet",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningLinkQuality": {
+        "message": "Varnar när länkkvaliteten underskrider larminställning"
+    },
+    "osdWarningTextRssiDbm": {
+        "message": "RSSI dBm",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRssiDbm": {
+        "message": "Varnar när RSSI dBm-värdet understiger larminställning"
+    },
+    "osdWarningTextUnknown": {
+        "message": "Okänd $1"
+    },
+    "osdWarningUnknown": {
+        "message": "Okänd varning (detaljer tillkommer i en kommande utgåva)"
     },
     "osdSectionHelpElements": {
         "message": "Aktivera eller avaktivera OSD-element."
@@ -4078,5 +4722,11 @@
     },
     "flashTab": {
         "message": "Uppdatera firmware"
+    },
+    "cliAutoComplete": {
+        "message": "Avancerad CLI AutoComplete"
+    },
+    "darkTheme": {
+        "message": "Använd mörkt färgtema"
     }
 }

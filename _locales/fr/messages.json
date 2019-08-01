@@ -494,9 +494,6 @@
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong>est un logiciel de contrôle de vol <strong>libre (open source)<\/strong> et gratuit <strong>sans aucune garantie<\/strong>, pour tous les utilisateurs.<\/p><p>Si vous trouvez Betaflight ou Betaflight Configurator utiles, veuillez envisager<strong>d'aider<\/strong> leur développement grâce à un don.<\/p>"
     },
-    "defaultDonateBottom": {
-        "message": "<p>Si vous voulez contribuer financièrement de façon régulière, vous devriez envisager de devenir un patron pour nous sur <a href='https:\/\/www.patreon.com\/betaflight'>Patreon<\/a>.<\/p>"
-    },
     "defaultDonate": {
         "message": "Don"
     },
@@ -676,87 +673,99 @@
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "Un gyro n'a pas été détecté",
-        "description": "Description of the NO GYRO arming disable flag"
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
         "message": "Failsafe actif",
-        "description": "Description of the FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
         "message": "Aucun signal valide du récepteur détecté",
-        "description": "Description of the RX_FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
         "message": "Votre récepteur vient juste de récupérer du failsafe mais l'interrupteur d'armement est activé",
-        "description": "Description of the BAD_RX_RECOVERY arming disable flag"
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
         "message": "L'interrupteur FAILSAFE était activé",
-        "description": "Description of the BOXFAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
         "message": "La prévention au décollage intempestif a été activée",
-        "description": "Description of the RUNAWAY_TAKEOFF arming disable flag"
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCRASH": {
+        "message": "Désarmé via la détection d'un crash",
+        "description": "Message that pops up to describe the CRASH arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
         "message": "Voie des gaz est trop élevée",
-        "description": "Description of the THROTTLE arming disable flag"
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "Votre appareil n'est pas (assez) de niveau",
-        "description": "Description of the ANGLE arming disable flag"
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
         "message": "Armement trop tôt après la mise sous tension",
-        "description": "Description of the BOOT_GRACE_TIME arming disable flag"
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipNOPREARM": {
         "message": "Le bouton de pré armement n'est pas activé ou n'a pas été activé aprés un désarmement",
-        "description": "Description of the NOPREARM arming disable flag"
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipLOAD": {
         "message": "La charge CPU est trop élevée pour voler en sécurité",
-        "description": "Description of the LOAD arming disable flag"
+        "description": "Message that pops up to describe the LOAD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
         "message": "L'étalonnage des capteurs est toujours en cours",
-        "description": "Description of the CALIBRATING arming disable flag"
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCLI": {
         "message": "Ligne de Commande active",
-        "description": "Description of the CLI arming disable flag"
+        "description": "Message that pops up to describe the CLI arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
         "message": "CMS (menu de configuration) est actif - sur OSD ou autre affichage -",
-        "description": "Description of the CMS_MENU arming disable flag"
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "Le menu OSD est actif",
-        "description": "Description of the OSD_MENU arming disable flag"
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBST": {
         "message": "Un appareil de télémétrie de TBS (Core Pro par exemple) est désarmé et empêche l'armement",
-        "description": "Description of the BST arming disable flag"
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "La connexion MSP est active, probablement avec ce configurateur Betaflight",
-        "description": "Description of the MSP arming disable flag"
+        "description": "Message that pops up to describe the MSP arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipPARALYZE": {
         "message": "Le mode Paralyze a été activé",
-        "description": "Description of the PARALYZE arming disable flag"
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipGPS": {
         "message": "Le mode de sauvetage GPS est configuré mais le nombre requis de satellites n'a pas été atteint",
-        "description": "Description of the GPS arming disable flag"
+        "description": "Message that pops up to describe the GPS arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRESC": {
         "message": "Le bouton \"GPS Rescue\" a été activé",
-        "description": "Description of the RESC arming disable flag"
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRPMFILTER": {
+        "message": "Le filtrage basé sur RPM est activé mais un ou plusieurs ESC ne fournissent pas de télémétrie DSHOT valide. Vérifiez que les ESC sont capables et ont le firmware requis installé pour supporter la télémétrie DSHOT bidirectionnelle.",
+        "description": "Message that pops up to describe the RPMFILTER arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipREBOOT_REQD": {
+        "message": "Une modification de configuration nécessite un redémarrage",
+        "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Un des autres drapeaux désarmés est actif lors de l'armement",
-        "description": "Description of the ARM_SWITCH arming disable flag"
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
     },
     "initialSetupGPSHead": {
         "message": "GPS"
@@ -811,6 +820,9 @@
     },
     "featureSERVO_TILT": {
         "message": "Servo gimbal"
+    },
+    "featureSERVO_TILTTip": {
+        "message": "Cette fonctionnalité active le mode CAMSTAB, qui permet de stabiliser jusqu'à deux axes en utilisant l'accéléromètre"
     },
     "featureSOFTSERIAL": {
         "message": "Activer le port série logiciel"
@@ -1164,7 +1176,7 @@
         "message": "<strong>Note:<\/strong> Assurez vous que votre FC peut fonctionner à ces vitesses ! Vérifiez le CPU. Cela peut demander de re-tuner ses PID. TIP: Désactivez l'accéléromètre  et les autres capteurs pour gagner en performance."
     },
     "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Note à propos de la boucle gyro à 32kHz:<\/strong> Le mode boucle gyro à 32 kHz avait été ajouté à Betaflight en tant que fonctionnalité expérimentale. Il n'a jamais montré de réel avantage par rapport à une boucle cadencée à 8kHz, notamment à cause de sa sensibilité aux vibrations et un niveau de bruit élevés, éxigeant un filtrage fort qui induit de la latence dans la boucle. Pour cette raison, <strong>le support de la boucle gyro à 32 kHz a été abandonné<\/strong> dans Betaflight 4.0."
+        "message": "$t(configurationLoopTimeHelp.message)<br><strong>À propos de la boucle gyro à 32kHz:<\/strong> La boucle gyro à 32 kHz avait été ajoutée à Betaflight en tant que fonctionnalité expérimentale. Il n'a jamais été démontré qu'il y avait un avantage réel par rapport à une boucle cadencée à 8kHz, notamment à cause de sa sensibilité aux vibrations et un niveau de bruit élevés, exigeant un filtrage fort qui induit de la latence dans la boucle. Pour cette raison, <strong>le support de la boucle gyro à 32 kHz à été abandonné<\/strong> à partir de la version Betaflight 4.0."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1725,16 +1737,19 @@
         "message": "ET"
     },
     "adjustmentsHelp": {
-        "message": "Configurez les commutateurs d'ajustement. Voir la section «Ajustements en vol» du manuel pour plus de détails. Les modifications apportées par les fonctions de réglage ne sont pas enregistrées automatiquement. Il y a 4 emplacements. Chaque commutateur utilisé pour effectuer simultanément des ajustements nécessite l'utilisation exclusive d'un emplacement."
+        "message": "Configurer les commutateurs d'ajustement. Voir la section \"ajustements en vol\" du manuel pour plus de détails. Les modifications que les fonctions d'ajustement effectuent ne sont pas enregistrées automatiquement."
+    },
+    "adjustmentSlotsHelp": {
+        "message": "Il y a 4 emplacements. Chaque commutateur utilisé pour effectuer des ajustements nécessite l'utilisation exclusive d'une position."
     },
     "adjustmentsExamples": {
-        "message": "Exemples"
+        "message": "Exemples:"
     },
     "adjustmentsExample1": {
-        "message": "Utiliser la position 1 d'un switch 3 positions sur AUX1 pour choisir Pitch\/Roll P,I, et D, ainsi qu'un autre switch 3 positions sur AUX2 pour augmenter ou baisser la valeur lorsqu'il sera monté ou baissé."
+        "message": "Utilisez un commutateur à trois positions sur AUX1 pour sélectionner entre Pitch\/Roll P, I et D et un autre commutateur à trois positions sur AUX2 pour augmenter ou diminuer la valeur lorsqu'elle est maintenue vers le haut ou vers le bas."
     },
     "adjustmentsExample2": {
-        "message": "Utiliser la position 2 d'un switch 3 positions sur AUX4 pour choisir un Profile Rate à l'aide du même switch sur la même voie."
+        "message": "Utilisez un commutateur à trois positions sur AUX4 pour sélectionner Activer la Sélection de \"Profil Rate\" via le même commutateur à trois positions sur le même canal."
     },
     "adjustmentsColumnEnable": {
         "message": "Si activé"
@@ -2178,7 +2193,10 @@
         "message": "<strong>Note:<\/strong> Quitter l'onglet CLI ou appuyer sur Déconnecter va <strong>automatiquement<\/strong> envoyer \"<strong>exit<\/strong>\" à la console de commande. Avec le dernier firmware, le contrôleur de vol va <strong>redémarrer<\/strong> et les changements non sauvegardés seront<strong>perdus<\/strong>.<p><strong><span class=\"message-negative\">Avertissement:<\/span><\/strong> Certaines commandes en CLI peuvent produirent des signaux aléatoires envoyés aux sorties moteurs. Ceux-ci, dans certains cas, feront tourner les moteurs si la batterie est connectée. Ainsi, il est fortement recommandé de s'assurer que<strong>la batterie soit déconnectée avant d'entrer des commandes en CLI<\/strong>."
     },
     "cliInputPlaceholder": {
-        "message": "Écrivez votre ligne de commande ici"
+        "message": "Écrivez votre commande ici. Appuyez sur Tab pour la saisie semi-automatique."
+    },
+    "cliInputPlaceholderBuilding": {
+        "message": "Veuillez patienter pendant la génération du cache de la saisie semi-automatique..."
     },
     "cliEnter": {
         "message": "Mode CLI détecté"
@@ -2197,6 +2215,18 @@
     },
     "cliCopySuccessful": {
         "message": "Copié !"
+    },
+    "cliLoadFromFileBtn": {
+        "message": "Charger à partir du fichier"
+    },
+    "cliConfirmSnippetDialogTitle": {
+        "message": "Réviser les commandes chargées"
+    },
+    "cliConfirmSnippetNote": {
+        "message": "<strong>Note<\/strong>: Vous pouvez revoir et modifier les commandes avant l'exécution."
+    },
+    "cliConfirmSnippetBtn": {
+        "message": "Exécuter"
     },
     "loggingNote": {
         "message": "Les données sont enregistrées dans cet onglet <span class=\"message-negative\">uniquement<\/span>, quitter l'onglet  <span class=\"message-negative\">arrête<\/span> l'enregistrement et l'application retourne en <strong>\"configurateur\"<\/strong>.<br \/> Peu importe la période de rafraîchissement, les données sont écrites <strong>chaque<\/strong> seconde afin de préserver les performances."
@@ -2518,6 +2548,9 @@
     },
     "firmwareFlasherFirmwareLocalLoaded": {
         "message": "Firmware local chargé: ($1 bytes)"
+    },
+    "firmwareFlasherFirmwareOnlineLoaded": {
+        "message": "Firmware en ligne chargé : ($1 octets)"
     },
     "firmwareFlasherHexCorrupted": {
         "message": "Le fichier HEX semble corrompu"
@@ -3244,11 +3277,47 @@
     "powerBatteryWarning": {
         "message": "Tension d'avertissement par élément"
     },
+    "powerCalibrationManagerButton": {
+        "message": "Etalonnage"
+    },
+    "powerCalibrationManagerTitle": {
+        "message": "Gestion de l'étalonnage"
+    },
+    "powerCalibrationManagerHelp": {
+        "message": "Pour l'étalonnage, utiliser un multi mètres et mesurer la tension actuelle \/ consommée sur la machine (avec batterie branchée), et renseigner les valeurs. Puis, avec la même batterie toujours branchée, cliquer sur [Calibrate]."
+    },
+    "powerCalibrationManagerNote": {
+        "message": "<strong>Remarque:<\/strong> Avant d'étalonner, s'assurer que le diviseur et multiplicateur pour la tension et l'écart pour l’ampérage sont correctement définis.<br> L'étalonnage ne se fait pas si les valeurs sont à 0.<\/br><strong>Ne pas oublier de retirer les hélices avant de brancher la batterie!<\/strong>"
+    },
+    "powerCalibrationManagerWarning": {
+        "message": "<span class=\"message-negative\">Attention:<\/span> La batterie <span class=\"message-negative\">n'est pas branchée<\/span> ou les sources des tensions et intensités <span class=\"message-negative\">ne sont pas configurées correctement.<\/span> S'assurer que les tensions et intensités ont des valeurs supérieures à 0. Autrement vous ne pourrez pas étalonner avec cet outil."
+    },
+    "powerCalibrationManagerSourceNote": {
+        "message": "<span class=\"message-negative\">Attention :<\/span> Les sources de mesure des tension et\/ou d'ampérage <strong>ont été modifiées mais non enregistrées.<\/strong> Veuillez définir les bonnes sources de mesures et les enregistrer avant de procéder à l'étalonnage."
+    },
+    "powerCalibrationSave": {
+        "message": "Calibrer"
+    },
+    "powerCalibrationApply": {
+        "message": "Appliquer l'étalonnage"
+    },
+    "powerCalibrationDiscard": {
+        "message": "Annuler l'étalonnage"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "Les échelles étalonnées sont affichées ici. <br>Appliquer utilisera les échelles mais <strong>sans les sauvegarder.<\/strong><\/br> <br>Aprés avoir sauvegardé, vérifier que la nouvelle tension et nouvelle intensité sont correctes.<\/br>"
+    },
     "powerVoltageHead": {
         "message": "Tension"
     },
     "powerVoltageValue": {
         "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "Tension mesurée"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "Échelle de tension calibrée:"
     },
     "powerAmperageValue": {
         "message": "$1 A"
@@ -3391,6 +3460,12 @@
     "powerAmperageOffset": {
         "message": "Ecart [mA]"
     },
+    "powerAmperageCalibration": {
+        "message": "Intensité mesurée"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "Echelle d'intensité mesurée:"
+    },
     "powerBatteryHead": {
         "message": "Batterie"
     },
@@ -3422,7 +3497,7 @@
         "message": "OSD"
     },
     "osdSetupPreviewHelp": {
-        "message": "<strong>Note: <\/strong> La police d'écriture sur l’aperçu OSD et celle installée dans le contrôleur de vol peuvent être différentes."
+        "message": "<strong>Note :<\/strong> L'aperçu OSD peut ne pas afficher la police de caractère installée sur le contrôleur de vol. La mise en page peut sembler différente avec d'anciennes versions de firmware - veuillez vérifier l'apparence dans vos lunettes avant de voler."
     },
     "osdSetupUnsupportedNote1": {
         "message": "Votre contrôleur de vol ne répond pas aux commandes OSD. L'OSD intégré n'est probablement pas celui de Betaflight."
@@ -3443,7 +3518,11 @@
     },
     "osdSetupPreviewSelectProfileTitle": {
         "message": "Aperçu pour",
-        "description": "Label of the selector for the OSD Profile in the preview"
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
+    },
+    "osdSetupPreviewForTitle": {
+        "message": "Changer ici le profil ou la police ne modifiera PAS le profil ou la police dans le contrôleur de vol, cela n'affectera que la fenêtre d'aperçu. Si vous voulez rendre effective la modification, vous devez utiliser l'option '$t(osdSetupSelectedProfileTitle.message)' ou le bouton '$t(osdSetupFontManager.message)'.",
+        "description": "Help content for the OSD profile and font PREVIEW"
     },
     "osdSetupSelectedProfileTitle": {
         "message": "Profil OSD actif",
@@ -3457,14 +3536,35 @@
         "message": "Profil OSD {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
     },
-    "osdSetupPreviewTitleTip": {
-        "message": "Afficher ou masquer le logo dans la fenêtre d'aperçu. Cela ne changera aucun paramètre sur le contrôleur de vol."
+    "osdSetupPreviewSelectFontElement": {
+        "message": "Police {{fontName}}",
+        "description": "Content of the selector for the OSD Font in the preview"
     },
     "osdSetupVideoFormatTitle": {
         "message": "Format vidéo"
     },
+    "osdSetupVideoFormatOptionAuto": {
+        "message": "Auto",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionPal": {
+        "message": "PAL",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionNtsc": {
+        "message": "NTSC",
+        "description": "Option for the video format in the OSD"
+    },
     "osdSetupUnitsTitle": {
         "message": "Unités"
+    },
+    "osdSetupUnitsOptionImperial": {
+        "message": "Impérial",
+        "description": "Option for the units system used in the OSD"
+    },
+    "osdSetupUnitsOptionMetric": {
+        "message": "Metrique",
+        "description": "Option for the units system used in the OSD"
     },
     "osdSetupTimersTitle": {
         "message": "Timers"
@@ -3489,6 +3589,10 @@
     },
     "osdSetupFontPresetsSelector": {
         "message": "Choisir des réglages de Police:"
+    },
+    "osdSetupFontPresetsSelectorCustomOption": {
+        "message": "Police fournie par l'utilisateur",
+        "description": "Option to show as selected when the user selects a custom local font"
     },
     "osdSetupFontPresetsSelectorOr": {
         "message": "ou"
@@ -3523,6 +3627,12 @@
     "osdSetupUploadFont": {
         "message": "Charger le fichier de police"
     },
+    "osdSetupUploadingFont": {
+        "message": "Téléversement en cours..."
+    },
+    "osdSetupUploadingFontEnd": {
+        "message": "Tous les caractères {{length}} ont été téléversés vers l'OSD"
+    },
     "osdSetupSave": {
         "message": "Sauvegarder"
     },
@@ -3553,242 +3663,658 @@
     "osdSetupButtonReset": {
         "message": "Réinitialiser les réglages"
     },
+    "osdTextElementMainBattVoltage": {
+        "message": "Tension batterie",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementMainBattVoltage": {
         "message": "Tension instantanée de la batterie principale (clignote lorsque le seuil d'alarme est atteint)"
+    },
+    "osdTextElementRssiValue": {
+        "message": "Valeur RSSI",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRssiValue": {
         "message": "Valeur RSSI instantanée (clignote en dessous du seuil d'alarme)"
     },
+    "osdTextElementTimer": {
+        "message": "Minuterie",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer": {
+        "message": "Un minuteur de vol"
+    },
+    "osdTextElementThrottlePosition": {
+        "message": "Position des gaz",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementThrottlePosition": {
         "message": "Valeur actuelle du throttle"
+    },
+    "osdTextElementCpuLoad": {
+        "message": "Utilisation CPU",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCpuLoad": {
+        "message": "Utilisation CPU actuelle"
+    },
+    "osdTextElementVtxChannel": {
+        "message": "Canal VTX",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVtxChannel": {
+        "message": "Canal et puissance VTX actuels"
+    },
+    "osdTextElementVoltageWarning": {
+        "message": "Avertissement de tension batterie",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVoltageWarning": {
+        "message": "Affiche un avertissement lorsque la tension est sous la valeur d'alarme"
+    },
+    "osdTextElementArmed": {
+        "message": "Armé",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementArmed": {
         "message": "Message lors de l'armement"
     },
+    "osdTextElementDisarmed": {
+        "message": "Désarmé",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementDisarmed": {
         "message": "Message lors du désarmement"
+    },
+    "osdTextElementCrosshairs": {
+        "message": "Viseur",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCrosshairs": {
         "message": "Centre de réticule de l'écran"
     },
+    "osdTextElementArtificialHorizon": {
+        "message": "Horizon artificiel",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArtificialHorizon": {
         "message": "Graphique de l'horizon artificielle"
+    },
+    "osdTextElementHorizonSidebars": {
+        "message": "Barres latérales de l'horizon artificiel",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHorizonSidebars": {
         "message": "Barres latérales autour de l'horizon artificiel"
     },
+    "osdTextElementCurrentDraw": {
+        "message": "Consommation ampèremétrique de la batterie",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementCurrentDraw": {
         "message": "Courant instantané de la batterie"
+    },
+    "osdTextElementMahDrawn": {
+        "message": "mAh de la batterie consommé",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMahDrawn": {
         "message": "Capacité total utilisée de la batterie utilisée"
     },
+    "osdTextElementCraftName": {
+        "message": "Nom de l'appareil",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementCraftName": {
         "message": "Nom du modèle comme indiqué dans le configurateur"
     },
-    "osdDescElementDisplayName": {
-        "message": "Afficher le nom comme défini par la commande cli \"display_name\""
+    "osdTextElementAltitude": {
+        "message": "Altitude",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementAltitude": {
         "message": "Altitude ( clignote quand le seuil d'alarme est atteint)"
     },
+    "osdTextElementOnTime": {
+        "message": "Temps de fonctionnement",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementOnTime": {
         "message": "Temps total depuis la mise en marche"
+    },
+    "osdTextElementFlyTime": {
+        "message": "Temps de vol",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementFlyTime": {
         "message": "Temps total pendant lequel l'engin a été armé (clignote lorsque le seuil d'alarme est au-dessus)"
     },
+    "osdTextElementFlyMode": {
+        "message": "Mode Vol",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementFlyMode": {
         "message": "Mode de vol"
+    },
+    "osdTextElementGPSSpeed": {
+        "message": "Vitesse GPS",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSSpeed": {
         "message": "Vitesse fournie par le GPS"
     },
+    "osdTextElementGPSSats": {
+        "message": "Satellites GPS",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementGPSSats": {
         "message": "Nombre de satellites GPS"
     },
+    "osdTextElementGPSLon": {
+        "message": "Longitude GPS",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementGPSLon": {
-        "message": "GPS longitude"
+        "message": "Coordonnées de Longitude GPS"
+    },
+    "osdTextElementGPSLat": {
+        "message": "Latitude GPS",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSLat": {
-        "message": "GPS latitude"
+        "message": "Coordonnées de latitude GPS"
+    },
+    "osdTextElementDebug": {
+        "message": "Débogage",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementDebug": {
         "message": "Debug variables"
     },
+    "osdTextElementPIDRoll": {
+        "message": "PID roll",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRoll": {
         "message": "PID du Roll"
+    },
+    "osdTextElementPIDPitch": {
+        "message": "PID pitch",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPIDPitch": {
         "message": "PID du Pitch"
     },
+    "osdTextElementPIDYaw": {
+        "message": "PID yaw",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDYaw": {
         "message": "PID du Yaw"
+    },
+    "osdTextElementPower": {
+        "message": "Consommation",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPower": {
         "message": "Consommation instantanée"
     },
+    "osdTextElementPIDRateProfile": {
+        "message": "Profil : PID et Rate",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRateProfile": {
         "message": "Affichage numérique des PID et RATE actuels"
+    },
+    "osdTextElementBatteryWarning": {
+        "message": "Avertissement batterie",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementBatteryWarning": {
         "message": "Texte d'avertissement qui apparaît lorsque la tension de la batterie tombe en dessous du seuil d'avertissement"
     },
+    "osdTextElementAvgCellVoltage": {
+        "message": "Tension moyenne d'une cellule",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementAvgCellVoltage": {
         "message": "Tension moyenne de la cellule (tension de la batterie principale \/ nombre de cellules)"
+    },
+    "osdTextElementPitchAngle": {
+        "message": "Angle : pitch",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPitchAngle": {
         "message": "PITCH angle en degrés"
     },
+    "osdTextElementRollAngle": {
+        "message": "Angle : roll",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementRollAngle": {
         "message": "ROLL angle en degrés"
+    },
+    "osdTextElementMainBattUsage": {
+        "message": "Niveau de la batterie",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMainBattUsage": {
         "message": "Représentation graphique de l'utilisation de la batterie"
     },
+    "osdTextElementArmedTime": {
+        "message": "Minuterie : temps armé",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArmedTime": {
         "message": "Temps depuis le dernier armement"
     },
-    "osdDescElementWarnings": {
-        "message": "Alertes (par exemple: batterie faible), Avertissements (par exemple: raisons de ne pas armer, batterie critique) et signal sonore (4 astérisques clignotants)."
-    },
-    "osdDescElementEscTemperature": {
-        "message": "Température reportée par la télémétrie des ESC"
-    },
-    "osdDescElementEscRpm": {
-        "message": "Tr\/min reporté par la télémétrie des ESC"
-    },
-    "osdDescElementEscRpmFreq": {
-        "message": "Fréquence Trs\/min reportée par la télémétrie des ESC"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "Horloge réel date\/heure"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "Paramètre et plage de réglage actuel"
+    "osdTextElementHomeDirection": {
+        "message": "Direction point de décollage",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHomeDirection": {
         "message": "Flèche indiquant la direction par rapport à la position de départ"
     },
+    "osdTextElementHomeDistance": {
+        "message": "Distance du point de décollage",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementHomeDistance": {
         "message": "Distance par rapport à la base de départ"
+    },
+    "osdTextElementNumericalHeading": {
+        "message": "En-tête numérique",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementNumericalHeading": {
         "message": "Cap actuel en degrés"
     },
+    "osdTextElementNumericalVario": {
+        "message": "vario numérique",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementNumericalVario": {
         "message": "Vitesse verticale"
+    },
+    "osdTextElementCompassBar": {
+        "message": "Boussole",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCompassBar": {
         "message": "Boussole graphique indiquant le cap actuel"
     },
-    "osdDescElementFlipArrow": {
-        "message": "En mode tortue, flèche indiquant quels moteurs seront activés"
+    "osdTextElementWarnings": {
+        "message": "Avertissements",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementLinkQuality": {
-        "message": "Indicateur alternatif de 'qualité de la liaison' basée sur la perte de trame - à utiliser avec prudence"
+    "osdDescElementWarnings": {
+        "message": "Alertes (par exemple: batterie faible), Avertissements (par exemple: raisons de ne pas armer, batterie critique) et signal sonore (4 astérisques clignotants)."
     },
-    "osdDescElementFlightDist": {
-        "message": "Distance parcourue au cours de ce vol."
+    "osdTextElementEscTemperature": {
+        "message": "Température ESC",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementStickOverlayLeft": {
-        "message": "Superpose la valeur du stick gauche de l'émetteur."
+    "osdDescElementEscTemperature": {
+        "message": "Température reportée par la télémétrie des ESC"
     },
-    "osdDescElementStickOverlayRight": {
-        "message": "Superpose la valeur du stick droit de l'émetteur."
+    "osdTextElementEscRpm": {
+        "message": "RPM ESC",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementTimer1": {
-        "message": "Affiche la valeur du timer 1"
+    "osdDescElementEscRpm": {
+        "message": "Tr\/min reporté par la télémétrie des ESC"
     },
-    "osdDescElementTimer2": {
-        "message": "Affiche la valeur du timer 2"
+    "osdTextElementRemaningTimeEstimate": {
+        "message": "Minuterie : estimation du temps restant",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRemaningTimeEstimate": {
         "message": "Estimation du temps de vol restant"
     },
-    "osdDescElementUnknown": {
-        "message": "Éléments inconnus (détails devant être ajoutés dans le"
+    "osdTextElementRtcDateTime": {
+        "message": "Date et heure RTC",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Horloge réel date\/heure"
+    },
+    "osdTextElementAdjustmentRange": {
+        "message": "Plage d'ajustement",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "Paramètre et plage de réglage actuel"
+    },
+    "osdTextElementTimer1": {
+        "message": "Minuterie 1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer1": {
+        "message": "Affiche la valeur du timer 1"
+    },
+    "osdTextElementTimer2": {
+        "message": "Minuterie 2",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer2": {
+        "message": "Affiche la valeur du timer 2"
+    },
+    "osdTextElementCoreTemperature": {
+        "message": "Température du noyau",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCoreTemperature": {
         "message": "Température du coeur du STM32 MCU"
     },
+    "osdTextAntiGravity": {
+        "message": "Anti gravity",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescAntiGravity": {
         "message": "Indique lorsque l'anti gravity est actif"
+    },
+    "osdTextGForce": {
+        "message": "G force",
+        "description": "One of the elements of the OSD"
     },
     "osdDescGForce": {
         "message": "Indique le nombre de G subit par l'appareil"
     },
+    "osdTextElementMotorDiag": {
+        "message": "Diagnostic moteur",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementMotorDiag": {
         "message": "Affiche un graphique de la sortie de chaque moteur"
+    },
+    "osdTextElementLogStatus": {
+        "message": "Statut du journal Blackbox",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementLogStatus": {
         "message": "Avertissements et numéros de Blackbox"
     },
+    "osdTextElementFlipArrow": {
+        "message": "Indicateur Flip-after-crash",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlipArrow": {
+        "message": "En mode tortue, flèche indiquant quels moteurs seront activés"
+    },
+    "osdTextElementLinkQuality": {
+        "message": "Qualité du lien",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLinkQuality": {
+        "message": "Indicateur alternatif de 'qualité de la liaison' basée sur la perte de trame - à utiliser avec prudence"
+    },
+    "osdTextElementFlightDist": {
+        "message": "Distance parcourue en vol",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlightDist": {
+        "message": "Distance parcourue au cours de ce vol."
+    },
+    "osdTextElementStickOverlayLeft": {
+        "message": "Overlay du manche gauche",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayLeft": {
+        "message": "Superpose la valeur du stick gauche de l'émetteur."
+    },
+    "osdTextElementStickOverlayRight": {
+        "message": "Overlay du manche droit",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayRight": {
+        "message": "Superpose la valeur du stick droit de l'émetteur."
+    },
+    "osdTextElementDisplayName": {
+        "message": "Afficher le nom",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDisplayName": {
+        "message": "Afficher le nom comme défini par la commande cli \"display_name\""
+    },
+    "osdTextElementEscRpmFreq": {
+        "message": "Fréquence RPM ESC",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEscRpmFreq": {
+        "message": "Fréquence Trs\/min reportée par la télémétrie des ESC"
+    },
+    "osdTextElementRateProfileName": {
+        "message": "Profil : nom du profil de rate",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRateProfileName": {
+        "message": "Affiche le nom de profile rate actuel"
+    },
+    "osdTextElementPidProfileName": {
+        "message": "Profil : Nom du profil PID",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPidProfileName": {
+        "message": "Affiche le nom du profil PID actuel"
+    },
+    "osdTextElementOsdProfileName": {
+        "message": "Profil : Nom du profil OSD",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementOsdProfileName": {
+        "message": "Nom du profil OSD tel que défini dans les variables CLI \"osd_profile_1_name\", \"osd_profile_2_name\" et \"osd_profile_3_name\""
+    },
+    "osdTextElementRssiDbmValue": {
+        "message": "Valeur dBm RSSI",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRssiDbmValue": {
+        "message": "Valeur RSSI du signal en dBm si disponible"
+    },
+    "osdTextElementUnknown": {
+        "message": "Inconnu $1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementUnknown": {
+        "message": "Éléments inconnus (détails devant être ajoutés dans le"
+    },
+    "osdTextStatMaxSpeed": {
+        "message": "Vitesse maximale",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxSpeed": {
         "message": "Vitesse maximale relevée"
+    },
+    "osdTextStatMinBattery": {
+        "message": "Tension batterie minimum",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinBattery": {
         "message": "Tension batterie minimum relevée"
     },
+    "osdTextStatMinRssi": {
+        "message": "Minimum RSSI",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMinRssi": {
         "message": "RSSI minimum relevé"
+    },
+    "osdTextStatMaxCurrent": {
+        "message": "Consommation maximum batterie",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxCurrent": {
         "message": "Courant maximum relevé"
     },
+    "osdTextStatUsedMah": {
+        "message": "mAh consommés sur la batterie",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatUsedMah": {
         "message": "Capacité de la batterie utilisée"
+    },
+    "osdTextStatMaxAltitude": {
+        "message": "Altitude maximum",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxAltitude": {
         "message": "Altitude maximum relevée"
     },
+    "osdTextStatBlackbox": {
+        "message": "Place utilisée sur la Blackbox",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatBlackbox": {
         "message": "Pourcentage total utilisé de la Blackbox"
+    },
+    "osdTextStatEndBattery": {
+        "message": "Tension batterie à la fin",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatEndBattery": {
         "message": "Tension de batterie au désarmement"
     },
+    "osdTextStatFlyTime": {
+        "message": "Temps de vol total",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatFlyTime": {
         "message": "Temps total durant lequel l'appareil a été armé pendant cette session"
+    },
+    "osdTextStatArmedTime": {
+        "message": "Durée du vol depuis le dernier armement",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatArmedTime": {
         "message": "Temps depuis le dernier armement"
     },
+    "osdTextStatMaxDistance": {
+        "message": "Distance max depuis point de décollage",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxDistance": {
         "message": "Distance maximum depuis la base"
+    },
+    "osdTextStatBlackboxLogNumber": {
+        "message": "Numéro de log Blackbox",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBlackboxLogNumber": {
         "message": "Numéro du log pour ce vol"
     },
+    "osdTextStatTimer1": {
+        "message": "Timer 1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatTimer1": {
         "message": "Valeur du Timer 1 au moment du désarmement"
+    },
+    "osdTextStatTimer2": {
+        "message": "Timer 2",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatTimer2": {
         "message": "Valeur du Timer 2 au moment du désarmement"
     },
+    "osdTextStatRtcDateTime": {
+        "message": "Date et heure RTC",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatRtcDateTime": {
         "message": "Date et heure depuis l'horloge réél"
+    },
+    "osdTextStatBattery": {
+        "message": "Tension de la batterie",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBattery": {
         "message": "Tension de la batterie en temps réel"
     },
+    "osdTextStatGForce": {
+        "message": "Nombre de G maximum",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatGForce": {
         "message": "G-Force Max ressentie par le multicopter"
+    },
+    "osdTextStatEscTemperature": {
+        "message": "Température ESC maximum",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatEscTemperature": {
         "message": "Température max des ESC"
     },
+    "osdTextStatEscRpm": {
+        "message": "RPM maximum ESC",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatEscRpm": {
         "message": "Trs\/min Max des ESC"
+    },
+    "osdTextStatMinLinkQuality": {
+        "message": "Qualité minimum de la liaison",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinLinkQuality": {
         "message": "Valeur minimum de l'indicateur alternatif pour la 'qualité de liaison' basé sur la perte de trame"
     },
+    "osdTextStatFlightDistance": {
+        "message": "Distance parcourue en vol",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatFlightDistance": {
         "message": "Distance totale parcourue lors du vol"
     },
+    "osdTextStatMaxFFT": {
+        "message": "Maximum FFT",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxFFT": {
         "message": "Pic fréquence FFT"
+    },
+    "osdTextStatTotalFlights": {
+        "message": "Nombre total de vols",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlights": {
+        "message": "Nombre total de vols"
+    },
+    "osdTextStatTotalFlightTime": {
+        "message": "Temps de vol total",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightTime": {
+        "message": "Temps total passé en vol"
+    },
+    "osdTextStatTotalFlightDistance": {
+        "message": "Distance de vol totale",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightDistance": {
+        "message": "Distance totale parcourue"
+    },
+    "osdTextStatMinRssiDbm": {
+        "message": "RSSI minimum en dBm",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinRssiDbm": {
+        "message": "Valeur minimum du RSSI en dBm"
+    },
+    "osdTextStatUnknown": {
+        "message": "Inconnu $1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatUnknown": {
+        "message": "Statistique inconnue (détails à ajouter dans une prochaine version)"
+    },
+    "osdDescribeFontVersion1": {
+        "message": "Version de police : 1 (Betaflight 4.0 ou antérieur)"
+    },
+    "osdDescribeFontVersion2": {
+        "message": "Version de police : 2 (Betaflight 4.1 ou plus récent)"
+    },
+    "osdDescribeFontVersionCUSTOM": {
+        "message": "Version de police : fournie par l'utilisateur"
     },
     "osdTimerSource": {
         "message": "Source:"
@@ -3796,11 +4322,39 @@
     "osdTimerSourceTooltip": {
         "message": "Sélectionnez la source du Timer, cela contrôle la durée \/ l'événement que le Timer mesure"
     },
+    "osdTimerSourceOptionOnTime": {
+        "message": "Temps de fonctionnement",
+        "description": "One of the options for the source timer. This options shows the amount of time has passed since the battery was plugged"
+    },
+    "osdTimerSourceOptionTotalArmedTime": {
+        "message": "Temps total armé",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed since the battery was plugged"
+    },
+    "osdTimerSourceOptionLastArmedTime": {
+        "message": "Dernière heure armée",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed the latest time"
+    },
+    "osdTimerSourceOptionOnArmTime": {
+        "message": "Temps Activé\/Armé",
+        "description": "One of the options for the source timer. This option shows On time when craft is disarmed, and Armed time when armed"
+    },
     "osdTimerPrecision": {
         "message": "Précision:"
     },
     "osdTimerPrecisionTooltip": {
         "message": "Sélectionnez la précision du Timer, cela contrôle à quelle précision le temps est indiqué dans"
+    },
+    "osdTimerPrecisionOptionSecond": {
+        "message": "Deuxième",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionHundredth": {
+        "message": "centièmes",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionTenth": {
+        "message": "dixièmes",
+        "description": "Selectable option for the precision of the timer in the OSD"
     },
     "osdTimerAlarm": {
         "message": "Alarme:"
@@ -3808,47 +4362,135 @@
     "osdTimerAlarmTooltip": {
         "message": "Sélectionnez le seuil de l'alarme du timer en minutes, lorsque le temps dépasse cette valeur, l'élément OSD clignote, le réglage à 0 désactive l'alarme"
     },
-    "osdWarningUnknown": {
-        "message": "Avertissement inconnu (détails à ajouter dans une version ultérieure)"
+    "osdTimerAlarmOptionRssi": {
+        "message": "RSSI",
+        "description": "Text of the RSSI alarm"
+    },
+    "osdTimerAlarmOptionCapacity": {
+        "message": "Capacité",
+        "description": "Text of the capacity alarm"
+    },
+    "osdTimerAlarmOptionAltitude": {
+        "message": "Altitude",
+        "description": "Text of the altitude alarm"
+    },
+    "osdWarningTextArmingDisabled": {
+        "message": "Armement désactivé",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningArmingDisabled": {
         "message": "Indique la raison la plus grave de ne pas armer"
     },
+    "osdWarningTextBatteryNotFull": {
+        "message": "Accu entamé",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningBatteryNotFull": {
         "message": "Alerte lorsqu'une batterie n'est pas complètement chargée"
+    },
+    "osdWarningTextBatteryWarning": {
+        "message": "Avertissement accu",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningBatteryWarning": {
         "message": "Alerte lorsque la tension de la batterie tombe en dessous du seuil d'avertissement"
     },
+    "osdWarningTextBatteryCritical": {
+        "message": "Accu critique",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningBatteryCritical": {
         "message": "Alerte lorsque la tension de la batterie tombe en dessous de la tension minimale moyenne de la cellule"
+    },
+    "osdWarningTextVisualBeeper": {
+        "message": "Beeper visuel",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningVisualBeeper": {
         "message": "Affiche une visualisation du beeper ( 4 astérisques)"
     },
+    "osdWarningTextCrashFlipMode": {
+        "message": "Mode crash flip",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningCrashFlipMode": {
         "message": "Avertit lors d'un retournement après l'activation du mode crash"
+    },
+    "osdWarningTextEscFail": {
+        "message": "Problème ESC",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningEscFail": {
         "message": "Enumère une liste d'ESCs\/moteurs (RPM ou température en dehors des seuils configurés)"
     },
+    "osdWarningTextCoreTemperature": {
+        "message": "Température du noyau",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningCoreTemperature": {
         "message": "Alerte quand température max processeur MCU dépasse la valeur configurée"
+    },
+    "osdWarningTextRcSmoothingFailure": {
+        "message": "Echec du RC Smoothing",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningRcSmoothingFailure": {
         "message": "Alerte échec initialisation du lissage rc"
     },
+    "osdWarningTextFailsafe": {
+        "message": "Failsafe",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningFailsafe": {
         "message": "Alerte Failsafe actif"
+    },
+    "osdWarningTextLaunchControl": {
+        "message": "Contrôle du démarrage lancé",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningLaunchControl": {
         "message": "Alerte lorsque le mode Launch Crontol est actif"
     },
+    "osdWarningTextGpsRescueUnavailable": {
+        "message": "Sauvetage GPS indisponible",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningGpsRescueUnavailable": {
         "message": "Alerte quand GPS Rescue n'est pas disponible et ne peut pas être activé"
     },
+    "osdWarningTextGpsRescueDisabled": {
+        "message": "Sauvetage GPS désactivé",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningGpsRescueDisabled": {
         "message": "Alerte quand GPS rescue est désactivé"
+    },
+    "osdWarningTextRSSI": {
+        "message": "RSSI",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRSSI": {
+        "message": "Alerte quand le RSSI est inférieur à la valeur configurée"
+    },
+    "osdWarningTextLinkQuality": {
+        "message": "Qualité de la liaison",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningLinkQuality": {
+        "message": "Alerte lorsque la qualité de la liaison est inférieure à la valeur configurée"
+    },
+    "osdWarningTextRssiDbm": {
+        "message": "RSSI dBm",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRssiDbm": {
+        "message": "Avertissement lorsque la valeur RSSI en dBm est inférieure au paramètre alarme"
+    },
+    "osdWarningTextUnknown": {
+        "message": "Inconnu $1"
+    },
+    "osdWarningUnknown": {
+        "message": "Avertissement inconnu (détails à ajouter dans une version ultérieure)"
     },
     "osdSectionHelpElements": {
         "message": "Activer ou désactiver l'OSD"
@@ -4071,5 +4713,11 @@
     },
     "flashTab": {
         "message": "Mise à jour du firmware"
+    },
+    "cliAutoComplete": {
+        "message": "CLI avancé avec saisie semi-automatique"
+    },
+    "darkTheme": {
+        "message": "Activer le thème sombre"
     }
 }

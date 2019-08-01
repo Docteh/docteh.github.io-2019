@@ -2,10 +2,6 @@
     "translation_version": {
         "message": "0"
     },
-    "windowTitle": {
-        "message": "Betaflight Configurator",
-        "description": "Title of the application window, usually not translated"
-    },
     "error": {
         "message": "Erro: {{errorMessage}} "
     },
@@ -76,46 +72,28 @@
         "message": "Por defecto"
     },
     "language_ca": {
-        "message": "Català (ca)"
+        "message": "Catalán (ca)",
+        "description": "Don't translate!!!"
     },
     "language_de": {
-        "message": "Deutsch (de)"
+        "message": "Deutsch (de)",
+        "description": "Don't translate!!!"
     },
     "language_en": {
-        "message": "English (en)"
+        "message": "English (en)",
+        "description": "Don't translate!!!"
     },
     "language_es": {
-        "message": "Español (es)"
+        "message": "Español (es)",
+        "description": "Don't translate!!!"
     },
     "language_fr": {
-        "message": "Français (fr)"
+        "message": "Français (fr)",
+        "description": "Don't translate!!!"
     },
-    "language_id": {
-        "message": "Bahasa Indonesia (id)"
-    },
-    "language_it": {
-        "message": "Italiano (it)"
-    },
-    "language_ja": {
-        "message": "日本語 (ja)"
-    },
-    "language_ko": {
-        "message": "한국어 (ko)"
-    },
-    "language_lv": {
-        "message": "Latviešu (lv)"
-    },
-    "language_pt": {
-        "message": "Português (pt)"
-    },
-    "language_ru": {
-        "message": "Русский язык (ru)"
-    },
-    "language_sv": {
-        "message": "Svenska (sv)"
-    },
-    "language_zh_CN": {
-        "message": "简体中文 (zh_CN)"
+    "language_gl": {
+        "message": "Galego (gl)",
+        "description": "Don't translate!!!"
     },
     "sensorDataFlashNotFound": {
         "message": "Memoria flash <br> non dispoñible",
@@ -543,9 +521,6 @@
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong> é un software de controlador de voo que é <strong>open source<\/strong> e está dispoñible gratuitamente <strong>sin garantía<\/strong> para tódolos usuarios.<\/p><p>Se atopou o Betaflight ou o configurador Betaflight, porfavor considere<strong>apoiar<\/strong> o seu desenvolvemento cunha donación.<\/p>"
     },
-    "defaultDonateBottom": {
-        "message": "<p>Se quere contribuír continuamente de forma financeira, debe considerar converterse nun patrocinador en <a href='https:\/\/www.patreon.com\/betaflight'> Patreon <\/a>.<\/p >"
-    },
     "defaultDonate": {
         "message": "Doar"
     },
@@ -725,87 +700,99 @@
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "O xiro non foi detectado",
-        "description": "Description of the NO GYRO arming disable flag"
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
         "message": "Failsafe está activado",
-        "description": "Description of the FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
         "message": "Non se detecta ningún sinal de receptor válido",
-        "description": "Description of the RX_FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
         "message": "O seu receptor acaba de recuperarse do dispositivo a proba de fallos, pero o interruptor de armar está activo",
-        "description": "Description of the BAD_RX_RECOVERY arming disable flag"
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
         "message": "O switch 'FAILSAFE' foi activado",
-        "description": "Description of the BOXFAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
         "message": "Activouse a protección de despegue incontrolado",
-        "description": "Description of the RUNAWAY_TAKEOFF arming disable flag"
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCRASH": {
+        "message": "Desarmado mediante a detección de colisión",
+        "description": "Message that pops up to describe the CRASH arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
         "message": "A canle do acelerador é demasiado alto",
-        "description": "Description of the THROTTLE arming disable flag"
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "A aeronave non está nivelada (suficientemente)",
-        "description": "Description of the ANGLE arming disable flag"
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
         "message": "Armado demasiado pronto despois de acenderse",
-        "description": "Description of the BOOT_GRACE_TIME arming disable flag"
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipNOPREARM": {
         "message": "O interruptor prearmar non está activado ou non se desactivou despois de desarmalo",
-        "description": "Description of the NOPREARM arming disable flag"
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipLOAD": {
         "message": "A carga do sistema é demasiado alta para un voo seguro",
-        "description": "Description of the LOAD arming disable flag"
+        "description": "Message that pops up to describe the LOAD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
         "message": "A calibración do sensor aínda está en curso",
-        "description": "Description of the CALIBRATING arming disable flag"
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCLI": {
         "message": "CLI está activo",
-        "description": "Description of the CLI arming disable flag"
+        "description": "Message that pops up to describe the CLI arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
         "message": "O CMS (menú de configuración) está activo - a través de OSD ou outra pantalla -",
-        "description": "Description of the CMS_MENU arming disable flag"
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "Menú OSD está activo",
-        "description": "Description of the OSD_MENU arming disable flag"
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBST": {
         "message": "Un dispositivo Black Sheep Telemetry (por exemplo, TBS Core Pro) desarmouse e está impedindo que se arme",
-        "description": "Description of the BST arming disable flag"
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "A conexión MSP está activa, probablemente con este Betaflight Configurator",
-        "description": "Description of the MSP arming disable flag"
+        "description": "Message that pops up to describe the MSP arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipPARALYZE": {
         "message": "Activouse o modo de paralización",
-        "description": "Description of the PARALYZE arming disable flag"
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipGPS": {
         "message": "O modo de rescate GPS está configurado pero o número de satélites requirido non foi fixado",
-        "description": "Description of the GPS arming disable flag"
+        "description": "Message that pops up to describe the GPS arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRESC": {
         "message": "O switch 'GPS Rescue' foi activado",
-        "description": "Description of the RESC arming disable flag"
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRPMFILTER": {
+        "message": "O filtrado baseado en RPM está activado, pero un ou máis ESC non están a proporcionar unha telemetría DSHOT válida. Comprobe que os ESC son capaces de instalar e posúen o firmware necesario para soportar a telemetría bidireccional DSHOT.",
+        "description": "Message that pops up to describe the RPMFILTER arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipREBOOT_REQD": {
+        "message": "Un cambio na configuración require un reinicio",
+        "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Unha das outras sinais de desarmado está activa ao armar",
-        "description": "Description of the ARM_SWITCH arming disable flag"
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
     },
     "initialSetupGPSHead": {
         "message": "GPS"
@@ -1213,7 +1200,7 @@
         "message": "<strong>Nota:<\/strong> Asegúrese de que a súa FC poida funcionar a estas velocidades. Comprobe a estabilidade da CPU e do ciclo. Cambiar isto pode requirir a reordenación de PID. SUXERENCIA: desactivar o acelerómetro e outros sensores para obter máis rendemento."
     },
     "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Nota sobre o modo de mostraxe do xiro de 32 kHz: <\/strong> engadiuse soporte para o modo de mostraxe de xiro de 32 kHz a Betaflight como unha característica experimental. Nos anos nos que estivo dispoñible, nunca mostrou que ten ningunha vantaxe sobre o modo de mostraxe xiratorio de 8 kHz, debido á súa susceptibilidade ás vibracións e ao seu alto nivel de ruído que require un filtrado agresivo, provocando atrasos no circuíto de control. Por esta razón, o <strong> soporte para o modo de mostraxe xiratorio de 32 kHz foi descartado <\/strong> en Betaflight 4.0."
+        "message": "$t(configurationLoopTimeHelp.message) <br> <strong> Nota sobre o modo de mostraxe xiratorio de 32 kHz: <\/strong> o soporte para o modo de mostraxe de xiro de 32 kHz engadiuse a Betaflight como unha característica experimental. Nos anos nos que estivo dispoñible, nunca mostrou que ten ningunha vantaxe sobre o modo de mostraxe xiratorio de 8 kHz, debido á súa susceptibilidade ás vibracións e ao seu alto nivel de ruído que require un filtrado agresivo, provocando atrasos no circuíto de control. Por esa razón, o <strong> soporte para o modo de mostraxe xiratorio de 32 kHz foi descartado <\/strong> en Betaflight 4.0."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1777,16 +1764,19 @@
         "message": "E"
     },
     "adjustmentsHelp": {
-        "message": "Configura interruptores para correccións. Mire o apartado 'in-flight adjustments' do manual para detalles. As correccións realizadas non se gardan automáticamente. Hai 4 slots. Cada interruptor usado para facer correccións concurrentemente requiere o uso exclusivo dun slot."
+        "message": "Configure os interruptores de axuste. Vexa a sección de \"axustes en voo\" do manual para obter máis detalles. Os cambios que fan as funcións de axuste non se gardan automaticamente."
+    },
+    "adjustmentSlotsHelp": {
+        "message": "Hai 4 slots. Cada interruptor usado para facer axustes simultaneamente require o uso exclusivo dunha ranura."
     },
     "adjustmentsExamples": {
-        "message": "Exemplos"
+        "message": "Exemplos:"
     },
     "adjustmentsExample1": {
-        "message": "Use Slot 1 e un interruptor de 3POS en AUX1 para elexir entre Pitch\/Roll de P, I e D e outro interruptor de 3POS en AUX2 para incrementar ou decrementar o valor ó mover arriba ou abaixo."
+        "message": "Utilice un conmutador de tres posicións no AUX1 para seleccionar entre Pitch\/Roll P, I e D e outro conmutador de tres posicións en AUX2 para aumentar ou diminuír o valor cando se mantén cara arriba ou abaixo."
     },
     "adjustmentsExample2": {
-        "message": "Use Slot 2 e un interruptor de 3POS en AUX4 para activar a Selección de Perfil de Tasas a través do mesmo interruptor de 3POS no mesmo canle."
+        "message": "Use un conmutador de tres posicións no AUX4 para seleccionar a opción Perfil de Rate mediante o mesmo interruptor de tres posicións no mesmo canal."
     },
     "adjustmentsColumnEnable": {
         "message": "Si activo"
@@ -2253,6 +2243,18 @@
     "cliCopySuccessful": {
         "message": "Copiado!"
     },
+    "cliLoadFromFileBtn": {
+        "message": "Lectura dende arquivo"
+    },
+    "cliConfirmSnippetDialogTitle": {
+        "message": "Revisar os comandos gardados"
+    },
+    "cliConfirmSnippetNote": {
+        "message": "<strong>Nota<\/strong>: Voste pode editar e revisar os comandos anates da súa execución."
+    },
+    "cliConfirmSnippetBtn": {
+        "message": "Executar"
+    },
     "loggingNote": {
         "message": "Os datos rexistraranse nesta pestana <span class=\"message-negative\">solo<\/span>, deixando a pestana <span class=\"message-negative\">cancela<\/span> o rexistro e a aplicación volverá ao seu estado normal <strong>\"configurador\" <\/strong>.<br\/> É libre para seleccionar o período de actualización global, os datos serán escritos no ficheiro de rexistro cada <strong>1<\/strong> segundo por razóns de rendemento."
     },
@@ -2573,6 +2575,9 @@
     },
     "firmwareFlasherFirmwareLocalLoaded": {
         "message": "Firmware Local Cargado: ($1 bytes)"
+    },
+    "firmwareFlasherFirmwareOnlineLoaded": {
+        "message": "Firmware Online cargado: ($1 bytes)"
     },
     "firmwareFlasherHexCorrupted": {
         "message": "O arquivo HEX parece estar corrupto"
@@ -3299,11 +3304,44 @@
     "powerBatteryWarning": {
         "message": "Aviso Voltaxe por Celda"
     },
+    "powerCalibrationManagerButton": {
+        "message": "Calibración"
+    },
+    "powerCalibrationManagerHelp": {
+        "message": "Para calibrar, use un multímetro para medir a tensión \/ corrente real da súa aeronave (cunha batería conectada) e introduza os valores seguintes. Entón, coa mesma batería aínda conectada, faga clic en [Calibrate]."
+    },
+    "powerCalibrationManagerNote": {
+        "message": "<strong> Nota: <\/strong> antes de calibrar a escala, asegúrese de que o divisor e multiplicador de tensión e desprazamento para o amperaje estea axustado correctamente. <br> Deixar os valores en 0 non aplicará a calibración. <\/br> <strong> Recorde retirar as hélices antes de enchufar unha batería! <\/strong>"
+    },
+    "powerCalibrationManagerWarning": {
+        "message": "<span class = \"message-negative\"> Aviso: <\/span> A batería <span class = \"message-negative\"> non está conectada <\/span> ou as fontes de tensión e amperage non <span class = \" negativo \"> son adecuadas. <\/span> Asegúrese de que a tensión e \/ ou o amperaje son un valor por enriba de 0. Se non, non poderá calibrar con esta ferramenta."
+    },
+    "powerCalibrationManagerSourceNote": {
+        "message": "<span class = \"message-negative\"> Aviso: <\/span> As fontes de medición de tensión e \/ ou amperage <strong> modificáronse pero non se gardaron. <\/strong> Configure as fontes correctas do medidor e gárdeas antes de intentar calibrar."
+    },
+    "powerCalibrationSave": {
+        "message": "Calibrado"
+    },
+    "powerCalibrationApply": {
+        "message": "Aplicar a calibración"
+    },
+    "powerCalibrationDiscard": {
+        "message": "Descartar a Calibración"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "Aquí móstranse novas escalas calibradas. <br> As solicitudes establecerán as escalas, pero <strong> non as gardarán. <\/strong> <\/br> <br> Despois de gardar asegúrese de que a nova tensión e corrente sexan correctas. <\/br>"
+    },
     "powerVoltageHead": {
         "message": "Medidor de Voltaxe"
     },
     "powerVoltageValue": {
         "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "Tensión medida"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "Escala de voltaxe calibrada:"
     },
     "powerAmperageValue": {
         "message": "$1 A"
@@ -3446,6 +3484,12 @@
     "powerAmperageOffset": {
         "message": "Desprazamento [mA]"
     },
+    "powerAmperageCalibration": {
+        "message": "Amperaxe medido"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "Escala de amperios calibrada:"
+    },
     "powerBatteryHead": {
         "message": "Batería"
     },
@@ -3477,7 +3521,7 @@
         "message": "OSD"
     },
     "osdSetupPreviewHelp": {
-        "message": "<strong> Nota: <\/strong> a vista previa da OSD pode non mostrar a fonte real que está instalada no controlador de voo."
+        "message": "<strong> Nota: <\/strong> A vista previa do OSD pode non mostrar a fonte real que está instalada no controlador de voo. O esquema dos elementos individuais pode ter un aspecto diferente cando se usan versións antigas do firmware. Comprobe o aspecto a través dos seus lentes antes de voar."
     },
     "osdSetupUnsupportedNote1": {
         "message": "O controlador de voo non responde aos comandos OSD. Isto probablemente significa que non ten un OSD integrado de BetaFlight."
@@ -3498,7 +3542,11 @@
     },
     "osdSetupPreviewSelectProfileTitle": {
         "message": "Previsualizar para",
-        "description": "Label of the selector for the OSD Profile in the preview"
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
+    },
+    "osdSetupPreviewForTitle": {
+        "message": "Cambiando aquí o perfil ou a fonte NON cambiará o perfil ou a fonte no controlador de voo, só afecta á ventá de previsualización. Se queres cambialo, debes usar a opción '$t(osdSetupSelectedProfileTitle.message)' ou o botón '$t(osdSetupFontManager.message)' respectivamente.",
+        "description": "Help content for the OSD profile and font PREVIEW"
     },
     "osdSetupSelectedProfileTitle": {
         "message": "Perfil OSD activo",
@@ -3512,8 +3560,9 @@
         "message": "Perfil OSD {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
     },
-    "osdSetupPreviewTitleTip": {
-        "message": "Mostrar ou ocultar o logotipo na xanela de previsualización. Isto non cambiará ningunha configuración do controlador de voo."
+    "osdSetupPreviewSelectFontElement": {
+        "message": "Fonte {{fontName}}",
+        "description": "Content of the selector for the OSD Font in the preview"
     },
     "osdSetupVideoFormatTitle": {
         "message": "Formato de vídeo"
@@ -3544,6 +3593,10 @@
     },
     "osdSetupFontPresetsSelector": {
         "message": "Elixe unha Fonte Predefinida:"
+    },
+    "osdSetupFontPresetsSelectorCustomOption": {
+        "message": "Fonte suministrada polo usuario",
+        "description": "Option to show as selected when the user selects a custom local font"
     },
     "osdSetupFontPresetsSelectorOr": {
         "message": "or"
@@ -3577,6 +3630,9 @@
     },
     "osdSetupUploadFont": {
         "message": "Cargar Fonte"
+    },
+    "osdSetupUploadingFont": {
+        "message": "Cargando..."
     },
     "osdSetupSave": {
         "message": "Gardar"
@@ -3641,9 +3697,6 @@
     "osdDescElementCraftName": {
         "message": "Nome da aeronave tal como está no apartado Configuración"
     },
-    "osdDescElementDisplayName": {
-        "message": "Mostrar nome configurado có comando cli \"display_name\""
-    },
     "osdDescElementAltitude": {
         "message": "Altitude actual (parpadea por riba do limiar de alarma)"
     },
@@ -3661,12 +3714,6 @@
     },
     "osdDescElementGPSSats": {
         "message": "Número de satélites GPS fixados"
-    },
-    "osdDescElementGPSLon": {
-        "message": "Lonxitude GPS"
-    },
-    "osdDescElementGPSLat": {
-        "message": "Latitude GPS"
     },
     "osdDescElementDebug": {
         "message": "Variables de Debug"
@@ -3704,24 +3751,6 @@
     "osdDescElementArmedTime": {
         "message": "Tempo dende que a aeronave foi armada por última vez"
     },
-    "osdDescElementWarnings": {
-        "message": "Alertas (p.ej. batería baixa), avisos (p.ej. razons para non armar, batería baixa crítica) e pitido visual (4 asteriscos parpadeando)."
-    },
-    "osdDescElementEscTemperature": {
-        "message": "Temperatura reportada pola telemetría dos ESC"
-    },
-    "osdDescElementEscRpm": {
-        "message": "RPM reportadas por la telemetría dos ESC"
-    },
-    "osdDescElementEscRpmFreq": {
-        "message": "Frecuencia RPM reportada pola telemetría dos ESC"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "Data \/ Hora en tempo real"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "Axuste de rango e valor do elemento activo actualmente"
-    },
     "osdDescElementHomeDirection": {
         "message": "Flecha mostrando a dirección da posición da casa"
     },
@@ -3736,6 +3765,45 @@
     },
     "osdDescElementCompassBar": {
         "message": "Barra gráfica cuna brúxula mostrando a dirección actual"
+    },
+    "osdDescElementWarnings": {
+        "message": "Alertas (p.ej. batería baixa), avisos (p.ej. razons para non armar, batería baixa crítica) e pitido visual (4 asteriscos parpadeando)."
+    },
+    "osdDescElementEscTemperature": {
+        "message": "Temperatura reportada pola telemetría dos ESC"
+    },
+    "osdDescElementEscRpm": {
+        "message": "RPM reportadas por la telemetría dos ESC"
+    },
+    "osdDescElementRemaningTimeEstimate": {
+        "message": "Tempo estimado restante de voo"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Data \/ Hora en tempo real"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "Axuste de rango e valor do elemento activo actualmente"
+    },
+    "osdDescElementTimer1": {
+        "message": "Mostra o valor do temporizador 1"
+    },
+    "osdDescElementTimer2": {
+        "message": "Mostra o valor do temporizador 2"
+    },
+    "osdDescElementCoreTemperature": {
+        "message": "Temperatura do núcleo do STM32 MCU"
+    },
+    "osdDescAntiGravity": {
+        "message": "Activa un indicador cando a anti gravidade está activa"
+    },
+    "osdDescGForce": {
+        "message": "Mostra canta Forza G está experimentando a aeronave"
+    },
+    "osdDescElementMotorDiag": {
+        "message": "Mostra un gráfico coa saída de cada motor"
+    },
+    "osdDescElementLogStatus": {
+        "message": "Número de caixa negra e avisos"
     },
     "osdDescElementFlipArrow": {
         "message": "Flecha que indica que lado ten os motores arriba en modo tartaruga"
@@ -3752,32 +3820,23 @@
     "osdDescElementStickOverlayRight": {
         "message": "Superposición da posición do mando dereito do transmisor."
     },
-    "osdDescElementTimer1": {
-        "message": "Mostra o valor do temporizador 1"
+    "osdDescElementDisplayName": {
+        "message": "Mostrar nome configurado có comando cli \"display_name\""
     },
-    "osdDescElementTimer2": {
-        "message": "Mostra o valor do temporizador 2"
+    "osdDescElementEscRpmFreq": {
+        "message": "Frecuencia RPM reportada pola telemetría dos ESC"
     },
-    "osdDescElementRemaningTimeEstimate": {
-        "message": "Tempo estimado restante de voo"
+    "osdDescElementRateProfileName": {
+        "message": "Mostra o nome do perfil de taxa actual"
+    },
+    "osdDescElementPidProfileName": {
+        "message": "Mostra o nome do perfil PID actual"
+    },
+    "osdDescElementOsdProfileName": {
+        "message": "O nome do perfil OSD definido nas variables CLI \"osd_profile_1_name\", \"osd_profile_2_name\" and \"osd_profile_3_name\""
     },
     "osdDescElementUnknown": {
         "message": "Elemento descoñecido (os detalles añadiranse nunha futura versión)"
-    },
-    "osdDescElementCoreTemperature": {
-        "message": "Temperatura do núcleo do STM32 MCU"
-    },
-    "osdDescAntiGravity": {
-        "message": "Activa un indicador cando a anti gravidade está activa"
-    },
-    "osdDescGForce": {
-        "message": "Mostra canta Forza G está experimentando a aeronave"
-    },
-    "osdDescElementMotorDiag": {
-        "message": "Mostra un gráfico coa saída de cada motor"
-    },
-    "osdDescElementLogStatus": {
-        "message": "Número de caixa negra e avisos"
     },
     "osdDescStatMaxSpeed": {
         "message": "Máxima velocidade rexistrada"
@@ -3854,6 +3913,15 @@
     "osdDescStatTotalFlightDistance": {
         "message": "Distancia total percorrida"
     },
+    "osdDescribeFontVersion1": {
+        "message": "Versión da fonte: 1 (Betaflight 4.0 ou superior)"
+    },
+    "osdDescribeFontVersion2": {
+        "message": "Versión da fonte: 2 (Betaflight 4.1 ou máis recente)"
+    },
+    "osdDescribeFontVersionCUSTOM": {
+        "message": "Versión da fonte: subministrada polo usuario"
+    },
     "osdTimerSource": {
         "message": "Orixen:"
     },
@@ -3871,9 +3939,6 @@
     },
     "osdTimerAlarmTooltip": {
         "message": "Elixe o limiar de alarma do temporizador en minutos, cando o tempo excede este valor o elemento do OSD parpadeará, indicando 0 se desactiva a alarma"
-    },
-    "osdWarningUnknown": {
-        "message": "Aviso descoñecido (os detalles añadiranse nunha futura versión)"
     },
     "osdWarningArmingDisabled": {
         "message": "Avisa da razón máis importante para non armar"
@@ -3919,6 +3984,9 @@
     },
     "osdWarningLinkQuality": {
         "message": "Avisa cando a Calidad do Enlace está por debaixo da alarma configurada"
+    },
+    "osdWarningUnknown": {
+        "message": "Aviso descoñecido (os detalles añadiranse nunha futura versión)"
     },
     "osdSectionHelpElements": {
         "message": "Activar ou desactivar os elementos do OSD"

@@ -226,6 +226,12 @@
     "logActionShow": {
         "message": "ログ表示"
     },
+    "serialErrorFrameError": {
+        "message": "シリアル接続エラー: フレーム長 不良"
+    },
+    "serialErrorParityError": {
+        "message": "シリアル接続エラー: パリティー 不良"
+    },
     "serialPortOpened": {
         "message": "ID: $1のシリアルポートへ<span class=\"message-positive\">正常<\/span>に接続しています"
     },
@@ -494,9 +500,6 @@
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong>は<strong>オープンソース<\/strong>であり、すべてのユーザに対し保証なしで<strong>無償<\/strong>にて提供されるフライトコントローラソフトウェアです。<\/p><p>もし、あなたがBetaflightやBetaflight Configuratorが役立つと感じたら、寄付による開発の<strong>サポート<\/strong>をご検討ください。<\/p>"
     },
-    "defaultDonateBottom": {
-        "message": "<p>引き続き経済的に貢献したい場合は <a href='https:\/\/www.patreon.com\/betaflight'>Patreon<\/a> で私達の支援者になることをご検討ください。<\/p>"
-    },
     "defaultDonate": {
         "message": "寄付"
     },
@@ -510,7 +513,7 @@
         "message": "Betaflightドキュメントは、リリースノートおよび wiki にてご利用いただけます。<br \/><br \/>"
     },
     "defaultDocumentation1": {
-        "message": "Betaflight wiki はすばらしい情報リソースを<a href=\"https:\/\/github.com\/betaflight\/betafli<a href=\"https:\/\/github.com\/betaflight\/betaflight\/wiki\" target=\"_blank\">ght\/wiki\" target=\"_blank\">こちら<\/a>で検索・確認することができます。"
+        "message": "Betaflight wiki はすばらしい情報リソースを<a href=\"https:\/\/github.com\/betaflight\/betaflight\/wiki\" target=\"_blank\">こちら<\/a>で検索・確認することができます。"
     },
     "defaultDocumentation2": {
         "message": "ファームウェア リリースノートは、GitHub リリースページの<a href=\"https:\/\/github.com\/Betaflight\/Betaflight\/releases\" target=\"_blank\">こちら<\/a>で確認いただけます。"
@@ -676,87 +679,99 @@
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "ジャイロセンサーが検出されませんでした",
-        "description": "Description of the NO GYRO arming disable flag"
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
         "message": "フェイルセーフが有効です",
-        "description": "Description of the FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
         "message": "有効な受信機からの信号が検出されません",
-        "description": "Description of the RX_FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
         "message": "受信機はフェイルセーフから回復したばかりですが、アームスイッチはオンのままです",
-        "description": "Description of the BAD_RX_RECOVERY arming disable flag"
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
         "message": "「フェイルセーフ」スイッチが有効です",
-        "description": "Description of the BOXFAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
         "message": "暴走離陸防止機能が実行されました",
-        "description": "Description of the RUNAWAY_TAKEOFF arming disable flag"
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipCRASH": {
+        "message": "クラッシュ検出によるディスアーム",
+        "description": "Message that pops up to describe the CRASH arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
         "message": "スロットルチャンネルが高すぎます",
-        "description": "Description of the THROTTLE arming disable flag"
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "機体が (十分に) 水平ではありません",
-        "description": "Description of the ANGLE arming disable flag"
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
         "message": "電源ON直後のアーミングです",
-        "description": "Description of the BOOT_GRACE_TIME arming disable flag"
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipNOPREARM": {
         "message": "PreArmスイッチが作動していない、またはディスアーム後にPreArmスイッチが正しい位置に戻っていない可能性があります",
-        "description": "Description of the NOPREARM arming disable flag"
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipLOAD": {
         "message": "安全な飛行にはシステム負荷が高すぎます",
-        "description": "Description of the LOAD arming disable flag"
+        "description": "Message that pops up to describe the LOAD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
         "message": "センサーキャリブレーションがまだ実行中です",
-        "description": "Description of the CALIBRATING arming disable flag"
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCLI": {
         "message": "CLI コマンドラインが有効です",
-        "description": "Description of the CLI arming disable flag"
+        "description": "Message that pops up to describe the CLI arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
         "message": "CMS (設定メニュー) が有効です - OSD上または他ディスプレイ -",
-        "description": "Description of the CMS_MENU arming disable flag"
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "OSDメニューが有効です",
-        "description": "Description of the OSD_MENU arming disable flag"
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBST": {
         "message": "Black Sheepテレメトリーデバイス (TBS Core Pro等) がディスアームし、アームを抑止しています",
-        "description": "Description of the BST arming disable flag"
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "おそらくこのBetaflight Configuratorで、MSP接続は有効です",
-        "description": "Description of the MSP arming disable flag"
+        "description": "Message that pops up to describe the MSP arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipPARALYZE": {
         "message": "パラライズモードが有効になっています",
-        "description": "Description of the PARALYZE arming disable flag"
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipGPS": {
         "message": "GPSレスキューモードは設定されていますが、必要な衛星数が未確定です",
-        "description": "Description of the GPS arming disable flag"
+        "description": "Message that pops up to describe the GPS arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRESC": {
         "message": "「GPSレスキュー」スイッチが有効になりました",
-        "description": "Description of the RESC arming disable flag"
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRPMFILTER": {
+        "message": "RPMベースのフィルタリングは有効ですが、1つ以上のESCが有効なDSHOTテレメトリー情報を提供していません。ESCがDSHOT双方向テレメトリーをサポートするために必要なファームウェアがインストールされていることを確認してください。",
+        "description": "Message that pops up to describe the RPMFILTER arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipREBOOT_REQD": {
+        "message": "設定を変更するには再起動が必要です",
+        "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "他のフラグの1つはアーム時にフラグを解除します",
-        "description": "Description of the ARM_SWITCH arming disable flag"
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
     },
     "initialSetupGPSHead": {
         "message": "GPS"
@@ -812,6 +827,9 @@
     "featureSERVO_TILT": {
         "message": "サーボジンバル"
     },
+    "featureSERVO_TILTTip": {
+        "message": "この機能によりCAMSTABモードが有効になります。これは加速度センサーを用いて最大2軸を安定して利用することができます。"
+    },
     "featureSOFTSERIAL": {
         "message": "CPUベース シリアルポート 有効"
     },
@@ -843,7 +861,7 @@
         "message": "MSP受信入力 (MSPポート経由制御)"
     },
     "featureRSSI_ADC": {
-        "message": "アナログRSSI 入力"
+        "message": "アナログRSSI 信号入力"
     },
     "featureLED_STRIP": {
         "message": "マルチカラーLEDストリップ サポート"
@@ -936,7 +954,7 @@
         "message": "受信機モード"
     },
     "configurationRSSI": {
-        "message": "RSSI (信号強度)"
+        "message": "アナログRSSI (信号強度設定)"
     },
     "configurationRSSIHelp": {
         "message": "RSSIは信号強度の値で、機体が圏外になったときやRF干渉を受けていることを確認でき非常に有益です。"
@@ -1164,7 +1182,7 @@
         "message": "<strong>注意:<\/strong>FCがこの速度で動作するか確認して下さい！CPUとサイクル時間の安定度を確認して下さい。この変更はPIDの再調整を必要とするかもしれません。TIP: パフォーマンスを上げるためには加速度センサや他センサを無効にします。"
     },
     "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>ジャイロ 32kMz サンプリングモードにおける注意事項:<\/strong> 実験的な機能として、ジャイロ 32kHz サンプリングモードがBetaflightに実装されました。利用可能になって以降、機体の振動に過敏であること、および積極的なフィルタリングを必要とし高ノイズとなってしまうことがあるため、ジャイロ 8kHz サンプリングモードを超えるような利点が実績として得られませんでした。このため、Betaflight 4.0では<strong>ジャイロ32 kHzサンプリングモードのサポートを終了致します。<\/strong>"
+        "message": "$t(configurationLoopTimeHelp.message)<br><strong>32 kHz ジャイロサンプリングモードにおける注意事項:<\/strong> 実験的な機能の一つとして、32 kHzジャイロサンプリングモードがBetaflightに実装されました。利用可能になった当初、機体の振動に敏感であること、および積極的なフィルタリングを必要としノイズが多く発生するため、ループ制御の遅延を引き起こしてしまい8 kHzジャイロサンプリングモードを超えるような利点を見出すことができませんでした。そのためBetaflight 4.0では、<strong>32 kHzジャイロサンプリングモードのサポートを終了<\/strong>致します。"
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1728,16 +1746,19 @@
         "message": "AND"
     },
     "adjustmentsHelp": {
-        "message": "調整スイッチを構成します。詳細については、マニュアルの [In-flight Adjustment] を参照して下さい。調整の変更は自動的には保存されません。 4つのスロットがありますが、調整を同時に行うために使用される各スイッチは、スロットを排他的に使用する必要があります。"
+        "message": "調整スイッチを設定します。詳細については、マニュアルの『in-flight adjustment(飛行調整)』の項目を参照してください。『調整』機能による変更は自動的には保存されません。"
+    },
+    "adjustmentSlotsHelp": {
+        "message": "4スロットありますが、同時に調整を行うために使用される各スイッチは、スロットの排他的な利用を必須とします。"
     },
     "adjustmentsExamples": {
-        "message": "例"
+        "message": "例:"
     },
     "adjustmentsExample1": {
-        "message": "AUX1のスロット1と3ポジションスイッチを使用し、ピッチ \/ ロール、PIDの設定を、AUX2の別の3ポジションスイッチを選択し、上下することで値を増減させます。"
+        "message": "AUX1の3POSスイッチを使ってPitch\/RollのP、I、Dを選択し、AUX2のもう1つの3POSスイッチを押したままにすると値が増減します。"
     },
     "adjustmentsExample2": {
-        "message": "AUX4のスロット2と3ポジションスイッチを選択し、かつ同じチャンネルの3ポジションスイッチを使用することでRateprofile変更を有効にすることができます。"
+        "message": "AUX4の3POSスイッチを使用し、同じチャンネルの同じ3POSスイッチでRateprofile選択を有効にします。"
     },
     "adjustmentsColumnEnable": {
         "message": "有効 \/ 無効"
@@ -2181,7 +2202,10 @@
         "message": "<strong>注:<\/strong> CLI: コマンドライン タブを離れるか、切断を押すと<strong>自動的<\/strong>にFCボードへ \"<strong>exit<\/strong>\" 命令を送ります。最新ファームウェアでは、これによりコントローラが<strong>再起動<\/strong>し、保存していない設定変更はすべて<strong>失われます<\/strong>。<p><strong><span class=\"message-negative\">警告:<\/span><\/strong> CLIのコマンドによっては、モーター出力ピンに任意の信号が送信される場合があります。バッテリーが接続されていると、モーターが回転する可能性があります。したがって<strong>CLIでコマンドを入力する前に、バッテリーが接続されていないという確認<\/strong>を強くお勧めします。"
     },
     "cliInputPlaceholder": {
-        "message": "こちらにコマンドを書いて下さい"
+        "message": "コマンドを記載してください。 オートコンプリートの場合はTabキーを押します。"
+    },
+    "cliInputPlaceholderBuilding": {
+        "message": "オートコンプリートキャッシュを作成中です。お待ちください..."
     },
     "cliEnter": {
         "message": "CLIモード検出"
@@ -2200,6 +2224,18 @@
     },
     "cliCopySuccessful": {
         "message": "コピー完了！"
+    },
+    "cliLoadFromFileBtn": {
+        "message": "ファイルから読み込みます"
+    },
+    "cliConfirmSnippetDialogTitle": {
+        "message": "読み込んだコマンドを確認します"
+    },
+    "cliConfirmSnippetNote": {
+        "message": "<strong>備考<\/strong>: 実行前にコマンドを確認及び編集することができます。"
+    },
+    "cliConfirmSnippetBtn": {
+        "message": "実行"
     },
     "loggingNote": {
         "message": "ログデータは<span class=\"message-negative\">このタブを選択している間のみ<\/span>記録されます。このタブから他へ切り替えると<span class=\"message-negative\">ログは停止<\/span>し、通常の<strong>Configurator<\/strong>の状態に戻ります。<br \/>また項目全体のログ更新期間を自由に選択できます。パフォーマンス上の理由から、<strong>1秒<\/strong>ごとにログファイルにデータが書き込まれます。"
@@ -2521,6 +2557,9 @@
     },
     "firmwareFlasherFirmwareLocalLoaded": {
         "message": "読込まれたローカル ファームウェア: ($1 bytes)"
+    },
+    "firmwareFlasherFirmwareOnlineLoaded": {
+        "message": "読込済みオンラインファーム: ($1 bytes)"
     },
     "firmwareFlasherHexCorrupted": {
         "message": "HEXファイルが破損しているようです"
@@ -3247,11 +3286,47 @@
     "powerBatteryWarning": {
         "message": "1セルあたりの警告電圧"
     },
+    "powerCalibrationManagerButton": {
+        "message": "キャリブレーション"
+    },
+    "powerCalibrationManagerTitle": {
+        "message": "キャリブレーション マネージャー"
+    },
+    "powerCalibrationManagerHelp": {
+        "message": "キャリブレートするには、(バッテリーを接続した状態で) テスターを使って機体にかかる実電圧\/電流を計測し、以下の値を入力してください。 それから同じくバッテリーを接続したまま [Calibrate] をクリックします。"
+    },
+    "powerCalibrationManagerNote": {
+        "message": "<strong>注:<\/strong> スケールを調整する前に、電圧の倍率と電流のオフセット値が正しく設定されていることを確認してください。<br>値が0のままですと、キャリブレーションは適用されません。<\/br><strong>バッテリーを接続する前に必ずプロペラを取り外してください！<\/strong>"
+    },
+    "powerCalibrationManagerWarning": {
+        "message": "<span class=\"message-negative\">警告:<\/span> バッテリーが<span class = \"message-negative\">接続されていない<\/span>、または電圧・電流計測テスターの電源が<span class = \"message-negative\">正しく設定されていない<\/span>可能性があります。このままでは、ツールでキャリブレーションすることはできません。"
+    },
+    "powerCalibrationManagerSourceNote": {
+        "message": "<span class=\"message-negative\">警告:<\/span> 電圧および\/または電流メーター情報は<strong>変更されましたが保存していません。<\/strong> 正しいメーター情報を設定して一度保存してから調整してください。"
+    },
+    "powerCalibrationSave": {
+        "message": "キャリブレート"
+    },
+    "powerCalibrationApply": {
+        "message": "キャリブレーション適用"
+    },
+    "powerCalibrationDiscard": {
+        "message": "キャリブレーション破棄"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "最新情報のスケールがここに表示されます。<br>適用すると縮尺は設定されますが<strong>保存はされません。<\/strong><\/br><br>保存後、新たな電圧・電流が正く表示されることを確認してください。<\/br>"
+    },
     "powerVoltageHead": {
         "message": "電圧メーター"
     },
     "powerVoltageValue": {
         "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "計測電圧"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "電圧スケール調整:"
     },
     "powerAmperageValue": {
         "message": "$1 A"
@@ -3394,6 +3469,12 @@
     "powerAmperageOffset": {
         "message": "オフセット [mA]"
     },
+    "powerAmperageCalibration": {
+        "message": "計測電流"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "電流スケール調整:"
+    },
     "powerBatteryHead": {
         "message": "バッテリー"
     },
@@ -3425,7 +3506,7 @@
         "message": "OSD"
     },
     "osdSetupPreviewHelp": {
-        "message": "<strong>注:<\/strong> プレビュー画面のフォントは実際のフォントと異なる場合があります。"
+        "message": "<strong>注:<\/strong> OSDプレビューでは、フライトコントローラにインストールされている実際のフォントが表示されない場合があります。旧バージョンのファームウェアが使用されている場合、OSD項目の個々のレイアウトが異なる場合があります。そのため、飛行する前にゴーグルを通してOSD表示を確認してください。"
     },
     "osdSetupUnsupportedNote1": {
         "message": "お使いのフライトコントローラはBetaFlight OSDに対応していないようです。"
@@ -3446,7 +3527,11 @@
     },
     "osdSetupPreviewSelectProfileTitle": {
         "message": "プレビュー",
-        "description": "Label of the selector for the OSD Profile in the preview"
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
+    },
+    "osdSetupPreviewForTitle": {
+        "message": "ここでプロファイルまたはフォントを変更しても、FC側のプロファイルまたはフォントは変更されず、プレビュー画面にのみ反映します。変更したい場合は、それぞれ $t(osdSetupSelectedProfileTitle.message) オプションまたは\n $t(osdSetupFontManager.message) ボタンを使用してください。",
+        "description": "Help content for the OSD profile and font PREVIEW"
     },
     "osdSetupSelectedProfileTitle": {
         "message": "OSDプロファイル有効",
@@ -3460,14 +3545,35 @@
         "message": "OSDプロファイル {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
     },
-    "osdSetupPreviewTitleTip": {
-        "message": "表示またはプレビューウィンドウでロゴを非表示にします。フライトコント ローラの設定は変わりません。"
+    "osdSetupPreviewSelectFontElement": {
+        "message": "フォント {{fontName}}",
+        "description": "Content of the selector for the OSD Font in the preview"
     },
     "osdSetupVideoFormatTitle": {
         "message": "ビデオ形式"
     },
+    "osdSetupVideoFormatOptionAuto": {
+        "message": "Auto",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionPal": {
+        "message": "PAL",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionNtsc": {
+        "message": "NTSC",
+        "description": "Option for the video format in the OSD"
+    },
     "osdSetupUnitsTitle": {
         "message": "単位"
+    },
+    "osdSetupUnitsOptionImperial": {
+        "message": "ヤードポンド法",
+        "description": "Option for the units system used in the OSD"
+    },
+    "osdSetupUnitsOptionMetric": {
+        "message": "メートル法",
+        "description": "Option for the units system used in the OSD"
     },
     "osdSetupTimersTitle": {
         "message": "タイマー"
@@ -3492,6 +3598,10 @@
     },
     "osdSetupFontPresetsSelector": {
         "message": "フォントプリセットを選択:"
+    },
+    "osdSetupFontPresetsSelectorCustomOption": {
+        "message": "ユーザ指定フォント",
+        "description": "Option to show as selected when the user selects a custom local font"
     },
     "osdSetupFontPresetsSelectorOr": {
         "message": "or"
@@ -3526,6 +3636,12 @@
     "osdSetupUploadFont": {
         "message": "フォントアップロード"
     },
+    "osdSetupUploadingFont": {
+        "message": "アップロード中..."
+    },
+    "osdSetupUploadingFontEnd": {
+        "message": "全ての {{length}} 文字をOSDにアップロード"
+    },
     "osdSetupSave": {
         "message": "保存"
     },
@@ -3556,242 +3672,658 @@
     "osdSetupButtonReset": {
         "message": "設定をリセット"
     },
+    "osdTextElementMainBattVoltage": {
+        "message": "バッテリー電圧",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementMainBattVoltage": {
         "message": "瞬間メインバッテリー電圧 (アラームしきい値以下の場合は点滅)"
+    },
+    "osdTextElementRssiValue": {
+        "message": "瞬間RSSI値",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRssiValue": {
         "message": "瞬間RSSI値 (アラームしきい値以下の場合は点滅)"
     },
+    "osdTextElementTimer": {
+        "message": "タイマー",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer": {
+        "message": "フライトタイマー"
+    },
+    "osdTextElementThrottlePosition": {
+        "message": "スロットルポジション",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementThrottlePosition": {
         "message": "現在のスロットルチャンネル値"
+    },
+    "osdTextElementCpuLoad": {
+        "message": "CPU使用率",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementCpuLoad": {
+        "message": "現在のCPU使用率"
+    },
+    "osdTextElementVtxChannel": {
+        "message": "受信機チャンネル",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVtxChannel": {
+        "message": "現在のVTX ChとVTX出力"
+    },
+    "osdTextElementVoltageWarning": {
+        "message": "バッテリー電圧警告",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementVoltageWarning": {
+        "message": "電圧が警告値を下回ったときに通知を表示"
+    },
+    "osdTextElementArmed": {
+        "message": "アーム",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementArmed": {
         "message": "アームメッセージ"
     },
+    "osdTextElementDisarmed": {
+        "message": "ディスアーム",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementDisarmed": {
         "message": "ディスアームメッセージ"
+    },
+    "osdTextElementCrosshairs": {
+        "message": "十字線",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCrosshairs": {
         "message": "画面中央クロスマーク"
     },
+    "osdTextElementArtificialHorizon": {
+        "message": "水平線",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArtificialHorizon": {
         "message": "水平表示"
+    },
+    "osdTextElementHorizonSidebars": {
+        "message": "水平サイドバー",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHorizonSidebars": {
         "message": "ピッチ表示"
     },
+    "osdTextElementCurrentDraw": {
+        "message": "バッテリー瞬間電流値",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementCurrentDraw": {
         "message": "瞬間電流量"
+    },
+    "osdTextElementMahDrawn": {
+        "message": "バッテリー総容量",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMahDrawn": {
         "message": "使用バッテリー総容量"
     },
+    "osdTextElementCraftName": {
+        "message": "機体名",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementCraftName": {
         "message": "[設定] タブで設定した機体名"
     },
-    "osdDescElementDisplayName": {
-        "message": "CLIコマンド【display_name】で設定した表示名"
+    "osdTextElementAltitude": {
+        "message": "高度",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementAltitude": {
         "message": "現在の高度 (アラーム値を超えると点滅)"
     },
+    "osdTextElementOnTime": {
+        "message": "On time",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementOnTime": {
         "message": "電源投入からの経過時間"
+    },
+    "osdTextElementFlyTime": {
+        "message": "飛行時間",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementFlyTime": {
         "message": "アーム後の経過時間 (アラーム値を超えると点滅)"
     },
+    "osdTextElementFlyMode": {
+        "message": "フライトモード",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementFlyMode": {
         "message": "現在のフライトモード"
+    },
+    "osdTextElementGPSSpeed": {
+        "message": "GPS 速度",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSSpeed": {
         "message": "GPSによる速度"
     },
+    "osdTextElementGPSSats": {
+        "message": "GPS 衛星数",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementGPSSats": {
         "message": "GPSの有効衛星数"
     },
+    "osdTextElementGPSLon": {
+        "message": "GPS 経度",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementGPSLon": {
-        "message": "GPS経度"
+        "message": "GPS 経度座標"
+    },
+    "osdTextElementGPSLat": {
+        "message": "GPS 緯度",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementGPSLat": {
-        "message": "GPS緯度"
+        "message": "GPS 緯度座標"
+    },
+    "osdTextElementDebug": {
+        "message": "デバッグ",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementDebug": {
         "message": "デバッグ変数"
     },
+    "osdTextElementPIDRoll": {
+        "message": "PID ロール",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRoll": {
         "message": "ロール軸 PIDゲイン"
+    },
+    "osdTextElementPIDPitch": {
+        "message": "PID ピッチ",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPIDPitch": {
         "message": "ピッチ軸 PIDゲイン"
     },
+    "osdTextElementPIDYaw": {
+        "message": "PID ヨー",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDYaw": {
         "message": "ヨー軸 PIDゲイン"
+    },
+    "osdTextElementPower": {
+        "message": "電源",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPower": {
         "message": "瞬間電力消費量"
     },
+    "osdTextElementPIDRateProfile": {
+        "message": "Profile: PID＆レート",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementPIDRateProfile": {
         "message": "有効PIDおよびRateprofile数値表示"
+    },
+    "osdTextElementBatteryWarning": {
+        "message": "バッテリー警告",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementBatteryWarning": {
         "message": "バッテリー電圧が警告しきい値を下回ったときに表示される警告テキスト"
     },
+    "osdTextElementAvgCellVoltage": {
+        "message": "バッテリー セル平均電圧",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementAvgCellVoltage": {
         "message": "セル電圧平均値 (メインバッテリー電圧 \/ セル数)"
+    },
+    "osdTextElementPitchAngle": {
+        "message": "Angle: pitch",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementPitchAngle": {
         "message": "ピッチ角度値"
     },
+    "osdTextElementRollAngle": {
+        "message": "Angle: roll",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementRollAngle": {
         "message": "ロール角度値"
+    },
+    "osdTextElementMainBattUsage": {
+        "message": "バッテリー使用量",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementMainBattUsage": {
         "message": "バッテリー容量の使用状況をグラフ表示"
     },
+    "osdTextElementArmedTime": {
+        "message": "タイマー: アーム後 経過時間",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArmedTime": {
         "message": "機体が最後にアームしてからの時間"
     },
-    "osdDescElementWarnings": {
-        "message": "アラート (例: 電池切れ)、警告 (例: アーミング不可理由、バッテリーが非常に低い)、ビジュアルビープ (4点滅LED)。"
-    },
-    "osdDescElementEscTemperature": {
-        "message": "温度レポート by ESCテレメトリー"
-    },
-    "osdDescElementEscRpm": {
-        "message": "回転数レポート by ESCテレメトリー"
-    },
-    "osdDescElementEscRpmFreq": {
-        "message": "回転数レポート by ESCテレメトリー"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "ハードウェアクロック 日付 \/ 時間"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "調整タブで設定した現在有効となる値"
+    "osdTextElementHomeDirection": {
+        "message": "ホームへの方向",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementHomeDirection": {
         "message": "ホームポジション方向を示す矢印"
     },
+    "osdTextElementHomeDistance": {
+        "message": "ホームまでの距離",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementHomeDistance": {
         "message": "ホームポジションまでの距離 (設定に基づいたフィートまたはメートル表示)"
+    },
+    "osdTextElementNumericalHeading": {
+        "message": "ヘディング角度値",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementNumericalHeading": {
         "message": "ヘッディング角度値"
     },
+    "osdTextElementNumericalVario": {
+        "message": "垂直スピード値",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementNumericalVario": {
         "message": "垂直スピード値 (設定に基づいたフィートまたはメートル表示)"
+    },
+    "osdTextElementCompassBar": {
+        "message": "コンパス バー",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCompassBar": {
         "message": "現在のヘッディングを示すグラフィカルなコンパスバー"
     },
-    "osdDescElementFlipArrow": {
-        "message": "タートルモードでどのモーターが起動しているかを示す矢印"
+    "osdTextElementWarnings": {
+        "message": "警告",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementLinkQuality": {
-        "message": "フレーム損失に基く『リンク品質』代替インジケータ - 使用注意"
+    "osdDescElementWarnings": {
+        "message": "アラート (例: 電池切れ)、警告 (例: アーミング不可理由、バッテリーが非常に低い)、ビジュアルビープ (4点滅LED)。"
     },
-    "osdDescElementFlightDist": {
-        "message": "この飛行での飛行距離"
+    "osdTextElementEscTemperature": {
+        "message": "ESC 温度",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementStickOverlayLeft": {
-        "message": "送信機 左スティック ポジションをオーバーレイ表示"
+    "osdDescElementEscTemperature": {
+        "message": "温度レポート by ESCテレメトリー"
     },
-    "osdDescElementStickOverlayRight": {
-        "message": "送信機 右スティック ポジションをオーバーレイ表示"
+    "osdTextElementEscRpm": {
+        "message": "ESC 回転数",
+        "description": "One of the elements of the OSD"
     },
-    "osdDescElementTimer1": {
-        "message": "タイマー1の値を表示"
+    "osdDescElementEscRpm": {
+        "message": "回転数レポート by ESCテレメトリー"
     },
-    "osdDescElementTimer2": {
-        "message": "タイマー2の値を表示"
+    "osdTextElementRemaningTimeEstimate": {
+        "message": "Timer: 想定残り時間",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementRemaningTimeEstimate": {
         "message": "残り飛行時間の予測"
     },
-    "osdDescElementUnknown": {
-        "message": "不明な構成要素 (将来のリリースで追加される予定)"
+    "osdTextElementRtcDateTime": {
+        "message": "RTC 日付と時刻",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "ハードウェアクロック 日付 \/ 時間"
+    },
+    "osdTextElementAdjustmentRange": {
+        "message": "調整範囲",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "調整タブで設定した現在有効となる値"
+    },
+    "osdTextElementTimer1": {
+        "message": "タイマー 1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer1": {
+        "message": "タイマー1の値を表示"
+    },
+    "osdTextElementTimer2": {
+        "message": "タイマー 2",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementTimer2": {
+        "message": "タイマー2の値を表示"
+    },
+    "osdTextElementCoreTemperature": {
+        "message": "コア温度",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCoreTemperature": {
         "message": "STM32 MCUコア温度"
     },
+    "osdTextAntiGravity": {
+        "message": "Anti Gravity",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescAntiGravity": {
         "message": "Anti Gravity機能がオンの時、インジケーターを有効にします。"
+    },
+    "osdTextGForce": {
+        "message": "G Force",
+        "description": "One of the elements of the OSD"
     },
     "osdDescGForce": {
         "message": "どのくらいのG値(加速度)が機体に負荷をかけているかを示す"
     },
+    "osdTextElementMotorDiag": {
+        "message": "モーターの診断",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementMotorDiag": {
         "message": "モーター毎の出力グラフを表示"
+    },
+    "osdTextElementLogStatus": {
+        "message": "ブラックボックス ログステータス",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementLogStatus": {
         "message": "ブラックボックス番号と警告"
     },
+    "osdTextElementFlipArrow": {
+        "message": "Flip after crash 向き",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlipArrow": {
+        "message": "タートルモードでどのモーターが起動しているかを示す矢印"
+    },
+    "osdTextElementLinkQuality": {
+        "message": "リンク品質",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementLinkQuality": {
+        "message": "フレーム損失に基く『リンク品質』代替インジケータ - 使用注意"
+    },
+    "osdTextElementFlightDist": {
+        "message": "今回の飛行距離",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementFlightDist": {
+        "message": "この飛行での飛行距離"
+    },
+    "osdTextElementStickOverlayLeft": {
+        "message": "左スティック オーバーレイ表示",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayLeft": {
+        "message": "送信機 左スティック ポジションをオーバーレイ表示"
+    },
+    "osdTextElementStickOverlayRight": {
+        "message": "右スティック オーバーレイ表示",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayRight": {
+        "message": "送信機 右スティック ポジションをオーバーレイ表示"
+    },
+    "osdTextElementDisplayName": {
+        "message": "ディスプレイ名称",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDisplayName": {
+        "message": "CLIコマンド【display_name】で設定した表示名"
+    },
+    "osdTextElementEscRpmFreq": {
+        "message": "ESC RPM 周波数",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementEscRpmFreq": {
+        "message": "回転数レポート by ESCテレメトリー"
+    },
+    "osdTextElementRateProfileName": {
+        "message": "Profile: レートプロファイル名",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRateProfileName": {
+        "message": "現在のRateprofile名を表示"
+    },
+    "osdTextElementPidProfileName": {
+        "message": "Profile: PIDプロファイル名",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPidProfileName": {
+        "message": "現在のPIDプロファイル名を表示"
+    },
+    "osdTextElementOsdProfileName": {
+        "message": "Profile: OSDプロファイル名",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementOsdProfileName": {
+        "message": "\"osd_profile_1_name\"、\"osd_profile_2_name\"、\"osd_profile_3_name\"はCLIにて設定されているOSDプロファイル名"
+    },
+    "osdTextElementRssiDbmValue": {
+        "message": "RSSI値 (dBm)",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRssiDbmValue": {
+        "message": "RSSI信号値(dBm) ※有効な場合"
+    },
+    "osdTextElementUnknown": {
+        "message": "不明 $1",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementUnknown": {
+        "message": "不明な構成要素 (将来のリリースで追加される予定)"
+    },
+    "osdTextStatMaxSpeed": {
+        "message": "最高速度",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxSpeed": {
         "message": "記録された最大スピード"
+    },
+    "osdTextStatMinBattery": {
+        "message": "バッテリー電圧最小値",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinBattery": {
         "message": "記録されたメインバッテリーの最小電圧"
     },
+    "osdTextStatMinRssi": {
+        "message": "RSSI最小値",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMinRssi": {
         "message": "記録されたRSSI最小値"
+    },
+    "osdTextStatMaxCurrent": {
+        "message": "バッテリー電流最大値",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxCurrent": {
         "message": "記録された最大電流値"
     },
+    "osdTextStatUsedMah": {
+        "message": "バッテリー使用量 (mAh)",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatUsedMah": {
         "message": "バッテリー容量"
+    },
+    "osdTextStatMaxAltitude": {
+        "message": "最大高度",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMaxAltitude": {
         "message": "記録された最大高度"
     },
+    "osdTextStatBlackbox": {
+        "message": "Blackbox利用",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatBlackbox": {
         "message": "ブラックボックス合計使用率"
+    },
+    "osdTextStatEndBattery": {
+        "message": "バッテリー終止電圧",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatEndBattery": {
         "message": "ディスアーム時バッテリー電圧"
     },
+    "osdTextStatFlyTime": {
+        "message": "合計飛行時間",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatFlyTime": {
         "message": "現在の電源サイクルで機体がアームしている合計時間"
+    },
+    "osdTextStatArmedTime": {
+        "message": "最後にアームした時の飛行時間",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatArmedTime": {
         "message": "機体が最後にアームしてからの時間"
     },
+    "osdTextStatMaxDistance": {
+        "message": "ホーム位置最大距離",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxDistance": {
         "message": "ホームロケーションからの最大距離"
+    },
+    "osdTextStatBlackboxLogNumber": {
+        "message": "Blackbox番号",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBlackboxLogNumber": {
         "message": "飛行後のブラックボックスログ番号"
     },
+    "osdTextStatTimer1": {
+        "message": "タイマー1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatTimer1": {
         "message": "ディスアーム時のタイマー1の値"
+    },
+    "osdTextStatTimer2": {
+        "message": "タイマー2",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatTimer2": {
         "message": "ディスアーム時のタイマー2の値"
     },
+    "osdTextStatRtcDateTime": {
+        "message": "日付と時刻 (RTC)",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatRtcDateTime": {
         "message": "ハードウェアクロックからの日付と時間"
+    },
+    "osdTextStatBattery": {
+        "message": "バッテリー電圧",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatBattery": {
         "message": "リアルタイム バッテリー電圧"
     },
+    "osdTextStatGForce": {
+        "message": "Gフォース最大値",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatGForce": {
         "message": "機体が記録した最大G値"
+    },
+    "osdTextStatEscTemperature": {
+        "message": "ESC 最高温度",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatEscTemperature": {
         "message": "ESC 最高温度"
     },
+    "osdTextStatEscRpm": {
+        "message": "ESC回転数最大値",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatEscRpm": {
         "message": "ESC 最大RPM"
+    },
+    "osdTextStatMinLinkQuality": {
+        "message": "接続品質最低値",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
     },
     "osdDescStatMinLinkQuality": {
         "message": "フレーム損失に基く『リンク品質』代替インジケータ最小値"
     },
+    "osdTextStatFlightDistance": {
+        "message": "飛行距離",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatFlightDistance": {
         "message": "この飛行での総飛行距離"
     },
+    "osdTextStatMaxFFT": {
+        "message": "FFT最大値",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
     "osdDescStatMaxFFT": {
         "message": "FFTのピーク周波数"
+    },
+    "osdTextStatTotalFlights": {
+        "message": "合計フライト数",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlights": {
+        "message": "合計飛行回数"
+    },
+    "osdTextStatTotalFlightTime": {
+        "message": "合計飛行時間",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightTime": {
+        "message": "合計飛行時間"
+    },
+    "osdTextStatTotalFlightDistance": {
+        "message": "合計飛行距離",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatTotalFlightDistance": {
+        "message": "合計飛行距離"
+    },
+    "osdTextStatMinRssiDbm": {
+        "message": "RSSI最小値 (dBm)",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatMinRssiDbm": {
+        "message": "最小RSSI値 (dBm)"
+    },
+    "osdTextStatUnknown": {
+        "message": "不明 $1",
+        "description": "One of the statistics that can be shown at the end of the flight in the OSD"
+    },
+    "osdDescStatUnknown": {
+        "message": "不明 統計値 (将来のリリースで対応予定)"
+    },
+    "osdDescribeFontVersion1": {
+        "message": "フォントバージョン: 1 (Betaflight 4.0以前)"
+    },
+    "osdDescribeFontVersion2": {
+        "message": "フォントバージョン: 2 (Betaflight 4.1以降)"
+    },
+    "osdDescribeFontVersionCUSTOM": {
+        "message": "フォントバージョン: ユーザ指定"
     },
     "osdTimerSource": {
         "message": "ソース:"
@@ -3799,11 +4331,39 @@
     "osdTimerSourceTooltip": {
         "message": "タイマーソースを選択します。これはタイマー計測する期間 \/ イベントを制御します。"
     },
+    "osdTimerSourceOptionOnTime": {
+        "message": "On time",
+        "description": "One of the options for the source timer. This options shows the amount of time has passed since the battery was plugged"
+    },
+    "osdTimerSourceOptionTotalArmedTime": {
+        "message": "合計アーム時間",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed since the battery was plugged"
+    },
+    "osdTimerSourceOptionLastArmedTime": {
+        "message": "直近のアーム時間",
+        "description": "One of the options for the source timer. This options shows the amount of time the craft was armed the latest time"
+    },
+    "osdTimerSourceOptionOnArmTime": {
+        "message": "ON\/アーム時間",
+        "description": "One of the options for the source timer. This option shows On time when craft is disarmed, and Armed time when armed"
+    },
     "osdTimerPrecision": {
         "message": "精度:"
     },
     "osdTimerPrecisionTooltip": {
         "message": "タイマー精度を選択します。これは、時間情報がどれくらいの精度でレポートされるかを制御します。"
+    },
+    "osdTimerPrecisionOptionSecond": {
+        "message": "秒",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionHundredth": {
+        "message": "100分の1",
+        "description": "Selectable option for the precision of the timer in the OSD"
+    },
+    "osdTimerPrecisionOptionTenth": {
+        "message": "10分の1",
+        "description": "Selectable option for the precision of the timer in the OSD"
     },
     "osdTimerAlarm": {
         "message": "アラーム:"
@@ -3811,47 +4371,135 @@
     "osdTimerAlarmTooltip": {
         "message": "タイマーアラームのしきい値を分単位で選択します。時間がこの値を超えると、OSD表示にて点滅し、これを0に設定するとアラームが無効になります。"
     },
-    "osdWarningUnknown": {
-        "message": "原因不明の警告 (詳細は今後のリリースで対応予定)"
+    "osdTimerAlarmOptionRssi": {
+        "message": "RSSI",
+        "description": "Text of the RSSI alarm"
+    },
+    "osdTimerAlarmOptionCapacity": {
+        "message": "キャパシティ",
+        "description": "Text of the capacity alarm"
+    },
+    "osdTimerAlarmOptionAltitude": {
+        "message": "高度",
+        "description": "Text of the altitude alarm"
+    },
+    "osdWarningTextArmingDisabled": {
+        "message": "アーム無効",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningArmingDisabled": {
         "message": "アーミングできない最も重大な理由を報告"
     },
+    "osdWarningTextBatteryNotFull": {
+        "message": "バッテリー満充電でない",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningBatteryNotFull": {
         "message": "完全に充電されていないバッテリーが接続されたときの警告"
+    },
+    "osdWarningTextBatteryWarning": {
+        "message": "バッテリー警告",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningBatteryWarning": {
         "message": "バッテリー電圧が警告しきい値を下回ったときの警告"
     },
+    "osdWarningTextBatteryCritical": {
+        "message": "バッテリー臨界値",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningBatteryCritical": {
         "message": "バッテリー電圧が最小平均セル電圧を下回ったときの警告"
+    },
+    "osdWarningTextVisualBeeper": {
+        "message": "ビープ音",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningVisualBeeper": {
         "message": "ビープを可視化 (4点滅LED表示)"
     },
+    "osdWarningTextCrashFlipMode": {
+        "message": "Crash flip モード",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningCrashFlipMode": {
         "message": "クラッシュモードを有効後、フリップすると警告"
+    },
+    "osdWarningTextEscFail": {
+        "message": "ESC不良",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningEscFail": {
         "message": "障害が発生しているESC \/ モーターリストの列挙\n (回転数または温度が設定しきい値を超過)"
     },
+    "osdWarningTextCoreTemperature": {
+        "message": "コア温度",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningCoreTemperature": {
         "message": "MCUコア温度が設定されたしきい値を超えたときに警告"
+    },
+    "osdWarningTextRcSmoothingFailure": {
+        "message": "RC Smoothing 不良",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningRcSmoothingFailure": {
         "message": "RCスムージングの初期化に失敗した場合に警告"
     },
+    "osdWarningTextFailsafe": {
+        "message": "フェイルセーフ",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningFailsafe": {
         "message": "フェイルセーフ発生時に警告"
     },
+    "osdWarningTextLaunchControl": {
+        "message": "ローンチコントロール",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningLaunchControl": {
-        "message": "起動制御モードが有効となったときの警告"
+        "message": "ローンチコントロールモードが有効となったときの警告"
+    },
+    "osdWarningTextGpsRescueUnavailable": {
+        "message": "GPSレスキュー利用不可",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
     },
     "osdWarningGpsRescueUnavailable": {
         "message": "GPS レスキューが利用できず、有効にならないときに警告"
     },
+    "osdWarningTextGpsRescueDisabled": {
+        "message": "GPSレスキュー無効",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
     "osdWarningGpsRescueDisabled": {
         "message": "GPS レスキューが無効な場合に警告"
+    },
+    "osdWarningTextRSSI": {
+        "message": "RSSI",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRSSI": {
+        "message": "RSSIがアラーム設定を下回ったときの警告"
+    },
+    "osdWarningTextLinkQuality": {
+        "message": "リンク品質",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningLinkQuality": {
+        "message": "送受信品質がアラーム設定を下回ったときの警告"
+    },
+    "osdWarningTextRssiDbm": {
+        "message": "RSSI dBm",
+        "description": "One of the warnings that can be selected to be shown in the OSD"
+    },
+    "osdWarningRssiDbm": {
+        "message": "RSSI値 (dBm) がアラーム設定を下回ったときの警告"
+    },
+    "osdWarningTextUnknown": {
+        "message": "不明 $1"
+    },
+    "osdWarningUnknown": {
+        "message": "原因不明の警告 (詳細は今後のリリースで対応予定)"
     },
     "osdSectionHelpElements": {
         "message": "OSDを有効、または無効にします。"
@@ -3980,7 +4628,7 @@
         "message": "Rateprofile"
     },
     "pidTuningRateProfileTip": {
-        "message": "1つのProfileにつき最大3つの異なるRateprofileをフライトコントローラに保存することができます。Rateprofileには、RCレート、レート、RC Expo、スロットル、およびTPAの設定が含まれます。 [調整] タブの [Rateprofile選択] の3つのポジションスイッチを設定することで、Rateprofileの切り替えが可能です。"
+        "message": "1つのProfileにつき最大3つの異なるRateprofileをフライトコントローラに保存することができます。Rateprofileには、RCレート、レート、RC Expo、スロットル、およびTPAの設定が含まれます。 [調整] タブの [Rateprofile選択] の3POSスイッチを設定することで、Rateprofileの切り替えが可能です。"
     },
     "pidTuningDelta": {
         "message": "D値 メソッド"
@@ -4073,6 +4721,12 @@
         "message": "カメラ モード切替"
     },
     "flashTab": {
-        "message": "ファームウェアをアップデート"
+        "message": "Update Firmware"
+    },
+    "cliAutoComplete": {
+        "message": "CLI オートコンプリート"
+    },
+    "darkTheme": {
+        "message": "ダークテーマを有効"
     }
 }

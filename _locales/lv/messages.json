@@ -494,9 +494,6 @@
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong> ir lidojuma kontroliera programmatūra, kas ir <strong>atvērta koda tipa<\/strong> un ir pieejama bezmaksas <strong>bez garantijas<\/strong> visiem lietotājiem.<\/p><p>Ja tev Betaflight vai Betaflight konfigurators ir noderīgi, lūdzu apsver iespēju <strong>atbalstīt<\/strong> to izstrādi ziedojot.<\/p>"
     },
-    "defaultDonateBottom": {
-        "message": "<p>Ja vēlies regulāri finansiāli palīdzēt, apsver iespēju kļūt par ziedotāju iekš <a href='https:\/\/www.patreon.com\/betaflight'>Patreon<\/a>.<\/p>"
-    },
     "defaultDonate": {
         "message": "Ziedot"
     },
@@ -676,87 +673,87 @@
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "Gyro netika atrasts",
-        "description": "Description of the NO GYRO arming disable flag"
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
         "message": "Failsafe ir aktīvs",
-        "description": "Description of the FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
         "message": "Derīgs uztvērēja signāls netika atrasts",
-        "description": "Description of the RX_FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
         "message": "Uztvērējs ir atjaunojies pēc uztvērēja failsafe, bet aktivizēšanas slēdzis ir ieslēgts",
-        "description": "Description of the BAD_RX_RECOVERY arming disable flag"
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
         "message": "'FAILSAFE' slēdzis tika aktivizēts",
-        "description": "Description of the BOXFAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
         "message": "Aizbēgšanas novēršana ir aktivizējusies",
-        "description": "Description of the RUNAWAY_TAKEOFF arming disable flag"
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
         "message": "Droseles kanālā pārāk augsts līmenis",
-        "description": "Description of the THROTTLE arming disable flag"
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "Gaisa kuģis nav līmenī (pietiekamā)",
-        "description": "Description of the ANGLE arming disable flag"
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
         "message": "Pārāk agri aktivizējāt pēc barošanas pieslēgšanas",
-        "description": "Description of the BOOT_GRACE_TIME arming disable flag"
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipNOPREARM": {
         "message": "Priekšaktivizēšanas slēdzis nav atvizēts vai netika atgriezts sākotnējā pozīcijā",
-        "description": "Description of the NOPREARM arming disable flag"
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipLOAD": {
         "message": "Sistēmas noslodze ir pārāk liela, lai droši lidotu",
-        "description": "Description of the LOAD arming disable flag"
+        "description": "Message that pops up to describe the LOAD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
         "message": "Sensora kalibrēšana joprojām notiek",
-        "description": "Description of the CALIBRATING arming disable flag"
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCLI": {
         "message": "CLI ir aktīvs",
-        "description": "Description of the CLI arming disable flag"
+        "description": "Message that pops up to describe the CLI arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
         "message": "CMS (konfig izvēlnē) ir aktīva - caur OSD vai citu ekrānu -",
-        "description": "Description of the CMS_MENU arming disable flag"
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "OSD izvēlne ir aktīva",
-        "description": "Description of the OSD_MENU arming disable flag"
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBST": {
         "message": "Black Sheep telemetrijas ierīce (piem. TBS Core Pro) ir deaktivēta un nepieļauj aktivizēšanu",
-        "description": "Description of the BST arming disable flag"
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "MSP savienojums ir aktīvs, visdrīzāk ar Betaflight Configurator",
-        "description": "Description of the MSP arming disable flag"
+        "description": "Message that pops up to describe the MSP arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipPARALYZE": {
         "message": "Paralizēšanas režīms tika aktivizēts",
-        "description": "Description of the PARALYZE arming disable flag"
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipGPS": {
         "message": "GPS glābšanas režīms ir nokonfigurēts, bet nepieciešama vairāku satelītu fiksācija",
-        "description": "Description of the GPS arming disable flag"
+        "description": "Message that pops up to describe the GPS arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRESC": {
         "message": "'GPS' slēdzis tika aktivizēts",
-        "description": "Description of the RESC arming disable flag"
+        "description": "Message that pops up to describe the RESC arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Viens no citiem dezaktivācijas karogiem ir aktīvs, kad aktivizē",
-        "description": "Description of the ARM_SWITCH arming disable flag"
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
     },
     "initialSetupGPSHead": {
         "message": "GPS"
@@ -1162,9 +1159,6 @@
     },
     "configurationLoopTimeHelp": {
         "message": "<strong>Piezīme:<\/strong> Pārliecināties, ka jūsu kontrolieris ir spējīgs darboties šādos ātrumos! Pārbaudiet CPU un cikla laika stabilitāti. Mainot šo iespējams būs nepieciešams pārregulēt PID. IETEIKUMS: Atslēdziet Akselerometru un citus sensorus lai ietaupītu CPU resursus."
-    },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Piezīme par žiroskopa 32kHz mērījuma ātruma režīmā:<\/strong> Žiroskopa 32kHz mērījuma ātruma režīma atbalsts Betaflight tika pievienots kā eksperimentāla iespēja. Šos gadus kamēr tā bija pieejama, tā neuzrādīja nekādas priekšrocības attiecībā pret 8 kHz mērījuma ātruma režīmu, dēļ tās īpašās jūtības uz vibrācijām, un augsto trokšņu līmeni, kam nepieciešama agresīva filtrēšana, kas savukārt radīja aiztures vadības cilpās. Dēļ šī iemesla, <strong>žiroskopa 32kHz mērījuma ātruma režīma atbalsts ir pārtraukts<\/strong> iekš Betaflight 4.0."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1607,6 +1601,9 @@
     "tuningHelp": {
         "message": "<b>Ieregulēšanas ieteikumi <\/b><br \/><span class=\"message-negative\">SVARĪGI:<\/span> Ir svarīgi pārbaudīt motoru temperatūras pirmā lidojuma laikā. Jo lielākas filtru vērtības, jo labāk iespējams tas lidos, bet jūs iegūsiet lielāku trokšņu līmeni motoros. <br>Noklusētā vērtība 100Hz ir optimāla, bet pie trokšņainākām konstrukcijām, jūs varat mēģināt samazināt Dterm filtru uz 50Hz un iespējams arī žiroskopa filtru."
     },
+    "filterWarning": {
+        "message": "<span class=\"message-negative\"><b>Brīdinājums:<\/b><\/span>Šāds filtrācijas daudzums ir bīstami mazs. Visdrīzāk gaisa kuģis būs grūti kontrolējams, un var izraisīt tā pazušanu. \n Ļoti tev iesakām <b>ieslēgt vismaz vienu Žiroskopa dinamisko zemfrekvenču vai Žiroskopa zemfrekvenču 1 un vismaz vienu D Term dinamisko zemfrekvenču vai D Term zemfrekvenču 1<\/b>."
+    },
     "receiverThrottleMid": {
         "message": "Droseles vidus"
     },
@@ -1723,18 +1720,6 @@
     },
     "auxiliaryModeLogicAND": {
         "message": "UN"
-    },
-    "adjustmentsHelp": {
-        "message": "Konfigurēt pieregulēšanas slēdžus. Detaļas ir atrodamas manuāla sadaļā 'in-flight adjustments'. Šīs izmaiņas ko pieregulēšanas funkcija izpilda netiek automātiski saglabātas. Tur ir 4 sloti. Katrs slēdzis tiek lietots, lai vienlaikus veiktu nepieciešamās izmaiņas atbilstošam slotam."
-    },
-    "adjustmentsExamples": {
-        "message": "Piemēri"
-    },
-    "adjustmentsExample1": {
-        "message": "Izmantojiet Slotu 1 un 3 pozīciju slēdzi uz AUX1, lai izvēlētos starp Pitch\/Roll P, I un D un citu 3 pozīciju slēdzi uz AUX2, lai palielinātu vai samazinātu vērtību turot to augšā vai lejā."
-    },
-    "adjustmentsExample2": {
-        "message": "Izmanto Slotu 2 un 3 pozīciju slēdzi uz AUX4 lai izvēlētos ieslēgt Ātrumprofilu izvēli ar to pašu 3 pozīciju slēdzi uz tā paša kanāla."
     },
     "adjustmentsColumnEnable": {
         "message": "Ja ieslēgts"
@@ -2176,9 +2161,6 @@
     },
     "cliInfo": {
         "message": "<strong>Piezīme:<\/strong> Atstājot CLI  vai nospiežot Atvienot <strong>automātiski<\/strong> nosūta uz plati komandu \"<strong>exit<\/strong>\".  Ar jaunāko programmatūru tas liks kontrolierim <strong>pārstartēties<\/strong> un nesaglabātās izmaiņas tiks <strong>pazaudētas<\/strong>.<p><strong><span class=\"message-negative\">Brīdinājums:<\/span><\/strong> Iekš CLI dažas komandas var izraisīt patvaļīgu signālu nosūtīšanu uz motoru izejām. Tas var izraisīt motoru griešanos, ja akumulators ir pieslēgts. Tamdēļ ļoti iesakām pārliecināties, <strong>ka akumulators nav pieslēgts, pirms ievadīt komandas iekš CLI<\/strong>."
-    },
-    "cliInputPlaceholder": {
-        "message": "Rakstiet jūsu komandu šeit"
     },
     "cliEnter": {
         "message": "Detektēts CLI režīms"
@@ -3043,6 +3025,9 @@
     "pidTuningAbsoluteControlGain": {
         "message": "Absolūtā kontrole"
     },
+    "pidTuningAbsoluteControlGainHelp": {
+        "message": "Šī funkcionalitāte atrisina dažas $t(pidTuningItermRotation.message) pamatproblēmas un cerams kādreiz aizvietos to pilnībā. Šī funkcionalitāte akumulē absolūto žiroskopa kļūdu iekš multirotorā koordinātām un jauc kopā ar proporcionālo korekciju iekš iestatījuma. Lai tas strādātu jums jāieslēdz AirMode un $t(pidTuningItermRelax.message) (priekš $t(pidTuningItermRelaxAxesOptionRP.message)). Ja jūs kombinējat šo funkcionalitāti ar $t(pidTuningIntegratedYaw.message), jūs varat ieslēgt $t(pidTuningItermRelax.message) priekš $t(pidTuningItermRelaxAxesOptionRPY.message)."
+    },
     "pidTuningThrottleBoost": {
         "message": "Droseles būsts"
     },
@@ -3418,9 +3403,6 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
-    "osdSetupPreviewHelp": {
-        "message": "<strong>Piezīme:<\/strong> OSD priekšskatījums var nerādīt aktuālos fontus, kas ieinstalēti lidojuma kontrolierī."
-    },
     "osdSetupUnsupportedNote1": {
         "message": "Jūsu lidojuma kontrolieris neatbild uz OSD komandām. Visdrīzāk tas nozīmē to, ka tam nav integrēta BetaFlight OSD."
     },
@@ -3440,7 +3422,7 @@
     },
     "osdSetupPreviewSelectProfileTitle": {
         "message": "Priekšskatījums",
-        "description": "Label of the selector for the OSD Profile in the preview"
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
     },
     "osdSetupSelectedProfileTitle": {
         "message": "Aktīvais OSD profils",
@@ -3453,9 +3435,6 @@
     "osdSetupPreviewSelectProfileElement": {
         "message": "OSD profils {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
-    },
-    "osdSetupPreviewTitleTip": {
-        "message": "Rādīt vai slēpt logotipu priekšskatījuma logā. Šis nemainīs nekādus iestatījumus lidojuma kontrolierī."
     },
     "osdSetupVideoFormatTitle": {
         "message": "Video Formāts"
@@ -3583,9 +3562,6 @@
     "osdDescElementCraftName": {
         "message": "Konfigurācijas cilnē iestatītais gaisa kuģa vārds"
     },
-    "osdDescElementDisplayName": {
-        "message": "Rādīt vārdu kas uzstādīts ar CLI komandu \"display_name\""
-    },
     "osdDescElementAltitude": {
         "message": "Patreizējais augstums (mirgo, ja ir virs trauksmes sliekšņa)"
     },
@@ -3603,12 +3579,6 @@
     },
     "osdDescElementGPSSats": {
         "message": "GPS pieejamo satelītu skaits"
-    },
-    "osdDescElementGPSLon": {
-        "message": "GPS garums"
-    },
-    "osdDescElementGPSLat": {
-        "message": "GPS platums"
     },
     "osdDescElementDebug": {
         "message": "Atkļūdošanas mainīgie"
@@ -3646,24 +3616,6 @@
     "osdDescElementArmedTime": {
         "message": "Laiks kopš gaisa kuģis pēdējo reizi tika aktivizēts"
     },
-    "osdDescElementWarnings": {
-        "message": "Trauksmes (piem. zems akumulatora līmenis), brīdinājumi (piem. iemesls kāpēc neaktivējas, kritiski zems akumulatora līmenis) un vizuālais pīkstulis (4 mirgojoša zvaigznītes)."
-    },
-    "osdDescElementEscTemperature": {
-        "message": "ESC telemetrijas ziņotā temperatūra"
-    },
-    "osdDescElementEscRpm": {
-        "message": "ESC telemetrijas ziņotais RPM"
-    },
-    "osdDescElementEscRpmFreq": {
-        "message": "ESC telemetrijas ziņotā RPM frekvence"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "Reālā laika pulksteņa datums \/ laiks"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "Patreiz aktīvā pieregulējamā diapazona konfigurācija un vērtība"
-    },
     "osdDescElementHomeDirection": {
         "message": "Bulta, kas norāda virzienu uz mājām"
     },
@@ -3678,6 +3630,45 @@
     },
     "osdDescElementCompassBar": {
         "message": "Kompasa grafiskā josla, kas norāda patreizējo debespusi"
+    },
+    "osdDescElementWarnings": {
+        "message": "Trauksmes (piem. zems akumulatora līmenis), brīdinājumi (piem. iemesls kāpēc neaktivējas, kritiski zems akumulatora līmenis) un vizuālais pīkstulis (4 mirgojoša zvaigznītes)."
+    },
+    "osdDescElementEscTemperature": {
+        "message": "ESC telemetrijas ziņotā temperatūra"
+    },
+    "osdDescElementEscRpm": {
+        "message": "ESC telemetrijas ziņotais RPM"
+    },
+    "osdDescElementRemaningTimeEstimate": {
+        "message": "Paredzamais atlikušais lidojuma laiks"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Reālā laika pulksteņa datums \/ laiks"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "Patreiz aktīvā pieregulējamā diapazona konfigurācija un vērtība"
+    },
+    "osdDescElementTimer1": {
+        "message": "Rādīt taimera 1 vērtību"
+    },
+    "osdDescElementTimer2": {
+        "message": "Rādīt taimera 2 vērtību"
+    },
+    "osdDescElementCoreTemperature": {
+        "message": "STM32 MCU kodola temperatūra"
+    },
+    "osdDescAntiGravity": {
+        "message": "Ieslēdz indikatoru, ja antigravitācija ir aktīva"
+    },
+    "osdDescGForce": {
+        "message": "Parādīt cik lielu G-Spēku piedzīvo gaisa kuģis"
+    },
+    "osdDescElementMotorDiag": {
+        "message": "Parādīt katra motora izejas grafisko joslu"
+    },
+    "osdDescElementLogStatus": {
+        "message": "Melnā kastes numurs un brīdinājumi"
     },
     "osdDescElementFlipArrow": {
         "message": "Bultiņa parāda kurā pusē motori ir bruņurupuča režīmā"
@@ -3694,32 +3685,14 @@
     "osdDescElementStickOverlayRight": {
         "message": "Raidītāja labās vadības sviras pozīcijas overlais."
     },
-    "osdDescElementTimer1": {
-        "message": "Rādīt taimera 1 vērtību"
+    "osdDescElementDisplayName": {
+        "message": "Rādīt vārdu kas uzstādīts ar CLI komandu \"display_name\""
     },
-    "osdDescElementTimer2": {
-        "message": "Rādīt taimera 2 vērtību"
-    },
-    "osdDescElementRemaningTimeEstimate": {
-        "message": "Paredzamais atlikušais lidojuma laiks"
+    "osdDescElementEscRpmFreq": {
+        "message": "ESC telemetrijas ziņotā RPM frekvence"
     },
     "osdDescElementUnknown": {
         "message": "Nezināms elements (informācija tiks pievienota nākamajā relīzē)"
-    },
-    "osdDescElementCoreTemperature": {
-        "message": "STM32 MCU kodola temperatūra"
-    },
-    "osdDescAntiGravity": {
-        "message": "Ieslēdz indikatoru, ja antigravitācija ir aktīva"
-    },
-    "osdDescGForce": {
-        "message": "Parādīt cik lielu G-Spēku piedzīvo gaisa kuģis"
-    },
-    "osdDescElementMotorDiag": {
-        "message": "Parādīt katra motora izejas grafisko joslu"
-    },
-    "osdDescElementLogStatus": {
-        "message": "Melnā kastes numurs un brīdinājumi"
     },
     "osdDescStatMaxSpeed": {
         "message": "Maksimālais piefiksētais ātrums"
@@ -3805,9 +3778,6 @@
     "osdTimerAlarmTooltip": {
         "message": "Izvēlēties taimera trauksmes slieksni minūtēs, kad tiks sasniegta šī vērtība, OSD elements sāks mirgot, uzstādiet 0, lai atslēgtu trauksmi"
     },
-    "osdWarningUnknown": {
-        "message": "Nezināms brīdinājums (detaļas tiks pievienotas nākotnes relīzēs)"
-    },
     "osdWarningArmingDisabled": {
         "message": "Ziņo par visiespējamāko iemeslu kāpēc neaktivizējas"
     },
@@ -3846,6 +3816,9 @@
     },
     "osdWarningGpsRescueDisabled": {
         "message": "Brīdināt, kad GPS glābšana ir atslēgta"
+    },
+    "osdWarningUnknown": {
+        "message": "Nezināms brīdinājums (detaļas tiks pievienotas nākotnes relīzēs)"
     },
     "osdSectionHelpElements": {
         "message": "Ieslēgt vai izslēgt OSD elementus."

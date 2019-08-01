@@ -1364,18 +1364,6 @@
     "auxiliaryAutoChannelSelect": {
         "message": "AUTO"
     },
-    "adjustmentsHelp": {
-        "message": "Configureu els interruptors d'ajust. Consulteu la secció \"Ajustaments de vol\" del manual per obtenir-ne més detalls. Els canvis que realitzen les funcions d'ajust no es guarden automàticament. Hi ha 4 ranures (slots). Cada interruptor utilitzat per fer ajustaments simultanis requereix l'ús exclusiu d'una ranura."
-    },
-    "adjustmentsExamples": {
-        "message": "Exemples"
-    },
-    "adjustmentsExample1": {
-        "message": "Utilitza l'Slot 1 i un switch de tres posicions a l'AUX1 per seleccionar entre Pitch\/Roll P, I i D i un altre switch de tres posicions a l'AUX2 per incrementar o disminuir el valor mantenint amunt o avall."
-    },
-    "adjustmentsExample2": {
-        "message": "Utilitza Slot 2 i un switch de 3 posicions a l'AUX4 per a habilitat la selecció de perfil de rate al mateix switch de 3 posicions del mateix canal."
-    },
     "adjustmentsColumnEnable": {
         "message": "si habilitat"
     },
@@ -1789,9 +1777,6 @@
     },
     "sensorsDebugTitle": {
         "message": "Debug"
-    },
-    "cliInputPlaceholder": {
-        "message": "Escriu la teva comanda aquí"
     },
     "cliEnter": {
         "message": "Mode CLI detectat"
@@ -2830,9 +2815,6 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
-    "osdSetupPreviewHelp": {
-        "message": "<strong>Nota:<\/strong> La previsualització de l'OSD pot no mostrar la font instaŀlada a la controladora de vol."
-    },
     "osdSetupUnsupportedNote1": {
         "message": "La teva controladora de vol no respon a les comandes OSD. Això vol dir, probablement, que no està integrada a l'OSD de BetaFlight"
     },
@@ -2841,9 +2823,6 @@
     },
     "osdSetupElementsTitle": {
         "message": "Elements"
-    },
-    "osdSetupPreviewTitleTip": {
-        "message": "Mostra o amaga el logo a la finestra de previsualització. Això no canviarà cap configuració a la controladora de vol."
     },
     "osdSetupVideoFormatTitle": {
         "message": "Format de video"
@@ -2977,12 +2956,6 @@
     "osdDescElementGPSSats": {
         "message": "Nombre de satèŀlits GPS que donen localització"
     },
-    "osdDescElementGPSLon": {
-        "message": "Longitud GPS"
-    },
-    "osdDescElementGPSLat": {
-        "message": "Latitud  GPS"
-    },
     "osdDescElementDebug": {
         "message": "Variables de Debug"
     },
@@ -3019,21 +2992,6 @@
     "osdDescElementArmedTime": {
         "message": "Temps des que l'aeronau va ser armada"
     },
-    "osdDescElementWarnings": {
-        "message": "Alertes (p.ex. bateria baixa), avisos (p.ex. raons per les quals no arma) i beeper visual (4 asteriscs parpellejant)."
-    },
-    "osdDescElementEscTemperature": {
-        "message": "Temperatura reportada per la telemetria d'ESCs"
-    },
-    "osdDescElementEscRpm": {
-        "message": "RPM reportat per la telemetria ESC"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "Hora \/ data real"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "Ajustament de rang i de valor actiu actualment"
-    },
     "osdDescElementHomeDirection": {
         "message": "Fletxa indicant la direcció de la posició de casa"
     },
@@ -3049,20 +3007,35 @@
     "osdDescElementCompassBar": {
         "message": "Compàs gràfic mostrant la direcció actual"
     },
+    "osdDescElementWarnings": {
+        "message": "Alertes (p.ex. bateria baixa), avisos (p.ex. raons per les quals no arma) i beeper visual (4 asteriscs parpellejant)."
+    },
+    "osdDescElementEscTemperature": {
+        "message": "Temperatura reportada per la telemetria d'ESCs"
+    },
+    "osdDescElementEscRpm": {
+        "message": "RPM reportat per la telemetria ESC"
+    },
+    "osdDescElementRemaningTimeEstimate": {
+        "message": "Temps estimat restant de volt"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Hora \/ data real"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "Ajustament de rang i de valor actiu actualment"
+    },
     "osdDescElementTimer1": {
         "message": "Mostra el valor del timer 1"
     },
     "osdDescElementTimer2": {
         "message": "Mostra el valor del timer 2"
     },
-    "osdDescElementRemaningTimeEstimate": {
-        "message": "Temps estimat restant de volt"
+    "osdDescElementCoreTemperature": {
+        "message": "Temperatura del nucli MCU STM32"
     },
     "osdDescElementUnknown": {
         "message": "Element desconegut (Els detalls s'afegiran a publicacions futures)"
-    },
-    "osdDescElementCoreTemperature": {
-        "message": "Temperatura del nucli MCU STM32"
     },
     "osdDescStatMaxSpeed": {
         "message": "Velocitat màxima registrada"

@@ -2,10 +2,6 @@
     "translation_version": {
         "message": "0"
     },
-    "windowTitle": {
-        "message": "Betaflight Konfigurator",
-        "description": "Title of the application window, usually not translated"
-    },
     "error": {
         "message": "Fehler: {{errorMessage}}"
     },
@@ -495,9 +491,6 @@
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong> ist eine <strong>open source<\/strong> Flugcontroller Software. Sie ist gratis und <strong>ohne Garantie<\/strong> für alle Nutzer verfügbar.<\/p><p>Wenn Sie Betaflight oder den Betaflight Konfigurator nützlich finden, überlegen Sie, ob Sie das Projekt und dessen Entwicklung via Spenden <strong>unterstützen<\/strong> wollen.<\/p>"
     },
-    "defaultDonateBottom": {
-        "message": "<p>Wenn Sie uns finanziell unterstützen wollen, können Sie via <a href='https:\/\/www.patreon.com\/betaflight'>Patreon<\/a> auch regelmässig helfen.<\/p>"
-    },
     "defaultDonate": {
         "message": "Spenden"
     },
@@ -677,87 +670,95 @@
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "Kein Gyro-Sensor erkannt",
-        "description": "Description of the NO GYRO arming disable flag"
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
         "message": "Failsafe ist aktiv",
-        "description": "Description of the FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
         "message": "Kein gültiges Empfänger-Signal erkannt",
-        "description": "Description of the RX_FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
         "message": "Der Empfänger hat den Status 'Empfänger Failsafe' verlassen, aber der Arming-Schalter ist auf 'Ein'",
-        "description": "Description of the BAD_RX_RECOVERY arming disable flag"
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
         "message": "Der 'FAILSAFE'-Schalter wurde betätigt",
-        "description": "Description of the BOXFAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
         "message": "Versehentlicher Start erkannt und unterbunden",
-        "description": "Description of the RUNAWAY_TAKEOFF arming disable flag"
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
         "message": "Gaskanal ist zu hoch",
-        "description": "Description of the THROTTLE arming disable flag"
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "Modell steht nicht (ausreichend) eben",
-        "description": "Description of the ANGLE arming disable flag"
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
         "message": "Arming zu früh nach dem Einschalten ausgelöst",
-        "description": "Description of the BOOT_GRACE_TIME arming disable flag"
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipNOPREARM": {
         "message": "Prearm-Schalter ist nicht aktiv, oder Prearm wurde nach dem Disarmen nicht ausgelöst",
-        "description": "Description of the NOPREARM arming disable flag"
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipLOAD": {
         "message": "Systemauslastung zu hoch für einen sicheren Flug",
-        "description": "Description of the LOAD arming disable flag"
+        "description": "Message that pops up to describe the LOAD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
         "message": "Sensorkalibrierung noch nicht abgeschlossen",
-        "description": "Description of the CALIBRATING arming disable flag"
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCLI": {
         "message": "Kommandozeile ist aktiv",
-        "description": "Description of the CLI arming disable flag"
+        "description": "Message that pops up to describe the CLI arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
         "message": "CMS (Konfigurations-Menü) ist aktiv - über OSD oder ein anderes Display -",
-        "description": "Description of the CMS_MENU arming disable flag"
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "OSD-Menü aktiv",
-        "description": "Description of the OSD_MENU arming disable flag"
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBST": {
         "message": "Ein Black Sheep Telemetrie-Gerät (z.B. TBS Core Pro) hat 'Disarming' ausgelöst und verhindert das Arming",
-        "description": "Description of the BST arming disable flag"
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "MSP-Verbindung - wahrscheinlich mit diesem Betaflight-Konfigurator - ist aktiv",
-        "description": "Description of the MSP arming disable flag"
+        "description": "Message that pops up to describe the MSP arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipPARALYZE": {
         "message": "Paralyze-Modus wurde aktiviert",
-        "description": "Description of the PARALYZE arming disable flag"
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipGPS": {
         "message": "Der 'GPS-Rescue'-Modus ist konfiguriert, aber die erforderliche Anzahl von Satelliten wurde nicht gefunden",
-        "description": "Description of the GPS arming disable flag"
+        "description": "Message that pops up to describe the GPS arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRESC": {
         "message": "Der 'GPS-Rescue'-Schalter wurde aktiviert",
-        "description": "Description of the RESC arming disable flag"
+        "description": "Message that pops up to describe the RESC arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipRPMFILTER": {
+        "message": "Die RPM-basierte Filterung ist aktiviert, aber ein oder mehrere ESCs liefern keine gültige DSHOT-Telemetrie. Prüfe, ob die ESCs kompatibel sind und die erforderliche Firmware installiert haben, um bidirektionale DSHOT-Telemetrie zu unterstützen.",
+        "description": "Message that pops up to describe the RPMFILTER arming disable flag"
+    },
+    "initialSetupArmingDisableFlagsTooltipREBOOT_REQD": {
+        "message": "Eine Konfigurationsänderung erfordert einen Neustart",
+        "description": "Message that pops up to describe the REBOOT_REQD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Einer der anderen 'Disarm-Flags' ist aktiv während des Armings",
-        "description": "Description of the ARM_SWITCH arming disable flag"
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
     },
     "initialSetupGPSHead": {
         "message": "GPS"
@@ -1165,7 +1166,7 @@
         "message": "<strong>Hinweis:<\/strong> Stelle sicher, dass dein FC mit dieser Geschwindigkeit arbeiten kann. Prüfe die CPU Auslastung und die Cycletime Stabilität. Änderungen führen möglicherweise dazu, dass die PID's neu eingestellt werden müssen. Tipp: Deaktiviere unbenutzte Sensoren, um mehr Leistung zu haben."
     },
     "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Hinweis zum 32 kHz-Gyro Gyro Sampling-Modus:<\/strong> Die Unterstützung für den 32 kHz-Gyro Gyro Sampling-Modus wurde als experimentelles Feature zu Betaflight hinzugefügt. In den Jahren, die es zur Verfügung stand, hat es keinen Vorteil gegenüber dem 8 kHz Gyro Sampling-Modus gezeigt. Aufgrund seiner Anfälligkeit für Vibrationen und des hohen Rauschpegels erfordert dies ein aggressives Filtern, was zu Verzögerungen im Regelkreis führt. Aus diesem Grund <strong>entfällt die Unterstützung für den 32 kHz Sampling Gyro-Modus <\/strong> in Betaflight 4.0."
+        "message": "$t(configurationLoopTimeHelp.message)\n<br>\n<strong>Hinweis zum 32 kHz-Gyro Sampling-Modus:<\/strong> \nDie Unterstützung für den 32 kHz-Gyro Sampling-Modus wurde als experimentelles Feature zu Betaflight hinzugefügt. In den Jahren, die es zur Verfügung stand, hat es keinen Vorteil gegenüber dem 8 kHz Gyro Sampling-Modus gezeigt. Aufgrund seiner Anfälligkeit für Vibrationen und des hohen Rauschpegels erfordert dies ein aggressives Filtern, was zu Verzögerungen im Regelkreis führt. Aus diesem Grund \n<strong>entfällt die Unterstützung für den 32 kHz Sampling Gyro-Modus <\/strong>\n in Betaflight 4.0."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1728,17 +1729,11 @@
     "auxiliaryModeLogicAND": {
         "message": "UND"
     },
-    "adjustmentsHelp": {
-        "message": "Konfiguriere Schalter Anpassungen. Siehe im 'in-flight adjustments' Abschnitt des Handbuchs für Details nach. Die Änderungen an Anpassungsfunktionen werden nicht automatisch gespeichert. Es gibt 4 (Speicher-) Slots. Jeder Schalter der für gleichzeitige Anpassungen genutzt wird, muss jeweils einem eindeutigen Slot zugeordnet sein."
+    "adjustmentSlotsHelp": {
+        "message": "Es gibt 4 Slots. Jeder Schalter, der zur gleichzeitigen Anpassung verwendet wird, erfordert eine exklusive Verwendung eines Slots."
     },
     "adjustmentsExamples": {
         "message": "Beispiele:"
-    },
-    "adjustmentsExample1": {
-        "message": "Benutze Speicherplatz 1 und einen 3 Pos. Schalter auf AUX1, um die Werte von Roll \/ Pitch P I und D mit Hilfe eines weitern 3 Pos. Schalters auf AUX2 zu erhöhen oder zu senken."
-    },
-    "adjustmentsExample2": {
-        "message": "Benutze Speicherplatz 2 und einen 3 Pos. Schalter auf AUX4, um die Auswahl des Rate Profils über diesen 3 Kanal Schalter auf dem selben Kanal auszuwählen."
     },
     "adjustmentsColumnEnable": {
         "message": "falls aktiviert"
@@ -1876,7 +1871,7 @@
         "message": "LED-Profilauswahl"
     },
     "adjustmentsSave": {
-        "message": "Speichtern"
+        "message": "Speichern"
     },
     "adjustmentsEepromSaved": {
         "message": "EEPROM <span class=\"message-positive\">gespeichert<\/span>"
@@ -2179,10 +2174,13 @@
         "message": "Debug"
     },
     "cliInfo": {
-        "message": "<strong>Hinweis:<\/strong> Beim Verlassen des CLI Tab oder beim Drücken der Taste \"trennen\" wird <strong>automatisch<\/strong>  <strong>beenden<\/strong> and die Flugsteuerung gesendet.  Mit der neuesten Firmware wird sie dadurch<strong>neu gestartet<\/strong> und nicht gespeicherte Änderungen gehen <strong>verloren<\/strong>. <p><strong><span class=\"message-negative\">Warnung:<\/span><\/strong> Einige CLI Befehle können dazu führen, dass willkürliche Signale an die Motoren geschickt werden. Dadurch können Motoren hochdrehen, wenn ein Batterie angeschlossen ist. Daher wird dringend empfohlen sicherzustellen, dass <strong> keine Batterie angeschlossen ist, bevor Sie Befehle in die CLI eingeben<\/strong>."
+        "message": "<strong>Hinweis:<\/strong> Beim Verlassen des CLI Tab oder beim Drücken der Taste \"trennen\" wird <strong>automatisch<\/strong>  <strong>beenden<\/strong> an die Flugsteuerung gesendet.  Mit der neuesten Firmware wird sie dadurch <strong>neu gestartet<\/strong> und nicht gespeicherte Änderungen gehen <strong>verloren<\/strong>. <p><strong><span class=\"message-negative\">Warnung:<\/span><\/strong> Einige CLI Befehle können dazu führen, dass willkürliche Signale an die Motoren geschickt werden. Dadurch können Motoren hochdrehen, wenn ein Batterie angeschlossen ist. Daher wird dringend empfohlen sicherzustellen, dass <strong> keine Batterie angeschlossen ist, bevor Sie Befehle in die CLI eingeben<\/strong>."
     },
     "cliInputPlaceholder": {
-        "message": "Kommandos hier eingeben"
+        "message": "Schreibe hier deinen Befehl. Drücke Tab zur Autovervollständigung."
+    },
+    "cliInputPlaceholderBuilding": {
+        "message": "Bitte warte während der Erstellung des Autovervollständigungs-Zwischenspeichers ..."
     },
     "cliEnter": {
         "message": "CLI Modus erkannt"
@@ -2201,6 +2199,18 @@
     },
     "cliCopySuccessful": {
         "message": "Kopiert!"
+    },
+    "cliLoadFromFileBtn": {
+        "message": "Aus Datei laden"
+    },
+    "cliConfirmSnippetDialogTitle": {
+        "message": "Geladene Befehle überprüfen"
+    },
+    "cliConfirmSnippetNote": {
+        "message": "<strong>Hinweis<\/strong>: Du kannst Befehle vor der Ausführung überprüfen und bearbeiten."
+    },
+    "cliConfirmSnippetBtn": {
+        "message": "Ausführen"
     },
     "loggingNote": {
         "message": "Daten werden <span class=\"message-negative\">nur <\/span> in diesem Tab geloggt. Wenn der Tab geschlossen wird, wird das Loggen <span class=\"message-negative\">abgebrochen<\/span> und die Anwendung geht in den normalen Modus zurück."
@@ -3248,11 +3258,35 @@
     "powerBatteryWarning": {
         "message": "Zellspannung Warnung"
     },
+    "powerCalibrationManagerButton": {
+        "message": "Kalibrierung"
+    },
+    "powerCalibrationManagerTitle": {
+        "message": "Kalibrierungsmanager"
+    },
+    "powerCalibrationSave": {
+        "message": "Kalibriere"
+    },
+    "powerCalibrationApply": {
+        "message": "Kalibrierung verwenden"
+    },
+    "powerCalibrationDiscard": {
+        "message": "Kalibrierung verwerfen"
+    },
+    "powerCalibrationConfirmHelp": {
+        "message": "Neue kalibrierte Skalen werden hier angezeigt. <br>Wenn du sie anwendest, werden die Skalen gesetzt, aber <strong>sie werden nicht gespeichert.<\/strong><\/br> <br>Stelle nach dem Speichern sicher, dass die neue Spannung- und Stromanzeige korrekt ist.<\/br>"
+    },
     "powerVoltageHead": {
         "message": "Voltmeter"
     },
     "powerVoltageValue": {
         "message": "$1 V"
+    },
+    "powerVoltageCalibration": {
+        "message": "Gemessene Spannung"
+    },
+    "powerVoltageCalibratedScale": {
+        "message": "Kalibrierte Spannungsskala:"
     },
     "powerAmperageValue": {
         "message": "$1 A"
@@ -3395,6 +3429,12 @@
     "powerAmperageOffset": {
         "message": "Versatz [mA]"
     },
+    "powerAmperageCalibration": {
+        "message": "Gemesser Strom"
+    },
+    "powerAmperageCalibratedScale": {
+        "message": "Kalibrierte Stromskala:"
+    },
     "powerBatteryHead": {
         "message": "Akku"
     },
@@ -3425,9 +3465,6 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
-    "osdSetupPreviewHelp": {
-        "message": "<strong>Hinweis:<\/strong> OSD-Vorschau eventuell nicht in der Schriftart, welche aktuell auf dem FC installiert ist."
-    },
     "osdSetupUnsupportedNote1": {
         "message": "Dein FC reagiert nicht auf OSD-Kommandos. Das bedeutet wahrscheinlich, daß er kein eingebautes Betaflight-OSD hat."
     },
@@ -3447,7 +3484,7 @@
     },
     "osdSetupPreviewSelectProfileTitle": {
         "message": "Vorschau für",
-        "description": "Label of the selector for the OSD Profile in the preview"
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
     },
     "osdSetupSelectedProfileTitle": {
         "message": "Aktives OSD-Profil",
@@ -3461,11 +3498,20 @@
         "message": "OSD-Profil {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
     },
-    "osdSetupPreviewTitleTip": {
-        "message": "Logo in der Vorschau anzeigen oder nicht anzeigen. Ändert keine Einstellungen des Flight Controllers."
+    "osdSetupPreviewSelectFontElement": {
+        "message": "Schriftart {{fontName}}",
+        "description": "Content of the selector for the OSD Font in the preview"
     },
     "osdSetupVideoFormatTitle": {
         "message": "Videoformat"
+    },
+    "osdSetupVideoFormatOptionPal": {
+        "message": "PAL",
+        "description": "Option for the video format in the OSD"
+    },
+    "osdSetupVideoFormatOptionNtsc": {
+        "message": "NTSC",
+        "description": "Option for the video format in the OSD"
     },
     "osdSetupUnitsTitle": {
         "message": "Einheiten"
@@ -3493,6 +3539,10 @@
     },
     "osdSetupFontPresetsSelector": {
         "message": "Wähle Schriftart-Voreinstellungen:"
+    },
+    "osdSetupFontPresetsSelectorCustomOption": {
+        "message": "Benutzerdefinierte Schriftart",
+        "description": "Option to show as selected when the user selects a custom local font"
     },
     "osdSetupFontPresetsSelectorOr": {
         "message": "oder"
@@ -3526,6 +3576,9 @@
     },
     "osdSetupUploadFont": {
         "message": "Schriftart hochladen"
+    },
+    "osdSetupUploadingFont": {
+        "message": "Wird hochgeladen..."
     },
     "osdSetupSave": {
         "message": "Speichern"
@@ -3590,9 +3643,6 @@
     "osdDescElementCraftName": {
         "message": "Name des Fluggerätes (gesetzt im Konfigurationstab)"
     },
-    "osdDescElementDisplayName": {
-        "message": "Zeigt den Namen, welcher durch den \"display_name\"-cli-Befehl festgelegt wurde."
-    },
     "osdDescElementAltitude": {
         "message": "Aktuelle Höhe (blinkt, wenn über dem Alarm Schwellwert)"
     },
@@ -3610,12 +3660,6 @@
     },
     "osdDescElementGPSSats": {
         "message": "Anzahl der Satelliten"
-    },
-    "osdDescElementGPSLon": {
-        "message": "GPS Längengrad"
-    },
-    "osdDescElementGPSLat": {
-        "message": "GPS Breitengrad"
     },
     "osdDescElementDebug": {
         "message": "Debug Variablen"
@@ -3653,24 +3697,6 @@
     "osdDescElementArmedTime": {
         "message": "Vergangene Zeit seit dem letzten Armen"
     },
-    "osdDescElementWarnings": {
-        "message": "Alarme (z.B. niedrige Batteriespannung), Warnungen (z.B. der Grund warum das Gerät nicht armt), und visueller Alarm (4 blinkende Sterne)"
-    },
-    "osdDescElementEscTemperature": {
-        "message": "Regler Temperatur (über Regler Telemetrie)"
-    },
-    "osdDescElementEscRpm": {
-        "message": "Motordrehzahl (über Regler Telemetrie)"
-    },
-    "osdDescElementEscRpmFreq": {
-        "message": "Motordrehzahl (über Regler Telemetrie)"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "Datum \/ Uhrzeit"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "Currently active adjustment range setting and value"
-    },
     "osdDescElementHomeDirection": {
         "message": "Pfeil der die Richtung zur Home Position anzeigt"
     },
@@ -3685,6 +3711,45 @@
     },
     "osdDescElementCompassBar": {
         "message": "Grafischer Kompass, welcher die aktuelle Richtung zeigt"
+    },
+    "osdDescElementWarnings": {
+        "message": "Alarme (z.B. niedrige Batteriespannung), Warnungen (z.B. der Grund warum das Gerät nicht armt), und visueller Alarm (4 blinkende Sterne)"
+    },
+    "osdDescElementEscTemperature": {
+        "message": "Regler Temperatur (über Regler Telemetrie)"
+    },
+    "osdDescElementEscRpm": {
+        "message": "Motordrehzahl (über Regler Telemetrie)"
+    },
+    "osdDescElementRemaningTimeEstimate": {
+        "message": "Errechnete verbleibende Flugzeit"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Datum \/ Uhrzeit"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "Currently active adjustment range setting and value"
+    },
+    "osdDescElementTimer1": {
+        "message": "Zeigt den Inhalt von Timer 1"
+    },
+    "osdDescElementTimer2": {
+        "message": "Zeigt den Inhalt von Timer 2"
+    },
+    "osdDescElementCoreTemperature": {
+        "message": "Temperatur des STM32 MCU Kerns"
+    },
+    "osdDescAntiGravity": {
+        "message": "aktiviert einen Indikator, wenn Anti Gravity aktiv ist"
+    },
+    "osdDescGForce": {
+        "message": "Zeigt, welchen G-Kräften das Fluggerät ausgesetzt ist."
+    },
+    "osdDescElementMotorDiag": {
+        "message": "Diagramm der Ausgabe jeden Motors anzeigen"
+    },
+    "osdDescElementLogStatus": {
+        "message": "Blackbox Nummer und Warnungen"
     },
     "osdDescElementFlipArrow": {
         "message": "Ein Pfeil zeigt, welche Motorseite im Turtle-Modus vom Boden weiter weg ist"
@@ -3701,32 +3766,17 @@
     "osdDescElementStickOverlayRight": {
         "message": "Positionsanzeige des rechten Sendersticks."
     },
-    "osdDescElementTimer1": {
-        "message": "Zeigt den Inhalt von Timer 1"
+    "osdDescElementDisplayName": {
+        "message": "Zeigt den Namen, welcher durch den \"display_name\"-cli-Befehl festgelegt wurde."
     },
-    "osdDescElementTimer2": {
-        "message": "Zeigt den Inhalt von Timer 2"
+    "osdDescElementEscRpmFreq": {
+        "message": "Motordrehzahl (über Regler Telemetrie)"
     },
-    "osdDescElementRemaningTimeEstimate": {
-        "message": "Errechnete verbleibende Flugzeit"
+    "osdDescElementPidProfileName": {
+        "message": "Zeigt den aktuellen PID-Profilnamen an"
     },
     "osdDescElementUnknown": {
         "message": "Unbekanntes Element (Details kommen in zukünftigen Versionen)"
-    },
-    "osdDescElementCoreTemperature": {
-        "message": "Temperatur des STM32 MCU Kerns"
-    },
-    "osdDescAntiGravity": {
-        "message": "aktiviert einen Indikator, wenn Anti Gravity aktiv ist"
-    },
-    "osdDescGForce": {
-        "message": "Zeigt, welchen G-Kräften das Fluggerät ausgesetzt ist."
-    },
-    "osdDescElementMotorDiag": {
-        "message": "Diagramm der Ausgabe jeden Motors anzeigen"
-    },
-    "osdDescElementLogStatus": {
-        "message": "Blackbox Nummer und Warnungen"
     },
     "osdDescStatMaxSpeed": {
         "message": "Maximal erreichte Geschwindigkeit"
@@ -3794,6 +3844,15 @@
     "osdDescStatMaxFFT": {
         "message": "FFT-Spitzenwert"
     },
+    "osdDescStatTotalFlights": {
+        "message": "Gesamtanzahl Flüge"
+    },
+    "osdDescStatTotalFlightTime": {
+        "message": "Gesamte Flugzeit"
+    },
+    "osdDescStatTotalFlightDistance": {
+        "message": "gesamt zurückgelegte Strecke"
+    },
     "osdTimerSource": {
         "message": "Quelle:"
     },
@@ -3811,9 +3870,6 @@
     },
     "osdTimerAlarmTooltip": {
         "message": "Setze den Alarmwert der Stoppuhr in Minuten. Sobald die Zeit überschritten ist blinkt das dazugehörige OSD Element"
-    },
-    "osdWarningUnknown": {
-        "message": "Unbekannte Warnung (Details werden in einer künftigen Version ergänzt)"
     },
     "osdWarningArmingDisabled": {
         "message": "Zeigt den schwerwiegensten Fehler an, warum das Fluggerät nicht armt."
@@ -3853,6 +3909,15 @@
     },
     "osdWarningGpsRescueDisabled": {
         "message": "Warnung, wenn GPS Rescue deaktiviert ist"
+    },
+    "osdWarningRSSI": {
+        "message": "Warnt, wenn RSSI unter den Alarmwert fällt"
+    },
+    "osdWarningLinkQuality": {
+        "message": "Warnt, wenn die Verbindungsqualität unter den Alarmwert fällt"
+    },
+    "osdWarningUnknown": {
+        "message": "Unbekannte Warnung (Details werden in einer künftigen Version ergänzt)"
     },
     "osdSectionHelpElements": {
         "message": "OSD Elemente aktivieren oder deaktivieren"
@@ -4075,5 +4140,8 @@
     },
     "flashTab": {
         "message": "Firmware aktualisieren"
+    },
+    "cliAutoComplete": {
+        "message": "Erweiterte CLI Autoervollständigung"
     }
 }

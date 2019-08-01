@@ -50,9 +50,6 @@
     "expertMode": {
         "message": "Modo avançado"
     },
-    "expertModeDescription": {
-        "message": "Mostrar versões não liberadas e potencialmente instáveis"
-    },
     "permanentExpertMode": {
         "message": "Sempre usar o modo avançado"
     },
@@ -117,9 +114,6 @@
     "sensorStatusSonarShort": {
         "message": "Sonar",
         "description": "Text of the image in the top sensors icons. Please keep it short."
-    },
-    "checkForConfiguratorUnstableVersions": {
-        "message": "Mostrar notificações de atualizações para versões instáveis do configurador"
     },
     "configuratorUpdateNotice": {
         "message": "Você está usando uma versão antiga do <b>Betaflight Configurator<\/b>. <br>A versão <b>$1<\/b> está disponível online, por favor visite <a href=\"$2\" target=\"_blank\">a página da nova versão<\/a> para efetuar o download e instalar a última versão com correções e melhorias. <br>Por favor feche a janela do configurador antes de atualizar."
@@ -494,9 +488,6 @@
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong> é um software para controladores de voo feito com <strong>código aberto<\/strong> e disponível gratuitamente <strong>sem nenhuma garantia<\/strong> para todos os usuários.<\/p><p> Se você achou o Betaflight ou o Configurador Betaflight útil, considere <strong>ajudar<\/strong> seu desenvolvimento com uma doação.<\/p>"
     },
-    "defaultDonateBottom": {
-        "message": "<p>Se deseja ajudar este projeto financeiramente, de forma continua, considere tornar-se nosso benfeitor pelo site <a href='https:\/\/www.patreon.com\/betaflight'>Patreon<\/a><\/p>"
-    },
     "defaultDonate": {
         "message": "Doar"
     },
@@ -676,87 +667,87 @@
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "Giroscópio não foi detectado",
-        "description": "Description of the NO GYRO arming disable flag"
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
         "message": "Failsafe está ativo",
-        "description": "Description of the FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
         "message": "Não foi detectado um sinal válido do receptor",
-        "description": "Description of the RX_FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
         "message": "Seu receptor se recuperou de um Failsafe, mas o switch para Armar está ativo",
-        "description": "Description of the BAD_RX_RECOVERY arming disable flag"
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
         "message": "O switch do Failsafe foi ativado",
-        "description": "Description of the BOXFAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
         "message": "A prevenção contra voo acidental foi acionada",
-        "description": "Description of the RUNAWAY_TAKEOFF arming disable flag"
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
         "message": "O Valor do canal do Acelerador está muito alto",
-        "description": "Description of the THROTTLE arming disable flag"
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "A aeronave não está nivelada o suficiente",
-        "description": "Description of the ANGLE arming disable flag"
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
         "message": "Armar muito cedo após ligar",
-        "description": "Description of the BOOT_GRACE_TIME arming disable flag"
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipNOPREARM": {
         "message": "Switch do Prearm não está ativo ou Prearm não foi alterado após desarmar",
-        "description": "Description of the NOPREARM arming disable flag"
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipLOAD": {
         "message": "A carga da CPU está acima do limite permitido para um voo seguro",
-        "description": "Description of the LOAD arming disable flag"
+        "description": "Message that pops up to describe the LOAD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
         "message": "Os sensores ainda estão sendo calibrados",
-        "description": "Description of the CALIBRATING arming disable flag"
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCLI": {
         "message": "Linha de comandos (CLI) está ativa",
-        "description": "Description of the CLI arming disable flag"
+        "description": "Message that pops up to describe the CLI arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
         "message": "CMS (Menu de configurações) está ativo no OSD ou outro display",
-        "description": "Description of the CMS_MENU arming disable flag"
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "Menu OSD está ativo",
-        "description": "Description of the OSD_MENU arming disable flag"
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBST": {
         "message": "A Telemetria de um dispositivo Black Sheep (Por exemplo: TBS Core Pro) está desarmada e está impedindo armar",
-        "description": "Description of the BST arming disable flag"
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "A conexão MSP está ativa, provavelmente com este configurador Betaflight",
-        "description": "Description of the MSP arming disable flag"
+        "description": "Message that pops up to describe the MSP arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipPARALYZE": {
         "message": "Modo Paralisar foi ativado",
-        "description": "Description of the PARALYZE arming disable flag"
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipGPS": {
         "message": "O modo de Resgate com GPS está configurado mas a quantidade de satélites localizados não é suficiente",
-        "description": "Description of the GPS arming disable flag"
+        "description": "Message that pops up to describe the GPS arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRESC": {
         "message": "O Switch de Resgate com GPS foi ativado",
-        "description": "Description of the RESC arming disable flag"
+        "description": "Message that pops up to describe the RESC arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "O Switch de armar não está em uma posição segura",
-        "description": "Description of the ARM_SWITCH arming disable flag"
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
     },
     "initialSetupGPSHead": {
         "message": "GPS"
@@ -1727,18 +1718,6 @@
     "auxiliaryModeLogicAND": {
         "message": "AND"
     },
-    "adjustmentsHelp": {
-        "message": "Configure os 'switches' de ajuste. Leia a seção do manual sobre 'in-flight adjustments' para detalhes. Os ajustes feitos por essas funções não serão salvos automaticamente. Existem 4 slots. Cada switch utilizado ao mesmo tempo para o ajuste exige o uso exclusivo de um slot."
-    },
-    "adjustmentsExamples": {
-        "message": "Exemplos"
-    },
-    "adjustmentsExample1": {
-        "message": "Use o Slot 1 e um switch de 3 posições no AUX1 para selecionar entre o P, I e D do Pitch\/Roll e outro switch de 3 posições no AUX2 para aumentar ou diminuir o valor quando o switch está para cima ou para baixo."
-    },
-    "adjustmentsExample2": {
-        "message": "Use o Slot 2 e um switch de 3 posições no AUX4 para selecionar e ativar um perfil de taxa."
-    },
     "adjustmentsColumnEnable": {
         "message": "Ativar"
     },
@@ -2181,7 +2160,7 @@
         "message": "<strong>Nota:<\/strong> Sair da aba de Linha de Comandos (CLI) ou pressionar Desconectar irá <strong>automaticamente<\/strong> enviar o comando \"<strong>exit<\/strong>\" para a placa. No firmware mais recente, isto fará com que o controlador de voo <strong>reinicie<\/strong> e qualquer alteração que não foi salva será <strong>perdida<\/strong>. <p><strong><span class=\"message-negative\">Atenção:<\/span><\/strong> Alguns comandos podem enviar sinais arbitrários para os pinos de saída dos motores. Isto pode fazer com que os motores girem se uma bateria estiver conectada. Portanto, é altamente recomendado verificar que <strong>nenhuma bateria está conectada antes de enviar comandos na CLI<\/strong>."
     },
     "cliInputPlaceholder": {
-        "message": "Escreva o seu comando aqui"
+        "message": "Escreva seu comando aqui. Pressione Tab para AutoCompletar."
     },
     "cliEnter": {
         "message": "Modo Linha de comandos (CLI) detectado"
@@ -2437,12 +2416,6 @@
     },
     "firmwareFlasherBaudRate": {
         "message": "Baud Rate"
-    },
-    "firmwareFlasherShowDevelopmentReleases": {
-        "message": "Mostrar versões instáveis"
-    },
-    "firmwareFlasherShowDevelopmentReleasesDescription": {
-        "message": "Mostrar versões candidatas em conjunto com versões estáveis"
     },
     "firmwareFlasherOptionLoading": {
         "message": "Carregando..."
@@ -3424,9 +3397,6 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
-    "osdSetupPreviewHelp": {
-        "message": "<strong>Nota:<\/strong> Pode ser que a fonte da pré-visualização do OSD não seja a mesma da fonte instalada no controlador de voo."
-    },
     "osdSetupUnsupportedNote1": {
         "message": "Seu controlador de voo não está respondendo aos comandos OSD. Isso provavelmente significa que ele não contém um OSD BetaFlight integrado."
     },
@@ -3446,7 +3416,7 @@
     },
     "osdSetupPreviewSelectProfileTitle": {
         "message": "Pré-visualização para",
-        "description": "Label of the selector for the OSD Profile in the preview"
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
     },
     "osdSetupSelectedProfileTitle": {
         "message": "Perfil OSD Ativo",
@@ -3459,9 +3429,6 @@
     "osdSetupPreviewSelectProfileElement": {
         "message": "Perfil OSD {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
-    },
-    "osdSetupPreviewTitleTip": {
-        "message": "Mostrar ou esconder o logo na janela de pré-visualização. Isso não irá afetar nenhuma configuração no controlador de voo."
     },
     "osdSetupVideoFormatTitle": {
         "message": "Formato do Video"
@@ -3589,9 +3556,6 @@
     "osdDescElementCraftName": {
         "message": "Nome da aeronave como definido na aba de Configurações"
     },
-    "osdDescElementDisplayName": {
-        "message": "Exibe o nome configurado pelo comando \"display_name\" na Linha de Comandos (CLI)"
-    },
     "osdDescElementAltitude": {
         "message": "Altitude atual (Piscar quando estiver acima do limite)"
     },
@@ -3609,12 +3573,6 @@
     },
     "osdDescElementGPSSats": {
         "message": "Numero de satélites localizados pelo GPS"
-    },
-    "osdDescElementGPSLon": {
-        "message": "Longitude do GPS"
-    },
-    "osdDescElementGPSLat": {
-        "message": "Latitude do GPS"
     },
     "osdDescElementDebug": {
         "message": "Depuração de variáveis"
@@ -3652,24 +3610,6 @@
     "osdDescElementArmedTime": {
         "message": "Tempo desde a ultima vez que a aeronave foi armada"
     },
-    "osdDescElementWarnings": {
-        "message": "Alerta (ex. bateria baixa), avisos (ex. razão por não ter armado, bateria extremamente baixa) e beeper visual (4 asteriscos piscando)."
-    },
-    "osdDescElementEscTemperature": {
-        "message": "Temperatura reportada pela telemetria do ESC"
-    },
-    "osdDescElementEscRpm": {
-        "message": "RPM reportado pela telemetria do ESC"
-    },
-    "osdDescElementEscRpmFreq": {
-        "message": "Frequência RPM, relatada pela telemetria do ESC"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "Relógio real (data \/ hora)"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "Faixa e valor do elemento de ajuste atualmente ativo"
-    },
     "osdDescElementHomeDirection": {
         "message": "Seta que indica a direção até a base (home)"
     },
@@ -3682,8 +3622,32 @@
     "osdDescElementNumericalVario": {
         "message": "Leitura numérica da velocidade vertical (em pés ou metros, baseado na configuração de unidade)"
     },
-    "osdDescElementCompassBar": {
-        "message": "Barra de bússola gráfica, mostrando a direção atual"
+    "osdDescElementWarnings": {
+        "message": "Alerta (ex. bateria baixa), avisos (ex. razão por não ter armado, bateria extremamente baixa) e beeper visual (4 asteriscos piscando)."
+    },
+    "osdDescElementEscTemperature": {
+        "message": "Temperatura reportada pela telemetria do ESC"
+    },
+    "osdDescElementEscRpm": {
+        "message": "RPM reportado pela telemetria do ESC"
+    },
+    "osdDescElementRemaningTimeEstimate": {
+        "message": "Tempo estimado de voo restante"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Relógio real (data \/ hora)"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "Faixa e valor do elemento de ajuste atualmente ativo"
+    },
+    "osdDescElementCoreTemperature": {
+        "message": "Temperatura do núcleo MCU do STM32"
+    },
+    "osdDescAntiGravity": {
+        "message": "Exibe um indicador quando o módulo antigravidade estiver em efeito"
+    },
+    "osdDescElementLogStatus": {
+        "message": "Blackbox - Avisos e número do log"
     },
     "osdDescElementFlipArrow": {
         "message": "Seta que indica quais motores estão afastados do chão no modo 'virar após queda' (Turtle mode)"
@@ -3700,32 +3664,14 @@
     "osdDescElementStickOverlayRight": {
         "message": "Posição do stick direito do transmissor."
     },
-    "osdDescElementTimer1": {
-        "message": "Mostra o valor do cronômetro 1"
+    "osdDescElementDisplayName": {
+        "message": "Exibe o nome configurado pelo comando \"display_name\" na Linha de Comandos (CLI)"
     },
-    "osdDescElementTimer2": {
-        "message": "Mostra o valor do cronômetro 2"
-    },
-    "osdDescElementRemaningTimeEstimate": {
-        "message": "Tempo estimado de voo restante"
+    "osdDescElementEscRpmFreq": {
+        "message": "Frequência RPM, relatada pela telemetria do ESC"
     },
     "osdDescElementUnknown": {
         "message": "Elemento desconhecido (detalhes serão adicionados em uma versão futura)"
-    },
-    "osdDescElementCoreTemperature": {
-        "message": "Temperatura do núcleo MCU do STM32"
-    },
-    "osdDescAntiGravity": {
-        "message": "Exibe um indicador quando o módulo antigravidade estiver em efeito"
-    },
-    "osdDescGForce": {
-        "message": "Mostra o valor da Força-G sob a aeronave"
-    },
-    "osdDescElementMotorDiag": {
-        "message": "Mostra um gráfico da saída de cada motor"
-    },
-    "osdDescElementLogStatus": {
-        "message": "Blackbox - Avisos e número do log"
     },
     "osdDescStatMaxSpeed": {
         "message": "Velocidade máxima registrada"
@@ -3793,6 +3739,15 @@
     "osdDescStatMaxFFT": {
         "message": "Pico de frequência FFT"
     },
+    "osdDescStatTotalFlights": {
+        "message": "Número total de vôos"
+    },
+    "osdDescStatTotalFlightTime": {
+        "message": "Tempo total gasto voando"
+    },
+    "osdDescStatTotalFlightDistance": {
+        "message": "Distância total percorrida"
+    },
     "osdTimerSource": {
         "message": "Origem:"
     },
@@ -3811,9 +3766,6 @@
     "osdTimerAlarmTooltip": {
         "message": "Selecione o limite do alarme do cronômetro em minutos, quando o tempo excede este valor, o elemento no OSD irá piscar, um valor de 0 desabilita o alarme"
     },
-    "osdWarningUnknown": {
-        "message": "Alerta Desconhecido (Detalhes serão adicionados em uma próxima versão)"
-    },
     "osdWarningArmingDisabled": {
         "message": "Mostra o principal motivo de não ter armado"
     },
@@ -3825,9 +3777,6 @@
     },
     "osdWarningBatteryCritical": {
         "message": "Alertas quando a voltagem da bateria fica abaixo da média mínima por célula"
-    },
-    "osdWarningVisualBeeper": {
-        "message": "Mostra uma visualização do beeper (mostra 4 asteriscos)"
     },
     "osdWarningCrashFlipMode": {
         "message": "Alerta quando o modo 'virar após queda' (Turtle mode) estiver ativo"
@@ -3853,6 +3802,15 @@
     "osdWarningGpsRescueDisabled": {
         "message": "Alerta quando o Resgate com GPS está desativado"
     },
+    "osdWarningRSSI": {
+        "message": "Avisa quando o RSSI está abaixo da configuração do alarme"
+    },
+    "osdWarningLinkQuality": {
+        "message": "Avisa quando a qualidade do link está abaixo da configuração do alarme"
+    },
+    "osdWarningUnknown": {
+        "message": "Alerta Desconhecido (Detalhes serão adicionados em uma próxima versão)"
+    },
     "osdSectionHelpElements": {
         "message": "Ativar ou desativar elementos do OSD."
     },
@@ -3872,7 +3830,7 @@
         "message": "Escolha os valores exibidos na tela de estatísticas após voo."
     },
     "osdSectionHelpWarnings": {
-        "message": "Ative ou Desative alertas exibidos no elemento de ALERTAS."
+        "message": "Ative ou Desative os alertas que serão exibidos no elemento de ALERTAS."
     },
     "osdSettingsSaved": {
         "message": "Configurações do OSD salvas"

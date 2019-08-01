@@ -494,9 +494,6 @@
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong> является прошивкой для полётных контроллеров <strong>с открытым исходным кодом<\/strong> и доступна абсолютно бесплатно <strong>без гарантии<\/strong> для всех пользователей.<\/p><p>Если вы нашли Betaflight или Betaflight конфигуратор полезными, пожалуйста<strong>поддержите<\/strong> разработку пожертвованием.<\/p>"
     },
-    "defaultDonateBottom": {
-        "message": "<p>Если вы хотите финансово помогать на постоянной основе, вы можете стать нашим покровителем на <a href='https:\/\/www.patreon.com\/betaflight'>Patreon<\/a>.<\/p>"
-    },
     "defaultDonate": {
         "message": "Пожертвовать"
     },
@@ -676,87 +673,87 @@
     },
     "initialSetupArmingDisableFlagsTooltipNO_GYRO": {
         "message": "Гироскоп не обнаружен",
-        "description": "Description of the NO GYRO arming disable flag"
+        "description": "Message that pops up to describe the NO_GYRO arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipFAILSAFE": {
         "message": "Failsafe активен",
-        "description": "Description of the FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRX_FAILSAFE": {
         "message": "Не обнаружен корректный сигнал приёмника",
-        "description": "Description of the RX_FAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the RX_FAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBAD_RX_RECOVERY": {
         "message": "Ваш приемник только что восстановил связь, но выключатель failsafe включен",
-        "description": "Description of the BAD_RX_RECOVERY arming disable flag"
+        "description": "Message that pops up to describe the BAD_RX_RECOVERY arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOXFAILSAFE": {
         "message": "Переключатель 'FAILSAFE' активирован",
-        "description": "Description of the BOXFAILSAFE arming disable flag"
+        "description": "Message that pops up to describe the BOXFAILSAFE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRUNAWAY_TAKEOFF": {
         "message": "Взлет с полосы переключен",
-        "description": "Description of the RUNAWAY_TAKEOFF arming disable flag"
+        "description": "Message that pops up to describe the RUNAWAY_TAKEOFF arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipTHROTTLE": {
         "message": "Канал газа слишком высок",
-        "description": "Description of the THROTTLE arming disable flag"
+        "description": "Message that pops up to describe the THROTTLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipANGLE": {
         "message": "Судно не в уровне (достаточном)",
-        "description": "Description of the ANGLE arming disable flag"
+        "description": "Message that pops up to describe the ANGLE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBOOT_GRACE_TIME": {
         "message": "Арминг слишком рано после включения питания",
-        "description": "Description of the BOOT_GRACE_TIME arming disable flag"
+        "description": "Message that pops up to describe the BOOT_GRACE_TIME arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipNOPREARM": {
         "message": "Переключатель преарма не активен или не был переключен после дизарма",
-        "description": "Description of the NOPREARM arming disable flag"
+        "description": "Message that pops up to describe the NOPREARM arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipLOAD": {
         "message": "Системная нагрузка слишком высока для полета",
-        "description": "Description of the LOAD arming disable flag"
+        "description": "Message that pops up to describe the LOAD arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCALIBRATING": {
         "message": "Калибровка датчика все еще продолжается",
-        "description": "Description of the CALIBRATING arming disable flag"
+        "description": "Message that pops up to describe the CALIBRATING arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCLI": {
         "message": "Интерфейс командной строки активен",
-        "description": "Description of the CLI arming disable flag"
+        "description": "Message that pops up to describe the CLI arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipCMS_MENU": {
         "message": "CMS (конфигурационное меню) активен - над OSD или другим дисплеем -",
-        "description": "Description of the CMS_MENU arming disable flag"
+        "description": "Message that pops up to describe the CMS_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipOSD_MENU": {
         "message": "OSD меню активно",
-        "description": "Description of the OSD_MENU arming disable flag"
+        "description": "Message that pops up to describe the OSD_MENU arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipBST": {
         "message": "Black Sheep устройство телеметрии (TBS Core Pro например) дизарм и предварительно арминг",
-        "description": "Description of the BST arming disable flag"
+        "description": "Message that pops up to describe the BST arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipMSP": {
         "message": "MSP соединение активно, возможно с этим Betaflight Configurator",
-        "description": "Description of the MSP arming disable flag"
+        "description": "Message that pops up to describe the MSP arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipPARALYZE": {
         "message": "Парализный режим активирован",
-        "description": "Description of the PARALYZE arming disable flag"
+        "description": "Message that pops up to describe the PARALYZE arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipGPS": {
         "message": "Режим восстановления GPS настроен, но требуемое количество спутников не было зафиксировано",
-        "description": "Description of the GPS arming disable flag"
+        "description": "Message that pops up to describe the GPS arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipRESC": {
         "message": "Переключатель 'GPS Rescue' активирован",
-        "description": "Description of the RESC arming disable flag"
+        "description": "Message that pops up to describe the RESC arming disable flag"
     },
     "initialSetupArmingDisableFlagsTooltipARM_SWITCH": {
         "message": "Один из других флагов дизарм активен при арминге",
-        "description": "Description of the ARM_SWITCH arming disable flag"
+        "description": "Message that pops up to describe the ARM_SWITCH arming disable flag"
     },
     "initialSetupGPSHead": {
         "message": "GPS"
@@ -1156,9 +1153,6 @@
     },
     "configurationLoopTimeHelp": {
         "message": "<strong>Примечание:<\/strong> Убедитесь, что Ваш FC способен работать на этих скоростях! Проверьте ЦП и стабильность времени цикла. Эти изменения могут потребовать подстройки PID. Совет: Отключите Акселерометр и другие сенсоры для повышения производительности."
-    },
-    "configurationLoopTimeNo32KhzHelp": {
-        "message": "$t(configurationLoopTimeHelp.message)<br><strong>Примечание по 32 кГц дискретизации гироскопа:<\/strong> Поддержа режима 32 кГц дискретизации была добавлена в Betaflight как экспериментальная опция. За те годы, что он был доступен, он никогда не показывал, что у него есть какое-либо преимущество перед режимом гироскопической дискретизации 8 кГц, из-за его восприимчивости к вибрациям и высокого уровня шума, который требует агрессивной фильтрации, вызывая задержки в контуре управления. По этой причине, <strong>поддержка режима дискретизации гироскопа 32 кГц выброшена<\/strong> в Betaflight 4.0."
     },
     "configurationGPS": {
         "message": "GPS"
@@ -1707,18 +1701,6 @@
     "auxiliaryModeLogicAND": {
         "message": "И"
     },
-    "adjustmentsHelp": {
-        "message": "Установка нас троечных переключателей. Смотри 'in-flight adjustments' секцию руководства. Изменение этих настроек автоматически не сохраняется. Там 4 слота. Каждый переключатель используемый одновременно требует исключительного использования слота."
-    },
-    "adjustmentsExamples": {
-        "message": "Примеры"
-    },
-    "adjustmentsExample1": {
-        "message": "Используете Slot 1 и 3POS переключите на AUX1 для выбора между Pitch\/Roll P, I и D и другой 3POS переключатель на AUX2 увеличит или уменьшит значение когда задержан вверх или вниз."
-    },
-    "adjustmentsExample2": {
-        "message": "Используете Slot 2 и 3POS переключатель в AUX4 для включения Rate Profile секция через тот же 3POS в тот же канал."
-    },
     "adjustmentsColumnEnable": {
         "message": "Если включено"
     },
@@ -2156,9 +2138,6 @@
     },
     "sensorsDebugTitle": {
         "message": "Отладка"
-    },
-    "cliInputPlaceholder": {
-        "message": "Пишите ваши команды здесь"
     },
     "cliEnter": {
         "message": "Обнаружен переход в режим командной строки"
@@ -3365,9 +3344,6 @@
     "osdSetupTitle": {
         "message": "OSD"
     },
-    "osdSetupPreviewHelp": {
-        "message": "<strong>Примечание:<\/strong> OSD предпросмотр может отображаться не тем шрифтом, который установлен в полётном контроллере."
-    },
     "osdSetupUnsupportedNote1": {
         "message": "Ваш полётный контроллер не отвечает на команды OSD. Возможно, это означает, что в него не встроен Betaflight OSD."
     },
@@ -3387,7 +3363,7 @@
     },
     "osdSetupPreviewSelectProfileTitle": {
         "message": "Предпросмотр для",
-        "description": "Label of the selector for the OSD Profile in the preview"
+        "description": "Label of the selector for the OSD Profile in the preview. KEEP IT SHORT!!!"
     },
     "osdSetupSelectedProfileTitle": {
         "message": "Активный профиль OSD",
@@ -3400,9 +3376,6 @@
     "osdSetupPreviewSelectProfileElement": {
         "message": "OSD Profile {{profileNumber}}",
         "description": "Content of the selector for the OSD Profile in the preview"
-    },
-    "osdSetupPreviewTitleTip": {
-        "message": "Показать\/скрыть логотип в окне предпросмотра. Этот переключатель никак не повлияет на настройки полётного контроллера."
     },
     "osdSetupVideoFormatTitle": {
         "message": "Формат видео"
@@ -3530,9 +3503,6 @@
     "osdDescElementCraftName": {
         "message": "Позывной пилота, установленный во вкладке \"Конфигурация\""
     },
-    "osdDescElementDisplayName": {
-        "message": "Показываемое имя для установки показываемого имени в интерфейсе командной строки"
-    },
     "osdDescElementAltitude": {
         "message": "Текущая высота (замигает, если значение будет ниже заданного порога тревоги)"
     },
@@ -3550,12 +3520,6 @@
     },
     "osdDescElementGPSSats": {
         "message": "Число пойманных спутников"
-    },
-    "osdDescElementGPSLon": {
-        "message": "GPS-Долгота"
-    },
-    "osdDescElementGPSLat": {
-        "message": "GPS-Широта"
     },
     "osdDescElementDebug": {
         "message": "Показывать Debug-переменные"
@@ -3593,24 +3557,6 @@
     "osdDescElementArmedTime": {
         "message": "Момент когда судно было последний раз в арминге"
     },
-    "osdDescElementWarnings": {
-        "message": "Показывать тревоги (напр., о низком заряде), предупреждения (напр., причины: почему не армится, критич. низкий заряд), а также визуально отображать сигнал с пищалки (в виде 4-х мигающих звёздочек)."
-    },
-    "osdDescElementEscTemperature": {
-        "message": "Температура, полученная с телеметрии от ESC"
-    },
-    "osdDescElementEscRpm": {
-        "message": "Скорость оборотов, полученная из телеметрии от ESC"
-    },
-    "osdDescElementEscRpmFreq": {
-        "message": "Частота RPM, сообщаемая телеметрией регуляторов оборотов"
-    },
-    "osdDescElementRtcDateTime": {
-        "message": "Отображать текущую дату и время"
-    },
-    "osdDescElementAdjustmentRange": {
-        "message": "В настоящее время активные регулировки диапазона параметров и значения"
-    },
     "osdDescElementHomeDirection": {
         "message": "Стрелка, показывающая направление к месту взлёта"
     },
@@ -3625,6 +3571,45 @@
     },
     "osdDescElementCompassBar": {
         "message": "Отображет шкалу компаса, показывающего текущее направление"
+    },
+    "osdDescElementWarnings": {
+        "message": "Показывать тревоги (напр., о низком заряде), предупреждения (напр., причины: почему не армится, критич. низкий заряд), а также визуально отображать сигнал с пищалки (в виде 4-х мигающих звёздочек)."
+    },
+    "osdDescElementEscTemperature": {
+        "message": "Температура, полученная с телеметрии от ESC"
+    },
+    "osdDescElementEscRpm": {
+        "message": "Скорость оборотов, полученная из телеметрии от ESC"
+    },
+    "osdDescElementRemaningTimeEstimate": {
+        "message": "Расчётное время до полного разряда батареи"
+    },
+    "osdDescElementRtcDateTime": {
+        "message": "Отображать текущую дату и время"
+    },
+    "osdDescElementAdjustmentRange": {
+        "message": "В настоящее время активные регулировки диапазона параметров и значения"
+    },
+    "osdDescElementTimer1": {
+        "message": "Показать значение таймера 1"
+    },
+    "osdDescElementTimer2": {
+        "message": "Показать значение таймера 2"
+    },
+    "osdDescElementCoreTemperature": {
+        "message": "Температура ядра STM32 MCU"
+    },
+    "osdDescAntiGravity": {
+        "message": "Включает индикатор когда режим антигравити активен"
+    },
+    "osdDescGForce": {
+        "message": "Показывает как много G-силы судно испытывает"
+    },
+    "osdDescElementMotorDiag": {
+        "message": "Показывает график работы каждого мотора"
+    },
+    "osdDescElementLogStatus": {
+        "message": "BlackBox номер и предупреждения"
     },
     "osdDescElementFlipArrow": {
         "message": "Стрелка показывает в какой стороне двигатели в режиме черепахи"
@@ -3641,32 +3626,14 @@
     "osdDescElementStickOverlayRight": {
         "message": "Схема положения для правого стика передатчика."
     },
-    "osdDescElementTimer1": {
-        "message": "Показать значение таймера 1"
+    "osdDescElementDisplayName": {
+        "message": "Показываемое имя для установки показываемого имени в интерфейсе командной строки"
     },
-    "osdDescElementTimer2": {
-        "message": "Показать значение таймера 2"
-    },
-    "osdDescElementRemaningTimeEstimate": {
-        "message": "Расчётное время до полного разряда батареи"
+    "osdDescElementEscRpmFreq": {
+        "message": "Частота RPM, сообщаемая телеметрией регуляторов оборотов"
     },
     "osdDescElementUnknown": {
         "message": "Неизвестный элемент (детали будут добавлены в будущих выпусках)"
-    },
-    "osdDescElementCoreTemperature": {
-        "message": "Температура ядра STM32 MCU"
-    },
-    "osdDescAntiGravity": {
-        "message": "Включает индикатор когда режим антигравити активен"
-    },
-    "osdDescGForce": {
-        "message": "Показывает как много G-силы судно испытывает"
-    },
-    "osdDescElementMotorDiag": {
-        "message": "Показывает график работы каждого мотора"
-    },
-    "osdDescElementLogStatus": {
-        "message": "BlackBox номер и предупреждения"
     },
     "osdDescStatMaxSpeed": {
         "message": "Максимальная зафиксированная скорость"
@@ -3752,9 +3719,6 @@
     "osdTimerAlarmTooltip": {
         "message": "Выберите порог тревоги для таймера в минутах, если время превысит это значение - элемент OSD будет мигать. Если выставить значение 0, то таймер будет отключён"
     },
-    "osdWarningUnknown": {
-        "message": "Неизвестное предупреждение (детали буду добавлены в будущем выпуске)"
-    },
     "osdWarningArmingDisabled": {
         "message": "Отобразить самые основные причины не-арминг"
     },
@@ -3793,6 +3757,9 @@
     },
     "osdWarningGpsRescueDisabled": {
         "message": "Предупреждает, когда GPS отключён"
+    },
+    "osdWarningUnknown": {
+        "message": "Неизвестное предупреждение (детали буду добавлены в будущем выпуске)"
     },
     "osdSectionHelpElements": {
         "message": "Включение или отключение элементов OSD."
