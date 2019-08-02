@@ -8,10 +8,9 @@ TABS.staticTab.initialize = function (staticTabName, callback) {
         GUI.active_tab = staticTabName;
     }
     var tabFile = "./tabs/" + staticTabName + ".html";
-    if (staticTabName == 'changelog') { tabFile = './changelog.html'; }
 
-    $('#content').html('<div id="tab-static"></div>');
-    $('#tab-static').load(tabFile, function () {
+    $('#content').html('<div id="tab-static"><div id="tab-static-contents"></div>');
+    $('#tab-static-contents').load(tabFile, function () {
         // translate to user-selected language
         i18n.localizePage();
 
@@ -19,8 +18,4 @@ TABS.staticTab.initialize = function (staticTabName, callback) {
     });
 
 };
-
-// Unused, all the real tabs have one declared.
-TABS.staticTab.cleanup = function (callback) {
-    if (callback) callback();
-};
+// Just noting that other tabs have cleanup functions.
