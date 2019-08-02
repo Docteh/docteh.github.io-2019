@@ -260,26 +260,6 @@ TABS.motors.initialize = function (callback) {
             }
         });
 
-        // set refresh speeds according to configuration saved in storage
-        ConfigStorage.get(['motors_tab_sensor_settings', 'motors_tab_gyro_settings', 'motors_tab_accel_settings'], function (result) {
-            if (result.motors_tab_sensor_settings) {
-                var sensor = result.motors_tab_sensor_settings.sensor;
-                $('.tab-motors select[name="sensor_choice"]').val(result.motors_tab_sensor_settings.sensor);
-            }
-
-            if (result.motors_tab_gyro_settings) {
-                TABS.motors.sensorGyroRate = result.motors_tab_gyro_settings.rate;
-                TABS.motors.sensorGyroScale = result.motors_tab_gyro_settings.scale;
-            }
-
-            if (result.motors_tab_accel_settings) {
-                TABS.motors.sensorAccelRate = result.motors_tab_accel_settings.rate;
-                TABS.motors.sensorAccelScale = result.motors_tab_accel_settings.scale;
-            }
-            $('.tab-motors .sensor select:first').change();
-        });
-
-
         function loadScaleSelector(selectorValues, selectedValue) {
             $('.tab-motors select[name="scale"]').find('option').remove();
 
@@ -313,7 +293,6 @@ TABS.motors.initialize = function (callback) {
 
             $('.tab-motors .rate select:first').change();
         });
-
 
         $('.tab-motors .rate select, .tab-motors .scale select').change(function () {
             var rate = parseInt($('.tab-motors select[name="rate"]').val(), 10);
@@ -401,6 +380,27 @@ TABS.motors.initialize = function (callback) {
                 raw_data_text_ements.rms[0].text(rms.toFixed(4));
             }
         });
+
+
+        // set refresh speeds according to configuration saved in storage
+        ConfigStorage.get(['motors_tab_sensor_settings', 'motors_tab_gyro_settings', 'motors_tab_accel_settings'], function (result) {
+            if (result.motors_tab_sensor_settings) {
+                var sensor = result.motors_tab_sensor_settings.sensor;
+                $('.tab-motors select[name="sensor_choice"]').val(result.motors_tab_sensor_settings.sensor);
+            }
+
+            if (result.motors_tab_gyro_settings) {
+                TABS.motors.sensorGyroRate = result.motors_tab_gyro_settings.rate;
+                TABS.motors.sensorGyroScale = result.motors_tab_gyro_settings.scale;
+            }
+
+            if (result.motors_tab_accel_settings) {
+                TABS.motors.sensorAccelRate = result.motors_tab_accel_settings.rate;
+                TABS.motors.sensorAccelScale = result.motors_tab_accel_settings.scale;
+            }
+            $('.tab-motors .sensor select:first').change();
+        });
+
 
         // Amperage
         function power_data_pull() {
