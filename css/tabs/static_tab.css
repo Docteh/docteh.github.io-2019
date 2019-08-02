@@ -1,8 +1,9 @@
 #tab-static {
-    padding-top: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 40px;
+    background-color: inherit;
+    background-image: url(/images/osd-bg-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom right;
 }
 
 #tab-static span {
@@ -24,4 +25,13 @@
 #tab-static li {
     font-weight: normal;
     margin-bottom: 5px;
+}
+
+#tab-static-contents {
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+    background-color: inherit;
+    max-width: 650px;
 }
