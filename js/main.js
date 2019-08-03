@@ -439,6 +439,7 @@ function startProcess() {
                         var languageSelected = $(this).val();
 
                         // Select the new language, a restart is required
+                        i18next.changeLanguage(languageSelected);
                         ConfigStorage.set({'userLanguageSelect': languageSelected});
                     });
                 });

@@ -120,6 +120,30 @@ i18n.localizePage = function() {
     return localized;
 }
 
+// This function should do the same things that the above i18n.localizePage does.
+i18next.on('languageChanged', function (newLang) {
+  var translate = function(messageID) {
+    return i18n.getMessage(messageID);
+  };
+  $('[i18n]').each(function() {
+    var element = $(this);
+    element.html(translate(element.attr('i18n')));
+  });
+  $('[i18n_title]').each(function() {
+    var element = $(this);
+    element.attr('title', translate(element.attr('i18n_title')));
+  });
+  $('[i18n_value]').each(function() {
+    var element = $(this);
+    element.val(translate(element.attr('i18n_value')));
+  });
+  $('[i18n_placeholder]').each(function() {
+    var element = $(this);
+    element.attr('placeholder', translate(element.attr('i18n_placeholder')));
+  });
+});
+
+
 /*
  * Reads the chrome config, if DEFAULT or there is no config stored,
  * returns the current locale to the callback
