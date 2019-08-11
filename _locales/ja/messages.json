@@ -62,12 +62,6 @@
     "analyticsOptOut": {
         "message": "匿名の統計データ収集を無効"
     },
-    "userLanguageSelect": {
-        "message": "言語設定 (変更を有効にするにはConfiguratorを再起動して下さい)"
-    },
-    "language_default": {
-        "message": "初期値"
-    },
     "sensorDataFlashNotFound": {
         "message": "データ書込みできません<br>チップを確認しました",
         "description": "Text of the dataflash image in the header of the page."
@@ -482,14 +476,8 @@
     "defaultFacebookText": {
         "message": "私たちは<a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">Facebookグループ<\/a>も運営しています。<br \/>私たちと一緒にBetaflightについて語り合い、設定に関する質問をしたり、パイロット同士で交流してみましょう。"
     },
-    "defaultChangelogAction": {
-        "message": "変更履歴"
-    },
     "defaultChangelogHead": {
         "message": "Configurator - 変更履歴"
-    },
-    "defaultPrivacyPolicyAction": {
-        "message": "プライバシーポリシー"
     },
     "defaultButtonFirmwareFlasher": {
         "message": "ファームフラッシャー"

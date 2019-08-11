@@ -62,12 +62,6 @@
     "analyticsOptOut": {
         "message": "Отказ от анонимной коллекции статистических данных"
     },
-    "userLanguageSelect": {
-        "message": "Язык (необходимо перезапустить приложение, чтобы изменения вступили в силу)"
-    },
-    "language_default": {
-        "message": "По умолчанию"
-    },
     "sensorDataFlashNotFound": {
         "message": "Отсутствует <br>модуль памяти",
         "description": "Text of the dataflash image in the header of the page."
@@ -476,14 +470,8 @@
     "defaultFacebookText": {
         "message": "У нас также есть <\/a><a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">группа Facebook <\/a>.<br \/>Присоединяйтесь к нам, чтобы говорить о Betaflight, задавать вопросы о конфигурации или просто пообщаться с другими пилотами."
     },
-    "defaultChangelogAction": {
-        "message": "Изменения"
-    },
     "defaultChangelogHead": {
         "message": "Список изменений конфигуратора"
-    },
-    "defaultPrivacyPolicyAction": {
-        "message": "Политика конфиденциальности"
     },
     "defaultButtonFirmwareFlasher": {
         "message": "Программатор"

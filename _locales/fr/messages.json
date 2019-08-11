@@ -62,12 +62,6 @@
     "analyticsOptOut": {
         "message": "Ne pas participer à la collecte anonymes de données statistiques"
     },
-    "userLanguageSelect": {
-        "message": "Langue (nécessite un redémarrage pour appliquer les changements)"
-    },
-    "language_default": {
-        "message": "Défaut"
-    },
     "sensorDataFlashNotFound": {
         "message": "Aucune donnée de flash<br>puce trouvée",
         "description": "Text of the dataflash image in the header of the page."
@@ -476,14 +470,8 @@
     "defaultFacebookText": {
         "message": "Nous avons également un <a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">Groupe Facebook<\/a>.<br \/>\nVenez échanger à propos de Betaflight, posez des questions sur la configuration ou simplement passez du temps avec d'autres pilotes."
     },
-    "defaultChangelogAction": {
-        "message": "Notes de MAJ"
-    },
     "defaultChangelogHead": {
         "message": "Configurateur - Changelog"
-    },
-    "defaultPrivacyPolicyAction": {
-        "message": "Politique de confidentialité"
     },
     "defaultButtonFirmwareFlasher": {
         "message": "Flasher le microprogramme"

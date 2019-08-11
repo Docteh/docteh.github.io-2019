@@ -65,36 +65,6 @@
     "analyticsOptOut": {
         "message": "Elimina os datos anónimos das estatísticas"
     },
-    "userLanguageSelect": {
-        "message": "Lingua (É necesario reiniciar a aplicación para que os cambios teñan efecto)"
-    },
-    "language_default": {
-        "message": "Por defecto"
-    },
-    "language_ca": {
-        "message": "Catalán (ca)",
-        "description": "Don't translate!!!"
-    },
-    "language_de": {
-        "message": "Deutsch (de)",
-        "description": "Don't translate!!!"
-    },
-    "language_en": {
-        "message": "English (en)",
-        "description": "Don't translate!!!"
-    },
-    "language_es": {
-        "message": "Español (es)",
-        "description": "Don't translate!!!"
-    },
-    "language_fr": {
-        "message": "Français (fr)",
-        "description": "Don't translate!!!"
-    },
-    "language_gl": {
-        "message": "Galego (gl)",
-        "description": "Don't translate!!!"
-    },
     "sensorDataFlashNotFound": {
         "message": "Memoria flash <br> non dispoñible",
         "description": "Text of the dataflash image in the header of the page."
@@ -503,14 +473,8 @@
     "defaultFacebookText": {
         "message": "Nós tamén temos <a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">Grupo de Facebook<\/a>.<br \/>Únase a nós para conseguir un lugar para falar sobre Betaflight, facer preguntas de configuración ou simplemente saír cos compañeiros pilotos."
     },
-    "defaultChangelogAction": {
-        "message": "Rexistro de actualización"
-    },
     "defaultChangelogHead": {
         "message": "Configurator - Novidades"
-    },
-    "defaultPrivacyPolicyAction": {
-        "message": "Política de privacidade"
     },
     "defaultButtonFirmwareFlasher": {
         "message": "Flasheador de Firmware"

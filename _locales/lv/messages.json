@@ -62,12 +62,6 @@
     "analyticsOptOut": {
         "message": "Atteikties no anonīmas statistikas datu vākšanas"
     },
-    "userLanguageSelect": {
-        "message": "Valoda (nepieciešams pārstartēt programmu, lai izmaiņas stātos spēkā)"
-    },
-    "language_default": {
-        "message": "Noklusējuma"
-    },
     "sensorDataFlashNotFound": {
         "message": "Datu atmiņas <br>čips nav atrasts",
         "description": "Text of the dataflash image in the header of the page."
@@ -476,14 +470,8 @@
     "defaultFacebookText": {
         "message": "Mums ir arī <a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">Facebook grupa<\/a>.<br \/>Pievienojies mums, lai tiktu vietā, kur runāt par Betaflight, paprasīt konfigurācijas jautājumus, vai vienkārši sapazīties ar citiem pilotiem."
     },
-    "defaultChangelogAction": {
-        "message": "Izmaiņas"
-    },
     "defaultChangelogHead": {
         "message": "Konfiguratora izmaiņu žurnāls"
-    },
-    "defaultPrivacyPolicyAction": {
-        "message": "Privātuma politika"
     },
     "defaultButtonFirmwareFlasher": {
         "message": "Programmators"

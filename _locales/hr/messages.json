@@ -62,12 +62,6 @@
     "analyticsOptOut": {
         "message": "Isključi anonimno prikupljanje statističkih podataka"
     },
-    "userLanguageSelect": {
-        "message": "Jezik (potrebno je ponovno pokrenuti aplikaciju kako biste vidjeli promjene)"
-    },
-    "language_default": {
-        "message": "Zadano"
-    },
     "sensorDataFlashNotFound": {
         "message": "Memorijski čip <br> nije pronađen",
         "description": "Text of the dataflash image in the header of the page."
@@ -476,14 +470,8 @@
     "defaultFacebookText": {
         "message": "Imamo i svoju <a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">Facebook grupu<\/a>.<br \/>Pridružite nam se i postavite pitanja o Betaflightu, konfiguriranju i ostalom."
     },
-    "defaultChangelogAction": {
-        "message": "Popis promjena"
-    },
     "defaultChangelogHead": {
         "message": "Konfigurator - zapis o promjenama"
-    },
-    "defaultPrivacyPolicyAction": {
-        "message": "Pravila o privatnosti"
     },
     "defaultButtonFirmwareFlasher": {
         "message": "Ažuriranje Firmwarea"

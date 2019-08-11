@@ -62,11 +62,82 @@
     "analyticsOptOut": {
         "message": "Avstå från anonymiserad insamling av statistikdata"
     },
-    "userLanguageSelect": {
-        "message": "Språk (programmet behöver startas om för att ändringarna ska börja gälla)"
+    "language_changed": {
+        "message": "Språk ändrat"
+    },
+    "language_choice_message": {
+        "message": "Byt språk:",
+        "description": "Try and be brief"
     },
     "language_default": {
-        "message": "Standard"
+        "message": "Systemstandard"
+    },
+    "language_default_pretty": {
+        "message": "Systemstandard ($t(detectedLanguage))"
+    },
+    "language_ca": {
+        "message": "Català",
+        "description": "Don't translate!!!"
+    },
+    "language_de": {
+        "message": "Deutsch",
+        "description": "Don't translate!!!"
+    },
+    "language_en": {
+        "message": "English",
+        "description": "Don't translate!!!"
+    },
+    "language_es": {
+        "message": "Español",
+        "description": "Don't translate!!!"
+    },
+    "language_fr": {
+        "message": "Français",
+        "description": "Don't translate!!!"
+    },
+    "language_gl": {
+        "message": "Galego",
+        "description": "Don't translate!!!"
+    },
+    "language_hr": {
+        "message": "Hrvatski",
+        "description": "Don't translate!!!"
+    },
+    "language_id": {
+        "message": "Bahasa Indonesia",
+        "description": "Don't translate!!!"
+    },
+    "language_it": {
+        "message": "Italiano",
+        "description": "Don't translate!!!"
+    },
+    "language_ja": {
+        "message": "日本語",
+        "description": "Don't translate!!!"
+    },
+    "language_ko": {
+        "message": "한국어",
+        "description": "Don't translate!!!"
+    },
+    "language_lv": {
+        "message": "Latviešu",
+        "description": "Don't translate!!!"
+    },
+    "language_pt": {
+        "message": "Português",
+        "description": "Don't translate!!!"
+    },
+    "language_ru": {
+        "message": "Русский язык",
+        "description": "Don't translate!!!"
+    },
+    "language_sv": {
+        "message": "Svenska",
+        "description": "Don't translate!!!"
+    },
+    "language_zh_CN": {
+        "message": "简体中文",
+        "description": "Don't translate!!!"
     },
     "sensorDataFlashNotFound": {
         "message": "Inget dataflash-<br>chip hittades",
@@ -153,6 +224,12 @@
     },
     "tabLanding": {
         "message": "Välkommen"
+    },
+    "tabChangelog": {
+        "message": "Ändringslogg"
+    },
+    "tabPrivacyPolicy": {
+        "message": "Sekretesspolicy"
     },
     "tabHelp": {
         "message": "Dokumentation & Support"
@@ -482,14 +559,8 @@
     "defaultFacebookText": {
         "message": "Vi har också en <a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">Facebookgrupp<\/a>.<br \/>Gå med oss för att prata om Betaflight, ställa konfigurationsfrågor, eller bara hänga med andra piloter."
     },
-    "defaultChangelogAction": {
-        "message": "Ändringslogg"
-    },
     "defaultChangelogHead": {
         "message": "Configurator - Ändringslogg"
-    },
-    "defaultPrivacyPolicyAction": {
-        "message": "Sekretesspolicy"
     },
     "defaultButtonFirmwareFlasher": {
         "message": "Firmware-flashare"
@@ -499,6 +570,9 @@
     },
     "defaultDonateText": {
         "message": "<p><strong>Betaflight<\/strong> är en flygkontrollerprogramvara som bygger på <strong>öppen källkod<\/strong> och är tillgänglig utan kostnad <strong>utan garanti<\/strong> för alla användare.<\/p><p>Om du tycker att Betaflight eller Betaflight configurator är användbar kanske du vill <strong>stödja<\/strong> utvecklingen genom en donation.<\/p>"
+    },
+    "defaultDonateBottom": {
+        "message": "<p>Om du vill fortsätta bidra ekonomiskt bör du överväga att bli en \"patron\" för oss på $t(patreonLink.message).<\/p>"
     },
     "defaultDonate": {
         "message": "Donera"
@@ -3081,6 +3155,9 @@
     },
     "pidTuningItermRelaxTypeOptionSetpoint": {
         "message": "Setpoint"
+    },
+    "pidTuningItermRelaxCutoff": {
+        "message": "Cutoff:"
     },
     "pidTuningAbsoluteControlGain": {
         "message": "Absolut kontroll"

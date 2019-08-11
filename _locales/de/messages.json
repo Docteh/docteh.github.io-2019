@@ -65,12 +65,6 @@
     "analyticsOptOut": {
         "message": "Keine anonymisierte Erhebung von Statistikdaten"
     },
-    "userLanguageSelect": {
-        "message": "Sprache (Das Programm muss zur Änderung neu gestartet werden)"
-    },
-    "language_default": {
-        "message": "Automatisch"
-    },
     "sensorDataFlashNotFound": {
         "message": "Keine Speichermöglichkeit<br>Chip nicht gefunden",
         "description": "Text of the dataflash image in the header of the page."
@@ -473,14 +467,8 @@
     "defaultFacebookText": {
         "message": "Wir haben auch eine <a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">Facebook Gruppe<\/a>.<br \/>Trete uns bei, um über Betaflight zu sprechen, um Konfigurationsfragen zu stellen oder einfach nur um mit anderen Piloten abzuhängen."
     },
-    "defaultChangelogAction": {
-        "message": "Changelog"
-    },
     "defaultChangelogHead": {
         "message": "Konfigurator - Changelog"
-    },
-    "defaultPrivacyPolicyAction": {
-        "message": "Datenschutzerklärung"
     },
     "defaultButtonFirmwareFlasher": {
         "message": "Firmware Flasher"

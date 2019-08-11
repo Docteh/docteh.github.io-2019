@@ -62,11 +62,82 @@
     "analyticsOptOut": {
         "message": "익명화된 통계 데이타 수집 선택 해제"
     },
-    "userLanguageSelect": {
-        "message": "언어 (변경 사항을 적용하려면 어플리케이션을 다시 시작해야 함)"
+    "language_changed": {
+        "message": "언어 변경이 저장됨"
+    },
+    "language_choice_message": {
+        "message": "언어 변경:",
+        "description": "Try and be brief"
     },
     "language_default": {
-        "message": "기본값"
+        "message": "시스템 기본"
+    },
+    "language_default_pretty": {
+        "message": "시스템 기본 ($t(detectedLanguage))"
+    },
+    "language_ca": {
+        "message": "Català",
+        "description": "Don't translate!!!"
+    },
+    "language_de": {
+        "message": "Deutsch",
+        "description": "Don't translate!!!"
+    },
+    "language_en": {
+        "message": "English",
+        "description": "Don't translate!!!"
+    },
+    "language_es": {
+        "message": "Español",
+        "description": "Don't translate!!!"
+    },
+    "language_fr": {
+        "message": "Français",
+        "description": "Don't translate!!!"
+    },
+    "language_gl": {
+        "message": "Galego",
+        "description": "Don't translate!!!"
+    },
+    "language_hr": {
+        "message": "Hrvatski",
+        "description": "Don't translate!!!"
+    },
+    "language_id": {
+        "message": "Bahasa Indonesia",
+        "description": "Don't translate!!!"
+    },
+    "language_it": {
+        "message": "Italiano",
+        "description": "Don't translate!!!"
+    },
+    "language_ja": {
+        "message": "日本語",
+        "description": "Don't translate!!!"
+    },
+    "language_ko": {
+        "message": "한국어",
+        "description": "Don't translate!!!"
+    },
+    "language_lv": {
+        "message": "Latviešu",
+        "description": "Don't translate!!!"
+    },
+    "language_pt": {
+        "message": "Português",
+        "description": "Don't translate!!!"
+    },
+    "language_ru": {
+        "message": "Русский язык",
+        "description": "Don't translate!!!"
+    },
+    "language_sv": {
+        "message": "Svenska",
+        "description": "Don't translate!!!"
+    },
+    "language_zh_CN": {
+        "message": "简体中文",
+        "description": "Don't translate!!!"
     },
     "sensorDataFlashNotFound": {
         "message": "데이터플래시 <br>칩이 발견되지 않음",
@@ -153,6 +224,12 @@
     },
     "tabLanding": {
         "message": "환영합니다"
+    },
+    "tabChangelog": {
+        "message": "변경내역"
+    },
+    "tabPrivacyPolicy": {
+        "message": "개인정보 보호정책"
     },
     "tabHelp": {
         "message": "문서 & 지원"
@@ -482,14 +559,8 @@
     "defaultFacebookText": {
         "message": "우리는 또한 <a href=\"https:\/\/www.facebook.com\/groups\/betaflightgroup\/\" target=\"_blank\">페이스북 그룹<\/a>이 있습니다.<br \/>우리와 함께 베타플라이트에 대해 이야기하고, 환경설정 질문을 하거나, 동료 파일럿과 어울릴 수 있습니다."
     },
-    "defaultChangelogAction": {
-        "message": "변경이력"
-    },
     "defaultChangelogHead": {
         "message": "컨피규레이터 - 변경이력"
-    },
-    "defaultPrivacyPolicyAction": {
-        "message": "개인정보 보호정책"
     },
     "defaultButtonFirmwareFlasher": {
         "message": "펌웨어 플래시 도구"
@@ -499,6 +570,13 @@
     },
     "defaultDonateText": {
         "message": "<p><strong>베타플라이트<\/strong>는 비행 컨트롤러 소프트웨어로 <strong>오픈 소스<\/strong>이며 모든 사용자들이 <strong>보증없이<\/strong> 무료로 사용할 수 있습니다.<\/p><p>베타플라이트 또는 베타플라이트 컨피규레이터가 유용하다고 판단되면, 기부하는 방법으로 개발을 <strong>지원하는<\/strong> 것을 고려하시기 바랍니다.<\/p>"
+    },
+    "defaultDonateBottom": {
+        "message": "<p>지속적으로 재정적으로 기여 하려는 경우 $t(patreonLink.message)에서 우리의 수호자가 되는 것을 고려하세요.<\/p>"
+    },
+    "patreonLink": {
+        "message": "<a href=\"https:\/\/www.patreon.com\/betaflight\" target=\"_blank\">Patreon<\/a>",
+        "description": "Patreon is name, and should not require translation"
     },
     "defaultDonate": {
         "message": "기부"
@@ -3081,6 +3159,9 @@
     },
     "pidTuningItermRelaxTypeOptionSetpoint": {
         "message": "설정점"
+    },
+    "pidTuningItermRelaxCutoff": {
+        "message": "컷오프:"
     },
     "pidTuningAbsoluteControlGain": {
         "message": "절대 제어"

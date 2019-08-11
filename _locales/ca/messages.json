@@ -44,12 +44,6 @@
     "permanentExpertMode": {
         "message": "Habilita el mode expert permanentment"
     },
-    "userLanguageSelect": {
-        "message": "Idioma (es necessita reiniciar l'aplicació perquè els canvis tinguin efecte)"
-    },
-    "language_default": {
-        "message": "Per defecte"
-    },
     "sensorDataFlashNotFound": {
         "message": "Cap dataflash <br>xip trobat",
         "description": "Text of the dataflash image in the header of the page."
@@ -323,7 +317,7 @@
         "message": "El firmware d'aquest dispositiu necessita ser actualitzat a una versió superior. Utilitza el CLI per fer una còpia de seguretat abans de flashejar. El procediment està explicat a la documentació.<br \/>D'altra banda pots descarregar i fer servir una versió antiga del configurador si no estàs preparat per actualitzar."
     },
     "infoVersions": {
-        "message": "Corrent - OS: <strong>$1<\/strong>, Chrome: <strong>$2<\/strong>, Configurator: <strong>$3<\/strong>",
+        "message": "Corrent - OS: <strong>{{operatingSystem}}<\/strong>, Chrome: <strong>{{chromeVersion}}<\/strong>, Configurator: <strong>{{configuratorVersion}}<\/strong>",
         "description": "Message that appears in the GUI log panel indicating operating system, Chrome version and Configurator version"
     },
     "releaseCheckLoaded": {
@@ -442,9 +436,6 @@
     },
     "defaultContributingText": {
         "message": "Si vols contribuir a fer un Betaflight encara millor pots ajudar de diverses maneres, incloent:<br \/><ul><li>Responent a altres usuaris les preguntes als forums i IRC.<\/li><li>Aportant codi al firmware i configurador - noves caracteristiques, solucions, millores<\/li><li>Proves <a href=\"https:\/\/github.com\/Betaflight\/betaflight\/pulls\" target=\"_blank\">noves caracteristiques\/solucions<\/a> i facilitant feedback.<\/li><li>Ajudar amb <a href=\"https:\/\/github.com\/betaflight\/betaflight\/issues\" target=\"_blank\">problemes i comentar sol·licituds de funcions<\/a>.<\/li><li><\/li><\/ul>Coŀlabora traduint <a href=\"https:\/\/crowdin.com\/project\/betaflight-configurator\" target=\"_blank\">al teu idioma.<\/li><li><\/li><\/ul>"
-    },
-    "defaultChangelogAction": {
-        "message": "Canvis"
     },
     "defaultChangelogHead": {
         "message": "Configurador - Llista de canvis"
