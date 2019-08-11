@@ -1,33 +1,11 @@
 'use strict';
 
-var nwGui = getNwGui();
-
 var googleAnalytics = analytics;
 var analytics = undefined;
-// Just nerf analytics for now
-if (!analytics) {
-  var analytics = {
-    setFlightControllerData: function() {
-      //nothing
-    },
-    sendAppView: function(){},
-    sendChangeEvents: function(){},
-    sendEvent: function(){},
-    setDimension: function(){},
-    setOptOut: function(){},
-    DATA: {
-      API_VERSION: 0
-    },
-    DIMENSIONS: {},
-    EVENT_CATEGORIES: {}
-  }
-}
 
 $(document).ready(function () {
     $.getJSON('version.json', function(data) {
-        if (data.version) {
-            CONFIGURATOR.version = data.version;
-        }
+        CONFIGURATOR.version = data.version;
         CONFIGURATOR.gitChangesetId = data.gitChangesetId;
 
         i18n.init(function() {
@@ -36,17 +14,6 @@ $(document).ready(function () {
         });
     });
 });
-
-function getNwGui() {
-    var gui = null;
-    try {
-        gui = require('nw.gui');
-    } catch (ex) {
-        console.log("Could not require 'nw.gui', maybe inside chrome");
-    }
-
-    return gui;
-}
 
 function checkSetupAnalytics(callback) {
     if (!analytics) {
@@ -65,7 +32,7 @@ function checkSetupAnalytics(callback) {
 };
 
 function getBuildType() {
-    return nwGui ? 'NW.js' : 'Chrome';
+    return GUI.Mode;
 }
 
 function setupAnalytics(result) {
@@ -84,7 +51,7 @@ function setupAnalytics(result) {
 
     var debugMode = typeof process === "object" && process.versions['nw-flavor'] === 'sdk';
 
-    analytics = new Analytics('UA-123002063-1', userId, 'Betaflight Configurator', getManifestVersion(), CONFIGURATOR.gitChangesetId, GUI.operating_system, checkForDebugVersions, optOut, debugMode, getBuildType());
+    analytics = new Analytics('UA-123002063-1', userId, 'Betaflight Configurator', CONFIGURATOR.version, CONFIGURATOR.gitChangesetId, GUI.operating_system, checkForDebugVersions, optOut, debugMode, getBuildType());
 
     function logException(exception) {
         analytics.sendException(exception.stack);
@@ -100,8 +67,8 @@ function setupAnalytics(result) {
         analytics.sendEvent(analytics.EVENT_CATEGORIES.APPLICATION, 'AppClose', { sessionControl: 'end' })
     }
 
-    if (nwGui) {
-        var win = nwGui.Window.get();
+    if (GUI.isNWJS()) {
+        var win = GUI.nwGui.Window.get();
         win.on('close', function () {
             sendCloseEvent();
 
@@ -111,9 +78,9 @@ function setupAnalytics(result) {
             // do not open the window
             policy.ignore();
             // and open it in external browser
-            nwGui.Shell.openExternal(url);
+            GUI.nwGui.Shell.openExternal(url);
         });
-    } else {
+    } else if (!GUI.isOther()) {
         // Looks like we're in Chrome - but the event does not actually get fired
         chrome.runtime.onSuspend.addListener(sendCloseEvent);
     }
@@ -130,9 +97,9 @@ function startProcess() {
     // alternative - window.navigator.appVersion.match(/Chrome\/([0-9.]*)/)[1];
     GUI.log(i18n.getMessage('infoVersions',{operatingSystem: GUI.operating_system, 
                                             chromeVersion: window.navigator.appVersion.replace(/.*Chrome\/([0-9.]*).*/, "$1"), 
-                                            configuratorVersion: getManifestVersion()}));
+                                            configuratorVersion: CONFIGURATOR.version }));
 
-    $('#logo .version').text(getManifestVersion());
+    $('#logo .version').text(CONFIGURATOR.version);
     updateStatusBarVersion();
     updateTopBarVersion();
 
@@ -151,16 +118,9 @@ function startProcess() {
             break;
     }
 
-    // If we don't have chrome.storage, we're probably running as a website.
-    if (chrome.storage && GUI.operating_system !== 'ChromeOS') {
+    if (!GUI.isOther() && GUI.operating_system !== 'ChromeOS') {
         checkForConfiguratorUpdates();
     }
-
-    ConfigStorage.get('logopen', function (result) {
-        if (result.logopen) {
-            $("#showlog").trigger('click');
-        }
-    });
 
     // log webgl capability
     // it would seem the webgl "enabling" through advanced settings will be ignored in the future
@@ -315,7 +275,7 @@ function startProcess() {
                         TABS.onboard_logging.initialize(content_ready);
                         break;
                     case 'cli':
-                        TABS.cli.initialize(content_ready, nwGui);
+                        TABS.cli.initialize(content_ready, GUI.nwGui);
                         break;
 
                     default:
@@ -419,30 +379,6 @@ function startProcess() {
                         ConfigStorage.set({'darkTheme': checked});
                         DarkTheme.setConfig(checked);
                     }).change();
-
-                ConfigStorage.get('userLanguageSelect', function (result) {
-
-                    var userLanguage_e = $('div.userLanguage select');
-                    var languagesAvailables = i18n.getLanguagesAvailables();
-                    userLanguage_e.append('<option value="DEFAULT">' + i18n.getMessage('language_default') + '</option>');
-                    userLanguage_e.append('<option disabled>------</option>');
-                    languagesAvailables.forEach(function(element) {
-                        var languageName = i18n.getMessage('language_' + element);
-                        userLanguage_e.append('<option value="' + element + '">' + languageName + '</option>');
-                    });
-                    
-                    if (result.userLanguageSelect) {
-                        userLanguage_e.val(result.userLanguageSelect);
-                    }
-                    
-                    userLanguage_e.change(function () {
-                        var languageSelected = $(this).val();
-
-                        // Select the new language, a restart is required
-                        i18next.changeLanguage(languageSelected);
-                        ConfigStorage.set({'userLanguageSelect': languageSelected});
-                    });
-                });
 
                 function close_and_cleanup(e) {
                     if (e.type == 'click' && !$.contains($('div#options-window')[0], e.target) || e.type == 'keyup' && e.keyCode == 27) {
@@ -565,6 +501,12 @@ function startProcess() {
         $(this).data('state', state);
     });
 
+    ConfigStorage.get('logopen', function (result) {
+        if (result.logopen) {
+            $("#showlog").trigger('click');
+        }
+    });
+
     ConfigStorage.get('permanentExpertMode', function (result) {
         if (result.permanentExpertMode) {
             $('input[name="expertModeCheckbox"]').prop('checked', true);
@@ -616,7 +558,7 @@ function notifyOutdatedVersion(releaseData) {
             }
         });
 
-        if (versions.length > 0 && semver.lt(getManifestVersion(), versions[0].tag_name)) {
+        if (versions.length > 0 && semver.lt(CONFIGURATOR.version, versions[0].tag_name)) {
             GUI.log(i18n.getMessage('configuratorUpdateNotice', [versions[0].tag_name, versions[0].html_url]));
 
             var dialog = $('.dialogConfiguratorUpdate')[0];
@@ -794,7 +736,7 @@ function getFirmwareVersion(firmwareVersion, firmwareId) {
 }
 
 function getConfiguratorVersion() {
-    return i18n.getMessage('versionLabelConfigurator') + ': ' + getManifestVersion();
+    return i18n.getMessage('versionLabelConfigurator') + ': ' + CONFIGURATOR.version;
 }
 
 function updateTopBarVersion(firmwareVersion, firmwareId, hardwareId) {
@@ -826,20 +768,6 @@ function updateStatusBarVersion(firmwareVersion, firmwareId, hardwareId) {
     versionText = versionText + getConfiguratorVersion() + ' (' + CONFIGURATOR.gitChangesetId + ')';
 
     $('#status-bar .version').text(versionText);
-}
-
-function getManifestVersion(manifest) {
-    return CONFIGURATOR.version;
-    if (!manifest) {
-        manifest = chrome.runtime.getManifest();
-    }
-
-    var version = manifest.version_name;
-    if (!version) {
-        version = manifest.version;
-    }
-
-    return version;
 }
 
 function showErrorDialog(message) {

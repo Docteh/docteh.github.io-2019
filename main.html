@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="author" content="cTn"/>
-    <link type="text/css" rel="stylesheet" href="/node/jBox.min.css"/>
+    <link type="text/css" rel="stylesheet" href="./node_modules/jbox/dist/jBox.min.css"/>
     <link type="text/css" rel="stylesheet" href="./js/libraries/jquery.nouislider.min.css"/>
     <link type="text/css" rel="stylesheet" href="./js/libraries/jquery.nouislider.pips.min.css"/>
     <link type="text/css" rel="stylesheet" href="./js/libraries/flightindicators.css"/>
@@ -31,11 +31,11 @@
     <link type="text/css" rel="stylesheet" href="./css/tabs/osd.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/power.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/transponder.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="./css/tabs/privacy_policy.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css" media="all">
     <link type="text/css" rel="stylesheet" href="./css/opensans_webfontkit/fonts.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/dropdown-lists/css/style_lists.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./js/libraries/switchery/switchery.css" media="all"/>
-    <link type="text/css" rel="stylesheet" href="./css/webserial.css" media="all"/>
 
     <link type="text/css" rel="stylesheet" href="./css/main-dark.css" media="all" disabled/>
     <link type="text/css" rel="stylesheet" href="./css/tabs-dark/landing-dark.css" media="all" disabled/>
@@ -88,17 +88,17 @@
         @import url(./css/tabs-dark/transponder-dark.css) (prefers-color-scheme: dark);
     </style>
 
-    <script type="text/javascript" src="./node/lru.js"></script>
-    <script type="text/javascript" src="./node/i18next.min.js"></script>
-    <script type="text/javascript" src="./node/i18nextXHRBackend.min.js"></script>
-    <script type="text/javascript" src="./node/marked.min.js"></script>
-    <script type="text/javascript" src="./node/analytics.min.js"></script>
-    <script type="text/javascript" src="./node/short-unique-id.min.js"></script>
-    <script type="text/javascript" src="./node/object_hash.js"></script>
+    <script type="text/javascript" src="./node_modules/lru_map/lru.js"></script>
+    <script type="text/javascript" src="./node_modules/i18next/i18next.min.js"></script>
+    <script type="text/javascript" src="./node_modules/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="./node_modules/marked/marked.min.js"></script>
+    <script type="text/javascript" src="./node_modules/universal-ga/lib/analytics.min.js"></script>
+    <script type="text/javascript" src="./node_modules/short-unique-id/dist/short-unique-id.min.js"></script>
+    <script type="text/javascript" src="./node_modules/object-hash/dist/object_hash.js"></script>
     <script type="text/javascript" src="./js/libraries/q.js"></script>
-    <script type="text/javascript" src="./node/jquery.min.js"></script>
-    <script type="text/javascript" src="./node/jBox.min.js"></script>
-    <script type="text/javascript" src="./node/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/jbox/dist/jBox.min.js"></script>
+    <script type="text/javascript" src="./node_modules/jquery-ui-npm/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./js/libraries/d3.min.js"></script>
     <script type="text/javascript" src="./js/libraries/jquery.nouislider.all.min.js"></script>
     <script type="text/javascript" src="./js/libraries/three/three.min.js"></script>
@@ -107,9 +107,9 @@
     <script type="text/javascript" src="./js/libraries/jquery.flightindicators.js"></script>
     <script type="text/javascript" src="./js/libraries/semver.js"></script>
     <script type="text/javascript" src="./js/libraries/switchery/switchery.js"></script>
-    <script type="text/javascript" src="./node/bluebird.min.js"></script>
+    <script type="text/javascript" src="./node_modules/bluebird/js/browser/bluebird.min.js"></script>
     <script type="text/javascript" src="./js/libraries/jquery.ba-throttle-debounce.min.js"></script>
-    <script type="text/javascript" src="./node/inflection.min.js"></script>
+    <script type="text/javascript" src="./node_modules/inflection/inflection.min.js"></script>
     <script type="text/javascript" src="./js/libraries/analytics.js"></script>
     <script type="text/javascript" src="./js/injected_methods.js"></script>
     <script type="text/javascript" src="./js/ConfigStorage.js"></script>
@@ -117,13 +117,12 @@
     <script type="text/javascript" src="./js/fc.js"></script>
     <script type="text/javascript" src="./js/port_handler.js"></script>
     <script type="text/javascript" src="./js/port_usage.js"></script>
-    <!--<script type="text/javascript" src="./js/serial.js"></script>-->
+    <script type="text/javascript" src="./js/serial.js"></script>
     <script type="text/javascript" src="./js/gui.js"></script>
     <script type="text/javascript" src="./js/huffman.js"></script>
     <script type="text/javascript" src="./js/default_huffman_tree.js"></script>
     <script type="text/javascript" src="./js/model.js"></script>
     <script type="text/javascript" src="./js/serial_backend.js"></script>
-    <script type="text/javascript" src="./js/navigator.serial.js"></script>
     <script type="text/javascript" src="./js/msp/MSPCodes.js"></script>
     <script type="text/javascript" src="./js/msp.js"></script>
     <script type="text/javascript" src="./js/msp/MSPHelper.js"></script>
@@ -166,7 +165,7 @@
     <script type="text/javascript" src="./js/tabs/osd.js"></script>
     <script type="text/javascript" src="./js/tabs/power.js"></script>
     <script type="text/javascript" src="./js/tabs/transponder.js"></script>
-    <script type="text/javascript" src="./node/jquery.textcomplete.min.js"></script>
+    <script type="text/javascript" src="./node_modules/jquery-textcomplete/dist/jquery.textcomplete.min.js"></script>
     <script type="text/javascript" src="./js/CliAutoComplete.js"></script>
     <script type="text/javascript" src="./js/DarkTheme.js"></script>
     <title i18n="windowTitle"></title>
@@ -293,8 +292,8 @@
             <ul class="mode-disconnected">
                 <li class="tab_landing" id="tab_landing"><a href="#" i18n="tabLanding" class="tabicon ic_welcome" i18n_title="tabLanding"></a>
                 </li>
-                <li class="tab_changelog"><a href="#" class="tabicon ic_help" i18n="defaultChangelogAction"></a></li>
-                <li class="tab_privacy_policy"><a href="#" class="tabicon ic_help" i18n="defaultPrivacyPolicyAction"></a></li>
+                <li class="tab_changelog"><a href="#" class="tabicon ic_help" i18n="tabChangelog"></a></li>
+                <li class="tab_privacy_policy"><a href="#" class="tabicon ic_help" i18n="tabPrivacyPolicy"></a></li>
                 <li class="tab_help" id="tab_help"><a href="#" i18n="tabHelp" class="tabicon ic_help"
                                         i18n_title="tabHelp"></a></li>
                 <li class="tab_firmware_flasher" id="tabFirmware"><a href="#" i18n="tabFirmwareFlasher" class="tabicon ic_flasher"

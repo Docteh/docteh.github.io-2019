@@ -453,7 +453,7 @@ OSD.loadDisplayFields = function() {
             default_position: 1,
             draw_order: 120,
             positionable: true,
-            preview: 'R:2:1'
+            preview: 'R:2:200:P'
         },
         VOLTAGE_WARNING: {
             name: 'VOLTAGE_WARNING',
@@ -2120,8 +2120,9 @@ TABS.osd.initialize = function (callback) {
                 fieldList.append(field);
             } else {
                 let added = false;
+                let currentLocale = i18n.getCurrentLocale().replace('_', '-');
                 fieldList.children().each(function() {
-                    if ($(this).text().localeCompare(field.text(), i18n.getCurrentLocale(), { sensitivity: 'base' }) > 0) {
+                    if ($(this).text().localeCompare(field.text(), currentLocale, { sensitivity: 'base' }) > 0) {
                         $(this).before(field);
                         added = true;
                         return false;
