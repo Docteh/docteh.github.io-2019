@@ -8,6 +8,11 @@ $(document).ready(function () {
         CONFIGURATOR.version = data.version;
         CONFIGURATOR.gitChangesetId = data.gitChangesetId;
 
+        // Version in the ChromeApp's manifest takes precedence.
+        if(chrome.runtime && chrome.runtime.getManifest) {
+            var manifest = chrome.runtime.getManifest();
+            CONFIGURATOR.version = manifest.version;
+        }
         i18n.init(function() {
             startProcess();
             initializeSerialBackend();
