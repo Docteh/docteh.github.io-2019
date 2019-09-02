@@ -1,8 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="author" content="cTn"/>
+    <script type="text/javascript" src="./js/crowdin_in_context.js"></script>
+    <script type="text/javascript" src="https://cdn.crowdin.com/jipt/jipt.js"></script>
     <link type="text/css" rel="stylesheet" href="./node_modules/jbox/dist/jBox.min.css"/>
     <link type="text/css" rel="stylesheet" href="./js/libraries/jquery.nouislider.min.css"/>
     <link type="text/css" rel="stylesheet" href="./js/libraries/jquery.nouislider.pips.min.css"/>
@@ -29,6 +31,7 @@
     <link type="text/css" rel="stylesheet" href="./css/tabs/auxiliary.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/failsafe.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/osd.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="./css/tabs/vtx.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/power.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/transponder.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/tabs/privacy_policy.css" media="all"/>
@@ -36,6 +39,7 @@
     <link type="text/css" rel="stylesheet" href="./css/opensans_webfontkit/fonts.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./css/dropdown-lists/css/style_lists.css" media="all"/>
     <link type="text/css" rel="stylesheet" href="./js/libraries/switchery/switchery.css" media="all"/>
+    <link type="text/css" rel="stylesheet" href="./css/webserial.css" media="all"/>
 
     <link type="text/css" rel="stylesheet" href="./css/main-dark.css" media="all" disabled/>
     <link type="text/css" rel="stylesheet" href="./css/tabs-dark/landing-dark.css" media="all" disabled/>
@@ -124,6 +128,7 @@
     <script type="text/javascript" src="./js/model.js"></script>
     <script type="text/javascript" src="./js/serial_backend.js"></script>
     <script type="text/javascript" src="./js/msp/MSPCodes.js"></script>
+    <script type="text/javascript" src="./js/msp/MSPConnector.js"></script>
     <script type="text/javascript" src="./js/msp.js"></script>
     <script type="text/javascript" src="./js/msp/MSPHelper.js"></script>
     <script type="text/javascript" src="./js/backup_restore.js"></script>
@@ -163,11 +168,13 @@
     <script type="text/javascript" src="./js/tabs/failsafe.js"></script>
     <script type="text/javascript" src="./js/LogoManager.js"></script>
     <script type="text/javascript" src="./js/tabs/osd.js"></script>
+    <script type="text/javascript" src="./js/tabs/vtx.js"></script>
     <script type="text/javascript" src="./js/tabs/power.js"></script>
     <script type="text/javascript" src="./js/tabs/transponder.js"></script>
     <script type="text/javascript" src="./node_modules/jquery-textcomplete/dist/jquery.textcomplete.min.js"></script>
     <script type="text/javascript" src="./js/CliAutoComplete.js"></script>
     <script type="text/javascript" src="./js/DarkTheme.js"></script>
+    <script type="text/javascript" src="./js/ConfigInserter.js"></script>
     <title i18n="windowTitle"></title>
 </head>
 <body>
@@ -322,6 +329,7 @@
                 <li class="tab_motors"><a href="#" i18n="tabMotorTesting" class="tabicon ic_motor" i18n_title="tabMotorTesting"></a>
                 </li>
                 <li class="tab_osd"><a href="#" i18n="tabOsd" class="tabicon ic_osd" i18n_title="tabOsd"></a></li>
+                <li class="tab_vtx"><a href="#" i18n="tabVtx" class="tabicon ic_vtx" i18n_title="tabVtx"></a></li>
                 <li class="tab_transponder"><a href="#" i18n="tabTransponder" class="tabicon ic_transponder"
                                                i18n_title="tabTransponder"></a></li>
                 <li class="tab_led_strip"><a href="#" i18n="tabLedStrip" class="tabicon ic_led" i18n_title="tabLedStrip"></a>
