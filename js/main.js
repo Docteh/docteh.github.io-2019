@@ -12,6 +12,12 @@ $(document).ready(function () {
         if(chrome.runtime && chrome.runtime.getManifest) {
             var manifest = chrome.runtime.getManifest();
             CONFIGURATOR.version = manifest.version;
+            // manifest.json for ChromeApp can't have a version
+            // with a prerelease tag eg 10.0.0-RC4
+            // Work around is to specify the prerelease version in version_name
+            if (manifest.version_name) {
+                CONFIGURATOR.version = manifest.version_name;
+            }
         }
         i18n.init(function() {
             startProcess();
@@ -241,6 +247,9 @@ function startProcess() {
                         break;
                     case 'osd':
                         TABS.osd.initialize(content_ready);
+                        break;
+                    case 'vtx':
+                        TABS.vtx.initialize(content_ready);
                         break;
                     case 'power':
                         TABS.power.initialize(content_ready);
@@ -626,46 +635,31 @@ function isExpertModeEnabled() {
 }
 
 function updateTabList(features) {
+
+    if (isExpertModeEnabled()) {
+        $('#tabs ul.mode-connected li.tab_failsafe').show();
+        $('#tabs ul.mode-connected li.tab_adjustments').show();
+        $('#tabs ul.mode-connected li.tab_servos').show();
+        $('#tabs ul.mode-connected li.tab_sensors').show();
+        $('#tabs ul.mode-connected li.tab_logging').show();
+    } else {
+        $('#tabs ul.mode-connected li.tab_failsafe').hide();
+        $('#tabs ul.mode-connected li.tab_adjustments').hide();
+        $('#tabs ul.mode-connected li.tab_servos').hide();
+        $('#tabs ul.mode-connected li.tab_sensors').hide();
+        $('#tabs ul.mode-connected li.tab_logging').hide();
+    }
+
     if (features.isEnabled('GPS') && isExpertModeEnabled()) {
         $('#tabs ul.mode-connected li.tab_gps').show();
     } else {
         $('#tabs ul.mode-connected li.tab_gps').hide();
     }
 
-    if (isExpertModeEnabled()) {
-        $('#tabs ul.mode-connected li.tab_failsafe').show();
-    } else {
-        $('#tabs ul.mode-connected li.tab_failsafe').hide();
-    }
-
-    if (isExpertModeEnabled()) {
-        $('#tabs ul.mode-connected li.tab_adjustments').show();
-    } else {
-        $('#tabs ul.mode-connected li.tab_adjustments').hide();
-    }
-
-    if (isExpertModeEnabled()) {
-        $('#tabs ul.mode-connected li.tab_servos').show();
-    } else {
-        $('#tabs ul.mode-connected li.tab_servos').hide();
-    }
-
     if (features.isEnabled('LED_STRIP')) {
         $('#tabs ul.mode-connected li.tab_led_strip').show();
     } else {
         $('#tabs ul.mode-connected li.tab_led_strip').hide();
-    }
-
-    if (isExpertModeEnabled()) {
-        $('#tabs ul.mode-connected li.tab_sensors').show();
-    } else {
-        $('#tabs ul.mode-connected li.tab_sensors').hide();
-    }
-
-    if (isExpertModeEnabled()) {
-        $('#tabs ul.mode-connected li.tab_logging').show();
-    } else {
-        $('#tabs ul.mode-connected li.tab_logging').hide();
     }
 
     if (features.isEnabled('TRANSPONDER')) {
@@ -685,6 +679,13 @@ function updateTabList(features) {
     } else {
         $('#tabs ul.mode-connected li.tab_power').hide();
     }
+
+    if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+        $('#tabs ul.mode-connected li.tab_vtx').show();
+    } else {
+        $('#tabs ul.mode-connected li.tab_vtx').hide();
+    }
+
 }
 
 function zeroPad(value, width) {

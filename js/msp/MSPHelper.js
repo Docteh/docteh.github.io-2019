@@ -142,6 +142,17 @@ MspHelper.prototype.process_data = function(dataHandler) {
                     MOTOR_DATA[i] = data.readU16();
                 }
                 break;
+            case MSPCodes.MSP_MOTOR_TELEMETRY:
+                var telemMotorCount = data.readU8();
+                for (let i = 0; i < telemMotorCount; i++) {
+                    MOTOR_TELEMETRY_DATA.rpm[i] = data.readU32();   // RPM
+                    MOTOR_TELEMETRY_DATA.invalidPercent[i] = data.readU16();   // 10000 = 100.00%
+                    MOTOR_TELEMETRY_DATA.temperature[i] = data.readU8();       // degrees celsius
+                    MOTOR_TELEMETRY_DATA.voltage[i] = data.readU16();          // 0.01V per unit
+                    MOTOR_TELEMETRY_DATA.current[i] = data.readU16();          // 0.01A per unit
+                    MOTOR_TELEMETRY_DATA.consumption[i] = data.readU16();      // mAh
+                }
+                break;
             case MSPCodes.MSP_RC:
                 RC.active_channels = data.byteLength / 2;
                 for (var i = 0; i < RC.active_channels; i++) {
@@ -392,6 +403,12 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 MOTOR_CONFIG.minthrottle = data.readU16(); // 0-2000
                 MOTOR_CONFIG.maxthrottle = data.readU16(); // 0-2000
                 MOTOR_CONFIG.mincommand = data.readU16(); // 0-2000
+                if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                    MOTOR_CONFIG.motor_count = data.readU8();
+                    MOTOR_CONFIG.motor_poles = data.readU8();
+                    MOTOR_CONFIG.use_dshot_telemetry = data.readU8() != 0;
+                    MOTOR_CONFIG.use_esc_sensor = data.readU8() != 0;
+                }
                 break;
             case MSPCodes.MSP_COMPASS_CONFIG:
                 COMPASS_CONFIG.mag_declination = data.read16() / 100; // -18000-18000
@@ -896,6 +913,10 @@ MspHelper.prototype.process_data = function(dataHandler) {
                             RX_CONFIG.rcSmoothingDerivativeCutoff = data.readU8();
                             RX_CONFIG.rcSmoothingInputType = data.readU8();
                             RX_CONFIG.rcSmoothingDerivativeType = data.readU8();
+                            if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                                RX_CONFIG.usbCdcHidType = data.readU8();
+                                RX_CONFIG.rcSmoothingAutoSmoothness = data.readU8();
+                            }
                         }
                     } else {
                         RX_CONFIG.rxSpiProtocol = 0;
@@ -949,6 +970,17 @@ MspHelper.prototype.process_data = function(dataHandler) {
                         let gyroUse32kHz = data.readU8();
                         if (semver.lt(CONFIG.apiVersion, "1.41.0")) {
                             PID_ADVANCED_CONFIG.gyroUse32kHz = gyroUse32kHz;
+                        } 
+                        if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                            PID_ADVANCED_CONFIG.motorPwmInversion = data.readU8();
+                            PID_ADVANCED_CONFIG.gyroToUse = data.readU8();
+                            PID_ADVANCED_CONFIG.gyroHighFsr = data.readU8();
+                            PID_ADVANCED_CONFIG.gyroMovementCalibThreshold = data.readU8();
+                            PID_ADVANCED_CONFIG.gyroCalibDuration = data.readU16();
+                            PID_ADVANCED_CONFIG.gyroOffsetYaw = data.readU16();
+                            PID_ADVANCED_CONFIG.gyroCheckOverflow = data.readU8();
+                            PID_ADVANCED_CONFIG.debugMode = data.readU8();
+                            PID_ADVANCED_CONFIG.debugModeCount = data.readU8();
                         }
                     }
                 }
@@ -987,6 +1019,12 @@ MspHelper.prototype.process_data = function(dataHandler) {
                             FILTER_CONFIG.gyro_lowpass_dyn_max_hz = data.readU16();
                             FILTER_CONFIG.dterm_lowpass_dyn_min_hz = data.readU16();
                             FILTER_CONFIG.dterm_lowpass_dyn_max_hz = data.readU16();
+                            if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                                FILTER_CONFIG.dyn_notch_range = data.readU8();
+                                FILTER_CONFIG.dyn_notch_width_percent = data.readU8();
+                                FILTER_CONFIG.dyn_notch_q = data.readU16();
+                                FILTER_CONFIG.dyn_notch_min_hz = data.readU16();
+                            }
                         }
                     }
                 }
@@ -1240,6 +1278,7 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 BLACKBOX.blackboxRateDenom = data.readU8();
                 if (semver.gte(CONFIG.apiVersion, "1.36.0")) {
                     BLACKBOX.blackboxPDenom = data.readU16();
+
                 }
                 break;
             case MSPCodes.MSP_SET_BLACKBOX_CONFIG:
@@ -1282,9 +1321,78 @@ MspHelper.prototype.process_data = function(dataHandler) {
                     TRANSPONDER.data.push(data.readU8());
                 }
                 break;
+
             case MSPCodes.MSP_SET_TRANSPONDER_CONFIG:
                 console.log("Transponder config saved");
                 break;
+
+            case MSPCodes.MSP_VTX_CONFIG:
+
+                VTX_CONFIG.vtx_type = data.readU8();
+                VTX_CONFIG.vtx_band = data.readU8();
+                VTX_CONFIG.vtx_channel = data.readU8();
+                VTX_CONFIG.vtx_power = data.readU8();
+                VTX_CONFIG.vtx_pit_mode = data.readU8() != 0;
+                VTX_CONFIG.vtx_frequency = data.readU16();
+                VTX_CONFIG.vtx_device_ready = data.readU8() != 0;
+                VTX_CONFIG.vtx_low_power_disarm = data.readU8();
+
+                if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                    VTX_CONFIG.vtx_pit_mode_frequency = data.readU16();
+                    VTX_CONFIG.vtx_table_available = data.readU8() != 0;
+                    VTX_CONFIG.vtx_table_bands = data.readU8();
+                    VTX_CONFIG.vtx_table_channels = data.readU8();
+                    VTX_CONFIG.vtx_table_powerlevels = data.readU8();
+                    VTX_CONFIG.vtx_table_clear = false;
+                }
+                break;
+
+            case MSPCodes.MSP_SET_VTX_CONFIG:
+                console.log("VTX config sent");
+                break;
+
+            case MSPCodes.MSP_VTXTABLE_BAND:
+
+                VTXTABLE_BAND.vtxtable_band_number = data.readU8();
+
+                let bandNameLength = data.readU8();
+                VTXTABLE_BAND.vtxtable_band_name = '';
+                for (let i = 0; i < bandNameLength; i++) {
+                    VTXTABLE_BAND.vtxtable_band_name += String.fromCharCode(data.readU8());
+                }
+
+                VTXTABLE_BAND.vtxtable_band_letter = String.fromCharCode(data.readU8());
+                VTXTABLE_BAND.vtxtable_band_is_factory_band = data.readU8() != 0;
+
+                let bandFrequenciesLength = data.readU8();
+                VTXTABLE_BAND.vtxtable_band_frequencies = [];
+                for (let i = 0; i < bandFrequenciesLength; i++) {
+                    VTXTABLE_BAND.vtxtable_band_frequencies.push(data.readU16());
+                }
+
+                break;
+
+            case MSPCodes.MSP_SET_VTXTABLE_BAND:
+                console.log("VTX band sent");
+                break;
+
+            case MSPCodes.MSP_VTXTABLE_POWERLEVEL:
+
+                VTXTABLE_POWERLEVEL.vtxtable_powerlevel_number = data.readU8();
+                VTXTABLE_POWERLEVEL.vtxtable_powerlevel_value = data.readU16();
+
+                let powerLabelLength = data.readU8();
+                VTXTABLE_POWERLEVEL.vtxtable_powerlevel_label = '';
+                for (let i = 0; i < powerLabelLength; i++) {
+                    VTXTABLE_POWERLEVEL.vtxtable_powerlevel_label += String.fromCharCode(data.readU8());
+                }
+
+                break;
+
+            case MSPCodes.MSP_SET_VTXTABLE_POWERLEVEL:
+                console.log("VTX powerlevel sent");
+                break;
+
             case MSPCodes.MSP_SET_MODE_RANGE:
                 console.log('Mode range saved');
                 break;
@@ -1339,10 +1447,6 @@ MspHelper.prototype.process_data = function(dataHandler) {
                 break;
             case MSPCodes.MSP_OSD_CHAR_WRITE:
                 console.log('OSD char uploaded');
-                break;
-            case MSPCodes.MSP_VTX_CONFIG:
-                break;
-            case MSPCodes.MSP_SET_VTX_CONFIG:
                 break;
             case MSPCodes.MSP_SET_NAME:
                 console.log('Name set');
@@ -1521,7 +1625,10 @@ MspHelper.prototype.crunch = function(code) {
             buffer.push16(MOTOR_CONFIG.minthrottle)
                 .push16(MOTOR_CONFIG.maxthrottle)
                 .push16(MOTOR_CONFIG.mincommand);
-                break;
+            if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                buffer.push8(MOTOR_CONFIG.motor_poles);
+            }
+            break;
         case MSPCodes.MSP_SET_GPS_CONFIG:
             buffer.push8(GPS_CONFIG.provider)
                 .push8(GPS_CONFIG.ublox_sbas);
@@ -1604,6 +1711,10 @@ MspHelper.prototype.crunch = function(code) {
                             .push8(RX_CONFIG.rcSmoothingDerivativeCutoff)
                             .push8(RX_CONFIG.rcSmoothingInputType)
                             .push8(RX_CONFIG.rcSmoothingDerivativeType);
+                        if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                            buffer.push8(RX_CONFIG.usbCdcHidType)
+                                  .push8(RX_CONFIG.rcSmoothingAutoSmoothness);
+                        }
                     }
                 }
             }
@@ -1708,6 +1819,16 @@ MspHelper.prototype.crunch = function(code) {
                         gyroUse32kHz = PID_ADVANCED_CONFIG.gyroUse32kHz;
                     }
                     buffer.push8(gyroUse32kHz);
+                    if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                        buffer.push8(PID_ADVANCED_CONFIG.motorPwmInversion)
+                              .push8(PID_ADVANCED_CONFIG.gyroToUse)
+                              .push8(PID_ADVANCED_CONFIG.gyroHighFsr)
+                              .push8(PID_ADVANCED_CONFIG.gyroMovementCalibThreshold)
+                              .push16(PID_ADVANCED_CONFIG.gyroCalibDuration)
+                              .push16(PID_ADVANCED_CONFIG.gyroOffsetYaw)
+                              .push8(PID_ADVANCED_CONFIG.gyroCheckOverflow)
+                              .push8(PID_ADVANCED_CONFIG.debugMode);
+                    }
                 }
             }
             break;
@@ -1746,6 +1867,12 @@ MspHelper.prototype.crunch = function(code) {
                           .push16(FILTER_CONFIG.gyro_lowpass_dyn_max_hz)
                           .push16(FILTER_CONFIG.dterm_lowpass_dyn_min_hz)
                           .push16(FILTER_CONFIG.dterm_lowpass_dyn_max_hz);
+                }
+                if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                    buffer.push8(FILTER_CONFIG.dyn_notch_range)
+                          .push8(FILTER_CONFIG.dyn_notch_width_percent)
+                          .push16(FILTER_CONFIG.dyn_notch_q)
+                          .push16(FILTER_CONFIG.dyn_notch_min_hz);
                 }
             }
             break;
@@ -1885,6 +2012,58 @@ MspHelper.prototype.crunch = function(code) {
             }
 
             break;
+
+        case MSPCodes.MSP_SET_VTX_CONFIG:
+
+            buffer.push16(VTX_CONFIG.vtx_frequency)
+                  .push8(VTX_CONFIG.vtx_power)
+                  .push8(VTX_CONFIG.vtx_pit_mode ? 1 : 0)
+                  .push8(VTX_CONFIG.vtx_low_power_disarm);
+
+            if (semver.gte(CONFIG.apiVersion, "1.42.0")) {
+                buffer.push16(VTX_CONFIG.vtx_pit_mode_frequency)
+                      .push8(VTX_CONFIG.vtx_band)
+                      .push8(VTX_CONFIG.vtx_channel)
+                      .push16(VTX_CONFIG.vtx_frequency)
+                      .push8(VTX_CONFIG.vtx_table_bands)
+                      .push8(VTX_CONFIG.vtx_table_channels)
+                      .push8(VTX_CONFIG.vtx_table_powerlevels)
+                      .push8(VTX_CONFIG.vtx_table_clear ? 1 : 0);
+            }
+
+            break;
+
+        case MSPCodes.MSP_SET_VTXTABLE_POWERLEVEL:
+
+            buffer.push8(VTXTABLE_POWERLEVEL.vtxtable_powerlevel_number)
+                  .push16(VTXTABLE_POWERLEVEL.vtxtable_powerlevel_value);
+
+            buffer.push8(VTXTABLE_POWERLEVEL.vtxtable_powerlevel_label.length);
+            for (let i = 0; i < VTXTABLE_POWERLEVEL.vtxtable_powerlevel_label.length; i++) {
+                buffer.push8(VTXTABLE_POWERLEVEL.vtxtable_powerlevel_label.charCodeAt(i));
+            }
+
+            break;
+
+        case MSPCodes.MSP_SET_VTXTABLE_BAND:
+
+            buffer.push8(VTXTABLE_BAND.vtxtable_band_number);
+
+            buffer.push8(VTXTABLE_BAND.vtxtable_band_name.length);
+            for (let i = 0; i < VTXTABLE_BAND.vtxtable_band_name.length; i++) {
+                buffer.push8(VTXTABLE_BAND.vtxtable_band_name.charCodeAt(i));
+            }
+
+            buffer.push8(VTXTABLE_BAND.vtxtable_band_letter.charCodeAt(0))
+                  .push8(VTXTABLE_BAND.vtxtable_band_is_factory_band ? 1 : 0);
+
+            buffer.push8(VTXTABLE_BAND.vtxtable_band_frequencies.length);
+            for (let i = 0; i < VTXTABLE_BAND.vtxtable_band_frequencies.length; i++) {
+                buffer.push16(VTXTABLE_BAND.vtxtable_band_frequencies[i]);
+            }
+
+            break;
+
         default:
             return false;
     }

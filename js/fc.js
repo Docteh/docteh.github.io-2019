@@ -26,6 +26,7 @@ var SERVO_RULES;
 var SERIAL_CONFIG;
 var SENSOR_DATA;
 var MOTOR_DATA;
+var MOTOR_TELEMETRY_DATA;
 var SERVO_DATA;
 var GPS_DATA;
 var ANALOG;
@@ -58,6 +59,9 @@ var FILTER_CONFIG;
 var ADVANCED_TUNING;
 var SENSOR_CONFIG;
 var COPY_PROFILE;
+var VTX_CONFIG;
+var VTXTABLE_BAND;
+var VTXTABLE_POWERLEVEL;
 var DEFAULT;
 
 var FC = {
@@ -207,6 +211,15 @@ var FC = {
         MOTOR_DATA =                    new Array(8);
         SERVO_DATA =                    new Array(8);
 
+        MOTOR_TELEMETRY_DATA = {
+            rpm:                        [0, 0, 0, 0, 0, 0, 0, 0],
+            invalidPercent:             [0, 0, 0, 0, 0, 0, 0, 0],
+            temperature:                [0, 0, 0, 0, 0, 0, 0, 0],
+            voltage:                    [0, 0, 0, 0, 0, 0, 0, 0],
+            current:                    [0, 0, 0, 0, 0, 0, 0, 0],
+            consumption:                [0, 0, 0, 0, 0, 0, 0, 0],
+        };
+
         GPS_DATA = {
             fix:                        0,
             numSat:                     0,
@@ -274,6 +287,10 @@ var FC = {
             minthrottle:                0,
             maxthrottle:                0,
             mincommand:                 0,
+            motor_count:                0,
+            motor_poles:                0,
+            use_dshot_telemetry:        false,
+            use_esc_sensor:             false,
         };
 
         GPS_CONFIG = {
@@ -353,6 +370,15 @@ var FC = {
             motor_pwm_rate:             0,
             digitalIdlePercent:         0,
             gyroUse32kHz:               0,
+            motorPwmInversion:          0,
+            gyroToUse:                  0,
+            gyroHighFsr:                0,
+            gyroMovementCalibThreshold: 0,
+            gyroCalibDuration:          0,
+            gyroOffsetYaw:              0,
+            gyroCheckOverflow:          0,
+            debugMode:                  0,
+            debugModeCount:             0,
         };
 
         FILTER_CONFIG = {
@@ -377,6 +403,10 @@ var FC = {
             dterm_notch_hz:             0,
             dterm_notch_cutoff:         0,
             yaw_lowpass_hz:             0,
+            dyn_notch_range:            0,
+            dyn_notch_width_percent:    0,
+            dyn_notch_q:                0,
+            dyn_notch_min_hz:           0,
         };
 
         ADVANCED_TUNING = {
@@ -445,6 +475,8 @@ var FC = {
             rcSmoothingDerivativeCutoff:  0, 
             rcSmoothingInputType:         0,
             rcSmoothingDerivativeType:    0,
+            rcSmoothingAutoSmoothness:    0,
+            usbCdcHidType:                0,
         };
 
         FAILSAFE_CONFIG = {
@@ -469,6 +501,37 @@ var FC = {
         };
 
         RXFAIL_CONFIG = [];
+
+        VTX_CONFIG = {
+            vtx_type:                       0,
+            vtx_band:                       0,
+            vtx_channel:                    0,
+            vtx_power:                      0,
+            vtx_pit_mode:                   false,
+            vtx_frequency:                  0,
+            vtx_device_ready:               false,
+            vtx_low_power_disarm:           0,
+            vtx_pit_mode_frequency:         0,
+            vtx_table_available:            false,
+            vtx_table_bands:                0,
+            vtx_table_channels:             0,
+            vtx_table_powerlevels:          0,
+            vtx_table_clear:                false,
+        };
+
+        VTXTABLE_BAND = {
+            vtxtable_band_number:           0,
+            vtxtable_band_name:             '',
+            vtxtable_band_letter:           '',
+            vtxtable_band_is_factory_band:  false,
+            vtxtable_band_frequencies:      [],
+        };
+
+        VTXTABLE_POWERLEVEL = {
+            vtxtable_powerlevel_number:     0,
+            vtxtable_powerlevel_value:      0,
+            vtxtable_powerlevel_label:      0,
+        };
 
         DEFAULT = {
             gyro_lowpass_hz:                100,
